@@ -33,9 +33,9 @@
         <section class="w-full ">
 
             <!--Title-->
-            <h1 class="flex items-center font-sans font-bold break-normal text-gray-700 px-2 text-xl mt-12 lg:mt-0 md:text-2xl">
-			 瞬間英作文
-			</h1>
+            <h1 class="font-sans font-bold break-normal text-gray-700 px-2 text-xl mt-12  md:text-2xl">
+			       瞬間英作文
+		      	</h1>
 
             <!--divider-->
             <hr class="bg-gray-300 my-12">
@@ -44,10 +44,16 @@
             <h2 id='section1' class="font-sans font-bold break-normal text-gray-700 px-2 pb-8 text-xl">Section 1</h2>
 
             <!--Card-->
+            @foreach ($languages as $language)
             <div class="p-8 mt-6 lg:mt-0 leading-normal rounded shadow bg-white">
-                <li>Using the CDN version of</li>
-                <li>This template uses jQuery for scrollspy</li>
+            
+              <ul>
+              <li>{{ $language->japanese }} </li>
+              <li>{{ $language->english }}</li> 
+             </ul>
+             
             </div>
+            @endforeach
             <!--/Card-->
       <!--/container-->
     </section >
