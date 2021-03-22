@@ -11,6 +11,7 @@ class LanguageController extends Controller
     {
         $languages = Language::all();
       
+        // dd($languages);
         return view('home',[
             'languages' => $languages
         ]);
