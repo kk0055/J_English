@@ -10,6 +10,7 @@
     <meta name="keywords" content="">
     <link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://unpkg.com/@tailwindcss/custom-forms/dist/custom-forms.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <!--Replace with your tailwind.css once created-->
     <style>
         .max-h-64 {
@@ -55,13 +56,9 @@
             <div class="p-8 mt-6 lg:mt-0 leading-normal rounded shadow bg-white">
             
              
-              <button onclick="myFunction()"> {{ $key  }}. {{ $language->japanese }} </button>
-              <p class="myDiv" id="myDIV" >{{ $language->english }}
+              <button class="question"> {{ $key  }}. {{ $language->japanese }} </button>
+              <p class="myDiv question" id="myDIV" >{{ $language->english }}
                </p> 
-
-          
-          
-             
             </div>
             @endforeach
             <!--/Card-->
@@ -69,11 +66,13 @@
     </section >
 
     <script>
-    function myFunction() {
-   var element = document.getElementById("myDIV");
-   
-    element.classList.toggle("myDIVShow");
-}
+
+
+$(document).ready(function(){
+$(".question").on("click", function() {
+$(this).next().slideToggle(200);
+});
+});
         </script>
         
 </body>
