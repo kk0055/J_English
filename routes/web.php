@@ -19,4 +19,4 @@ use App\Http\Controllers\LanguageController;
 // });
 
 
-Route::get('/', [LanguageController::class, 'index']);
+Route::resource('/', [LanguageController::class, 'index']);
