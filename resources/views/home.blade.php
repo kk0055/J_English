@@ -53,11 +53,11 @@
 
             <!--Card-->
             @foreach ($languages as $key => $language)
-            <div class="p-8 mt-6 lg:mt-0 leading-normal rounded shadow bg-white">
+            <div class="p-5 mt-6 lg:mt-0 leading-normal rounded shadow bg-white">
             
              
               <button class="question"> {{ $key  }}. {{ $language->japanese }} </button>
-              <p class="myDiv question" id="myDIV" >{{ $language->english }}
+              <p class="myDiv question" >{{ $language->english }}
                </p> 
             </div>
             @endforeach

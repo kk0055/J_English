@@ -19,7 +19,7 @@ class LanguageController extends Controller
 
     public function create()
     {
-        //
+        return view('create');
     }
 
     /**
@@ -27,9 +27,23 @@ class LanguageController extends Controller
         *
         * @return Response
         */
-    public function store()
+    public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'english' => 'required',
+            'japanese' => 'required',
+      
+        ]);
+       
+        
+            $request->user()->drinks()->create([
+            'english' => $request->english,
+            'japanese' => $request->japanese,
+            
+            ]);
+           
+            return redirect()->route('home')->with('info','追加');
+            
     }
     
     /**
