@@ -81,4 +81,18 @@ class LanguageController extends Controller
     {
         //
     }
+
+        public function favoritePost(Language $language)
+    {
+        Auth::user()->favorites()->attach($language->id);
+
+        return back();
+    }
+
+    public function unfavoritePost(Language $language)
+    {
+        Auth::user()->favorites()->attach($language->id);
+
+        return back();
+    }
 }
