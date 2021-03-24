@@ -47,7 +47,7 @@
                @endauth
           {{-- / ログイン時 --}}
           {{-- ゲスト --}}
-          @guest
+               @guest
                <button class="question focus:outline-none">{{ $language->japanese }} </button>
                <p class="english mt-2  text-red-500" >{{ $language->english }}
                 </p>
@@ -55,8 +55,7 @@
           {{-- ゲスト --}}      
             </div>
             @endforeach
-       
-
+   
       {{-- {{ $languages->links() }} --}}
     </div>
     </div >

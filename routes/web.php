@@ -17,5 +17,5 @@ Route::post('unfavorite/{language}', [LanguageController::class,'unfavoritePost'
 
 Route::get('my_favorites', [LanguageController::class,'myFavorites'])->middleware('auth');
 
-Route::get('/{user}', [UserItemController::class,'index']);
+Route::get('/{user}', [UserItemController::class,'index'])->name('user.post');
 

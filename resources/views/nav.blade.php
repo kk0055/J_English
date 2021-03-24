@@ -24,12 +24,11 @@
 
               
                 @auth
-                {{-- <li>
-                    <a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href=""
-             >
-                     {{ $user->name }}
-                 </a></li>
-                <li> --}}
+            
+                  <li>
+                    <a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="{{ route('user.post',Auth::user()) }}">{{ Auth::user()->name }}</a>
+                 </li>
+
                 <a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="{{ route('logout') }}"
                 onclick="event.preventDefault();
                               document.getElementById('logout-form').submit();">
@@ -39,11 +38,12 @@
              <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                 @csrf
             </form>
-
+          
                  
              <li>
                 <a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="my_favorites">お気に入り(保存)</a>
             </li>
+         
              @endauth
            
               </ul>    
