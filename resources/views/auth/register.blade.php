@@ -6,9 +6,9 @@
     
     <div class="w-2/3 lg:w-1/2 xl:max-w-screen-sm bg-white shadow px-4 py-2 rounded-md">
        
-        <div class=" sm:px-24 md:px-48 lg:px-12 lg:mt-16 xl:px-24 xl:max-w-2xl">
-            <a href="/"> 
-                <i class="fas fa-wine-glass-alt text-2xl hover:text-red-500"></i></a>  
+        <div class="mt-5 sm:px-24 md:px-48 lg:px-12 lg:mt-16 xl:px-24 xl:max-w-2xl">
+                   <a href="/"> 
+                    <i class="fas fa-book"></i></a>   
             <P class="text-center text-gray-700 font-display  
            
             font-bold">登録</P>
@@ -84,8 +84,7 @@
                     </div>
                 </form>
                 <div class="my-4 text-sm font-display font-semibold text-gray-700 text-center">
-                    アカウント持ってる?
-                    <a class="cursor-pointer hover:text-red-800 ml-2 text-xl" href="{{ 'login' }}">ログイン</a>
+                    <a class="cursor-pointer hover:text-red-800 ml-2 " href="{{ 'login' }}">ログイン</a>
                 </div>
            
             </div>

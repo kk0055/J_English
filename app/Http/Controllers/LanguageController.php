@@ -98,8 +98,8 @@ class LanguageController extends Controller
 
         public function myFavorites()
     {
-        $languages = Auth::user()->favorites;
+        $myFavorites = Auth::user()->favorites;
 
-        return view('my_favorites', compact('languages'));
+        return view('my_favorites', compact('myFavorites'));
     }
 }

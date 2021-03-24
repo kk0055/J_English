@@ -9,8 +9,8 @@
        
         <div class=" md:px-48 lg:px-12 lg:mt-16 xl:px-24  xl:max-w-2xl">
             <a href="/"> 
-                <i class="fas fa-wine-glass-alt text-2xl hover:text-red-500"></i></a>  
-            <P class="text-center text-gray-700    font-bold ">ログイン</P>
+                <i class="fas fa-book"></i></a>  
+            <P class="text-center text-gray-700   font-bold ">ログイン</P>
          
             <div class="  mt-10">
                      <form method="POST" action="{{ route('login') }}">
@@ -43,11 +43,12 @@
                         <input class=" text-lg py-2  focus:outline-none  border-b focus:border-indigo-500 form-control @error('password') is-invalid @enderror" type="password"  placeholder="" value="{{ old('password') }}" name="password">
                     </div>
                     <div class="mt-10">
-                        <button class=" p-4  rounded-full 
+                        <button class="bg- text-black p-4 w-full rounded-full tracking-wide
                         font-semibold font-display focus:outline-none focus:shadow-outline hover:bg-gray-200
                         shadow-lg">
                         ログイン
                         </button>
+                    </div>
                     </div>
                 </form>
                 <div class="mt-2 text-sm font-display font-semibold text-gray-700 my-4">
@@ -66,8 +67,8 @@
                   
                     <div class=" my-6">
                         <button class="bg-black px-2 text-white rounded-full 
-                        font-display focus:outline-none focus:shadow-outline hover:bg-green-500
-                        shadow-lg"> テストユーザーとして書く
+                        font-display focus:outline-none focus:shadow-outline hover:bg-gray-600
+                        shadow-lg"> テストユーザーとしてログイン
                     
                         </button>
                     </div>  
