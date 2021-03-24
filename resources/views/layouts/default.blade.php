@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>瞬間英作文</title>
+    <title>5seconds英作文</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
@@ -13,15 +13,18 @@
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Stick&display=swap" rel="stylesheet">
-
+    
+  
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <!--Replace with your tailwind.css once created-->
     <style>
        @import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-       * {
+       
+       body {
             font-family: 'RocknRoll', sans-serif;
         }
+
 
         .nav{
           font-family: 'Roboto', sans-serif;

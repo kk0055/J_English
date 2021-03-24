@@ -3,7 +3,6 @@
 @section('content')
     
 
-
         <!--Section container-->
         <section class="w-full ">
 

@@ -11,11 +11,11 @@
         <div class="create-text flex flex-col w-full items-center  px-6 tracking-wide">
           文章を考えて追加しよう
           @guest
-          {{-- <div class="text-red-500" role="alert">
-             <p>※ログインしてないと投稿できないよ～<br>ログインするか？<i class="fas fa-hand-point-right"></i> 
+          <div class="text-red-500" role="alert">
+             <p>※ログインしてないと投稿できないよ～<br>ログインする？<i class="fas fa-hand-point-right"></i> 
             <a href="{{ route('login') }}" class="text-black">ログイン</a></p>
              
-          </div> --}}
+          </div>
          @endguest
          
           </div>
