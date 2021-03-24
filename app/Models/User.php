@@ -45,4 +45,9 @@ class User extends Authenticatable
     {
         return $this->hasMany(Language::class);
     }
+
+    public function favorites()
+{
+    return $this->belongsToMany(Language::class, 'favorites', 'user_id', 'language_id')->withTimeStamps();
+}
 }
