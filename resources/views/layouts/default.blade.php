@@ -14,13 +14,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Stick&display=swap" rel="stylesheet">
     
-  
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <!--Replace with your tailwind.css once created-->
     <style>
        @import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-       
+
        body {
             font-family: 'RocknRoll', sans-serif;
         }
@@ -42,11 +42,11 @@
         .form-multiselect {
             background-color: #edf2f7;
         }
-        .myDiv{
+        .english{
             display:none;
         }
 
-        .myDIVShow{
+        .englishShow{
             display:block;
         }
     </style>

@@ -22,17 +22,18 @@
             <p class="ml-3">日本語を見て5秒以内に英語を声に出す。<br> 5秒考えてわからなければ日本語をクリックして英語を見る。</p>
 
             <!--Card-->
-            @foreach ($languages as $key => $language)
+            @foreach ($languages as  $language)
             <div class="p-5 mt-6 lg:mt-0 leading-normal rounded shadow bg-white">
             
              
-              <button class="question"> {{ $key  }}. {{ $language->japanese }} </button>
-              <p class="myDiv question" >{{ $language->english }}
+              <button class="question focus:outline-none"> {{ $language->japanese }} </button>
+              <p class="english mt-2 text-red-500" >{{ $language->english }}
                </p> 
             </div>
             @endforeach
             <!--/Card-->
       <!--/container-->
+      {{-- {{ $languages->links() }} --}}
     </section >
 
     <script>
