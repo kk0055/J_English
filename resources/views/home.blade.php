@@ -8,7 +8,7 @@
 
             <!--Title-->
             <h1 class="font-sans font-bold break-normal text-gray-700 px-2 text-xl mt-5  md:text-2xl">
-			       瞬間英作文
+                5秒英作文
 		      	</h1>
 
             <!--divider-->

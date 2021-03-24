@@ -9,7 +9,7 @@ class LanguageController extends Controller
 {
     public function index()
     {
-        $languages = Language::all();
+        $languages = Language::all()->shuffle();
       
         // dd($languages);
         return view('home',[
