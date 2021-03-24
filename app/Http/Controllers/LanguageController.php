@@ -36,13 +36,13 @@ class LanguageController extends Controller
         ]);
        
         
-            $request->user()->drinks()->create([
+            $request->user()->languages()->create([
             'english' => $request->english,
             'japanese' => $request->japanese,
             
             ]);
            
-            return redirect()->route('home')->with('info','追加');
+            return redirect()->to('/')->with('info','追加');
             
     }
     

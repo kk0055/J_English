@@ -43,6 +43,6 @@ class User extends Authenticatable
 
     public function languages()
     {
-        return $this->hasMany(Languages::class);
+        return $this->hasMany(Language::class);
     }
 }
