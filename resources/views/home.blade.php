@@ -27,9 +27,9 @@
             <!--Card-->
             @foreach ($languages as  $language)
             <div class="p-5 mt-6 lg:mt-0 leading-normal rounded shadow bg-white">
-            
+                <i class="far fa-heart"></i>
             <button class="question focus:outline-none">{{ $language->japanese }} </button>
-              <p class="english mt-2 text-red-500" >{{ $language->english }}
+              <p class="english mt-2 ml-6 text-red-500" >{{ $language->english }}
                </p> 
             </div>
             @endforeach
