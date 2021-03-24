@@ -55,7 +55,6 @@
 
 <body class="bg-gray-100 text-gray-900 tracking-wider  ">
   @include('nav')
-
   @yield('content')
 
 </body>

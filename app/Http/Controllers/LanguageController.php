@@ -4,16 +4,19 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Language;
+use Illuminate\Support\Facades\Auth;
 
 class LanguageController extends Controller
 {
     public function index()
     {
+        $user = Auth::user();
         $languages = Language::all()->shuffle();
       
         // dd($languages);
         return view('home',[
-            'languages' => $languages
+            'languages' => $languages,
+            'user' => $user
         ]);
     }
 

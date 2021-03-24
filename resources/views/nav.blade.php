@@ -24,7 +24,12 @@
 
               
                 @auth
-                <li>
+                {{-- <li>
+                    <a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href=""
+             >
+                     {{ $user->name }}
+                 </a></li>
+                <li> --}}
                 <a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="{{ route('logout') }}"
                 onclick="event.preventDefault();
                               document.getElementById('logout-form').submit();">
@@ -37,18 +42,10 @@
 
                  
              <li>
-                <a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="#">俺のお気に入り</a>
+                <a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="#">お気に入り</a>
             </li>
              @endauth
            
-                        
-
-                <li>
-                    <a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="#">ランキング</a> 
-                </li>
-
-        
-              
               </ul>    
           </nav>
      

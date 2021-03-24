@@ -5,12 +5,16 @@
 
         <!--Section container-->
         <div class="w-full mb-10 ">
-
+            {{-- @if (Session::has('info'))
+            <div class="text-red-500" role="alert">
+                {{ Session::get('info') }}
+            </div>
+            @endif --}}
             <!--Title-->
             <h1 class="font-sans font-bold break-normal text-gray-700 px-2 text-xl mt-5  md:text-2xl">
                 5秒英作文
 		      	</h1>
-
+           
             <!--divider-->
             <hr class="bg-gray-300 my-12">
 
@@ -27,7 +31,10 @@
             <!--Card-->
             @foreach ($languages as  $language)
             <div class="p-5 mt-6 lg:mt-0 leading-normal rounded shadow bg-white">
+                @auth
                 <i class="far fa-heart"></i>
+                @endauth
+                
             <button class="question focus:outline-none">{{ $language->japanese }} </button>
               <p class="english mt-2 ml-6 text-red-500" >{{ $language->english }}
                </p> 
