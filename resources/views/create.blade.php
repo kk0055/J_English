@@ -9,6 +9,7 @@
     <div class="shadow overflow-hidden sm:rounded-md">
       <div class="px-4 py-5 bg-white sm:p-6">
         <div class="create-text flex flex-col w-full items-center  px-6 tracking-wide">
+          文章を考えて追加しよう
           @guest
           {{-- <div class="text-red-500" role="alert">
              <p>※ログインしてないと投稿できないよ～<br>ログインするか？<i class="fas fa-hand-point-right"></i> 
@@ -23,7 +24,7 @@
           <div class="col-span-6">
         
             <label for="japanese" class="block text-sm font-medium text-gray-700">日本語</label>
-            <input type="text" name="japanese"  class="mt-1 p-1 focus:outline-none focus:ring  block w-full shadow-sm sm:text-sm rounded-md border border-indigo-600" placeholder="" value="{{ old('japanese') }}" >
+            <input type="text" name="japanese"  class="mt-1 p-1 focus:outline-none focus:ring  block w-full  shadow-sm sm:text-sm rounded-md border border-black" placeholder="おなかすいてるよね？" value="{{ old('japanese') }}" >
           </div>
           @error('japanese')
           <div class="text-red-500 mb-2 text-sm">
@@ -34,7 +35,7 @@
           <div class="col-span-6 mt-3">
         
             <label for="english" class="block text-sm font-medium text-gray-700">英語</label>
-            <input type="text" name="english"   class="mt-1 p-1 focus:outline-none focus:ring  block w-full shadow-sm sm:text-sm rounded-md border border-indigo-600" placeholder="" value="{{ old('english') }}" >
+            <input type="text" name="english"   class="mt-1 p-1 focus:outline-none focus:ring  block w-full shadow-sm sm:text-sm rounded-md border border-black" placeholder="You are hungry, aren't you?" value="{{ old('english') }}" >
           </div>
           @error('english')
           <div class="text-red-500 mb-2 text-sm">

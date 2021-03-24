@@ -10,9 +10,25 @@
     <meta name="keywords" content="">
     <link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://unpkg.com/@tailwindcss/custom-forms/dist/custom-forms.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Stick&display=swap" rel="stylesheet">
+
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <!--Replace with your tailwind.css once created-->
     <style>
+       @import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+       @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+       * {
+            font-family: 'RocknRoll', sans-serif;
+        }
+
+        .nav{
+          font-family: 'Roboto', sans-serif;
+       }
+       #menu-toggle:checked + #menu {
+            display: block;
+        }
         .max-h-64 {
             max-height: 16rem;
         }
@@ -35,6 +51,7 @@
 </head>
 
 <body class="bg-gray-100 text-gray-900 tracking-wider  ">
+  @include('nav')
 
   @yield('content')
 
