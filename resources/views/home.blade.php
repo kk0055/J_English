@@ -49,7 +49,8 @@
             <hr class="bg-gray-300 my-12">
 
             <!--Title-->
-            <h2 id='section1' class="font-sans font-bold break-normal text-gray-700 px-2 pb-8 text-xl">Section 1</h2>
+            <h2 id='section1' class="font-sans font-bold break-normal text-gray-700 px-2 pb-3 text-xl">ルール</h2>
+            <p class="ml-3">日本語を見て5秒以内に英語を声に出す。<br> 5秒考えてわからなければ日本語をクリックして英語を見る。</p>
 
             <!--Card-->
             @foreach ($languages as $key => $language)
