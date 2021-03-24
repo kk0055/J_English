@@ -61,9 +61,10 @@
 
 <body class="bg-gray-100 text-gray-900 tracking-wider  ">
   <div id="app">
-  @include('nav')
+ 
   @yield('content')
 </div>
+
 <script>
   $(document).ready(function(){
   $(".question").on("click", function() {
