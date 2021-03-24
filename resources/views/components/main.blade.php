@@ -1,4 +1,4 @@
-           <!--Main-->
+          
            @foreach ($languages as  $language)
            <div class="p-5 mt-6 lg:mt-0 leading-normal rounded shadow bg-white">
                @auth
