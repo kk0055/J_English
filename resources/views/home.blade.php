@@ -35,7 +35,8 @@
                <favorite-button
                :language={{ $language->id }}
                :favorited={{ $language->favorited() ? 'true' : 'false' }}
-               />
+               >  </favorite-button
+               >
                 @endauth
                 
             <button class="question focus:outline-none">{{ $language->japanese }} </button>
@@ -48,14 +49,6 @@
       {{-- {{ $languages->links() }} --}}
     </div >
 
-    <script>
 
-
-$(document).ready(function(){
-$(".question").on("click", function() {
-$(this).next().slideToggle(200);
-});
-});
-        </script>
         
 @endsection

@@ -58,5 +58,14 @@
   @include('nav')
   @yield('content')
 </div>
+<script>
+  $(document).ready(function(){
+  $(".question").on("click", function() {
+  $(this).next().slideToggle(200);
+  });
+  });
+   </script>
+<script src="{{ mix('js/app.js') }}"></script>
+
 </body>
 </html>

@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Auth;
 
 class Language extends Model
 {
@@ -15,4 +16,10 @@ class Language extends Model
     {
         return $this->belongsTo(User::class);
     }
+    public function favorited()
+{
+    return (bool) Favorite::where('user_id', Auth::id())
+                        ->where('language_id', $this->id)
+                        ->first();
+}
 }

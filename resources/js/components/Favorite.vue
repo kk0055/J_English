@@ -1,10 +1,10 @@
 <template>
     <span>
         <a href="#" v-if="isFavorited" @click.prevent="unFavorite(language)">
-            <i  class="fa fa-heart"></i>
+         <i class="fas fa-heart"></i>
         </a>
         <a href="#" v-else @click.prevent="favorite(language)">
-            <i  class="fa fa-heart-o"></i>
+             <i class="far fa-heart"></i>
         </a>
     </span>
 </template>
