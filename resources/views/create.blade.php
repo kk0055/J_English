@@ -9,10 +9,10 @@
     <div class="shadow overflow-hidden sm:rounded-md">
       <div class="px-4 py-5 bg-white sm:p-6">
         <div class="create-text flex flex-col w-full items-center  px-6 tracking-wide">
-          文章を考えて追加しよう
+          文章を考えて追加しよう♪
           @guest
-          <div class="text-red-500" role="alert">
-             <p>※ログインしてないと投稿できないよ～<br>ログインする？<i class="fas fa-hand-point-right"></i> 
+          <div class="text-red-500 text-sm" role="alert">
+             <p>※ログインしてないと投稿できないよ～<br><i class="fas fa-hand-point-right"></i> 
             <a href="{{ route('login') }}" class="text-black">ログイン</a></p>
              
           </div>
@@ -24,7 +24,7 @@
           <div class="col-span-6">
         
             <label for="japanese" class="block text-sm font-medium text-gray-700">日本語</label>
-            <input type="text" name="japanese"  class="mt-1 p-1 focus:outline-none focus:ring  block w-full  shadow-sm sm:text-sm rounded-md border border-black" placeholder="おなかすいてるよね？" value="{{ old('japanese') }}" >
+            <input type="text" name="japanese"  class="mt-1 p-1 focus:outline-none focus:ring  block w-full  shadow-sm sm:text-sm rounded-md border border-black" placeholder="アヒルみたいな顔だね" value="{{ old('japanese') }}" >
           </div>
           @error('japanese')
           <div class="text-red-500 mb-2 text-sm">
@@ -35,7 +35,7 @@
           <div class="col-span-6 mt-3">
         
             <label for="english" class="block text-sm font-medium text-gray-700">英語</label>
-            <input type="text" name="english"   class="mt-1 p-1 focus:outline-none focus:ring  block w-full shadow-sm sm:text-sm rounded-md border border-black" placeholder="You are hungry, aren't you?" value="{{ old('english') }}" >
+            <input type="text" name="english"   class="mt-1 p-1 focus:outline-none focus:ring  block w-full shadow-sm sm:text-sm rounded-md border border-black" placeholder="Your face looks like a duck." value="{{ old('english') }}" >
           </div>
           @error('english')
           <div class="text-red-500 mb-2 text-sm">
@@ -55,7 +55,7 @@
     @guest
     <div class="px-4 py-3 bg-white text-right sm:px-6">
       <button type="submit" class="inline-flex  justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 bg-black"  onclick="loginAlert()" >
-        Go!!
+        Submit!!
       </button>
     </div>
    @endguest
@@ -63,7 +63,7 @@
     @auth
       <div class="px-4 py-3 bg-white text-right sm:px-6">
         <button type="submit" class="inline-flex  justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 bg-black" >
-          Go!!
+          Submit!!
         </button>
       </div>
       @endauth
