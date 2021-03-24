@@ -100,6 +100,7 @@ class LanguageController extends Controller
     {
         $myFavorites = Auth::user()->favorites;
 
+      
         return view('my_favorites', compact('myFavorites'));
     }
 }

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LanguageController;
+use App\Http\Controllers\UserItemController;
 use Illuminate\Support\Facades\Auth;
 
 
@@ -15,4 +16,6 @@ Route::post('favorite/{language}', [LanguageController::class,'favoritePost']);
 Route::post('unfavorite/{language}', [LanguageController::class,'unfavoritePost']);
 
 Route::get('my_favorites', [LanguageController::class,'myFavorites'])->middleware('auth');
+
+Route::get('/{user}', [UserItemController::class,'index']);
 
