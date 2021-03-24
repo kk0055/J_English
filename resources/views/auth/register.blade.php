@@ -6,7 +6,7 @@
     
     <div class="w-2/3 lg:w-1/2 xl:max-w-screen-sm bg-white shadow px-4 py-2 rounded-md">
        
-        <div class="mt-5 sm:px-24 md:px-48 lg:px-12 lg:mt-16 xl:px-24 xl:max-w-2xl">
+        <div class="md:px-48 lg:px-12 lg:mt-16 xl:px-24 xl:max-w-2xl">
                    <a href="/"> 
                     <i class="fas fa-book"></i></a>   
             <P class="text-center text-gray-700 font-display  
