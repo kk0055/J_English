@@ -91,8 +91,15 @@ class LanguageController extends Controller
 
     public function unfavoritePost(Language $language)
     {
-        Auth::user()->favorites()->attach($language->id);
+        Auth::user()->favorites()->detach($language->id);
 
         return back();
+    }
+
+        public function myFavorites()
+    {
+        $languages = Auth::user()->favorites;
+
+        return view('my_favorites', compact('languages'));
     }
 }

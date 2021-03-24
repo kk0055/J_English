@@ -42,7 +42,7 @@
 
                  
              <li>
-                <a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="#">お気に入り</a>
+                <a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="my_favorites">お気に入り(保存)</a>
             </li>
              @endauth
            
