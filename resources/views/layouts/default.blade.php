@@ -31,11 +31,15 @@
        @import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
        @import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
+       @import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
 
        body {
             font-family: 'RocknRoll', sans-serif;
         }
-
+       
+       .main-title{
+        font-family: 'New Tegomin', serif;
+       }
 
         .nav{
           font-family: 'Stick', sans-serif;
