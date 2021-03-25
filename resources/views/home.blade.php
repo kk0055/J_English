@@ -26,7 +26,7 @@
         </div>
             <p class="ml-3">日本語を見て5秒以内に英語を声に出す。<br> 5秒考えてわからなければ日本語をクリックして英語を見て声に出す。
             <br>ログインすれば問題の追加と問題の保存(<i class="far fa-heart"></i>をクリック) ができるよー。
-            <br>`リロードで問題はシャッフルされるよー。<span class="text-blue-700 font-bold">声出してねー。大事だよー。</span></p>
+            <br>リロードで問題はシャッフルされるよー。<span class="text-blue-700 font-bold">声出してねー。大事だよー。</span></p>
             
 
            <div class="mt-4">
