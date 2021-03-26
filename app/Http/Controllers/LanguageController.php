@@ -11,7 +11,7 @@ class LanguageController extends Controller
     public function index()
     {
         $user = Auth::user();
-        $languages = Language::all()->shuffle();
+        $languages = Language::all()->random(100);
       
         // dd($languages);
         return view('home',[
