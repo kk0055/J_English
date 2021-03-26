@@ -16,10 +16,15 @@ class Language extends Model
     {
         return $this->belongsTo(User::class);
     }
-    public function favorited()
-{
-    return (bool) Favorite::where('user_id', Auth::id())
-                        ->where('language_id', $this->id)
-                        ->first();
-}
+        public function favorited()
+    {
+        return (bool) Favorite::where('user_id', Auth::id())
+                            ->where('language_id', $this->id)
+                            ->first();
+    }
+
+    public function favorites()
+    {
+        return $this->belongsToMany(Language::class, 'favorites', 'user_id', 'language_id')->withTimeStamps();
+    }
 }
