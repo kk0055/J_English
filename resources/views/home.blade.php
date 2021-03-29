@@ -13,7 +13,7 @@
             @endif --}}
             <!--Title-->
             <h1 class="font-sans font-bold break-normal text-gray-700 px-2 text-2xl mt-5  md:text-2xl">
-             5 秒英作文<i class="fas fa-paw ml-1"></i>
+             5秒英作文<i class="fas fa-paw ml-1"></i>
 		      	</h1>
            
             <!--divider-->

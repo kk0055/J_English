@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>5秒英作文。～5seconds English～ 日本語を見て5秒で英文を作ろう</title>
+    <title>5秒英作文 ～5seconds English～ 日本語を見て5秒で英文を作ろう</title>
     <meta property="og:site_name" content="5秒英作文 ～5seconds English～" />
     <meta property="og:title" content="5秒英作文 ～5seconds English～"/>
     <meta name="keywords" content="瞬間英作文,スピーキング,英語,5秒英作文,TOEIC,英会話,英語学習">
