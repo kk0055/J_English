@@ -59,7 +59,12 @@ class LanguageController extends Controller
         */
         public function edit($id)
         {
-            //
+            $language = Language::find($id);
+
+            // dd($language);
+            return view('edit',[
+                'language' => $language
+            ]);
         }
 
     /**

@@ -43,8 +43,12 @@
                >
                
                 
-            <button class="question focus:outline-none">{{ $language->japanese }} </button>
+            <button class="question focus:outline-none">{{ $language->japanese }}
+              <a href={{ route('edit',$language->id) }}> <i class="ml-2 far fa-edit"></i></a>
+            
+            </button>
               <p class="english mt-2 ml-6 text-red-500" >{{ $language->english }}
+              
                </p> 
                @endauth
           {{-- / ログイン時 --}}
