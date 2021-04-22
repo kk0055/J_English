@@ -85,6 +85,26 @@
             text-align: left;
         }
 
+@media only screen and (max-width: 600px) {
+    .iframe-wrap {
+        position: relative;
+        width: 90%;
+        padding-top: 56.25%;
+        overflow:auto; 
+        -webkit-overflow-scrolling:touch;
+        border:2px solid #ccc; 
+        }
+        .iframe-wrap iframe {
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            border:none;
+            display:block;
+        }
+}
+  
     </style>
 
 </head>

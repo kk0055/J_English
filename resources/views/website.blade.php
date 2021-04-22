@@ -27,81 +27,82 @@
 <div class="websiteList" >
 <ul >
     <li class="font-sans font-bold break-normal text-gray-700 mt-3 pb-3 text-xl">Udemy</li>
-    <a class="hover:text-blue-700" href="https://www.udemy.com/courses/search/?price=price-free&q=english&sort=relevance&src=ukw" target=_blank>Udemyにジャンプ</a>
+    <a class="text-blue-500 hover:text-blue-700" href="https://www.udemy.com/courses/search/?price=price-free&q=english&sort=relevance&src=ukw" target=_blank>Udemyにジャンプ</a>
 
     <p class="mt-3">Udemyの無料で利用できる英語の講座です。現在864個の講座が無料で受けられます。Udemyにジャンプしたら自分のアカウントの言語を英語に変えてください。英語で英語学習ができます。 自分の目的に合わせてつかってみてください。</p>
 
     {{-- block --}}
     <li class="font-sans font-bold break-normal text-gray-700 mt-20 pb-3 text-xl">Learn English While Sleeping</li>
-
+    <div class="iframe-wrap">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/OazE2vXzLf4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
 
     <p class="mt-5">Learn English While Sleepingの名の通り寝るときに流しましょう。</p>
     {{-- block end --}}
 
     {{-- block --}}
     <li class="font-sans font-bold break-normal text-gray-700 mt-20 pb-3 text-xl">74 Topics - Daily Life English conversations</li>
-
+    <div class="iframe-wrap">
     <iframe width="560"  height="315" src="https://www.youtube.com/embed/bAPpaP5exR0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+    </div>
     <p class="mt-5"></p>
     {{-- block end --}}
 
 
     {{-- block --}}
     <li class="font-sans font-bold break-normal text-gray-700 mt-20 pb-3 text-xl">Daily English Conversation</li>
-
+    <div class="iframe-wrap">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/RCseemNc2zw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+     </div>
     <p class="mt-5"></p>
     {{-- block end --}}
 
     {{-- block --}}
     <li class="font-sans font-bold break-normal text-gray-700 mt-20 pb-3 text-xl">American English Passages for Reading and Listening With an American Accent</li>
-
+    <div class="iframe-wrap">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/3w4RnhjNDkQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+     </div>
     <p class="mt-5"></p>
     {{-- block end --}}
 
     {{-- block --}}
     <li class="font-sans font-bold break-normal text-gray-700 mt-20 pb-3 text-xl">58 Passages from Elementary to Advanced Level</li>
-
+    <div class="iframe-wrap">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/mIbAPEPbptY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+    </div>
     <p class="mt-5"></p>
     {{-- block end --}}   
 
     {{-- block --}}
     <li class="font-sans font-bold break-normal text-gray-700 mt-20 pb-3 text-xl">All about America English Listening Passages With Native English Speakers</li>
-
+    <div class="iframe-wrap">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/_QhcGOSA4z0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+     </div>      
     <p class="mt-5"></p>
     {{-- block end --}}  
 
     {{-- block --}}
     <li class="font-sans font-bold break-normal text-gray-700 mt-20 pb-3 text-xl">Academic American English - Listening and Reading</li>
-
+    <div class="iframe-wrap">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/MQkXa-gHSuc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+     </div>
     <p class="mt-5"></p>
     {{-- block end --}}  
 
 
     {{-- block --}}
     <li class="font-sans font-bold break-normal text-gray-700 mt-20 pb-3 text-xl">Daily English Conversation Practice Questions and Answers - Improve Vocabulary - Sleep Learning</li>
-
+    <div class="iframe-wrap">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Lw3p7rgOVaA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+    </div>
     <p class="mt-5"></p>
     {{-- block end --}}  
 
     {{-- block --}}
     <li class="font-sans font-bold break-normal text-gray-700 mt-20 pb-3 text-xl">English Conversation & Listening Practice - English Practice Listening to Naturally</li>
-
+    <div class="iframe-wrap">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/9m_MxHuK_-U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+    </div>
     <p class="mt-5"></p>
     {{-- block end --}}  
   </ul>

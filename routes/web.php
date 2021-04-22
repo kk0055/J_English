@@ -6,14 +6,12 @@ use App\Http\Controllers\UserItemController;
 use App\Http\Controllers\WebsiteController;
 use Illuminate\Support\Facades\Auth;
 
+Auth::routes();
 
 Route::get('/user', [UserController::class, 'index']);
 
-Auth::routes();
 Route::resource('/', LanguageController::class)->except('edit','update');
-// Route::get('/', [LanguageController::class,'index']);
-// Route::get('/create', [LanguageController::class,'create']);
-// Route::post('/create', [LanguageController::class,'store']);
+
 Route::get('/edit/{id}', [LanguageController::class,'edit'])->name('edit');
 Route::post('/edit/{id}', [LanguageController::class,'update'])->name('update');
 
