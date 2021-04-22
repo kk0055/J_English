@@ -21,7 +21,6 @@ Route::get('/website', [WebsiteController::class,'index'])->name('website');
 
 Route::post('/favorite/{language}', [LanguageController::class,'favoritePost']);
 Route::post('/unfavorite/{language}', [LanguageController::class,'unfavoritePost']);
-
 Route::get('/my_favorites', [LanguageController::class,'myFavorites'])->middleware('auth');
 
 Route::get('/{user}', [UserItemController::class,'index'])->name('user.post');
@@ -34,7 +33,8 @@ Route::group(['middleware' => ['auth.admin']], function () {
   Route::post('/admin/logout', [AdminController::class, 'logout']);
   Route::get('/admin/user_list', [AdminController::class, 'showUserList']);
   Route::get('/admin/user/{id}', [AdminController::class, 'showUserDetail']);
-
+  Route::get('/admin/edit/{id}', [AdminController::class, 'edit'])->name('admin.edit');
+  Route::post('/admin/edit/{id}', [AdminController::class, 'update'])->name('admin.update');
   });
 
   Route::get('/admin/login', [AdminController::class, 'showLoginform']);

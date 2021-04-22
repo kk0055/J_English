@@ -5,6 +5,8 @@ namespace App\Http\Controllers\admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\Language;
+use Illuminate\Support\Facades\Validator;
 
 class AdminController extends Controller
 {
@@ -48,8 +50,62 @@ class AdminController extends Controller
 	}
 	function showUserDetail($id){
 		$user = User::find($id);
+		
+		$languages = Language::where('user_id',$user->id )->get();
+
+
 		return view("admin.user_detail", [
-			"user" => $user
+			"user" => $user,
+			'languages' =>$languages
 		]);
 	}
+
+	    /**
+        * Show the form for editing the specified resource.
+        *
+        * @param  int  $id
+        * @return Response
+        */
+        public function edit($id)
+        {
+            $language = Language::find($id);
+
+            // dd($language);
+            return view('admin.edit',[
+                'language' => $language
+            ]);
+        }
+
+    /**
+        * Update the specified resource in storage.
+        *
+        * @param  int  $id
+        * @return Response
+        */
+    public function update(Request $request,$id)
+    {
+        $language = Language::find($id);
+        $input = $request->only('japanese','english');
+
+        $validator = Validator::make($input, [
+            'english' => 'required',
+            'japanese' => 'required',
+      
+		]);
+
+        //バリデーション失敗
+		if($validator->fails()){
+			return back()
+				->withErrors($validator)
+				->withInput();
+		}
+
+        	//バリデーション成功
+		$language->japanese = $input["japanese"];
+		$language->english = $input["english"];
+		
+		$language->save();
+
+        return redirect('admin/show');
+    }
 }

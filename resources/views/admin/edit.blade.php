@@ -10,7 +10,6 @@
       <div class="px-4 py-5 bg-white sm:p-6">
         <div class="create-text flex flex-col w-full items-center  px-6 tracking-wide">
           編集
-            
           </div>
         
 
@@ -37,27 +36,31 @@
           @enderror
           {{-- Body --}}
 
-             
-
-
         {{-- End of Body --}}
     
         </div>
       </div>
 
-    {{-- ログインしてるとき --}}
-    @auth
+  
+    
       <div class="px-4 py-3 bg-white text-right sm:px-6">
         <button type="submit" class="inline-flex  justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 bg-black" >
           Submit!!
         </button>
       </div>
-      @endauth
+    
+         {{-- admin_auth ログインしてるとき --}}
+  
+    {{-- @if (Session::has('admin_auth'))
+    <div class="px-4 py-3 bg-white text-right sm:px-6">
+      <button type="submit" class="inline-flex  justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 bg-black" >
+        Submit!!
+      </button>
+    </div>
+    @endif --}}
+
     </div>
   </form>
 </div>
-
-
-
     
 @endsection
