@@ -17,7 +17,7 @@
           <div class="col-span-6">
         
             <label for="japanese" class="block text-sm font-medium text-gray-700">日本語</label>
-            <input type="text" name="japanese"  class="mt-1 p-1 focus:outline-none focus:ring  block w-full  shadow-sm sm:text-sm rounded-md border border-black" placeholder="アヒルみたいな顔だね" value="{{ old('japanese') ,$language->japanese}} " >
+            <input type="text" name="japanese"  class="mt-1 p-1 focus:outline-none focus:ring  block w-full  shadow-sm sm:text-sm rounded-md border border-black" placeholder="アヒルみたいな顔だね" value="{{ old('japanese',$language->japanese) }} " >
           </div>
           @error('japanese')
           <div class="text-red-500 mb-2 text-sm">
@@ -28,7 +28,7 @@
           <div class="col-span-6 mt-3">
         
             <label for="english" class="block text-sm font-medium text-gray-700">英語</label>
-            <input type="text" name="english"   class="mt-1 p-1 focus:outline-none focus:ring  block w-full shadow-sm sm:text-sm rounded-md border border-black" placeholder="Your face looks like a duck." value="{{ old('english') }}" >
+            <input type="text" name="english"   class="mt-1 p-1 focus:outline-none focus:ring  block w-full shadow-sm sm:text-sm rounded-md border border-black" placeholder="Your face looks like a duck." value="{{ old('english',$language->english) }}" >
           </div>
           @error('english')
           <div class="text-red-500 mb-2 text-sm">

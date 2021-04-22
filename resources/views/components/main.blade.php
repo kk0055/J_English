@@ -9,7 +9,12 @@
               >
                @endauth
                
-           <button class="question focus:outline-none">{{ $language->japanese }} </button>
+           <button class="question focus:outline-none">{{ $language->japanese }} 
+            @auth
+            <a href={{ route('edit',$language->id) }}> <i class="ml-2 far fa-edit"></i></a>     
+            @endauth
+         
+          </button>
              <p class="english mt-2 ml-6 text-red-500" >{{ $language->english }}
               </p> 
            </div>

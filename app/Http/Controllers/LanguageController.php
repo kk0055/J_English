@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Language;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Validator;
 
 class LanguageController extends Controller
 {
@@ -73,9 +74,31 @@ class LanguageController extends Controller
         * @param  int  $id
         * @return Response
         */
-    public function update($id)
+    public function update(Request $request,$id)
     {
-        //
+        $language = Language::find($id);
+        $input = $request->only('japanese','english');
+
+        $validator = Validator::make($input, [
+            'english' => 'required',
+            'japanese' => 'required',
+      
+		]);
+
+        //バリデーション失敗
+		if($validator->fails()){
+			return back()
+				->withErrors($validator)
+				->withInput();
+		}
+
+        	//バリデーション成功
+		$language->japanese = $input["japanese"];
+		$language->english = $input["english"];
+		
+		$language->save();
+
+        return redirect()->route('user.post',$language->user->id);
     }
 
     /**
