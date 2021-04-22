@@ -42,6 +42,14 @@
                         </div>
                         <input class=" text-lg py-2  focus:outline-none  border-b focus:border-indigo-500 form-control @error('password') is-invalid @enderror" type="password"  placeholder="" value="{{ old('password') }}" name="password">
                     </div>
+
+                    <div class="form-check mt-3">
+                        <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+
+                        <label class="form-check-label" for="remember">
+                            {{ __('Remember Me') }}
+                        </label>
+                    </div>
                     <div class="mt-10">
                         <button class="bg- text-black p-4 w-full rounded-full tracking-wide
                         font-semibold font-display focus:outline-none focus:shadow-outline hover:bg-gray-200
