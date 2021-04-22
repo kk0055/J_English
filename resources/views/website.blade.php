@@ -29,7 +29,8 @@
     <li class="font-sans font-bold break-normal text-gray-700 mt-3 pb-3 text-xl">Udemy</li>
     <a class="text-blue-500 hover:text-blue-700" href="https://www.udemy.com/courses/search/?price=price-free&q=english&sort=relevance&src=ukw" target=_blank>Udemyにジャンプ</a>
 
-    <p class="mt-3">Udemyの無料で利用できる英語の講座です。現在864個の講座が無料で受けられます。Udemyにジャンプしたら自分のアカウントの言語を英語に変えてください。英語で英語学習ができます。 自分の目的に合わせてつかってみてください。</p>
+    <p class="mt-3">Udemyの無料で利用できる英語の講座です。<br> 
+    現在864個の講座が無料で受けられます。Udemyにジャンプしたら自分のアカウントの言語を英語に変えてください。英語で英語学習ができます。 自分の目的に合わせてつかってみてください。</p>
 
     {{-- block --}}
     <li class="font-sans font-bold break-normal text-gray-700 mt-20 pb-3 text-xl">Learn English While Sleeping</li>
@@ -37,7 +38,16 @@
     <iframe width="560" height="315" src="https://www.youtube.com/embed/OazE2vXzLf4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
-    <p class="mt-5">Learn English While Sleepingの名の通り寝るときに流しましょう。</p>
+    <p class="mt-5"></p>
+    {{-- block end --}}
+
+    {{-- block --}}
+    <li class="font-sans font-bold break-normal text-gray-700 mt-20 pb-3 text-xl">English Conversation; Learn while you Sleep with 5000 words</li>
+    <div class="iframe-wrap">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3ha-kqV0P38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <p class="mt-5"></p>
     {{-- block end --}}
 
     {{-- block --}}
@@ -105,6 +115,46 @@
     </div>
     <p class="mt-5"></p>
     {{-- block end --}}  
+
+    {{-- block --}}
+    <li class="font-sans font-bold break-normal text-gray-700 mt-20 pb-3 text-xl">American English Conversations to Improve Listening & Speaking Fluency | English Conversation</li>
+    <div class="iframe-wrap">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/v-Htpt-ZtcA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p class="mt-5"></p>
+    {{-- block end --}}  
+
+    {{-- block --}}
+    <li class="font-sans font-bold break-normal text-gray-700 mt-20 pb-3 text-xl">1000 COMMON ENGLISH QUESTIONS AND ANSWERS for beginners | English Conversation</li>
+    <div class="iframe-wrap">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/p6EQKQK8Z1M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p class="mt-5"></p>
+    {{-- block end --}}     
+
+    {{-- block --}}
+    <li class="font-sans font-bold break-normal text-gray-700 mt-20 pb-3 text-xl">50 Daily English Conversations </li>
+    <div class="iframe-wrap">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kxb8EpyhKro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p class="mt-5"></p>
+    {{-- block end --}} 
+
+    {{-- block --}}
+    <li class="font-sans font-bold break-normal text-gray-700 mt-20 pb-3 text-xl">Friends</li>
+    <div class="iframe-wrap">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/A9GyVeV1Yu8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p class="mt-5">フレンズは面白い。Netflixで見れるから見てね。</p>
+    {{-- block end --}}     
+
+    {{-- block --}}
+    <li class="font-sans font-bold break-normal text-gray-700 mt-20 pb-3 text-xl">TOEFL Listening Practice </li>
+    <div class="iframe-wrap">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Dahw9ZxlNFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p class="mt-5"></p>
+    {{-- block end --}}     
   </ul>
             
        
