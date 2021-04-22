@@ -77,6 +77,14 @@
         .englishShow{
             display:block;
         }
+
+        .websiteList ul {
+            list-style-type: square;
+            margin-left: 24px;
+            padding:0;
+            text-align: left;
+        }
+
     </style>
 
 </head>

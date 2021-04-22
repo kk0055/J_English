@@ -22,7 +22,8 @@
                   <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="{{ route('register') }}">登録</a></li>
                 @endguest
 
-              
+                <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="{{ route('website') }}">英語学習用サイトの紹介</a></li>
+
                 @auth
             
                   <li>
