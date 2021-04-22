@@ -85,6 +85,8 @@ class AdminController extends Controller
     public function update(Request $request,$id)
     {
         $language = Language::find($id);
+				$user = $language->user;
+
         $input = $request->only('japanese','english');
 
         $validator = Validator::make($input, [
@@ -106,6 +108,6 @@ class AdminController extends Controller
 		
 		$language->save();
 
-        return redirect('admin/show');
+        return redirect('admin/user/'. $user->id);
     }
 }
