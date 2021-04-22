@@ -28,8 +28,8 @@
 
       @include('components.main')
        
-
-      {{-- {{ $languages->links() }} --}}
+    
+      {{ $languages->links() }}
     </div >
 
 

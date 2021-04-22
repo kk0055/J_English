@@ -22,12 +22,12 @@
                   <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="{{ route('register') }}">登録</a></li>
                 @endguest
 
-                <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="{{ route('website') }}">英語学習用サイトの紹介</a></li>
+             
 
                 @auth
             
                   <li>
-                    <a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="{{ route('user.post',Auth::user()) }}">{{ Auth::user()->name }}</a>
+                    <a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="{{ route('user.post',Auth::user()) }}">{{ Auth::user()->name }}の投稿</a>
                  </li>
 
                 <a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="{{ route('logout') }}"
@@ -46,14 +46,14 @@
             </li>
          
              @endauth
-           
+             <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="{{ route('website') }}">英語学習用サイトの紹介</a></li>
               </ul>    
           </nav>
      
         
       </div>
-             <div class="order-1 md:order-2 ">
-          <a class="flex items-center tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl " href="/">
+             <div class="order-1 md:order-2  ">
+          <a class="flex  items-center tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl " href="/">
             <i class="fas fa-home"></i>
           </a>
      

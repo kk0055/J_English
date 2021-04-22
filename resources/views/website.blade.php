@@ -4,7 +4,7 @@
     
 
         <!--Section container-->
-        <div class="w-full mb-10 ">
+        <div class="w-full mb-10  bg-white">
             @include('nav')
             {{-- @if (Session::has('info'))
             <div class="text-red-500" role="alert">
@@ -30,7 +30,8 @@
     <a class="text-blue-500 hover:text-blue-700" href="https://www.udemy.com/courses/search/?price=price-free&q=english&sort=relevance&src=ukw" target=_blank>Udemyにジャンプ</a>
 
     <p class="mt-3">Udemyの無料で利用できる英語の講座です。<br> 
-    現在864個の講座が無料で受けられます。Udemyにジャンプしたら自分のアカウントの言語を英語に変えてください。英語で英語学習ができます。 自分の目的に合わせてつかってみてください。</p>
+    現在864個の講座が無料で受けられます。Udemyにジャンプしたら自分のアカウントの言語を英語に変えてください。<br>
+     英語で英語学習ができます。 自分の目的に合わせてつかってみてください。</p>
 
     {{-- block --}}
     <li class="font-sans font-bold break-normal text-gray-700 mt-20 pb-3 text-xl">Learn English While Sleeping</li>

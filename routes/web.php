@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\UserItemController;
 use App\Http\Controllers\WebsiteController;
+use App\Http\Controllers\admin\AdminController;
 use Illuminate\Support\Facades\Auth;
 
 Auth::routes();
@@ -27,3 +28,14 @@ Route::get('/{user}', [UserItemController::class,'index'])->name('user.post');
 
 
 
+Route::group(['middleware' => ['auth.admin']], function () {
+
+  Route::get('/admin/show', [AdminController::class, 'show']);
+  Route::post('/admin/logout', [AdminController::class, 'logout']);
+  Route::get('/admin/user_list', [AdminController::class, 'showUserList']);
+  Route::get('/admin/user/{id}', [AdminController::class, 'showUserDetail']);
+
+  });
+
+  Route::get('/admin/login', [AdminController::class, 'showLoginform']);
+  Route::post('/admin/login', [AdminController::class, 'login']);
