@@ -24,7 +24,7 @@
             <h2 id='section1' class="font-sans font-bold break-normal text-gray-700 px-2 pb-3 text-xl">使い方<i class="far fa-cat"></i></h2>
             <a  class="inline-flex  justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 bg-black" href="{{ route('create') }}">問題をつくる</a>
         </div>
-         <div class="ml-5">
+         <div class="ml-5 mt-3">
             <p class=" pb-1">日本語を見て<span class="text-red-500">5</span> 秒以内に英語を声に出します。<br> <span class="text-red-500">5</span> 秒考えてわからなければ日本語をクリックして英語を見て声に出す。
             <br>ログインすれば問題の追加と問題の保存(<i class="far fa-heart"></i>をクリック) ができるよ。
             <br>分からない問題は保存して何回も見直そう。自分で文章考えて追加するのもいい勉強になるよ。
@@ -36,6 +36,7 @@
                 <i class="fas fa-home"></i>
           
               をクリックで問題はシャッフルされるよー。
+              <br> 毎日つ少しずつでも頑張りましょう。
             <br>重要なのは
             <span class="text-red-500 font-bold"> 「口に出すこと, 声を出すこと」</span>です<i class="far fa-monkey"></i></p>
           </div>
