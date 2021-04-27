@@ -48,7 +48,7 @@ class LanguageController extends Controller
             
             ]);
            
-            return redirect()->to('/')->with('info','追加');
+            return redirect()->to('/')->withStatus("追加！");
             
     }
     
@@ -98,7 +98,7 @@ class LanguageController extends Controller
 		
 		$language->save();
 
-        return redirect()->route('user.post',$language->user->id);
+        return redirect()->route('user.post',$language->user->id)->withStatus("訂正完了！");;
     }
 
     /**

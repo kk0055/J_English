@@ -6,11 +6,11 @@
         <!--Section container-->
         <div class="w-full mb-10 ">
             @include('nav')
-            {{-- @if (Session::has('info'))
-            <div class="text-red-500" role="alert">
-                {{ Session::get('info') }}
+            @if (session('status'))
+            <div class="ml-5 text-green-500 text-2xl font-bold" role="alert">
+                {{ session('status') }}
             </div>
-            @endif --}}
+            @endif
             <!--Title-->
             <h1 class="font-sans font-bold break-normal text-gray-700 px-2 text-2xl mt-5  md:text-2xl">
              5秒英作文<i class="fas fa-paw ml-1"></i>
