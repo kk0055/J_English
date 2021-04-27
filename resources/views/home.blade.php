@@ -36,7 +36,7 @@
                 <i class="fas fa-home"></i>
           
               をクリックで問題はシャッフルされるよー。
-              <br> 毎日つ少しずつでも頑張りましょう。
+              <br> 毎日少しずつでも頑張りましょう。
             <br>重要なのは
             <span class="text-red-500 font-bold"> 「口に出すこと, 声を出すこと」</span>です<i class="far fa-monkey"></i></p>
           </div>
