@@ -15,7 +15,7 @@
             @endauth
          
           </button>
-             <p class="english mt-2 ml-6 text-red-500" >{{ $language->english }}
+             <p class="english mt-2 ml-6 text-red-500 font-bold" >{{ $language->english }}
               </p> 
            </div>
            @endforeach

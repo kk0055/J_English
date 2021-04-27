@@ -76,7 +76,10 @@
 
         .englishShow{
             display:block;
+            
         }
+       
+       
 
         .websiteList ul {
             list-style-type: square;
@@ -121,6 +124,7 @@
   $(this).next().slideToggle(200);
   });
   });
+
    </script>
 <script src="{{ mix('js/app.js') }}"></script>
 
