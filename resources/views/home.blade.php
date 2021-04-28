@@ -66,7 +66,7 @@
           {{-- ゲスト --}}
                @guest
                <button class="question focus:outline-none">{{ $language->japanese }} </button>
-               <p class="english mt-2  text-red-500" >{{ $language->english }}
+               <p class="english mt-2  text-red-500 font-bold" >{{ $language->english }}
                 </p>
                 @endguest   
           {{-- ゲスト --}}      
