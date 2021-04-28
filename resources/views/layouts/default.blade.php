@@ -17,7 +17,7 @@
     {{-- Twitter --}}
     <meta name="twitter:card" content="Summary">
     <meta name="twitter:title" content="5秒英作文 ～5seconds English～">
-    <meta name="twitter:description" content="4.5秒英作文。日本語を見て5秒以内に英語を声に出します。基本的な文法を使って、比較的短い日本語を5秒で英作文するトレーニングを進めていきます。短時間でもいいので、毎日繰り返し練習して英語になれましょう。">
+    <meta name="twitter:description" content="5秒英作文。日本語を見て5秒以内に英語を声に出します。基本的な文法を使って、比較的短い日本語を5秒で英作文するトレーニングを進めていきます。短時間でもいいので、毎日繰り返し練習して英語になれましょう。">
     <meta name="twitter:image" content="https://image.freepik.com/free-photo/top-view-decoration-with-cubes-wooden-background_23-2148389005.jpg" >
 
     {{-- Search Console --}}
