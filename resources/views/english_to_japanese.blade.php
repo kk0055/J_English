@@ -27,39 +27,32 @@
        
         </div>
    
-
            <div class="mt-4">
             @foreach ($languages as  $language)
             <div class="p-5 mt-6 lg:mt-0 leading-normal rounded shadow bg-white">
-          {{-- ログイン時 --}}
+          {{-- ログイン時 favorite-button--}}
                 @auth
                <favorite-button
                :language={{ $language->id }}
                :favorited={{ $language->favorited() ? 'true' : 'false' }}
                >  </favorite-button
                >
-      
+               @endauth
+           {{-- end ログイン時 --}} 
             <button class="question focus:outline-none">{{ $language->english }}
+
+              {{--edit  --}}
               @if($user == $language->user)
               <a href={{ route('edit',$language->id) }}> <i class="ml-2 far fa-edit"></i></a>     
               @endif
+                {{--edit  --}}
             </button>
               <p class="english mt-2 ml-6 text-red-500 font-bold" >{{ $language->japanese }}
-              
                </p> 
-               @endauth
-          {{-- / ログイン時 --}}
-          {{-- ゲスト --}}
-               @guest
-               <button class="question focus:outline-none">{{ $language->english }} </button>
-               <p class="english mt-2  text-red-500 font-bold" >{{ $language->japanese }}
-                </p>
-                @endguest   
-          {{-- ゲスト --}}      
+                          
             </div>
             @endforeach
-   
-      {{-- {{ $languages->links() }} --}}
+  
     </div>
     </div >
 @endsection
