@@ -19,7 +19,21 @@
   <hr class="bg-gray-300 my-12">
  
   <h2 id='section1' class=" font-sans font-bold break-normal text-gray-700 px-2 pb-3 text-xl">
-  英語→日本語 <i class="far fa-cat"></i></h2>
+  English→Japanese <i class="far fa-cat"></i></h2>
+
+  <div class="ml-5 mt-3 ">
+    <p class=" pb-1">Read English sentence and guess how to say in  Japanese in <span class="text-red-500">5</span> seconds.
+    <br> If you have no idea, click the English sentence. 
+    <br> Then, Japanese will be displayed.
+    <i class="far fa-laugh-wink"></i>
+
+    </p>
+
+    <p class="text-blue-700 mt-1">
+    <a href="/">
+    <br>日本語→英語 (Japanese→English)Ver. </a> </p>
+    </div>
+
 
     <div class="mt-4">
     @foreach ($languages as  $language)
