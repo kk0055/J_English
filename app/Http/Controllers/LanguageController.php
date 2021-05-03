@@ -151,7 +151,7 @@ class LanguageController extends Controller
       
       
         // dd($languages);
-        return view('japanese_to_english',[
+        return view('english_to_japanese',[
             'languages' => $languages,
             'user' => $user
         ]);
