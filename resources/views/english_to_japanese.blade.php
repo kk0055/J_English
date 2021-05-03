@@ -38,8 +38,7 @@
                :favorited={{ $language->favorited() ? 'true' : 'false' }}
                >  </favorite-button
                >
-               
-                
+      
             <button class="question focus:outline-none">{{ $language->english }}
               @if($user == $language->user)
               <a href={{ route('edit',$language->id) }}> <i class="ml-2 far fa-edit"></i></a>     
@@ -52,8 +51,8 @@
           {{-- / ログイン時 --}}
           {{-- ゲスト --}}
                @guest
-               <button class="question focus:outline-none">{{ $language->japanese }} </button>
-               <p class="english mt-2  text-red-500 font-bold" >{{ $language->english }}
+               <button class="question focus:outline-none">{{ $language->english }} </button>
+               <p class="english mt-2  text-red-500 font-bold" >{{ $language->japanese }}
                 </p>
                 @endguest   
           {{-- ゲスト --}}      
