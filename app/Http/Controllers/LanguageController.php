@@ -13,7 +13,7 @@ class LanguageController extends Controller
     {
         $user = Auth::user();
         // $languages = Language::all()->random(200);
-        $languages = Language::inRandomOrder()->take(150)->get();
+        $languages = Language::inRandomOrder()->take(100)->get();
       
       
         // dd($languages);
