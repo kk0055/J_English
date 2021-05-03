@@ -22,8 +22,8 @@
   English→Japanese <i class="far fa-cat"></i></h2>
 
   <div class="ml-5 mt-3 ">
-    <p class=" pb-1">Read English sentence and guess how to say in  Japanese in <span class="text-red-500">5</span> seconds.
-    <br> If you have no idea, click the English sentence. 
+    <p class=" pb-1">Read the English sentence and guess how to say it in Japanese in <span class="text-red-500">5</span> seconds.
+    <br> If you have no idea, click on the English sentence. 
     <br> Then, Japanese will be displayed.
     <i class="far fa-laugh-wink"></i>
 
