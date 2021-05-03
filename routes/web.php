@@ -9,12 +9,16 @@ use Illuminate\Support\Facades\Auth;
 
 Auth::routes();
 
-Route::get('/user', [UserController::class, 'index']);
+
 
 Route::resource('/', LanguageController::class)->except('edit','update');
 Route::get('/website', [WebsiteController::class,'index'])->name('website');
 
-Route::get('/edit/{id}', [LanguageController::class,'edit'])->name('edit');
+
+//Middleware AUTH 
+Route::group(['middleware' => ['auth']], function () {
+
+  Route::get('/edit/{id}', [LanguageController::class,'edit'])->name('edit');
 Route::post('/edit/{id}', [LanguageController::class,'update'])->name('update');
 
 Route::post('/favorite/{language}', [LanguageController::class,'favoritePost']);
@@ -24,8 +28,13 @@ Route::get('/my_favorites', [LanguageController::class,'myFavorites'])->middlewa
 Route::get('/{user}', [UserItemController::class,'index'])->name('user.post');
 
 
+  });
 
 
+
+
+
+  //Middleware admin
 Route::group(['middleware' => ['auth.admin']], function () {
 
   Route::get('/admin/show', [AdminController::class, 'show']);
