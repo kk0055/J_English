@@ -53,9 +53,21 @@
         
       </div>
              <div class="order-1 md:order-2  ">
-          <a class="flex  items-center tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl " href="/">
-            <i class="fas fa-home"></i>
-          </a>
+              @if (route('japanese'))
+              <div class="flex">
+              <a class="flex  items-center tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl mr-3" href="japanese">
+                <i class="fas fa-redo"></i>
+              </a>  
+              <a class="flex  items-center tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl " href="/">
+                <i class="fas fa-home"></i>
+              </a>   
+            </div>
+              @else
+              <a class="flex  items-center tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl " href="/">
+                <i class="fas fa-home"></i>
+              </a>   
+              @endif
+     
      
       </div>
 

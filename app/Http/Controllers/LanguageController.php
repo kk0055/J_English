@@ -142,4 +142,18 @@ class LanguageController extends Controller
         dump($languages);
         return view('my_favorites', compact('languages'));
     }
+
+    public function JapaneseToEnglish()
+    {
+        $user = Auth::user();
+        // $languages = Language::all()->random(200);
+        $languages = Language::inRandomOrder()->take(100)->get();
+      
+      
+        // dd($languages);
+        return view('japanese_to_english',[
+            'languages' => $languages,
+            'user' => $user
+        ]);
+    }
 }

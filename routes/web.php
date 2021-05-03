@@ -12,6 +12,9 @@ Auth::routes();
 
 
 Route::resource('/', LanguageController::class)->except('edit','update');
+
+Route::get('/japanese', [LanguageController::class,'JapaneseToEnglish'])->name('japanese');
+
 Route::get('/website', [WebsiteController::class,'index'])->name('website');
 
 
