@@ -54,9 +54,9 @@
                
                 
             <button class="question focus:outline-none">{{ $language->japanese }}
-              @auth
+              @if($user == $language->user)
               <a href={{ route('edit',$language->id) }}> <i class="ml-2 far fa-edit"></i></a>     
-              @endauth
+              @endif
             </button>
               <p class="english mt-2 ml-6 text-red-500 font-bold" >{{ $language->english }}
               

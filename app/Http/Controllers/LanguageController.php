@@ -35,11 +35,19 @@ class LanguageController extends Controller
         */
     public function store(Request $request)
     {
-        $this->validate($request, [
+       $user = Auth::user();
+        //ログインしてない時
+        if(!$user){
+
+            return redirect()->to('/login'); 
+            }
+
+        $validation =  $this->validate($request, [
             'english' => 'required',
             'japanese' => 'required',
       
         ]);
+       
        
         
             $request->user()->languages()->create([
