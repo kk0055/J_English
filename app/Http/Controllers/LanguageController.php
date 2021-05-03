@@ -7,6 +7,7 @@ use App\Models\Language;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
 
+
 class LanguageController extends Controller
 {
     public function index()
@@ -136,9 +137,9 @@ class LanguageController extends Controller
 
         public function myFavorites()
     {
-        $languages = Auth::user()->favorites;
+        $languages = Auth::user()->favorites()->orderBy('pivot_created_at','desc')->get();
 
-      
+        dump($languages);
         return view('my_favorites', compact('languages'));
     }
 }

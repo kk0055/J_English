@@ -10,12 +10,14 @@ class UserItemController extends Controller
     public function index(User $user)
     {
      
-        $languages = $user->languages()->latest()->with('user')->simplePaginate(20);
+        $languages = $user->languages()->latest()->with('user')->simplePaginate(50);
        
         return view('users.index',[
             
             'languages' => $languages ,
         ]);
     }
+
+    
     
 }
