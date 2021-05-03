@@ -2,8 +2,6 @@
 
 @section('content')
     
-
-        <!--Section container-->
         <div class="w-full mb-10 ">
             @include('nav')
             @if (session('status'))
@@ -29,7 +27,7 @@
    
            <div class="mt-4">
             @foreach ($languages as  $language)
-            <div class="p-5 mt-6 lg:mt-0 leading-normal rounded shadow bg-white">
+            <div class="p-5 mt-6 lg:mt-2 leading-normal rounded shadow bg-white">
           {{-- ログイン時 favorite-button--}}
                 @auth
                <favorite-button
