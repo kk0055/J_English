@@ -139,7 +139,7 @@ class LanguageController extends Controller
     {
         $languages = Auth::user()->favorites()->orderBy('pivot_created_at','desc')->get();
 
-        dump($languages);
+        
         return view('my_favorites', compact('languages'));
     }
 
