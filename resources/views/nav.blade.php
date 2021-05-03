@@ -53,7 +53,8 @@
         
       </div>
              <div class="order-1 md:order-2  ">
-              @if (route('japanese'))
+               {{-- Routeがjapaneseの時だけ--}}
+              @if (Request::is('japanese'))
               <div class="flex">
               <a class="flex  items-center tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl mr-3" href="japanese">
                 <i class="fas fa-redo"></i>
@@ -61,6 +62,7 @@
               <a class="flex  items-center tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl " href="/">
                 <i class="fas fa-home"></i>
               </a>   
+               {{-- Routeがjapaneseの時だけ--}}
             </div>
               @else
               <a class="flex  items-center tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl " href="/">
