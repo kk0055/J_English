@@ -1,26 +1,16 @@
 @extends('layouts.default')
 
 @section('content')
-    
 
-        <!--Section container-->
         <div class="w-full mb-10  bg-white">
             @include('nav')
-            {{-- @if (Session::has('info'))
-            <div class="text-red-500" role="alert">
-                {{ Session::get('info') }}
-            </div>
-            @endif --}}
-            <!--Title-->
+
             <h1 class="font-sans font-bold break-normal text-gray-700 px-2 text-2xl mt-5  md:text-2xl">
               英語学習用サイトの紹介<i class="fas fa-paw ml-1"></i>
 		      	</h1>
-           <p class="px-3 mt-3">英語学習に役立つYoutube動画やサイトを紹介します。</p>
-            <!--divider-->
-            <hr class="bg-gray-300 my-12">
-
-            <!--Title-->
-            <div class="flex justify-between">
+        <p class="px-3 mt-3">英語学習に役立つYoutube動画やサイトを紹介します。</p>
+        <hr class="bg-gray-300 my-12">
+        <div class="flex justify-between">
            
            
         </div>

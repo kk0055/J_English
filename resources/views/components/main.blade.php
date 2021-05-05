@@ -14,7 +14,10 @@
     @endif
 
     </button>
-    <p class="english mt-2 ml-6 text-red-500 font-bold" >{{ $language->english }}
+    <p class="english mt-2 ml-6 text-red-500 font-bold " id="target">{{ $language->english }} 
+      <input type="hidden" class="text"  value="{{ $language->english }}">
+      <button onclick="speak()">speak()</button>
     </p> 
+
   </div>
 @endforeach
