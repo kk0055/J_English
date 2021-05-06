@@ -156,4 +156,13 @@ class LanguageController extends Controller
             'user' => $user
         ]);
     }
+
+    public function sounds(Request $request)
+    {
+     
+        $languages = Language::get();
+      
+      
+        return response()->json($languages);
+    }
 }

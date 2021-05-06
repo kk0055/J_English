@@ -130,18 +130,21 @@
   });
   });
 
-  function speak(){
-  var text = document.querySelector('.text').value;
-  var uttr = new SpeechSynthesisUtterance();
-  uttr.text = text;
-  
-    uttr.lang = 'en-US';
-  
-  speechSynthesis.speak(uttr);
-//   console.log(speechSynthesis)
-}
-   </script>
-<script src="{{ mix('js/app.js') }}"></script>
 
+  function speak(){
+    var text = document.getElementById('text');
+   
+    console.log(text)
+    var uttr = new SpeechSynthesisUtterance();
+    uttr.text = text;
+    
+      uttr.lang = 'en-US';
+    
+    speechSynthesis.speak(uttr);
+  //   console.log(speechSynthesis)
+  }
+ 
+
+</script>
 </body>
 </html>
