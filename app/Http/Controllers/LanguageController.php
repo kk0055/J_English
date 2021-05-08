@@ -150,14 +150,14 @@ class LanguageController extends Controller
         $languages = Language::inRandomOrder()->take(100)->get();
       
       
-        // dd($languages);
+   
         return view('english_to_japanese',[
             'languages' => $languages,
             'user' => $user
         ]);
     }
 
-    public function sounds(Request $request)
+    public function sounds(Language $language)
     {
      
         $languages = Language::get();

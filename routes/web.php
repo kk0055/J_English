@@ -17,6 +17,8 @@ Route::get('/japanese', [LanguageController::class,'JapaneseToEnglish'])->name('
 
 Route::get('/website', [WebsiteController::class,'index'])->name('website');
 
+Route::get('/sounds/{language}', [LanguageController::class,'sounds']);
+
 
 //Middleware AUTH 
 Route::group(['middleware' => ['auth']], function () {

@@ -131,19 +131,79 @@
   });
 
 
-  function speak(){
-    var text = document.getElementById('text');
+  $(document).ready(function(){
+        // window.utterances = [];
+
+        // var click_count = 0;
+        $('.trigger').on('click', function(event){
+
+            var trigger = $(this);
+            var parent = $(this).parents('li');
+            var answer = $('.answer', parent);
+            var message = $(answer).val();
+            // message = replaceMessage(message);
+         
+            var speech = new SpeechSynthesisUtterance();
+
+            speech.volume = 1.0;
+            speech.rate = 1.0;
+            speech.pitch = 1.0;
+            speech.text = message;
+            speech.lang = 'en-US';
+
+
+            // utterances.push(speech);
+
+            speechSynthesis.speak(speech);
+         
+            console.log( speechSynthesis.speak(speech));
+            console.log( speech);
+        });
+    });
+    
+//]]>
+</script><script type="text/javascript">
+//<![CDATA[
+
+/**
+  * replace message
+  *
+  * @param Str
+  * @return Str
+  */
+function replaceMessage(mes) {
+
+    var target;
+    var list = [
+        '\\(1\\)',
+        '\\(2\\)',
+        '\\(3\\)',
+        '\\( 1 \\)',
+        '\\( 2 \\)',
+        '\\( 3 \\)',
+        '_',
+        '\/',
+        '（1）',
+        '（2）',
+        '（3）',
+        '（ 1 ）',
+        '（ 2 ）',
+        '（ 3 ）',
+        '[^\x01-\x7E]',
+    ];
+
+    $.each(list, function(i, val) {
+
+        target = new RegExp(val, "g");
+        if (mes.match(target)) {
+            mes = mes.replace(target, ' ');
+        }
+    });
+
+    return mes;
    
-    console.log(text)
-    var uttr = new SpeechSynthesisUtterance();
-    uttr.text = text;
-    
-      uttr.lang = 'en-US';
-    
-    speechSynthesis.speak(uttr);
-  //   console.log(speechSynthesis)
-  }
- 
+}
+
 
 </script>
 </body>
