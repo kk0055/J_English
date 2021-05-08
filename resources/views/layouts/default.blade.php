@@ -92,6 +92,36 @@
             // console.log( speech);
         });
     });
+
+    $(document).ready(function(){
+        // window.utterances = [];
+
+        // var click_count = 0;
+        $('.trigger-jap').on('click', function(event){
+
+            var trigger = $(this);
+            var parent = $(this).parents('li');
+            var answer = $('.answer', parent);
+            var message = $(answer).val();
+            // message = replaceMessage(message);
+         
+            var speech = new SpeechSynthesisUtterance();
+
+            speech.volume = 1.0;
+            speech.rate = 1.0;
+            speech.pitch = 1.0;
+            speech.text = message;
+            speech.lang = 'ja-JP';
+
+
+            // utterances.push(speech);
+
+            speechSynthesis.speak(speech);
+         
+            // console.log( speechSynthesis.speak(speech));
+            // console.log( speech);
+        });
+    });
     
 //]]>
 </script><script type="text/javascript">

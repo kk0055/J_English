@@ -57,7 +57,18 @@
     </button>
     <p class="english mt-2 ml-6 text-red-500 font-bold" >{{ $language->japanese }}
     </p> 
-            
+    <p class="english mt-2 ml-6 text-red-500 font-bold" id="target">
+      {{ $language->english }}  
+
+      {{-- <ul class="mt-3">
+        <li>
+            <input type="hidden"  class="answer" value="{{ $language->japanese }}">
+                <p><a href="javascript:void(0)">
+                <img src="https://img.eikaiwa.dmm.com/assets/uknow/icon_translation_play.png" class="trigger-jap" alt="" width="20px">
+                </a></p>
+        </li>
+        </ul> --}}
+    </p>        
     </div>
     @endforeach
     </div>

@@ -46,15 +46,16 @@
 
     </p>
 
+    
     <p class="text-blue-700 mt-1">
     <a href="/japanese">
     <br>英語→日本語 (English→Japanese)Ver. </a> </p>
-    </div>
-    
+
+    <div class="mt-4">
     <form action="{{ route('item.search') }}">
-        <i class="fas fa-search "> </i>
-        <input type="text" name="query" class=" text-sm rounded-full w-64 px-4  py-1 focus:outline-none border-b focus:shadow-outline " placeholder=" Search">
-      </form>
+    <input type="text" name="query" class=" text-sm rounded-full w-64 px-4  py-1 focus:outline-none border-b focus:shadow-outline " placeholder=" Search">
+    </form>
+    </div>
     <div class="mt-4">
 
     @include('components.main')
