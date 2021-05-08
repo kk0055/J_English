@@ -16,20 +16,17 @@
     </button>
     <p class="english mt-2 ml-6 text-red-500 font-bold" id="target">
       {{ $language->english }}  
-      <input type="hidden" 
-      class="target" id="" value=" {{ $language->english }} ">
-       
-
+      <ul class="">
+        <li>
+            <input type="hidden"  class="answer" value="{{ $language->english }}">
+                <p><a href="javascript:void(0)">
+                <img src="https://img.eikaiwa.dmm.com/assets/uknow/icon_translation_play.png" class="trigger" alt="" width="20px">
+                </a></p>
+        </li>
+        </ul>
     </p> 
 
-      <ul class="q-detail-curator-answer-translation">
-      <li>
-          <input type="hidden"  class="answer" value="{{ $language->english }}">
-              <p><a href="javascript:void(0)">
-              <img src="https://img.eikaiwa.dmm.com/assets/uknow/icon_translation_play.png" class="trigger" alt="">
-              </a></p>
-      </li>
-      </ul>
+     
 
   </div>
 

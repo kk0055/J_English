@@ -156,8 +156,8 @@
 
             speechSynthesis.speak(speech);
          
-            console.log( speechSynthesis.speak(speech));
-            console.log( speech);
+            // console.log( speechSynthesis.speak(speech));
+            // console.log( speech);
         });
     });
     
