@@ -5,6 +5,7 @@ use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\UserItemController;
 use App\Http\Controllers\WebsiteController;
 use App\Http\Controllers\admin\AdminController;
+use App\Http\Controllers\SearchController;
 use Illuminate\Support\Facades\Auth;
 
 Auth::routes();
@@ -16,6 +17,7 @@ Route::resource('/', LanguageController::class)->except('edit','update');
 Route::get('/japanese', [LanguageController::class,'JapaneseToEnglish'])->name('japanese');
 
 Route::get('/website', [WebsiteController::class,'index'])->name('website');
+Route::get('/search', [SearchController::class, 'search'])->name('item.search');
 
 
 //Middleware AUTH 
