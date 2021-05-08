@@ -23,8 +23,6 @@ window.Vue = require('vue').default;
 
 Vue.component('favorite-button', require('./components/Favorite.vue').default);
 
-Vue.component('sounds-button', require('./components/SoundsBtn.vue').default);
-
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

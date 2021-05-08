@@ -16,7 +16,7 @@
     </button>
     <p class="english mt-2 ml-6 text-red-500 font-bold" id="target">
       {{ $language->english }}  
-      <ul class="">
+      <ul class="mt-3">
         <li>
             <input type="hidden"  class="answer" value="{{ $language->english }}">
                 <p><a href="javascript:void(0)">

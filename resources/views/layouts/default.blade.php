@@ -43,77 +43,8 @@
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   {{-- JQuery --}}
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-   
-
-    <style>
-       @import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
-       @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-       @import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
-       @import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
-
-       body {
-            font-family: 'RocknRoll', sans-serif;
-        }
-       
-       .main-title{
-        font-family: 'New Tegomin', serif;
-       }
-
-        .nav{
-          font-family: 'Stick', sans-serif;
-       }
-       #menu-toggle:checked + #menu {
-            display: block;
-        }
-        .max-h-64 {
-            max-height: 16rem;
-        }
-        /*Quick overrides of the form input as using the CDN version*/
-        .form-input,
-        .form-textarea,
-        .form-select,
-        .form-multiselect {
-            background-color: #edf2f7;
-        }
-        .english{
-            display:none;
-        }
-
-        .englishShow{
-            display:block;
-            
-        }
-       
-       
-
-        .websiteList ul {
-            list-style-type: square;
-            margin-left: 24px;
-            padding:0;
-            text-align: left;
-        }
-
-@media only screen and (max-width: 600px) {
-    .iframe-wrap {
-        position: relative;
-        width: 90%;
-        padding-top: 56.25%;
-        overflow:auto; 
-        -webkit-overflow-scrolling:touch;
-        border:2px solid #ccc; 
-        }
-        .iframe-wrap iframe {
-            position:absolute;
-            top:0;
-            left:0;
-            width:100%;
-            height:100%;
-            border:none;
-            display:block;
-        }
-}
-  
-    </style>
+    {{-- CSS --}}
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
 </head>
 
@@ -121,6 +52,7 @@
   <div id="app">
  
   @yield('content')
+  
 </div>
 
 <script>
@@ -206,5 +138,7 @@ function replaceMessage(mes) {
 
 
 </script>
+
+<script src="{{ asset('js/app.js') }}" ></script>
 </body>
 </html>
