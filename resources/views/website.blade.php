@@ -22,11 +22,15 @@
     <p class="mt-3">Udemyの無料で利用できる英語の講座です。<br> 
     現在864個の講座が無料で受けられます。Udemyにジャンプしたら自分のアカウントの言語を英語に変えてください。<br>
      英語で英語学習ができます。 自分の目的に合わせてつかってみてください。</p>
-
+     {{-- block --}}  
      <li class="font-sans font-bold break-normal text-gray-700 mt-5 pb-3 text-xl ">英単語アプリ mikan</li>
      <a class="text-blue-500 hover:text-blue-700" href="https://apps.apple.com/jp/app/%E8%8B%B1%E5%8D%98%E8%AA%9E%E3%82%A2%E3%83%97%E3%83%AA-mikan/id920856839" target=_blank>英単語アプリ mikan</a>
  
-     
+     {{-- block --}}
+     <li class="font-sans font-bold break-normal text-gray-700 mt-5 pb-3 text-xl ">English Listening Lesson Library Online</li>
+     <a class="text-blue-500 hover:text-blue-700" href="https://www.elllo.org/index.htm" target=_blank>English Listening Lesson Library Online</a>
+ 
+
     {{-- block --}}
     <li class="font-sans font-bold break-normal text-gray-700 mt-20 pb-3 text-xl">Learn English While Sleeping</li>
     <div class="iframe-wrap">
