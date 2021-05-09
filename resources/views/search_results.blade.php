@@ -23,18 +23,19 @@
     <h2 id='section1' class=" font-sans font-bold break-normal text-gray-700 px-2 pb-3 text-xl">検索結果 <i class="far fa-cat"></i></h2>
   
     </div>
-    <div class="ml-5 mt-3 ">
+    <div class=" mt-3 ">
     @if (!$languages->count())
     <p>検索した飲みワードはまだ無いみたいだね！<br> 君が作成してみては！？
       
    </p>
    <a  class="inline-flex mt-5  justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 bg-black" href="{{ route('create') }}">問題をつくる</a>
   </div>
+</div >
    @else
 
     @include('components.main')
 
     @endif
     </div>
-</div >
+
 @endsection
