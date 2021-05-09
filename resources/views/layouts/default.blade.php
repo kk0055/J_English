@@ -66,7 +66,6 @@
   $(document).ready(function(){
         // window.utterances = [];
 
-        // var click_count = 0;
         $('.trigger').on('click', function(event){
 
             var trigger = $(this);
@@ -122,17 +121,10 @@
             // console.log( speech);
         });
     });
-    
-//]]>
-</script><script type="text/javascript">
-//<![CDATA[
 
-/**
-  * replace message
-  *
-  * @param Str
-  * @return Str
-  */
+
+</script><script type="text/javascript">
+
 function replaceMessage(mes) {
 
     var target;

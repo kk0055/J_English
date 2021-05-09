@@ -28,14 +28,13 @@
     <p class=" pb-1">日本語を見て<span class="text-red-500">5</span> 秒以内に英語を声に出します。<br> <span class="text-red-500">5</span> 秒考えてわからなければ日本語をクリックして英語を見て声に出す。
     <br>ログインすれば問題の追加と問題の保存(<i class="far fa-heart"></i>をクリック) ができます。
     <br>分からない問題は保存して何回も見直しましょう。
-    <br>自分で文章考えて追加するのもいい勉強になるでしょう。
     <br>
     <a href="website" class="hover:text-blue-500">
     サイト紹介のページ</a>ではリスニング用のYoutubeが見れます。
 
     </p>
     <p class=" mb-1">
-    <br>全部で800問以上あります。リロードもしくは   
+    <br>全部で1000問以上あります。リロードもしくは   
     右上の
     <i class="fas fa-home"></i>
 
