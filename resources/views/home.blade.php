@@ -2,7 +2,7 @@
 
 @section('content')
     
-<div class="w-full mb-10 ">
+<div class="w-full mb-10 container">
     @include('nav')
 
     @if (session('status'))
@@ -21,14 +21,23 @@
     <!--Title-->
     <div class="flex justify-between ">
     <h2 id='section1' class=" font-sans font-bold break-normal text-gray-700 px-2 pb-3 text-xl">使い方 <i class="far fa-cat"></i></h2>
-    <a  class="inline-flex  justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 bg-black" href="{{ route('create') }}">問題をつくる</a>
+
+    <a  class="inline-flex  justify-center py-2 px-2 border border-transparent shadow-sm text-sm bg-black font-medium rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 " href="{{ route('create') }}">問題をつくる</a>
     </div>
     
     <div class="ml-5 mt-3 text-sm md:text-base">
-    <p class=" pb-1">日本語を見て<span class="text-red-500">5</span> 秒以内に英語を声に出します。<br> <span class="text-red-500">5</span> 秒考えてわからなければ日本語をクリックして英語を見て声に出す。
-    <br>ログインすれば問題の追加と問題の保存(<i class="far fa-heart"></i>をクリック) ができます。
-   
-   
+    <p>①日本語を見て、英文を口に出す。</p>
+    <p>日本語を見て5秒以内に英語を声に出してください。</p>
+    <p> </p>
+    <p>②5秒考えてわからなければ英語を確認して答え合わせ。</p>
+    <p>あまり長く考えず、分からなければすぐに答えを見てください。暗記する必要はないです。</p>
+    <p>何度も見るうちに勝手に覚えます。</p>
+    <p> </p>
+    <p>③何度か口に出す。</p>
+    <p>口になじむまで何回か声に出してみましょう。</p>
+    <p> </p>
+    <p>④次の問題へ</p>
+
     </p>
     <p class=" mb-1">
     <br>全部で1000問以上あります。リロードもしくは   
