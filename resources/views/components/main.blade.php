@@ -1,6 +1,6 @@
 
 @foreach ($languages as $language)
-  <div class="p-5 mt-6 lg:mt-2 leading-normal rounded shadow bg-white">
+  <div class="p-3 mt-6 lg:mt-2  rounded shadow bg-white">
     @auth
     <favorite-button
     :language={{ $language->id }}
@@ -8,13 +8,13 @@
     >  </favorite-button >
     @endauth
 
-    <button class="question focus:outline-none">{{ $language->japanese }} 
+    <button class="question focus:outline-none text-sm md:text-base">{{ $language->japanese }} 
     @if(Auth::user() == $language->user)
     <a href={{ route('edit',$language->id) }}> <i class="ml-2 far fa-edit"></i></a>     
     @endif
 
     </button>
-    <p class="english mt-2 ml-6 text-red-500 font-bold" id="target">
+    <p class="english mt-2 ml-6 text-red-500 font-bold text-sm md:text-base" id="target">
       {{ $language->english }}  
       <ul class="mt-3">
         <li>
