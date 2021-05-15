@@ -67,7 +67,7 @@
 
 			<!--Title-->
 			<div class="font-sans">
-				<p class="text-base md:text-sm text-green-500 font-bold">&lt; <a href="/" class="text-base md:text-sm text-green-500 font-bold no-underline hover:underline">BACK TO HOME</a></p>
+			
 						<h1 class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">5秒英作文</h1>
 						<h2 class="text-sm md:text-base font-normal text-gray-600 mt-2">～はじめに～</h2>
 			</div>
@@ -145,8 +145,10 @@
 
 
 		<!--Twitter-->
-		<div class="container px-4">
-      <a href="https://twitter.com/5seconds_en?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @5seconds_en</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		<div class="container px-4 ">
+      <a href="https://twitter.com/5seconds_en" target=_blank>
+      <img src="https://img.icons8.com/fluent/2x/twitter.png" width="40px" alt="">
+      </a>
 		</div>
 		<!-- /Twitter-->
 
