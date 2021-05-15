@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Language;
+use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
 
@@ -13,14 +14,15 @@ class LanguageController extends Controller
     public function index()
     {
         $user = Auth::user();
-        // $languages = Language::all()->random(200);
-        $languages = Language::inRandomOrder()->take(100)->get();
+     
+        // $languages = Language::inRandomOrder()->take(100)->get();
+        $languages = Language::with('user')->inRandomOrder()->take(100)->get();
       
       
         // dd($languages);
         return view('home',[
             'languages' => $languages,
-            'user' => $user
+            
         ]);
     }
 
