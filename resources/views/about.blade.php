@@ -1,59 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Tailwind Starter Template - Minimal Blog: Tailwind Toolbox</title>
-    <meta name="author" content="name" />
-    <meta name="description" content="description here" />
-    <meta name="keywords" content="keywords,here" />
-    <link
-      href="https://unpkg.com/tailwindcss/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <!--Replace with your tailwind.css once created-->
-  </head>
+@extends('layouts.default')
 
-  
-<body class="bg-white font-sans leading-normal tracking-normal">
+@section('content')
 
-	<nav id="header" class="fixed w-full z-10 top-0">
+<div class="bg-white font-sans leading-normal tracking-normal">
+  @include('nav')
 
-		<div id="progress" class="h-1 z-20 top-0" style="background:linear-gradient(to right, #4dc0b5 var(--scroll), transparent 0);"></div>
 
-		<div class="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3">
 
-			<div class="pl-4">
-				<a class="text-gray-900 text-base no-underline hover:no-underline font-extrabold text-xl" href="#">
-					Minimal Blog
-				</a>
-			</div>
-
-			<div class="block lg:hidden pr-4">
-				<button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-900 hover:border-green-500 appearance-none focus:outline-none">
-					<svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-						<title>Menu</title>
-						<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-					</svg>
-				</button>
-			</div>
-
-			<div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-gray-100 md:bg-transparent z-20" id="nav-content">
-				<ul class="list-reset lg:flex justify-end flex-1 items-center">
-					<li class="mr-3">
-						<a class="inline-block py-2 px-4 text-gray-900 font-bold no-underline" href="#">Active</a>
-					</li>
-					<li class="mr-3">
-						<a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4" href="#">link</a>
-					</li>
-					<li class="mr-3">
-						<a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4" href="#">link</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
 
 	<!--Container-->
 	<div class="container w-full md:max-w-3xl mx-auto pt-20">
@@ -62,50 +15,61 @@
 
 			<!--Title-->
 			<div class="font-sans">
-				<p class="text-base md:text-sm text-green-500 font-bold">&lt; <a href="#" class="text-base md:text-sm text-green-500 font-bold no-underline hover:underline">BACK TO BLOG</a></p>
-						<h1 class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">Welcome to Minimal Blog</h1>
-						<p class="text-sm md:text-base font-normal text-gray-600">Published 19 February 2019</p>
+				<p class="text-base md:text-sm text-green-500 font-bold">&lt; <a href="/" class="text-base md:text-sm text-green-500 font-bold no-underline hover:underline">BACK TO HOME</a></p>
+						<h1 class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">5秒英作文</h1>
+						<h2 class="text-sm md:text-base font-normal text-gray-600">～はじめに～</h2>
 			</div>
 
 
 			<!--Post Content-->
 
-
-			<!--Lead Para-->
-			<p class="py-6">
-				👋 Welcome fellow <a class="text-green-500 no-underline hover:underline" href="https://www.tailwindcss.com">Tailwind CSS</a> and miminal monochrome blog fan. This starter template provides a starting point to create your own minimal monochrome blog using Tailwind CSS and vanilla Javascript.
-			</p>
-
-			<p class="py-6">The basic blog page layout is available and all using the default Tailwind CSS classes (although there are a few hardcoded style tags). If you are going to use this in your project, you will want to convert the classes into components.</p>
-
-
-			<h1 class="py-2 font-sans">Heading 1</h1>
-			<h2 class="py-2 font-sans">Heading 2</h2>
-			<h3 class="py-2 font-sans">Heading 3</h3>
-			<h4 class="py-2 font-sans">Heading 4</h4>
-			<h5 class="py-2 font-sans">Heading 5</h5>
-			<h6 class="py-2 font-sans">Heading 6</h6>
-
-			<p class="py-6">Sed dignissim lectus ut tincidunt vulputate. Fusce tincidunt lacus purus, in mattis tortor sollicitudin pretium. Phasellus at diam posuere, scelerisque nisl sit amet, tincidunt urna. Cras nisi diam, pulvinar ut molestie eget, eleifend ac magna. Sed at lorem condimentum, dignissim lorem eu, blandit massa. Phasellus eleifend turpis vel erat bibendum scelerisque. Maecenas id risus dictum, rhoncus odio vitae, maximus purus. Etiam efficitur dolor in dolor molestie ornare. Aenean pulvinar diam nec neque tincidunt, vitae molestie quam fermentum. Donec ac pretium diam. Suspendisse sed odio risus. Nunc nec luctus nisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis nec nulla eget sem dictum elementum.</p>
-
-			<ol>
-				<li class="py-3">Maecenas accumsan lacus sit amet elementum porta. Aliquam eu libero lectus. Fusce vehicula dictum mi. In non dolor at sem ullamcorper venenatis ut sed dui. Ut ut est quam. Suspendisse quam quam, commodo sit amet placerat in, interdum a ipsum. Morbi sit amet tellus scelerisque tortor semper posuere.</li>
-				<li class="py-3">Morbi varius posuere blandit. Praesent gravida bibendum neque eget commodo. Duis auctor ornare mauris, eu accumsan odio viverra in. Proin sagittis maximus pharetra. Nullam lorem mauris, faucibus ut odio tempus, ultrices aliquet ex. Nam id quam eget ipsum luctus hendrerit. Ut eros magna, eleifend ac ornare vulputate, pretium nec felis.</li>
-				<li class="py-3">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc vitae pretium elit. Cras leo mauris, tristique in risus ac, tristique rutrum velit. Mauris accumsan tempor felis vitae gravida. Cras egestas convallis malesuada. Etiam ac ante id tortor vulputate pretium. Maecenas vel sapien suscipit, elementum odio et, consequat tellus.</li>
-			</ol>
-
-			<blockquote class="border-l-4 border-green-500 italic my-8 pl-8 md:pl-12">Example of blockquote - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.</blockquote>
-
-			<p class="py-6">Example code block:</p>
-			<pre class="bg-gray-900 rounded text-white font-mono text-base p-2 md:p-4">
-				<code class="break-words whitespace-pre-wrap">
-&lt;header class="site-header outer"&gt;
-&lt;div class="inner"&gt;
-
-&lt;/div&gt;
-&lt;/header&gt;
-				</code>
-			</pre>
+<p> </p>
+<p>TOEICで良いスコアを取りたい、映画を字幕なしで見たい、受験のために英語が必要、留学したい、英語を使った仕事に就きたい、外国人と楽しく会話をできるようになりたい、カッコよく英語を話せるようになりたいなど英語を勉強する目的はひとそれぞれです。</p>
+<p> </p>
+<p>英語の勉強をする方法も、無料のものから有料のものまで数えられないほどたくさんあります。英単語を覚える、文法を暗記、簡単な英文を暗記、シャドーウィング、リスニングを聴く、リーディング、ディクテーション（耳で聞いたものをそのまま書き取っていく）をする、英文の音読、英語で日記を書く、英作文を作る、オンライン英会話などなど。</p>
+<p> </p>
+<p>どれも大切ですし、正直何から始めて良いかわからないかとおもいます。</p>
+<p>ただ、よく言われるように多くのひとはリーディングはそれほど苦労なくできると思います。</p>
+<p>英語を学ぶ目的としては、<strong class="font-bold text-underline">英語を話せるようになりたい</strong>というのが一番ではないでしょうか。リスニングには問題なく、相手の言っていることは分かるのに、上手く答えられない、会話がスムーズにいかないというのはフラストレーションがたまります。</p>
+<p> </p>
+<p>この5秒英作文のサイトは日本語を見て、瞬間的に英文を作れるようになるために作りました。瞬間的に英文が作れると何がいいのか。</p>
+<p>瞬間的に英文を作れるようになると英会話がスムーズにできるようになります。</p>
+<p> </p>
+<p>瞬間的に英作文を作る練習は<strong>「基本的な文法をマスターする」「瞬発力を鍛える</strong>」のに効果的で、この力は英会話においてはかなり重要です。</p>
+<p>TOEICなどのリーディングの試験で必要な英語の力をつけることにも役立つはずです。</p>
+<p> </p>
+<p>英語が話せるとは<strong>”今言いたいことが口から瞬時に出てくること”</strong>だと思います。</p>
+<p>では、どうすれば今言いたいことが瞬時にでてくるのかというと、瞬時に出てくるセリフの引き出しが多ければ多いほど出てきやすいです。</p>
+<p>最初は難しいかもしれませんが、日本語を見て英語を口に出すトレーニングを積めば、英語を口に出すことに慣れてきます。</p>
+<p>何度もやれば少しずつフレーズを覚えてきます。 インプットなしにはアウトプットはできません。頭の中に英語があまり入っていないのに、英語が話せるわけがないのです。</p>
+<p>少しずつでも続けていれば、そのうち自分が言いたいことも出てきやすくなります。そして引き出しが増えていきます。</p>
+<p>基本的な文法の引き出しが増えれば、後はボキャブラリー（単語）のバリエーションが広がれば広がるほど、英語で伝えられることが増えていきます。応用がきくようになります。</p>
+<p>トレーニングを積むことで、使うべき文法やフレーズがより瞬間的に頭に浮かんでくるようになるでしょう。</p>
+<p> </p>
+<p>英語が話せるようになりたくてオンライン英会話を始めたり、留学を検討する人も多いとおもいます。ですが、これでは英語のスピーキング力を効率的に向上させることはできません。スピーキング力を向上させるには、話す機会を持つことが重要なのではなく、その準備（時間が掛かっても、まずは正確な文章を作れるようになること）が大切なのです。基本的な簡単な単語、文法を学んでからオンライン英会話なり、留学をした方が会話を楽しめます。むしろ、基本的な文法さえ分からない状態だと英会話がストレスに感じ、あまり楽しく感じられないのではないでしょうか。</p>
+<p>また、単語・文法の基本的な知識がないうちにオンライン英会話などで先生にうながされて話すと、単語も文法もめちゃくちゃな「変」な英語を自分で作ってしまいます。その後に、修正されても、自分で作りだした「変」な英語が強烈な印象を持って頭に刻み込まれているので、何度も同じ間違いを繰り返してしまうという現象すらあります。まずは初期段階での基礎学習とインプットが重要です。</p>
+<p>ネイティヴスピーカーと話す機会は、ある程度基礎知識が身についてからの実践練習のステップで積極的に活用するほうがいいでしょう。</p>
+<p> </p>
+<p>このサイトには基本的な文法をつかった簡単な日常会話から少し難しい関係代名詞を使った文章を登録しています。</p>
+<p>基本は中学英語レベルの問題がかなり多いです。英語を見れば「あー!こんなものか。」というくらい簡単なのに、日本語を見て英語を作れないというのは、中学英語が「わかる」けど使いこなせていないのです。中学英語を使った簡単な英文を大量に声に出して、基礎をマスターしましょう。</p>
+<p> </p>
+<p> </p>
+<p>基本的な使い方</p>
+<p>①日本語を見て、英文を口に出す。</p>
+<p>日本語を見て5秒以内に英語を声に出してください。</p>
+<p> </p>
+<p>②5秒考えてわからなければ英語を確認して答え合わせ。</p>
+<p>あまり長く考えず、分からなければすぐに答えを見てください。暗記する必要はないです。</p>
+<p>何度も見るうちに勝手に覚えます。</p>
+<p> </p>
+<p>③何度か口に出す。</p>
+<p>口になじむまで何回か声に出してみましょう。</p>
+<p> </p>
+<p>④次の問題へ</p>
+<p> </p>
+<p>以上です。あとは繰り返し、継続です。人と比べる必要はありません。</p>
+<p>自分のペースで毎日10分でも続けていきましょう</p>
+<p>URL</p>
 
 
 			<!--/ Post Content-->
@@ -254,6 +218,6 @@
 		}
 	</script>
 
-</body>
+</div>
 
-</html>
+@endsection
