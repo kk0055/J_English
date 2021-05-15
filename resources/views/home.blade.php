@@ -24,7 +24,7 @@
     <a  class="inline-flex  justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 bg-black" href="{{ route('create') }}">問題をつくる</a>
     </div>
     
-    <div class="ml-5 mt-3 ">
+    <div class="ml-5 mt-3 text-xs md:text-base">
     <p class=" pb-1">日本語を見て<span class="text-red-500">5</span> 秒以内に英語を声に出します。<br> <span class="text-red-500">5</span> 秒考えてわからなければ日本語をクリックして英語を見て声に出す。
     <br>ログインすれば問題の追加と問題の保存(<i class="far fa-heart"></i>をクリック) ができます。
    
