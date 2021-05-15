@@ -21,8 +21,8 @@
   <h2 id='section1' class=" font-sans font-bold break-normal text-gray-700 px-2 pb-3 text-xl">
   English→Japanese <i class="far fa-cat"></i></h2>
 
-  <div class="ml-5 mt-3 ">
-    <p class=" pb-1">Read the English sentence and guess how to say it in Japanese in <span class="text-red-500">5</span> seconds.
+  <div class="ml-5 mt-3  text-sm md:text-base">
+    <p class=" pb-1 ">Read the English sentence and guess how to say it in Japanese in <span class="text-red-500">5</span> seconds.
     <br> If you have no idea, click on the English sentence. 
     <br> Then, Japanese will be displayed.
     <i class="far fa-laugh-wink"></i>
@@ -35,9 +35,9 @@
     </div>
 
 
-    <div class="mt-4">
+    <div class="mt-4 text-sm md:text-base">
     @foreach ($languages as  $language)
-    <div class="p-5 mt-6 lg:mt-2 leading-normal rounded shadow bg-white">
+    <div class="p-3 mt-6 lg:mt-2 leading-normal rounded shadow bg-white">
     {{-- ログイン時 favorite-button--}}
     @auth
     <favorite-button
