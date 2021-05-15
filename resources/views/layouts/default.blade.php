@@ -8,15 +8,20 @@
     <title>5秒英作文 ～5seconds English～ 日本語を見て5秒で英文を作ろう</title>
     <meta property="og:site_name" content="5秒英作文 ～5seconds English～" />
     <meta property="og:title" content="5秒英作文 ～5seconds English～"/>
+    <meta property="og:url" content="https://5seconds-en.com/about" />
+    <meta property="og:image" content="https://image.freepik.com/free-photo/top-view-decoration-with-cubes-wooden-background_23-2148389005.jpg" />
+    <meta property="og:description" content="" />
     <meta name="keywords" content="瞬間英作文,スピーキング,英語,5秒英作文,TOEIC,英会話,英語学習">
-    <meta name="description" content="5秒英作文。日本語を見て5秒以内に英語を声に出します。基本的な文法を使って、比較的短い日本語を5秒で英作文するトレーニングを進めていきます。短時間でもいいので、毎日繰り返し練習して英語になれましょう。">
+    <meta name="description" content="5秒英作文。日本語を見て瞬間的に英文を作ってを声に出します。基本的な文法を中心に比較的短い日本語を5秒で英作文するトレーニングを進めていきます。短時間でもいいので、毎日繰り返し練習して英語になれましょう。">
     <meta property="st:section" content="5秒英作文。日本語を見て5秒以内に英語を声に出します。基本的な文法を使って、比較的短い日本語を5秒で英作文するトレーニングを進めていきます。短時間でもいいので、毎日繰り返し練習して英語になれましょう。"/>
     <meta name="twitter:title" content="5秒英作文 ～5seconds English～"/>
-    <meta property="og:url" content="https://5seconds-en.com/" />
-    <meta property="og:image" content="https://image.freepik.com/free-photo/top-view-decoration-with-cubes-wooden-background_23-2148389005.jpg" />
+  
     {{-- Twitter --}}
     <meta name="twitter:card" content="Summary">
     <meta name="twitter:title" content="5秒英作文 ～5seconds English～">
+    <meta name="twitter:site" content="@5seconds_en" />
+    <meta name="twitter:creator" content="@5seconds_en" />
+    <meta name="twitter:domain" content="twitter.com/5seconds_en" />
     <meta name="twitter:description" content="5秒英作文。日本語を見て5秒以内に英語を声に出します。基本的な文法を使って、比較的短い日本語を5秒で英作文するトレーニングを進めていきます。短時間でもいいので、毎日繰り返し練習して英語になれましょう。">
     <meta name="twitter:image" content="https://image.freepik.com/free-photo/top-view-decoration-with-cubes-wooden-background_23-2148389005.jpg" >
 
@@ -123,7 +128,8 @@
     });
 
 
-</script><script type="text/javascript">
+</script>
+<script type="text/javascript">
 
 function replaceMessage(mes) {
 

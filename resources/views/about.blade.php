@@ -1,8 +1,60 @@
-@extends('layouts.default')
+<!DOCTYPE html>
+<html lang="ja" >
 
-@section('content')
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>5秒英作文 ～5seconds English～ 日本語を見て5秒で英文を作ろう</title>
+    <meta property="og:site_name" content="5秒英作文 ～5seconds English～" />
+    <meta property="og:title" content="5秒英作文 ～5seconds English～"/>
+    <meta property="og:url" content="https://5seconds-en.com/about" />
+    <meta property="og:image" content="https://image.freepik.com/free-photo/top-view-decoration-with-cubes-wooden-background_23-2148389005.jpg" />
+    <meta property="og:description" content="" />
+    <meta name="keywords" content="瞬間英作文,スピーキング,英語,5秒英作文,TOEIC,英会話,英語学習">
+    <meta name="description" content="5秒英作文。日本語を見て瞬間的に英文を作ってを声に出します。基本的な文法を中心に比較的短い日本語を5秒で英作文するトレーニングを進めていきます。短時間でもいいので、毎日繰り返し練習して英語になれましょう。">
+    <meta property="st:section" content="5秒英作文。日本語を見て5秒以内に英語を声に出します。基本的な文法を使って、比較的短い日本語を5秒で英作文するトレーニングを進めていきます。短時間でもいいので、毎日繰り返し練習して英語になれましょう。"/>
+    <meta name="twitter:title" content="5秒英作文 ～5seconds English～"/>
+  
+    {{-- Twitter --}}
+    <meta name="twitter:card" content="Summary">
+    <meta name="twitter:title" content="5秒英作文 ～5seconds English～">
+    <meta name="twitter:site" content="@5seconds_en" />
+    <meta name="twitter:creator" content="@5seconds_en" />
+    <meta name="twitter:domain" content="twitter.com/5seconds_en" />
+    <meta name="twitter:description" content="5秒英作文。日本語を見て5秒以内に英語を声に出します。基本的な文法を使って、比較的短い日本語を5秒で英作文するトレーニングを進めていきます。短時間でもいいので、毎日繰り返し練習して英語になれましょう。">
+    <meta name="twitter:image" content="https://image.freepik.com/free-photo/top-view-decoration-with-cubes-wooden-background_23-2148389005.jpg" >
 
-<div class="bg-white font-sans leading-normal tracking-normal">
+    {{-- Search Console --}}
+    <meta name="google-site-verification" content="Xja4SEPoY8ersK2goh_5cGHoLdvCDalwlmQLTV1F-io" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BT31K5VNL5"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-BT31K5VNL5');
+    </script>
+
+    <link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/@tailwindcss/custom-forms/dist/custom-forms.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Stick&display=swap" rel="stylesheet">
+ 
+  {{-- fontawesome --}}
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  {{-- JQuery --}}
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    {{-- CSS --}}
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+
+</head>
+
+<body >
+  
   @include('nav')
 
 
@@ -17,7 +69,7 @@
 			<div class="font-sans">
 				<p class="text-base md:text-sm text-green-500 font-bold">&lt; <a href="/" class="text-base md:text-sm text-green-500 font-bold no-underline hover:underline">BACK TO HOME</a></p>
 						<h1 class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">5秒英作文</h1>
-						<h2 class="text-sm md:text-base font-normal text-gray-600">～はじめに～</h2>
+						<h2 class="text-sm md:text-base font-normal text-gray-600 mt-2">～はじめに～</h2>
 			</div>
 
 
@@ -30,9 +82,9 @@
 <p> </p>
 <p>どれも大切ですし、正直何から始めて良いかわからないかとおもいます。</p>
 <p>ただ、よく言われるように多くのひとはリーディングはそれほど苦労なくできると思います。</p>
-<p>英語を学ぶ目的としては、<strong class="font-bold text-underline">英語を話せるようになりたい</strong>というのが一番ではないでしょうか。リスニングには問題なく、相手の言っていることは分かるのに、上手く答えられない、会話がスムーズにいかないというのはフラストレーションがたまります。</p>
+<p>英語を学ぶ目的としては、<strong class="font-bold underline text-">英語を話せるようになりたい</strong>というのが一番ではないでしょうか。リスニングには問題なく、相手の言っていることは分かるのに、上手く答えられない、会話がスムーズにいかないというのはフラストレーションがたまります。</p>
 <p> </p>
-<p>この5秒英作文のサイトは日本語を見て、瞬間的に英文を作れるようになるために作りました。瞬間的に英文が作れると何がいいのか。</p>
+<p>この5秒英作文のサイトは、日本語を見て、瞬間的に英文を作れるようになるために作りました。瞬間的に英文が作れると何がいいのか。</p>
 <p>瞬間的に英文を作れるようになると英会話がスムーズにできるようになります。</p>
 <p> </p>
 <p>瞬間的に英作文を作る練習は<strong>「基本的な文法をマスターする」「瞬発力を鍛える</strong>」のに効果的で、この力は英会話においてはかなり重要です。</p>
@@ -40,13 +92,17 @@
 <p> </p>
 <p>英語が話せるとは<strong>”今言いたいことが口から瞬時に出てくること”</strong>だと思います。</p>
 <p>では、どうすれば今言いたいことが瞬時にでてくるのかというと、瞬時に出てくるセリフの引き出しが多ければ多いほど出てきやすいです。</p>
+<br>
 <p>最初は難しいかもしれませんが、日本語を見て英語を口に出すトレーニングを積めば、英語を口に出すことに慣れてきます。</p>
 <p>何度もやれば少しずつフレーズを覚えてきます。 インプットなしにはアウトプットはできません。頭の中に英語があまり入っていないのに、英語が話せるわけがないのです。</p>
 <p>少しずつでも続けていれば、そのうち自分が言いたいことも出てきやすくなります。そして引き出しが増えていきます。</p>
 <p>基本的な文法の引き出しが増えれば、後はボキャブラリー（単語）のバリエーションが広がれば広がるほど、英語で伝えられることが増えていきます。応用がきくようになります。</p>
 <p>トレーニングを積むことで、使うべき文法やフレーズがより瞬間的に頭に浮かんでくるようになるでしょう。</p>
-<p> </p>
-<p>英語が話せるようになりたくてオンライン英会話を始めたり、留学を検討する人も多いとおもいます。ですが、これでは英語のスピーキング力を効率的に向上させることはできません。スピーキング力を向上させるには、話す機会を持つことが重要なのではなく、その準備（時間が掛かっても、まずは正確な文章を作れるようになること）が大切なのです。基本的な簡単な単語、文法を学んでからオンライン英会話なり、留学をした方が会話を楽しめます。むしろ、基本的な文法さえ分からない状態だと英会話がストレスに感じ、あまり楽しく感じられないのではないでしょうか。</p>
+<br>
+<p>英語が話せるようになりたくてオンライン英会話を始めたり、留学を検討する人も多いとおもいます。ですが、これでは英語のスピーキング力を効率的に向上させることはできません。
+<br>  
+スピーキング力を向上させるには、話す機会を持つことが重要なのではなく、その準備（時間が掛かっても、まずは正確な文章を作れるようになること）が大切なのです。基本的な簡単な単語、文法を学んでからオンライン英会話なり、留学をした方が会話を楽しめます。むしろ、基本的な文法さえ分からない状態だと英会話がストレスに感じ、あまり楽しく感じられないのではないでしょうか。</p>
+<br>
 <p>また、単語・文法の基本的な知識がないうちにオンライン英会話などで先生にうながされて話すと、単語も文法もめちゃくちゃな「変」な英語を自分で作ってしまいます。その後に、修正されても、自分で作りだした「変」な英語が強烈な印象を持って頭に刻み込まれているので、何度も同じ間違いを繰り返してしまうという現象すらあります。まずは初期段階での基礎学習とインプットが重要です。</p>
 <p>ネイティヴスピーカーと話す機会は、ある程度基礎知識が身についてからの実践練習のステップで積極的に活用するほうがいいでしょう。</p>
 <p> </p>
@@ -54,7 +110,8 @@
 <p>基本は中学英語レベルの問題がかなり多いです。英語を見れば「あー!こんなものか。」というくらい簡単なのに、日本語を見て英語を作れないというのは、中学英語が「わかる」けど使いこなせていないのです。中学英語を使った簡単な英文を大量に声に出して、基礎をマスターしましょう。</p>
 <p> </p>
 <p> </p>
-<p>基本的な使い方</p>
+<h2 class="font-bold text-3xl md:text-4xl">基本的な使い方</h2>
+<br>
 <p>①日本語を見て、英文を口に出す。</p>
 <p>日本語を見て5秒以内に英語を声に出してください。</p>
 <p> </p>
@@ -69,7 +126,10 @@
 <p> </p>
 <p>以上です。あとは繰り返し、継続です。人と比べる必要はありません。</p>
 <p>自分のペースで毎日10分でも続けていきましょう</p>
-<p>URL</p>
+
+<p class="text-blue-700 mt-1">
+<a href="/">
+  <br>日本語→英語 (Japanese→English)Ver. </a> </p>
 
 
 			<!--/ Post Content-->
@@ -78,146 +138,30 @@
 
 		<!--Tags -->
 		<div class="text-base md:text-sm text-gray-500 px-4 py-6">
-			Tags: <a href="#" class="text-base md:text-sm text-green-500 no-underline hover:underline">Link</a> . <a href="#" class="text-base md:text-sm text-green-500 no-underline hover:underline">Link</a>
 		</div>
 
 		<!--Divider-->
 		<hr class="border-b-2 border-gray-400 mb-8 mx-4">
 
 
-		<!--Subscribe-->
+		<!--Twitter-->
 		<div class="container px-4">
-			<div class="font-sans bg-gradient-to-b from-green-100 to-gray-100 rounded-lg shadow-xl p-4 text-center">
-				<h2 class="font-bold break-normal text-xl md:text-3xl">Subscribe to my Newsletter</h2>
-				<h3 class="font-bold break-normal text-gray-600 text-sm md:text-base">Get the latest posts delivered right to your inbox</h3>
-				<div class="w-full text-center pt-4">
-					<form action="#">
-						<div class="max-w-xl mx-auto p-1 pr-0 flex flex-wrap items-center">
-							<input type="email" placeholder="youremail@example.com" class="flex-1 mt-4 appearance-none border border-gray-400 rounded shadow-md p-3 text-gray-600 mr-2 focus:outline-none">
-							<button type="submit" class="flex-1 mt-4 block md:inline-block appearance-none bg-green-500 text-white text-base font-semibold tracking-wider uppercase py-4 rounded shadow hover:bg-green-400">Subscribe</button>
-						</div>
-					</form>
-				</div>
-			</div>
+      <a href="https://twitter.com/5seconds_en?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @5seconds_en</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 		</div>
-		<!-- /Subscribe-->
+		<!-- /Twitter-->
 
 
 
-		<!--Author-->
-		<div class="flex w-full items-center font-sans px-4 py-12">
-			<img class="w-10 h-10 rounded-full mr-4" src="http://i.pravatar.cc/300" alt="Avatar of Author">
-			<div class="flex-1 px-2">
-				<p class="text-base font-bold text-base md:text-xl leading-none mb-2">Jo Bloggerson</p>
-				<p class="text-gray-600 text-xs md:text-base">Minimal Blog Tailwind CSS template by <a class="text-green-500 no-underline hover:underline" href="https://www.tailwindtoolbox.com">TailwindToolbox.com</a></p>
-			</div>
-			<div class="justify-end">
-				<button class="bg-transparent border border-gray-500 hover:border-green-500 text-xs text-gray-500 hover:text-green-500 font-bold py-2 px-4 rounded-full">Read More</button>
-			</div>
-		</div>
-		<!--/Author-->
-
-		<!--Divider-->
-		<hr class="border-b-2 border-gray-400 mb-8 mx-4">
-
-		<!--Next & Prev Links-->
-		<div class="font-sans flex justify-between content-center px-4 pb-12">
-			<div class="text-left">
-				<span class="text-xs md:text-sm font-normal text-gray-600">&lt; Previous Post</span><br>
-				<p><a href="#" class="break-normal text-base md:text-sm text-green-500 font-bold no-underline hover:underline">Blog title</a></p>
-			</div>
-			<div class="text-right">
-				<span class="text-xs md:text-sm font-normal text-gray-600">Next Post &gt;</span><br>
-				<p><a href="#" class="break-normal text-base md:text-sm text-green-500 font-bold no-underline hover:underline">Blog title</a></p>
-			</div>
-		</div>
 
 
-		<!--/Next & Prev Links-->
 
-	</div>
-	<!--/container-->
-
-	<footer class="bg-white border-t border-gray-400 shadow">
+	<footer class="bg-white border-gray-400 shadow">
 		<div class="container max-w-4xl mx-auto flex py-8">
-
-			<div class="w-full mx-auto flex flex-wrap">
-				<div class="flex w-full md:w-1/2 ">
-					<div class="px-8">
-						<h3 class="font-bold text-gray-900">About</h3>
-						<p class="py-4 text-gray-600 text-sm">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel mi ut felis tempus commodo nec id erat. Suspendisse consectetur dapibus velit ut lacinia.
-						</p>
-					</div>
-				</div>
-
-				<div class="flex w-full md:w-1/2">
-					<div class="px-8">
-						<h3 class="font-bold text-gray-900">Social</h3>
-						<ul class="list-reset items-center text-sm pt-3">
-							<li>
-								<a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1" href="#">Add social link</a>
-							</li>
-							<li>
-								<a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1" href="#">Add social link</a>
-							</li>
-							<li>
-								<a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1" href="#">Add social link</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-
-
 
 		</div>
 	</footer>
 
-	<script>
-		/* Progress bar */
-		//Source: https://alligator.io/js/progress-bar-javascript-css-variables/
-		var h = document.documentElement,
-			b = document.body,
-			st = 'scrollTop',
-			sh = 'scrollHeight',
-			progress = document.querySelector('#progress'),
-			scroll;
-		var scrollpos = window.scrollY;
-		var header = document.getElementById("header");
-		var navcontent = document.getElementById("nav-content");
-
-		document.addEventListener('scroll', function() {
-
-			/*Refresh scroll % width*/
-			scroll = (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100;
-			progress.style.setProperty('--scroll', scroll + '%');
-
-			/*Apply classes for slide in bar*/
-			scrollpos = window.scrollY;
-
-			if (scrollpos > 10) {
-				header.classList.add("bg-white");
-				header.classList.add("shadow");
-				navcontent.classList.remove("bg-gray-100");
-				navcontent.classList.add("bg-white");
-			} else {
-				header.classList.remove("bg-white");
-				header.classList.remove("shadow");
-				navcontent.classList.remove("bg-white");
-				navcontent.classList.add("bg-gray-100");
-
-			}
-
-		});
-
-
-		//Javascript to toggle the menu
-		document.getElementById('nav-toggle').onclick = function() {
-			document.getElementById("nav-content").classList.toggle("hidden");
-		}
-	</script>
-
 </div>
 
-@endsection
+</body>
+</html>
