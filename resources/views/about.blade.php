@@ -5,24 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>5秒英作文 ～5seconds English～ 日本語を見て5秒で英文を作ろう</title>
+    <title>5秒英作文 ～5seconds English～ 日本語を見て瞬間的に英作文を作るサイト</title>
     <meta property="og:site_name" content="5秒英作文 ～5seconds English～" />
     <meta property="og:title" content="5秒英作文 ～5seconds English～"/>
     <meta property="og:url" content="https://5seconds-en.com/about" />
     <meta property="og:image" content="https://image.freepik.com/free-photo/top-view-decoration-with-cubes-wooden-background_23-2148389005.jpg" />
     <meta property="og:description" content="" />
-    <meta name="keywords" content="瞬間英作文,スピーキング,英語,5秒英作文,TOEIC,英会話,英語学習">
-    <meta name="description" content="5秒英作文。日本語を見て瞬間的に英文を作ってを声に出します。基本的な文法を中心に比較的短い日本語を5秒で英作文するトレーニングを進めていきます。短時間でもいいので、毎日繰り返し練習して英語になれましょう。">
-    <meta property="st:section" content="5秒英作文。日本語を見て5秒以内に英語を声に出します。基本的な文法を使って、比較的短い日本語を5秒で英作文するトレーニングを進めていきます。短時間でもいいので、毎日繰り返し練習して英語になれましょう。"/>
-    <meta name="twitter:title" content="5秒英作文 ～5seconds English～"/>
-  
+    <meta name="keywords" content="瞬間英作文,スピーキング,英語,5秒英作文,TOEIC,英会話,英語学習,海外">
+    <meta name="description" content="5秒英作文。日本語を見て瞬間的に英文を作って声に出します。基本的な文法を中心に比較的短い日本語を5秒で英作文するトレーニングを進めていきます。英語学習にお使いください。">
+    <meta property="st:section" content="5秒英作文。日本語を見て5秒以内に英語を声に出します。基本的な文法を使って、比較的短い日本語を5秒で英作文するトレーニングを進めていきます。英語学習にお使いください。"/>
+      
     {{-- Twitter --}}
     <meta name="twitter:card" content="Summary">
     <meta name="twitter:title" content="5秒英作文 ～5seconds English～">
     <meta name="twitter:site" content="@5seconds_en" />
     <meta name="twitter:creator" content="@5seconds_en" />
     <meta name="twitter:domain" content="twitter.com/5seconds_en" />
-    <meta name="twitter:description" content="5秒英作文。日本語を見て5秒以内に英語を声に出します。基本的な文法を使って、比較的短い日本語を5秒で英作文するトレーニングを進めていきます。短時間でもいいので、毎日繰り返し練習して英語になれましょう。">
+    <meta name="twitter:description" content="5秒英作文。日本語を見て5秒以内に英語を声に出します。基本的な文法を使って、比較的短い日本語を5秒で英作文するトレーニングを進めていきます。英語学習にお使いください。">
     <meta name="twitter:image" content="https://image.freepik.com/free-photo/top-view-decoration-with-cubes-wooden-background_23-2148389005.jpg" >
 
     {{-- Search Console --}}
@@ -39,7 +38,7 @@
     </script>
 
     <link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://unpkg.com/@tailwindcss/custom-forms/dist/custom-forms.min.css" rel="stylesheet">
+    {{-- <link href="https://unpkg.com/@tailwindcss/custom-forms/dist/custom-forms.min.css" rel="stylesheet"> --}}
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Stick&display=swap" rel="stylesheet">
@@ -57,10 +56,6 @@
 
   @include('nav')
 
-
-
-
-	<!--Container-->
 	<div class="container w-full md:max-w-3xl mx-auto pt-20">
 
 		<div class="w-full px-4 md:px-6 text-sm md:text-xl text-gray-800 leading-normal" style="font-family:Georgia,serif;">
