@@ -53,7 +53,7 @@
 
 </head>
 
-<body class="bg-gray-100 text-gray-900 tracking-wider  ">
+<body class=" tracking-wider" >
   <div id="app">
  
   @yield('content')
