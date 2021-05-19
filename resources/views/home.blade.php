@@ -10,11 +10,15 @@
     {{ session('status') }}
     </div>
     @endif
-
+   <div class="flex ">
+      {{-- <img src="https://pbs.twimg.com/profile_images/1394899451018309632/2MjLsq3Y_400x400.jpg" class="rounded-full " width="80px"  alt=""> --}}
     <h1 class="font-sans font-bold break-normal text-gray-700 px-2 text-2xl mt-5  md:text-2xl">
-    5秒英作文<i class="fas fa-paw ml-1"></i>
-   
+    5秒英作文
+    <i class="fas fa-paw ml-1"></i>
     </h1>
+   
+  
+   </div>
 
     <hr class="bg-gray-300 my-12">
 
