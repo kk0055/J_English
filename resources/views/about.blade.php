@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>5秒英作文 ～5seconds English～ 日本語を見て瞬間的に英作文を作るサイト</title>
+    <title>5秒英作文 ～5seconds English～ 英会話はリスニング+瞬間英作文力</title>
     <meta property="og:site_name" content="5秒英作文 ～5seconds English～" />
-    <meta property="og:title" content="5秒英作文 ～5seconds English～"/>
+    <meta property="og:title" content="5秒英作文 ～5seconds English～ 英会話はリスニング+瞬間英作文力"/>
     <meta property="og:url" content="https://5seconds-en.com/about" />
     <meta property="og:image" content="https://image.freepik.com/free-photo/top-view-decoration-with-cubes-wooden-background_23-2148389005.jpg" />
-    <meta property="og:description" content="" />
+    <meta property="og:description" content="5秒英作文。日本語を見て瞬間的に英文を作って声に出します。基本的な文法を中心に比較的短い日本語を5秒で英作文を作るトレーニングを進めていきます。英語学習にお使いください。" />
     <meta name="keywords" content="瞬間英作文,スピーキング,英語,5秒英作文,TOEIC,英会話,英語学習,海外">
     <meta name="description" content="5秒英作文。日本語を見て瞬間的に英文を作って声に出します。基本的な文法を中心に比較的短い日本語を5秒で英作文を作るトレーニングを進めていきます。英語学習にお使いください。">
     <meta property="st:section" content="5秒英作文。日本語を見て5秒以内に英語を声に出します。基本的な文法を使って、比較的短い日本語を5秒で英作文を作るトレーニングを進めていきます。英語学習にお使いください。"/>
