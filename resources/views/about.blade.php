@@ -12,8 +12,8 @@
     <meta property="og:image" content="https://image.freepik.com/free-photo/top-view-decoration-with-cubes-wooden-background_23-2148389005.jpg" />
     <meta property="og:description" content="" />
     <meta name="keywords" content="瞬間英作文,スピーキング,英語,5秒英作文,TOEIC,英会話,英語学習,海外">
-    <meta name="description" content="5秒英作文。日本語を見て瞬間的に英文を作って声に出します。基本的な文法を中心に比較的短い日本語を5秒で英作文するトレーニングを進めていきます。英語学習にお使いください。">
-    <meta property="st:section" content="5秒英作文。日本語を見て5秒以内に英語を声に出します。基本的な文法を使って、比較的短い日本語を5秒で英作文するトレーニングを進めていきます。英語学習にお使いください。"/>
+    <meta name="description" content="5秒英作文。日本語を見て瞬間的に英文を作って声に出します。基本的な文法を中心に比較的短い日本語を5秒で英作文を作るトレーニングを進めていきます。英語学習にお使いください。">
+    <meta property="st:section" content="5秒英作文。日本語を見て5秒以内に英語を声に出します。基本的な文法を使って、比較的短い日本語を5秒で英作文を作るトレーニングを進めていきます。英語学習にお使いください。"/>
       
     {{-- Twitter --}}
     <meta name="twitter:card" content="Summary">
@@ -21,7 +21,7 @@
     <meta name="twitter:site" content="@5seconds_en" />
     <meta name="twitter:creator" content="@5seconds_en" />
     <meta name="twitter:domain" content="twitter.com/5seconds_en" />
-    <meta name="twitter:description" content="5秒英作文。日本語を見て5秒以内に英語を声に出します。基本的な文法を使って、比較的短い日本語を5秒で英作文するトレーニングを進めていきます。英語学習にお使いください。">
+    <meta name="twitter:description" content="5秒英作文。日本語を見て5秒以内に英語を声に出します。基本的な文法を使って、比較的短い日本語を5秒で英作文を作るトレーニングを進めていきます。英語学習にお使いください。">
     <meta name="twitter:image" content="https://image.freepik.com/free-photo/top-view-decoration-with-cubes-wooden-background_23-2148389005.jpg" >
 
     {{-- Search Console --}}
@@ -127,7 +127,8 @@
 
 <p> </p>
 <p>以上です。あとは繰り返し、継続です。人と比べる必要はありません。</p>
-<p>自分のペースで毎日10分でも続けていきましょう。</p>
+
+<p>1ページ30問。自分のペースで毎日1ページずつでも続けていきましょう。</p>
 
 <p class="text-blue-700 mt-1">
 <a href="/">

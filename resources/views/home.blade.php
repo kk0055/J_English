@@ -45,7 +45,7 @@
     <i class="fas fa-home"></i>
 
     をクリックで問題はシャッフルされます。
-    <br> 毎日少しずつでも頑張りましょう。
+    <br> 1ページ30問。毎日1ページずつでも頑張りましょう。
     <br>重要なのは
     <span class="text-red-500 font-bold"> 「口に出すこと, 声を出すこと」</span>です <i class="far fa-laugh-wink"></i>
 
@@ -62,7 +62,7 @@
     </form>
     </div >
     </div>
-    <div class="mt-4">
+    <div class="mt-4 ">
 
     @include('components.main')
 
