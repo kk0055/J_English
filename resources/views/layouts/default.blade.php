@@ -52,6 +52,10 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     {{-- Adsense --}}
     <script data-ad-client="ca-pub-6877145874439358" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- Ptengine Tag -->
+  <script src="https://js.ptengine.jp/269856ai.js"></script>
+  <!-- End Ptengine Tag -->
+
 </head>
 
 <body class=" tracking-wider" >
