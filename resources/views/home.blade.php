@@ -62,11 +62,31 @@
     </form>
     </div >
     </div>
-    <div class="mt-4 ">
+    <div class="mt-4">
 
     @include('components.main')
 
     </div>
 
+		<!--Divider-->
+		<hr class="border-b-2 border-gray-400 mt-10 mb-8 mx-4">
+
+
+		<!--Twitter-->
+		<div class="container px-4 ">
+      <a href="https://twitter.com/5seconds_en" target=_blank>
+      <img src="https://img.icons8.com/fluent/2x/twitter.png" width="40px" alt="">
+      </a>
+
+		</div>
+         
+		<!-- /Twitter-->
+   
+
+	<footer class="">
+		<div class="container max-w-4xl mx-auto flex py-8">
+
+		</div>
+	</footer>
 </div >
 @endsection
