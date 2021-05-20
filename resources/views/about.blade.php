@@ -54,7 +54,8 @@
 <!-- Ptengine Tag -->
 <script src="https://js.ptengine.jp/269856ai.js"></script>
 <!-- End Ptengine Tag -->
-
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;700&display=swap" rel="stylesheet">
 </head>
 
 <body >
@@ -63,13 +64,13 @@
 
 	<div class="container w-full md:max-w-3xl mx-auto pt-20">
 
-		<div class="w-full px-4 md:px-6 text-sm md:text-xl text-gray-800 leading-normal" style="font-family:Georgia,serif;">
+		<div class="w-full px-4 md:px-6 text-sm md:text-xl text-gray-800 leading-normal" style="font-family: 'Noto Serif JP', serif;">
 
 			<!--Title-->
-			<div class="font-sans">
+			<div class="">
 			
-						<h1 class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">5秒英作文</h1>
-						<h2 class="text-sm md:text-base font-normal text-gray-600 mt-2">～はじめに～</h2>
+						<h1 class="font-bold break-normal pt-6 pb-2 text-3xl md:text-4xl">5秒英作文</h1>
+						<h2 class="text-sm md:text-base  mt-2">～はじめに～</h2>
 			</div>
 
 

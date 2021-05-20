@@ -55,12 +55,14 @@
       <!-- Ptengine Tag -->
   <script src="https://js.ptengine.jp/269856ai.js"></script>
   <!-- End Ptengine Tag -->
-
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;700&display=swap" rel="stylesheet">
+  
 </head>
 <style>
  
 </style>
-<body class="racking-widert bg-white" >
+<body class="racking-widert bg-white" style="font-family: 'Noto Serif JP', serif;">
   <div id="app">
  
   @yield('content')
