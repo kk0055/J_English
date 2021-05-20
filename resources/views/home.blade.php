@@ -69,6 +69,7 @@
 
     </div>
 
+    
 		<!--Divider-->
 		<hr class="border-b-2 mt-10 mb-8 mx-4">
 
