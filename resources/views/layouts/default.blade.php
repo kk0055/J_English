@@ -62,7 +62,7 @@
 <style>
  
 </style>
-<body class="racking-widert bg-white" style="font-family: 'Noto Serif JP', serif;">
+<body class="bg-white" style="font-family: 'Noto Serif JP', serif;">
   <div id="app">
  
   @yield('content')

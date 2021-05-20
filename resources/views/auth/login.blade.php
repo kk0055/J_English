@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class=" flex items-center justify-center md:col-span-2 max-w-3xl mx-auto  mt-20 ">
+<div class="max-w-7xl flex items-center justify-center  mx-auto  mt-20 ">
     
     <div class="bg-white shadow  px-4 py-2 rounded-md border">
        
@@ -85,6 +85,7 @@
             </div>
           
             </div>
+          
      
   
 
