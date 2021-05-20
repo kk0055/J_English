@@ -2,14 +2,14 @@
 
 @section('content')
 
-<div class="flex flex-col space-y-10 items-center justify-center mt-20 ">
+<div class=" flex items-center justify-center mt-20 ">
     
     <div class="bg-white shadow  px-4 py-2 rounded-md border">
        
-        <div class=" ">
+        
             <a href="/"> 
                 <i class="fas fa-book"></i></a>  
-            <P class="text-center text-gray-700   font-bold ">ログイン</P>
+            <P class="text-center text-gray-700 font-bold ">ログイン</P>
          
             <div class="mt-10">
                      <form method="POST" action="{{ route('login') }}">
@@ -85,8 +85,7 @@
             </div>
           
             </div>
-        </div>
-    
+     
   
 
 @endsection
