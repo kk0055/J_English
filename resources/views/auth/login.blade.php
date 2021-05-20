@@ -23,7 +23,7 @@
 
                     <div class="">
                         <p class="text-sm font-bold text-gray-700 tracking-wide">メールアドレス</p>
-                        <input class="w-1/2 text-lg py-2 border-b border-gray-300 focus:outline-none focus:border-indigo-500 form-control @error('email') is-invalid @enderror" type="email" name="email" placeholder="" value="{{ old('email') }}" >
+                        <input class="w-3/4 text-lg py-2 border-b border-gray-300 focus:outline-none focus:border-indigo-500 form-control @error('email') is-invalid @enderror" type="email" name="email" placeholder="" value="{{ old('email') }}" >
                     </div>
 
                                 
@@ -39,7 +39,7 @@
                             </p>
                             
                         </div>
-                        <input class=" text-lg py-2  focus:outline-none  border-b focus:border-indigo-500 form-control @error('password') is-invalid @enderror" type="password"  placeholder="" value="{{ old('password') }}" name="password">
+                        <input class="w-3/4 text-lg py-2  focus:outline-none  border-b focus:border-indigo-500 form-control @error('password') is-invalid @enderror" type="password"  placeholder="" value="{{ old('password') }}" name="password">
                     </div>
 
                     <div class="form-check mt-3">
