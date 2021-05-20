@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="flex justify-center mt-20 ">
+<div class="flex justify-center mt-20">
     
     <div class=" bg-white shadow w-9/12 md:w-1/4 px-4 py-2 rounded-md border">
        

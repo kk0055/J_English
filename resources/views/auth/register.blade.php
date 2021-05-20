@@ -2,18 +2,16 @@
 
 @section('content')
 
-<div class="flex items-center justify-center mt-20">
+<div class="flex justify-center mt-20">
     
-    <div class="bg-white shadow px-4 py-2 rounded-md border">
+    <div class="bg-white shadow w-9/12 md:w-1/4 px-4 py-2 rounded-md border">
        
         <div class="">
                    <a href="/"> 
                     <i class="fas fa-book"></i></a>   
-            <P class="text-center text-gray-700 font-display  
+            <P class="text-center text-gray-700 font-bold">登録</P>
            
-            font-bold">登録</P>
-           
-            <div class="mt-12">
+            <div class="mt-10">
                 <form method="POST" action="{{ route('register') }}">
                     @csrf
                     @if (session('oauth_error'))
@@ -22,7 +20,7 @@
  
                       <div class="">
                         <div class="text-sm font-bold text-gray-700 tracking-wide">ニックネーム</div>
-                        <input class="w-full text-lg border-gray-300 focus:outline-none focus:border-indigo-500 form-control  border-b @error('name') is-invalid @enderror" type="text" name="name" placeholder="" value="{{ old('name') }}" ></div>
+                        <input class="w-3/4 text-lg border-gray-300 focus:outline-none focus:border-indigo-500 form-control  border-b @error('name') is-invalid @enderror" type="text" name="name" placeholder="" value="{{ old('name') }}" ></div>
                     @error('name')
                     <span class="text-red-500 mt-2 text-sm" role="alert">
                         <strong>{{ $message }}</strong>
@@ -31,7 +29,7 @@
 
                     <div class="mt-2">
                         <div class="text-sm font-bold text-gray-700 tracking-wide">メールアドレス</div>
-                        <input class="w-full text-lg border-b border-gray-300 focus:outline-none focus:border-indigo-500 form-control @error('email') is-invalid @enderror" type="email" name="email" placeholder="" value="{{ old('email') }}" >
+                        <input class="w-3/4 text-lg border-b border-gray-300 focus:outline-none focus:border-indigo-500 form-control @error('email') is-invalid @enderror" type="email" name="email" placeholder="" value="{{ old('email') }}" >
                     </div>
                     @error('email')
                     <span class="text-red-500 mt-2 text-sm" role="alert">
@@ -50,7 +48,7 @@
                             </div>
 
                         </div>
-                        <input class="w-full text-lg py-2 border-b border-gray-300 focus:outline-none focus:border-indigo-500 form-control @error('password') is-invalid @enderror" type="password"  placeholder="" value="{{ old('password') }}" name="password">
+                        <input class="w-3/4 text-lg py-2 border-b border-gray-300 focus:outline-none focus:border-indigo-500 form-control @error('password') is-invalid @enderror" type="password"  placeholder="" value="{{ old('password') }}" name="password">
                     </div>
 
                     @error('password')
@@ -66,7 +64,7 @@
                             </div>
 
                         </div>
-                        <input class="w-full text-lg py-2 border-b border-gray-300 focus:outline-none focus:border-indigo-500 form-control @error('password') is-invalid @enderror" type="password"  placeholder="" value="{{ old('password') }}" name="password_confirmation">
+                        <input class="w-3/4 text-lg py-2 border-b border-gray-300 focus:outline-none focus:border-indigo-500 form-control @error('password') is-invalid @enderror" type="password"  placeholder="" value="{{ old('password') }}" name="password_confirmation">
                     </div>
 
                     @error('password')
