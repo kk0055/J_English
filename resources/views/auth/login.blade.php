@@ -11,7 +11,7 @@
                 <i class="fas fa-book"></i></a>  
             <P class="text-center text-gray-700 font-bold ">ログイン</P>
          
-            <div class="mt-10 w-9/12">
+            <div class="mt-10 ">
                      <form method="POST" action="{{ route('login') }}">
                     @csrf
                                   
@@ -22,8 +22,8 @@
                       @enderror
 
                     <div class="">
-                        <div class="text-sm font-bold text-gray-700 tracking-wide">メールアドレス</div>
-                        <input class=" text-lg py-2 border-b border-gray-300 focus:outline-none focus:border-indigo-500 form-control @error('email') is-invalid @enderror" type="email" name="email" placeholder="" value="{{ old('email') }}" >
+                        <p class="text-sm font-bold text-gray-700 tracking-wide">メールアドレス</p>
+                        <input class="w-1/2 text-lg py-2 border-b border-gray-300 focus:outline-none focus:border-indigo-500 form-control @error('email') is-invalid @enderror" type="email" name="email" placeholder="" value="{{ old('email') }}" >
                     </div>
 
                                 
@@ -34,9 +34,9 @@
                         </span>
                         @enderror
                         <div class="flex justify-between items-center">
-                            <div class="text-sm font-bold text-gray-700 tracking-wide">
+                            <p class="text-sm font-bold text-gray-700 tracking-wide">
                                 パスワード
-                            </div>
+                            </p>
                             
                         </div>
                         <input class=" text-lg py-2  focus:outline-none  border-b focus:border-indigo-500 form-control @error('password') is-invalid @enderror" type="password"  placeholder="" value="{{ old('password') }}" name="password">
