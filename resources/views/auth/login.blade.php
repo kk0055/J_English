@@ -2,16 +2,16 @@
 
 @section('content')
 
-<div class="h-screen bg-white flex flex-col space-y-10 justify-center items-center ">
+<div class="flex flex-col space-y-10 items-center justify-center mt-20 ">
     
-    <div class="bg-white w-96 shadow px-4 py-2 rounded-md border">
+    <div class="bg-white shadow  px-4 py-2 rounded-md border">
        
         <div class=" ">
             <a href="/"> 
                 <i class="fas fa-book"></i></a>  
             <P class="text-center text-gray-700   font-bold ">ログイン</P>
          
-            <div class="  mt-10">
+            <div class="mt-10">
                      <form method="POST" action="{{ route('login') }}">
                     @csrf
                                   
