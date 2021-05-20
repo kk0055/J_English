@@ -57,8 +57,10 @@
   <!-- End Ptengine Tag -->
 
 </head>
-
-<body class=" tracking-wider" >
+<style>
+ 
+</style>
+<body class="racking-widert bg-white" >
   <div id="app">
  
   @yield('content')

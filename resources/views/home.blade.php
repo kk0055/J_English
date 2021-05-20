@@ -2,7 +2,7 @@
 
 @section('content')
     
-<div class="w-full mb-10 container">
+<div class="w-full">
     @include('nav')
 
     @if (session('status'))
@@ -10,18 +10,15 @@
     {{ session('status') }}
     </div>
     @endif
-   <div class="flex ">
-      {{-- <img src="https://pbs.twimg.com/profile_images/1394899451018309632/2MjLsq3Y_400x400.jpg" class="rounded-full " width="80px"  alt=""> --}}
-    <h1 class="font-sans font-bold break-normal text-gray-700 px-2 text-2xl mt-5  md:text-2xl">
-    5秒英作文
-    <i class="fas fa-paw ml-1"></i>
-    </h1>
-   
-  
-   </div>
+    <div class="flex ">
+      {{-- <img src="https://pbs.twimg.com/profile_images/1394899451018309632/2MjLsq3Y_400x400.jpg" class="rounded-full" width="100px"  alt=""> --}}
+      <h1 class="font-sans font-bold break-normal text-gray-700 px-2 text-2xl mt-5  md:text-2xl">
+      5秒英作文
+      <i class="fas fa-paw ml-1"></i>
+      </h1>
+      </div>
 
-    <hr class="bg-gray-300 my-12">
-
+    <hr class="bg-gray-300 m-10">
     <!--Title-->
     <div class="flex justify-between ">
     <h2 id='section1' class=" font-sans font-bold break-normal text-gray-700 px-2 pb-3 text-xl">使い方 <i class="far fa-cat"></i></h2>
@@ -73,23 +70,23 @@
     </div>
 
 		<!--Divider-->
-		<hr class="border-b-2 border-gray-400 mt-10 mb-8 mx-4">
+		<hr class="border-b-2 mt-10 mb-8 mx-4">
 
 
 		<!--Twitter-->
-		<div class="container px-4 ">
-      <a href="https://twitter.com/5seconds_en" target=_blank>
+		<div class="flex items-center px-4 mt-10">
+      <a href="https://twitter.com/5seconds_en" target='_blank'>
       <img src="https://img.icons8.com/fluent/2x/twitter.png" width="40px" alt="">
       </a>
-
+      <a class="ml-4 text-xl text-gray-500" href="/">
+         <i class="fas fa-redo"></i>
 		</div>
-         
+      
 		<!-- /Twitter-->
-   
-
 	<footer class="">
-		<div class="container max-w-4xl mx-auto flex py-8">
-
+		<div class="container mx-auto flex justify-center m-4">
+         <a href="https://pbs.twimg.com/profile_images/1394899451018309632/2MjLsq3Y_400x400.jpg" target='_blank'>
+            <img src="https://pbs.twimg.com/profile_images/1394899451018309632/2MjLsq3Y_400x400.jpg" class="rounded-full" width="130px"  alt=""></a>
 		</div>
 	</footer>
 </div >
