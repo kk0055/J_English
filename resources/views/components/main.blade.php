@@ -14,7 +14,7 @@
     @endif
 
     </button>
-    <p class="english mt-2 ml-6 text-red-500 font-bold text-sm md:text-base" id="target">
+    <p class="english mt-2 ml-6 text-red-500 font-black	text-sm md:text-base" id="target">
       {{ $language->english }}  
       <ul class="mt-3">
         <li>
@@ -25,8 +25,6 @@
         </li>
         </ul>
     </p> 
-
-     
 
   </div>
 

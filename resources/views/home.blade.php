@@ -12,7 +12,7 @@
     @endif
     <div class="flex ">
       {{-- <img src="https://pbs.twimg.com/profile_images/1394899451018309632/2MjLsq3Y_400x400.jpg" class="rounded-full" width="100px"  alt=""> --}}
-      <h1 class=" font-bold break-normal text-gray-700 px-2 text-2xl mt-5  md:text-2xl">
+      <h1 class="font-bold px-2 text-2xl mt-5  md:text-3xl">
       5秒英作文
       <i class="fas fa-paw ml-1"></i>
       </h1>
@@ -21,7 +21,7 @@
     <hr class="bg-gray-300 m-10">
     <!--Title-->
     <div class="flex justify-between ">
-    <h2 id='section1' class=" font-bold break-normal text-gray-700 px-2 pb-3 text-xl">使い方 <i class="far fa-cat"></i></h2>
+    <h2 id='section1' class="px-2 pb-3 text-xl">使い方 <i class="far fa-cat"></i></h2>
 
     <a  class="inline-flex  justify-center py-2 px-2 border border-transparent shadow-sm text-sm bg-black font-medium rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 " href="{{ route('create') }}">問題をつくる</a>
     </div>
