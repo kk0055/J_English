@@ -2,11 +2,11 @@
 
 @section('content')
 
-<div class="flex items-center justify-center mt-3">
+<div class="flex items-center justify-center mt-20">
     
-    <div class="w-2/3 lg:w-1/2 xl:max-w-screen-sm bg-white shadow px-4 py-2 rounded-md">
+    <div class="bg-white shadow px-4 py-2 rounded-md border">
        
-        <div class="md:px-48 lg:px-12 lg:mt-16 xl:px-24 xl:max-w-2xl">
+        <div class="">
                    <a href="/"> 
                     <i class="fas fa-book"></i></a>   
             <P class="text-center text-gray-700 font-display  
@@ -76,15 +76,15 @@
                     @enderror
 
                     <div class="mt-10">
-                        <button class="bg- text-black p-4 w-full rounded-full tracking-wide
+                        <button class="bg- text-black p-2 w-full border 
                         font-semibold font-display focus:outline-none focus:shadow-outline hover:bg-gray-200
                         shadow-lg">
                         登録
                         </button>
                     </div>
                 </form>
-                <div class="my-4 text-sm font-display font-semibold text-gray-700 text-center">
-                    <a class="cursor-pointer hover:text-red-800 ml-2 " href="{{ 'login' }}">ログイン</a>
+                <div class="my-4 text-sm font-display font-semibold text-gray-700 text-center">もしくは
+                    <a class="cursor-pointer hover:text-red-600 ml-2 " href="{{ 'login' }}">ログイン</a>
                 </div>
            
             </div>

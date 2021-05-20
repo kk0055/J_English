@@ -2,12 +2,11 @@
 
 @section('content')
 
-
-<div class="flex items-center justify-center mt-5 ">
+<div class="flex items-center justify-center mt-20 ">
     
-    <div class="w-2/3 lg:w-1/2 xl:max-w-screen-sm bg-white shadow px-4 py-2 rounded-md">
+    <div class="bg-white shadow px-4 py-2 rounded-md border">
        
-        <div class=" md:px-48 lg:px-12 lg:mt-16 xl:px-24  xl:max-w-2xl">
+        <div class=" ">
             <a href="/"> 
                 <i class="fas fa-book"></i></a>  
             <P class="text-center text-gray-700   font-bold ">ログイン</P>
@@ -51,16 +50,16 @@
                         </label>
                     </div>
                     <div class="mt-10">
-                        <button class="bg- text-black p-4 w-full rounded-full tracking-wide
-                        font-semibold font-display focus:outline-none focus:shadow-outline hover:bg-gray-200
+                        <button class="text-black p-2 w-full 
+                        font-semibold font-display focus:outline-none focus:shadow-outline hover:bg-gray-200 border
                         shadow-lg">
                         ログイン
                         </button>
                     </div>
                     </div>
                 </form>
-                <div class="mt-2 text-sm font-display font-semibold text-gray-700 my-4">
-                    アカウントを持ってない？<a class="cursor-pointer ml-2 border-b text-gray-500" href="{{ 'register' }}">登録</a>
+                <div class="mt-2 text-sm  my-4">
+                    アカウントを持ってない？<a class="cursor-pointer ml-2 border-b text-gray-500 hover:text-red-600" href="{{ 'register' }}">登録</a>
                 </div>
            
                 {{-- テストボタン --}}
@@ -74,9 +73,9 @@
                         <input class="" type="hidden"  value="12345678910" name="password">
                   
                     <div class=" my-6">
-                        <button class="bg-black px-2 text-white rounded-full 
+                        <button class="bg-black px-2 text-white  
                         font-display focus:outline-none focus:shadow-outline hover:bg-gray-600
-                        shadow-lg"> テストユーザーとしてログイン
+                        shadow-lg"> ゲストとしてログイン
                     
                         </button>
                     </div>  
@@ -87,6 +86,7 @@
           
             </div>
         </div>
+    
   
 
 @endsection

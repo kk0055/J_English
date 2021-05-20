@@ -58,13 +58,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&display=swap" rel="stylesheet">
 </head>
 
-<body >
+<body style="font-family: 'Noto Serif JP', serif;" >
 
   @include('nav')
 
 	<div class="container w-full md:max-w-3xl mx-auto pt-20">
 
-		<div class="w-full px-4 md:px-6 text-sm md:text-xl text-gray-800 leading-normal" style="font-family: 'Noto Serif JP', serif;">
+		<div class="w-full px-4 md:px-6 text-sm md:text-xl text-gray-800 leading-normal" >
 
 			<!--Title-->
 			<div class="">

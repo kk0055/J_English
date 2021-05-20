@@ -13,12 +13,12 @@
   @endif
 
   
-  <h1 class=" font-bold break-normal text-gray-700 px-2 text-2xl mt-5  md:text-2xl">
+  <h1 class=" font-bold break-normal  px-2 text-2xl mt-5  md:text-2xl">
   5秒英作文<i class="fas fa-paw ml-1"></i>
   </h1>
   <hr class="bg-gray-300 my-12">
  
-  <h2 id='section1' class="font-bold break-normal text-gray-700 px-2 pb-3 text-xl">
+  <h2 id='section1' class="font-bold break-normal  px-2 pb-3 text-xl">
   English→Japanese <i class="far fa-cat"></i></h2>
 
   <div class="ml-5 mt-3  text-sm md:text-base">
