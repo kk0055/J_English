@@ -20,7 +20,7 @@ $(document).ready(function(){
 
             speech.volume = 1.0;
             speech.rate = 0.9;
-            speech.pitch = 1.8;
+            speech.pitch = 1.0;
             speech.text = message;
             speech.lang = 'en-US';
 
