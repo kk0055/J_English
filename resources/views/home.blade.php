@@ -1,9 +1,9 @@
 @extends('layouts.default')
 
 @section('content')
-    
-<div class="w-full">
-    @include('nav')
+@include('nav')
+<div class="w-full ">
+   
 
     @if (session('status'))
     <div class="ml-5 text-green-500 text-2xl font-bold" role="alert">
@@ -12,18 +12,27 @@
     @endif
     <div class="flex ">
       {{-- <img src="https://pbs.twimg.com/profile_images/1394899451018309632/2MjLsq3Y_400x400.jpg" class="rounded-full" width="100px"  alt=""> --}}
-      <h1 class="font-bold px-2 text-2xl mt-5  md:text-3xl">
+      {{-- <h1 class="font-bold ml-3 px-2 text-2xl mt-5  md:text-3xl">
       5秒英作文
-      <i class="fas fa-paw ml-1"></i>
-      </h1>
+      {{-- <i class="fas fa-paw ml-1"></i> 
+      </h1> --}}
       </div>
-
+      <div class="container mx-auto flex justify-center m-4">
+        <a href="https://pbs.twimg.com/profile_images/1394899451018309632/2MjLsq3Y_400x400.jpg" target='_blank'>
+           <img src="https://pbs.twimg.com/profile_images/1394899451018309632/2MjLsq3Y_400x400.jpg" class="rounded-full" width="200px"  alt=""></a>
+   </div>
     <hr class="bg-gray-300 m-10">
     <!--Title-->
-    <div class="flex justify-between ">
-    <h2 id='section1' class="px-2 pb-3 text-xl">使い方 <i class="far fa-cat"></i></h2>
+    
+    <h1 class="font-bold ml-3 px-2 text-2xl mt-5  md:text-3xl">
+      5秒英作文
+      {{-- <i class="fas fa-paw ml-1"></i> --}}
+      </h1>
+    <div class="flex justify-between ml-5 mt-5">
+      
+    <h2 id='section1' class=" px-2 pb-3 text-xl">使い方 <i class="far fa-cat"></i></h2>
 
-    <a  class="inline-flex  justify-center py-2 px-2 border border-transparent shadow-sm text-sm bg-black font-medium rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 " href="{{ route('create') }}">問題をつくる</a>
+    <a  class="mr-5 py-2 px-2 shadow-sm text-sm bg-black font-medium rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 " href="{{ route('create') }}">問題をつくる</a>
     </div>
     
     <div class="ml-5 mt-3 text-sm md:text-base">
@@ -84,11 +93,11 @@
 		</div>
       
 		<!-- /Twitter-->
-	<footer class="">
+	{{-- <footer class="">
 		<div class="container mx-auto flex justify-center m-4">
          <a href="https://pbs.twimg.com/profile_images/1394899451018309632/2MjLsq3Y_400x400.jpg" target='_blank'>
             <img src="https://pbs.twimg.com/profile_images/1394899451018309632/2MjLsq3Y_400x400.jpg" class="rounded-full" width="130px"  alt=""></a>
 		</div>
-	</footer>
+	</footer> --}}
 </div >
 @endsection

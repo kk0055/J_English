@@ -159,12 +159,4 @@ class LanguageController extends Controller
         ]);
     }
 
-    public function sounds(Language $language)
-    {
-     
-        $languages = Language::get();
-      
-      
-        return response()->json($languages);
-    }
 }

@@ -24,16 +24,11 @@
                   <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="{{ route('login') }}">ログイン</a></li>
                   <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="{{ route('register') }}">登録</a></li>
                 @endguest
-
-             
-
                 @auth
             
                   <li>
                     <a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="{{ route('user.post',Auth::user()) }}">{{ Auth::user()->name }}の投稿</a>
                  </li>
-
-          
              
              <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                 @csrf
@@ -60,16 +55,16 @@
                {{-- Routeがjapaneseの時だけ--}}
               @if (Request::is('japanese'))
               <div class="flex">
-              <a class="flex  items-center tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl mr-3" href="japanese">
+              <a class="font-bold text-xl mr-5" href="japanese">
                 <i class="fas fa-redo"></i>
               </a>  
-              <a class="flex  items-center tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl " href="/">
+              <a class="md:mr-10 font-bold text-xl  " href="/">
                 <i class="fas fa-home"></i>
               </a>   
                {{-- Routeがjapaneseの時だけ--}}
             </div>
               @else
-              <a class="flex  items-center tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl " href="/">
+              <a class=" md:mr-10 font-bold text-xl " href="/">
                 <i class="fas fa-home"></i>
               </a>   
               @endif

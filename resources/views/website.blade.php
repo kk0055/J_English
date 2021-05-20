@@ -2,7 +2,7 @@
 
 @section('content')
 
-        <div class="w-full mb-10  bg-white">
+        <div class="w-full mb-10  bg-white ">
             @include('nav')
 
             <h1 class="font-bold break-normal  px-2 text-2xl mt-5  md:text-2xl">
