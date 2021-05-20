@@ -11,7 +11,7 @@
                 <i class="fas fa-book"></i></a>  
             <P class="text-center text-gray-700 font-bold ">ログイン</P>
          
-            <div class="mt-10">
+            <div class="mt-10 w-9/12">
                      <form method="POST" action="{{ route('login') }}">
                     @csrf
                                   
@@ -21,7 +21,7 @@
                     </span>
                       @enderror
 
-                    <div>
+                    <div class="">
                         <div class="text-sm font-bold text-gray-700 tracking-wide">メールアドレス</div>
                         <input class=" text-lg py-2 border-b border-gray-300 focus:outline-none focus:border-indigo-500 form-control @error('email') is-invalid @enderror" type="email" name="email" placeholder="" value="{{ old('email') }}" >
                     </div>
