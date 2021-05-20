@@ -2,9 +2,9 @@
 
 @section('content')
 
-<div class="max-w-7xl flex items-center justify-center  mx-auto  mt-20 ">
+<div class="max-w-md mx-auto flex items-center justify-center mt-20 ">
     
-    <div class="bg-white shadow  px-4 py-2 rounded-md border">
+    <div class="bg-white shadow px-4 py-2 rounded-md border">
        
         
             <a href="/"> 
