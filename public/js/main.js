@@ -65,7 +65,28 @@ $(document).ready(function(){
     });
 
 
+    $(document).ready(function(){
+    $('.greeting').on('click', function(event){
 
+        var speech = new SpeechSynthesisUtterance("Hey How are you today?");
+
+        speech.volume = 1.0;
+        speech.rate = 1.0;
+        // 高さ 0-2 初期値:1
+        speech.pitch = 0.9;
+        // 言語 (日本語:ja-JP, アメリカ英語:en-US, イギリス英語:en-GB, 中国語:zh-CN, 韓国語:ko-KR)
+        speech.lang = '';
+        //「イギリス人男性風の声質」のvoiceオブジェクトを取得
+        var voice = speechSynthesis.getVoices().find(function(voice){
+            return voice.name === 'Google UK English Male';
+        });
+        speech.voice = voice
+        speechSynthesis.speak(speech);
+        
+        // console.log( speechSynthesis.speak(speech));
+        // console.log( speech.voice);
+    });
+    });
 
 function replaceMessage(mes) {
 

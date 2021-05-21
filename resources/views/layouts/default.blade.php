@@ -49,7 +49,7 @@
   {{-- JQuery --}}
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     {{-- CSS --}}
-    <link rel="stylesheet" href="{{ asset('css/style.css?') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css?0521') }}">
     {{-- Adsense --}}
     <script data-ad-client="ca-pub-6877145874439358" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
       <!-- Ptengine Tag -->
@@ -60,7 +60,7 @@
   
 </head>
 <style>
- 
+
 </style>
 <body class="bg-white" style="font-family: 'Noto Serif JP', serif;">
   <div id="app">
@@ -73,7 +73,7 @@
   
 
 </script>
-<script src="{{ asset('js/main.js?') }}" ></script>
+<script src="{{ asset('js/main.js?0521') }}" ></script>
 <script src="{{ asset('js/app.js') }}" ></script>
 
 </body>
