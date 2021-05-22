@@ -23,16 +23,21 @@ $(document).ready(function(){
             speech.pitch = 1.0;
             speech.text = message;
             speech.lang = 'en-US';
+
+            if(speech.lang === '	ja-JP') {
+                return   speech.lang = 'en-US';
+            }
       //「イギリス人男性風の声質」のvoiceオブジェクトを取得
       var voice = speechSynthesis.getVoices().find(function(voice){
         return voice.name === 'Google US English';
+     
     });
     speech.voice = voice
 
             // utterances.push(speech);
 
             speechSynthesis.speak(speech);
-         
+            console.log(speech);
             // console.log( speechSynthesis.speak(speech));
             // console.log( speech);
         });

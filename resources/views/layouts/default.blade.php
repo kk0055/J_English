@@ -73,7 +73,7 @@
   
 
 </script>
-<script src="{{ asset('js/main.js?0521') }}" ></script>
+<script src="{{ asset('js/main.js?0522') }}" ></script>
 <script src="{{ asset('js/app.js') }}" ></script>
 
 </body>
