@@ -24,7 +24,7 @@ $(document).ready(function(){
             speech.text = message;
             speech.lang = 'en-US';
 
-            if(speech.lang === '	ja-JP') {
+            if(speech.lang === 'ja-JP') {
                 return   speech.lang = 'en-US';
             }
       //「イギリス人男性風の声質」のvoiceオブジェクトを取得
@@ -35,9 +35,9 @@ $(document).ready(function(){
     speech.voice = voice
 
             // utterances.push(speech);
-
+            // console.log(speech);
             speechSynthesis.speak(speech);
-            console.log(speech);
+          
             // console.log( speechSynthesis.speak(speech));
             // console.log( speech);
         });
