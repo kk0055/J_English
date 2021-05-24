@@ -56,7 +56,15 @@
                         ログイン
                         </button>
                     </div>
+                
                     </div>
+                    <div class="mt-2">
+                        @if (Route::has('password.request'))
+                        <a class="btn btn-link text-sm hover:text-red-600" href="{{ route('password.request') }}">
+                            {{ __('Forgot Your Password?') }}
+                        </a>
+                    @endif
+                </div>
                 </form>
                 <div class="mt-2 text-sm  my-4">
                     アカウントを持ってない？<a class="cursor-pointer ml-2 border-b text-gray-500 hover:text-red-600" href="{{ 'register' }}">登録</a>
