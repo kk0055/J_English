@@ -160,11 +160,11 @@
 
 
 		<!--Twitter-->
-		<div class="container px-4 ">
+		{{-- <div class="container px-4 ">
       <a href="https://twitter.com/5seconds_en" target=_blank>
       <img src="https://img.icons8.com/fluent/2x/twitter.png" width="40px" alt="">
       </a>
-		</div>
+		</div> --}}
 		<!-- /Twitter-->
 
 
