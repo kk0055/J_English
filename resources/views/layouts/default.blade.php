@@ -37,6 +37,10 @@
     gtag('config', 'G-BT31K5VNL5');
     </script>
 
+    <!-- Global site tag (gtag.js) - Google Ads: 692470157 --> 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-692470157"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-692470157'); </script>
+    
+
     <link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
     {{-- <link href="https://unpkg.com/@tailwindcss/custom-forms/dist/custom-forms.min.css" rel="stylesheet"> --}}
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,400&display=swap" rel="stylesheet">
