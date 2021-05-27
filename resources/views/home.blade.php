@@ -89,9 +89,9 @@
 
 		<!--Twitter-->
 		<div class="flex items-center px-4 mt-10">
-      <a href="https://twitter.com/5seconds_en" target='_blank'>
+      {{-- <a href="https://twitter.com/5seconds_en" target='_blank'>
       <img src="https://img.icons8.com/fluent/2x/twitter.png" width="40px" alt="">
-      </a>
+      </a> --}}
       <a class="ml-1 text-xl text-gray-500" href="/">
          <i class="fas fa-redo"></i>
 		</div>
