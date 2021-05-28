@@ -67,7 +67,7 @@
            
                 
                 <div class="mb-2  ml-2">
-                    <div class="w-full">
+                    <div class="mb-3">
                     <a href="{{ url('/login/twitter') }}"  class="twitter-login px-2 text-white  
                     font-display focus:outline-none focus:shadow-outline 
                     shadow-lg"> 
@@ -85,7 +85,7 @@
                   
                     <div class=" my-2">
                         <button class="bg-black px-2 text-white  
-                        font-display focus:outline-none focus:shadow-outline hover:bg-gray-600
+                        font-display focus:outline-none focus:shadow-outline 
                         shadow-lg"> ゲストとしてログイン
                         </button>
                     </div>  
