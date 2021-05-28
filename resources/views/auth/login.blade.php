@@ -48,7 +48,7 @@
                         <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
                         <label class="form-check-label" for="remember">
-                            {{ __('Remember Me') }}
+                            {{ __('Keep me logged in') }}
                         </label>
                     </div>
                     <div class="mt-10">
@@ -62,7 +62,7 @@
              
                 </form>
                 <div class="mt-2 text-sm  my-4">
-                  <a class="cursor-pointer ml-2 border-b text-gray-500 hover:text-red-600" href="{{ 'register' }}">アカウントをお持ちではない方はこちら</a>
+                  <a class="cursor-pointer ml-2 \ text-gray-500 hover:text-red-600" href="{{ 'register' }}">アカウントをお持ちではない方はこちら</a>
                 </div>
            
                 
