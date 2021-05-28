@@ -6,7 +6,9 @@
     
     <div class=" bg-white shadow w-9/12 md:w-1/4 px-4 py-2 rounded-md border">
        
-        
+        @if (session('oauth_error'))
+    {{ session('oauth_error') }}
+        @endif
             <a href="/"> 
                 <i class="fas fa-book"></i></a>  
             <P class="text-center text-gray-700 font-bold ">ログイン</P>
@@ -84,10 +86,10 @@
                         <button class="bg-black px-2 text-white  
                         font-display focus:outline-none focus:shadow-outline hover:bg-gray-600
                         shadow-lg"> ゲストとしてログイン
-                    
                         </button>
                     </div>  
                 </form>
+                <a href="/login/twitter">T</a>
             </div>
               {{-- テストボタン --}}
             </div>

@@ -6,6 +6,7 @@ use App\Http\Controllers\UserItemController;
 use App\Http\Controllers\WebsiteController;
 use App\Http\Controllers\admin\AdminController;
 use App\Http\Controllers\SearchController;
+use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Support\Facades\Auth;
 
 Auth::routes();
@@ -20,7 +21,11 @@ Route::get('/website', [WebsiteController::class,'index'])->name('website');
 Route::get('/about', [WebsiteController::class,'about'])->name('about');
 Route::get('/search', [SearchController::class, 'search'])->name('item.search');
 
-Route::get('/login/{provider}', 'Auth\LoginController@redirectToProvider')->name('twitter.login');
+Route::get('/login/{provider}', [LoginController::class, 'redirectToProvider'])->name('twitter.login');
+Route::get('login/{provider}/callback', [LoginController::class, 'handleProviderCallback'])->name('');
+
+// Route::get('/login/{provider}', 'Auth\LoginController@redirectToProvider')->name('twitter.login');
+// Route::get('login/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
 
 
 //Middleware AUTH 
