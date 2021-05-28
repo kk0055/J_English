@@ -89,7 +89,7 @@
                         </button>
                     </div>  
                 </form>
-                <a href="/login/twitter">T</a>
+                <a href="{{ url('/login/twitter') }}">T</a>
             </div>
               {{-- テストボタン --}}
             </div>
