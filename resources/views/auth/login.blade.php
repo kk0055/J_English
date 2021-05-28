@@ -29,7 +29,7 @@
                     </div>
 
                                 
-                    <div class="mt-8">
+                    <div class="mt-4">
                         @error('password')
                         <span class="text-red-500" role="alert">
                             <strong>{{ $message }}</strong>
@@ -58,22 +58,23 @@
                         ログイン
                         </button>
                     </div>
-                
                     </div>
-                    <div class="mt-2">
-                        @if (Route::has('password.request'))
-                        <a class="btn btn-link text-sm hover:text-red-600" href="{{ route('password.request') }}">
-                            {{ __('Forgot Your Password?') }}
-                        </a>
-                    @endif
-                </div>
+             
                 </form>
                 <div class="mt-2 text-sm  my-4">
-                    アカウントを持ってない？<a class="cursor-pointer ml-2 border-b text-gray-500 hover:text-red-600" href="{{ 'register' }}">登録</a>
+                  <a class="cursor-pointer ml-2 border-b text-gray-500 hover:text-red-600" href="{{ 'register' }}">アカウントをお持ちではない方はこちら</a>
                 </div>
            
-                {{-- テストボタン --}}
+                
                 <div class="mb-2  ml-2">
+                    <div class="w-full">
+                    <a href="{{ url('/login/twitter') }}"  class="twitter-login px-2 text-white  
+                    font-display focus:outline-none focus:shadow-outline 
+                    shadow-lg"> 
+                    <i class="fab fa-twitter mr-1"></i>Twitterでログイン
+                        </a>
+                    </div>
+                 {{-- テストボタン --}}
                   <form method="POST" action="{{ route('login') }}">
                     @csrf
                     <div>
@@ -82,16 +83,24 @@
                     </div>
                         <input class="" type="hidden"  value="12345678910" name="password">
                   
-                    <div class=" my-6">
+                    <div class=" my-2">
                         <button class="bg-black px-2 text-white  
                         font-display focus:outline-none focus:shadow-outline hover:bg-gray-600
                         shadow-lg"> ゲストとしてログイン
                         </button>
                     </div>  
                 </form>
-                <a href="{{ url('/login/twitter') }}">T</a>
+                <div class="mt-2">
+                    @if (Route::has('password.request'))
+                    <a class="btn btn-link text-sm hover:text-red-600" href="{{ route('password.request') }}">
+                        {{ __('パスワードをお忘れの方はこちら') }}
+                    </a>
+                @endif
             </div>
-              {{-- テストボタン --}}
+        
+            </div>
+         
+            {{-- テストボタン --}}
             </div>
           
             </div>

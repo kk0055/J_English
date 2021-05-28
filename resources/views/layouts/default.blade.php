@@ -64,7 +64,9 @@
   
 </head>
 <style>
-
+.twitter-login{
+  background: #1DA1F2;
+}
 </style>
 <body class="bg-white" style="font-family: 'Noto Serif JP', serif;">
   <div id="app">
