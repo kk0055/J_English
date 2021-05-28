@@ -20,6 +20,8 @@ Route::get('/website', [WebsiteController::class,'index'])->name('website');
 Route::get('/about', [WebsiteController::class,'about'])->name('about');
 Route::get('/search', [SearchController::class, 'search'])->name('item.search');
 
+Route::get('/login/{provider}', 'Auth\LoginController@redirectToProvider')->name('twitter.login');
+
 
 //Middleware AUTH 
 Route::group(['middleware' => ['auth']], function () {
