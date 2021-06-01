@@ -21,6 +21,7 @@
         <script>
              (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
+
         <hr class="bg-gray-300 my-12">
         <div class="flex justify-between">
            
@@ -175,6 +176,7 @@
     <p class="mt-5"></p>
     {{-- block end --}}     
   </ul>
+  
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <!-- ベーシック１ -->
   <ins class="adsbygoogle"
@@ -185,8 +187,8 @@
        data-full-width-responsive="true"></ins>
   <script>
        (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>    
-       
+  </script>  
+  
           </div>
     </div >
 @endsection
