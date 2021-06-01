@@ -110,8 +110,8 @@
       <a href="https://twitter.com/5seconds_en" target='_blank'>
       <img src="https://img.icons8.com/fluent/2x/twitter.png" width="40px" alt="">
       </a>
-      <a class="ml-1 text-xl text-gray-500" href="/">
-         <i class="ml-2 fas fa-redo"></i>
+      <a class="ml-1 text-xl " href="/">
+         <i class="ml-2 fas fa-home"></i>
 		</div>
       
  {{-- Google Ads --}}
