@@ -71,7 +71,7 @@
       <br>
       <div class="mt-6">
         <form action="{{ route('item.search') }}">
-        <input type="text" name="query" class=" text-sm rounded-full w-64 px-4  py-1 focus:outline-none border-b focus:shadow-outline " placeholder=" Search">
+        <input type="text" name="query" class="border-black text-sm rounded-full w-64 px-4  py-1 focus:outline-none border-b focus:shadow-outline " placeholder=" Search">
         </form>
         </div >
         <br>
@@ -130,7 +130,7 @@
   <br>
   @endguest
  {{-- !Google Ads --}}
- 
+
 		<!-- /Twitter-->
 	{{-- <footer class="">
 		<div class="container mx-auto flex justify-center m-4">
