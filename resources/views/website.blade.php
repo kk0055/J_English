@@ -8,7 +8,19 @@
             <h1 class="font-bold break-normal  px-2 text-2xl mt-5  md:text-2xl">
               英語学習用サイトの紹介<i class="fas fa-paw ml-1"></i>
 		      	</h1>
-        <p class="px-3 mt-3">英語学習に役立つYoutube動画やサイトを紹介します。</p>
+        <p class="px-3 mt-3 mb-2">英語学習に役立つYoutube動画やサイトを紹介します。</p>
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- ベーシック１ -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-6877145874439358"
+             data-ad-slot="5867733062"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
         <hr class="bg-gray-300 my-12">
         <div class="flex justify-between">
            
@@ -163,7 +175,17 @@
     <p class="mt-5"></p>
     {{-- block end --}}     
   </ul>
-            
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- ベーシック１ -->
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-6877145874439358"
+       data-ad-slot="5867733062"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>    
        
           </div>
     </div >

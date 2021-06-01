@@ -64,6 +64,11 @@
     <span class="text-red-500 font-bold"> 「口に出すこと、 声を出すこと」</span>です <i class="far fa-laugh-wink"></i>
 
     </p>
+
+    <p class="text-blue-700 mt-1">
+      <a href="/japanese">
+      <br>英語→日本語 (English→Japanese)Ver. </a> </p>
+      <br>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <!-- ベーシック１ -->
     <ins class="adsbygoogle"
@@ -75,10 +80,8 @@
     <script>
          (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
+     <br>
     
-    <p class="text-blue-700 mt-1">
-    <a href="/japanese">
-    <br>英語→日本語 (English→Japanese)Ver. </a> </p>
     
     <div class="mt-6">
     <form action="{{ route('item.search') }}">
