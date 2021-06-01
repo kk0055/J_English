@@ -39,6 +39,8 @@
 
 <!-- Global site tag (gtag.js) - Google Ads: 692470157 --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-692470157"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-692470157'); </script>
 <!-- Global site tag (gtag.js) - Google Ads: 692470157 --> 
+ <!-- Global Adsense--> 
+ <script data-ad-client="ca-pub-6877145874439358" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
     <link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
     {{-- <link href="https://unpkg.com/@tailwindcss/custom-forms/dist/custom-forms.min.css" rel="stylesheet"> --}}
@@ -52,8 +54,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     {{-- CSS --}}
     <link rel="stylesheet" href="{{ asset('css/style.css?') }}">
- {{-- Adsense --}}
- <script data-ad-client="ca-pub-6877145874439358" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
 <!-- Ptengine Tag -->
 <script src="https://js.ptengine.jp/269856ai.js"></script>
 <!-- End Ptengine Tag -->
@@ -169,7 +170,17 @@
       </a>
 		</div> --}}
 		<!-- /Twitter-->
-
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- ベーシック１ -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-6877145874439358"
+         data-ad-slot="5867733062"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
 
 	<footer class="">
 		<div class="container max-w-4xl mx-auto flex py-8">

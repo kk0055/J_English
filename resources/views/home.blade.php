@@ -64,7 +64,17 @@
     <span class="text-red-500 font-bold"> 「口に出すこと、 声を出すこと」</span>です <i class="far fa-laugh-wink"></i>
 
     </p>
-
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- ベーシック１ -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-6877145874439358"
+         data-ad-slot="5867733062"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
     
     <p class="text-blue-700 mt-1">
     <a href="/japanese">
@@ -96,6 +106,17 @@
          <i class="fas fa-redo"></i>
 		</div>
       
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ベーシック１ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6877145874439358"
+     data-ad-slot="5867733062"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 		<!-- /Twitter-->
 	{{-- <footer class="">
 		<div class="container mx-auto flex justify-center m-4">

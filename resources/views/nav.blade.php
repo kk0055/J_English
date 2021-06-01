@@ -58,13 +58,13 @@
               <a class="font-bold text-xl mr-5" href="japanese">
                 <i class="fas fa-redo"></i>
               </a>  
-              <a class="md:mr-10 font-bold text-xl  " href="/">
-                <i class="fas fa-home"></i>
+              <a class="md:mr-10 font-bold text-xl"  href="/">
+                <i class="fas fa-home"  ></i>
               </a>   
                {{-- Routeがjapaneseの時だけ--}}
             </div>
               @else
-              <a class=" md:mr-10 font-bold text-xl " href="/">
+              <a class=" md:mr-10 font-bold text-xl"  href="/">
                 <i class="fas fa-home"></i>
               </a>   
               @endif

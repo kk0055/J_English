@@ -22,6 +22,7 @@ window.Vue = require('vue').default;
 
 
 Vue.component('favorite-button', require('./components/Favorite.vue').default);
+Vue.component('home-button', require('./components/Home.vue').default);
 
 
 /**
