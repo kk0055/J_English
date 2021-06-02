@@ -30,13 +30,14 @@
       {{-- <i class="fas fa-paw ml-1"></i> --}}
       </h1>
     <div class="flex justify-between ml-5 mt-5">
-      
-    <h2 id='section1' class=" px-2 pb-3 text-xl">使い方 <i class="far fa-cat"></i></h2>
-
+      <a href="{{ route('about') }}"><p id='section1' class=" px-2 pb-3 text-xl text-green-400">はじめての方はこちら</p></a>
+   
     <a  class="mr-5 py-2 px-2 shadow-sm text-sm bg-black font-medium rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 " href="{{ route('create') }}">問題をつくる</a>
     </div>
     
     <div class="ml-5 mt-3 text-sm md:text-base">
+      <p id='section1' class=" px-2 pb-3 text-xl">使い方 </p>
+     
     <p>①日本語を見て、英文を口に出す。</p>
     <p>日本語を見て5秒以内に英語を声に出してください。</p>
     <p> </p>
@@ -47,7 +48,7 @@
     <p> </p>
     <p>③何度か口に出す。</p>
     <p>口になじむまで何回か声に出してみましょう。</p>
-    <p>サウンドボタンを押すと英語を読み上げますが、デバイスの言語を英語にする必要があります。</p>
+    <p>サウンドボタンを押すと英語を読み上げますが、デバイスの言語設定を英語にする必要があります。</p>
   
     <p> </p>
     <p>④次の問題へ</p>
