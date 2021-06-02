@@ -12,7 +12,7 @@
   <meta property="og:image" content="https://image.freepik.com/free-photo/top-view-decoration-with-cubes-wooden-background_23-2148389005.jpg" />
 
   <meta name="keywords" content="瞬間英作文,スピーキング,英語,5秒英作文,TOEIC,英会話,英語学習,海外">
-  <meta name="description" content="瞬間英作文。中学英語を中心に基本的な文法を使って瞬間英作文するトレーニングを行います。1000問以上の例文があります。英語、TOEIC,英会話の勉強に役立ちます。。">
+  <meta name="description" content="瞬間英作文。中学英語を中心に基本的な文法を使って瞬間英作文するトレーニングを行います。1000問以上の例文があります。英語、TOEIC,英会話の勉強に役立ちます。">
   <meta property="og:description" content="瞬間英作文。中学英語を中心に基本的な文法を使って瞬間英作文するトレーニングを行います。1000問以上の例文があります。英語、TOEIC,英会話の勉強に役立ちます。"/>     
     {{-- Twitter --}}
     <meta name="twitter:card" content="Summary">
