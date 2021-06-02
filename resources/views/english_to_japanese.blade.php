@@ -34,6 +34,23 @@
     <br>日本語→英語 (Japanese→English)Ver. </a> </p>
     </div>
 
+    {{-- Google Ads --}}
+    @guest
+    <br>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- ベーシック１ -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-6877145874439358"
+         data-ad-slot="5867733062"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+     <br>
+     @endguest
+    {{-- !Google Ads --}}
 
     <div class="mt-4 text-sm md:text-base">
     @foreach ($languages as  $language)
@@ -72,5 +89,23 @@
     </div>
     @endforeach
     </div>
+
+        {{-- Google Ads --}}
+        @guest
+        <br>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- ベーシック１ -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-6877145874439358"
+             data-ad-slot="5867733062"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+         <br>
+         @endguest
+        {{-- !Google Ads --}}
 </div >
 @endsection
