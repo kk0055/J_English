@@ -11,7 +11,7 @@
 			<!--Title-->
 			<div class="">
 			
-						<h1 class="font-bold break-normal pt-6 pb-2 text-3xl md:text-4xl">5秒英作文</h1>
+						<h1 class="font-bold break-normal pt-6 pb-2 text-2xl md:text-3xl">5秒英作文 - 英会話はリスニング+瞬間英作文力</h1>
 						<h2 class="text-sm md:text-base  mt-2">～はじめに～</h2>
 			</div>
 
