@@ -13,13 +13,10 @@ class LanguageController extends Controller
 {
     public function index()
     {
-        $user = Auth::user();
-     
+       
         // $languages = Language::inRandomOrder()->take(100)->get();
         $languages = Language::with('user')->inRandomOrder()->take(30)->get();
       
-      
-        // dd($languages);
         return view('home',[
             'languages' => $languages,
             
@@ -41,7 +38,6 @@ class LanguageController extends Controller
        $user = Auth::user();
         //ログインしてない時
         if(!$user){
-
             return redirect()->to('/login'); 
             }
 
@@ -50,9 +46,7 @@ class LanguageController extends Controller
             'japanese' => 'required',
       
         ]);
-       
-       
-        
+     
             $request->user()->languages()->create([
             'english' => $request->english,
             'japanese' => $request->japanese,
@@ -72,8 +66,6 @@ class LanguageController extends Controller
         public function edit($id)
         {
             $language = Language::find($id);
-
-            // dd($language);
             return view('edit',[
                 'language' => $language
             ]);
@@ -147,15 +139,12 @@ class LanguageController extends Controller
 
     public function JapaneseToEnglish()
     {
-        $user = Auth::user();
-        // $languages = Language::all()->random(200);
-        $languages = Language::inRandomOrder()->take(30)->get();
+       
+        $languages = Language::with('user')->inRandomOrder()->take(30)->get();
       
-      
-   
         return view('english_to_japanese',[
             'languages' => $languages,
-            'user' => $user
+           
         ]);
     }
 

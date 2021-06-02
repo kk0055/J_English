@@ -67,7 +67,7 @@
     <button class="question focus:outline-none">{{ $language->english }}
 
     {{--edit  --}}
-    @if($user == $language->user)
+    @if(Auth::user() == $language->user)
     <a href={{ route('edit',$language->id) }}> <i class="ml-2 far fa-edit"></i></a>     
     @endif
     {{--edit  --}}

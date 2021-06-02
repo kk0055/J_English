@@ -36,7 +36,7 @@ Route::post('/edit/{id}', [LanguageController::class,'update'])->name('update');
 
 Route::post('/favorite/{language}', [LanguageController::class,'favoritePost']);
 Route::post('/unfavorite/{language}', [LanguageController::class,'unfavoritePost']);
-Route::get('/my_favorites', [LanguageController::class,'myFavorites']);
+Route::get('/my_favorites', [LanguageController::class,'myFavorites'])->name('my_favorites');
 
 Route::get('/mypost/{user:name}', [UserItemController::class,'index'])->name('user.post');
 
