@@ -10,18 +10,18 @@
   <meta property="og:title" content="5秒英作文 ～5seconds English～ 英会話はリスニング+瞬間英作文力"/>
   <meta property="og:url" content="https://5seconds-en.com" />
   <meta property="og:image" content="https://image.freepik.com/free-photo/top-view-decoration-with-cubes-wooden-background_23-2148389005.jpg" />
-  <meta property="og:description" content="瞬間英作文。日本語を見て瞬間的に英文を作って声に出します。基本的な文法を中心に比較的短い日本語を5秒で英作文を作るトレーニングを進めていきます。英語学習にお使いください。" />
+
   <meta name="keywords" content="瞬間英作文,スピーキング,英語,5秒英作文,TOEIC,英会話,英語学習,海外">
-  <meta name="description" content="瞬間英作文。日本語を見て瞬間的に英文を作って声に出します。基本的な文法を中心に比較的短い日本語を5秒で英作文を作るトレーニングを進めていきます。英語学習にお使いください。">
-  <meta property="st:section" content="瞬間英作文。日本語を見て5秒以内に英語を声に出します。基本的な文法を使って、比較的短い日本語を5秒で英作文を作るトレーニングを進めていきます。英語学習にお使いください。"/>
-      
+  <meta name="description" content="瞬間英作文。中学英語を中心に基本的な文法を使って5秒で英作文を作るトレーニングを行います。1000問以上の例文があります。英語、TOEIC,英会話の勉強に役立ちます。。">
+  <meta property="og:description" content="瞬間英作文。中学英語を中心に基本的な文法を使って5秒で英作文を作るトレーニングを行います。1000問以上の例文があります。英語、TOEIC,英会話の勉強に役立ちます。"/>     
     {{-- Twitter --}}
     <meta name="twitter:card" content="Summary">
     <meta name="twitter:title" content="5秒英作文 ～5seconds English～">
     <meta name="twitter:site" content="@5seconds_en" />
     <meta name="twitter:creator" content="@5seconds_en" />
     <meta name="twitter:domain" content="twitter.com/5seconds_en" />
-    <meta name="twitter:description" content="瞬間英作文。日本語を見て5秒以内に英語を声に出します。基本的な文法を使って、比較的短い日本語を5秒で英作文するトレーニングを進めていきます。英語学習にお使いください。">
+    <meta name="twitter:description" content="瞬間英作文。中学英語を中心に基本的な文法を使って5秒で英作文を作るトレーニングを行います。1000問以上の例文があります。英語、TOEIC,英会話の勉強に役立ちます。">
+    
     <meta name="twitter:image" content="https://image.freepik.com/free-photo/top-view-decoration-with-cubes-wooden-background_23-2148389005.jpg" >
 
     {{-- Search Console --}}
