@@ -110,24 +110,22 @@
 		<hr class="border-b-2 mt-10 mb-8 mx-4">
 
 
-		<!--Twitter-->
+	
 		<div class="flex items-center px-4 mt-10">
-      {{-- <a href="https://twitter.com/5seconds_en" target='_blank'>
-      <img src="https://img.icons8.com/fluent/2x/twitter.png" width="40px" alt="">
-      </a> --}}
-      <a class="text-xl" href="/">
+   
+      <a class="text-2xl" href="/">
          <i class="ml- fas fa-home"></i>
 		</div>
   
-    <footer class="mt-3">
-      <div class="container mx-auto flex m-4">
+   
+      <div class="container mx-auto flex m-4 ml-3">
         <div class="flex-col">
         <a href="https://twitter.com/5seconds_en" target='_blank'>
           <img src="https://img.icons8.com/fluent/2x/twitter.png" width="40px" alt="">
           </a>
-          <p>お問い合わせ</p></div>
+          <p class="text-xs">お問い合わせ</p></div>
       </div>
-    </footer>
+
     
  {{-- Google Ads --}}
  @guest
