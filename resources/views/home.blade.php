@@ -3,7 +3,7 @@
 @section('content')
 @include('nav')
 <div class="w-full ">
-   
+  
 
     @if (session('status'))
     <div class="ml-5 text-green-500 text-2xl font-bold" role="alert">
@@ -27,12 +27,16 @@
     
     <h1 class="font-bold ml-3 px-2 text-2xl mt-5  md:text-3xl">
       5秒英作文
+     
+   
       {{-- <i class="fas fa-paw ml-1"></i> --}}
       </h1>
     <div class="flex justify-between ml-5 mt-5">
       <a href="{{ route('about') }}"><p id='section1' class=" px-2 pb-3 text-xl text-green-400">はじめての方はこちら</p></a>
    
+    @auth
     <a  class="mr-5 py-2 px-2 shadow-sm text-sm bg-black font-medium rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 " href="{{ route('create') }}">問題をつくる</a>
+    @endauth
     </div>
     
     <div class="ml-5 mt-3 text-sm md:text-base">
@@ -113,8 +117,9 @@
       </a>
       <a class="ml-1 text-xl " href="/">
          <i class="ml-2 fas fa-home"></i>
+        
 		</div>
-      
+       
  {{-- Google Ads --}}
  @guest
  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -139,5 +144,8 @@
             <img src="https://pbs.twimg.com/profile_images/1394899451018309632/2MjLsq3Y_400x400.jpg" class="rounded-full" width="130px"  alt=""></a>
 		</div>
 	</footer> --}}
+
+
+ 
 </div >
 @endsection

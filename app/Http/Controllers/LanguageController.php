@@ -101,7 +101,7 @@ class LanguageController extends Controller
 		
 		$language->save();
 
-        return redirect()->route('user.post',$language->user->id)->withStatus("訂正完了！");;
+        return redirect()->route('user.post',$language->user->name)->withStatus("訂正完了！");;
     }
 
     /**

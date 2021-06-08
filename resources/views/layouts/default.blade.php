@@ -71,9 +71,8 @@
 </style>
 <body class="bg-white" style="font-family: 'Noto Serif JP', serif;">
   <div id="app">
- 
   @yield('content')
-  
+
 </div>
 
 <script>
