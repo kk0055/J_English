@@ -24,10 +24,7 @@ $(document).ready(function(){
             speech.text = message;
             speech.lang = 'en-US';
 
-            if(speech.lang === 'ja-JP') {
-                return   speech.lang = 'en-US';
-            }
-      
+          
       var voice = speechSynthesis.getVoices().find(function(voice){
         return voice.name === 'Google US English';
      

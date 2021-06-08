@@ -112,13 +112,23 @@
 
 		<!--Twitter-->
 		<div class="flex items-center px-4 mt-10">
-      <a href="https://twitter.com/5seconds_en" target='_blank'>
+      {{-- <a href="https://twitter.com/5seconds_en" target='_blank'>
       <img src="https://img.icons8.com/fluent/2x/twitter.png" width="40px" alt="">
-      </a>
-      <a class="ml-1 text-xl " href="/">
-         <i class="ml-2 fas fa-home"></i>
+      </a> --}}
+      <a class="text-xl" href="/">
+         <i class="ml- fas fa-home"></i>
 		</div>
-       
+  
+    <footer class="mt-3">
+      <div class="container mx-auto flex m-4">
+        <div class="flex-col">
+        <a href="https://twitter.com/5seconds_en" target='_blank'>
+          <img src="https://img.icons8.com/fluent/2x/twitter.png" width="40px" alt="">
+          </a>
+          <p>お問い合わせ</p></div>
+      </div>
+    </footer>
+    
  {{-- Google Ads --}}
  @guest
  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -136,7 +146,7 @@
   @endguest
  {{-- !Google Ads --}}
 
-		<!-- /Twitter-->
+	
 	{{-- <footer class="">
 		<div class="container mx-auto flex justify-center m-4">
          <a href="https://pbs.twimg.com/profile_images/1394899451018309632/2MjLsq3Y_400x400.jpg" target='_blank'>

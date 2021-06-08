@@ -69,7 +69,7 @@
   background: #1DA1F2;
 }
 </style>
-<body class="bg-white" style="font-family: 'Noto Serif JP', serif;">
+<body class="bg-white w-full md:w-4/5 mx-auto" style="font-family: 'Noto Serif JP', serif;">
   <div id="app">
   @yield('content')
 
