@@ -129,6 +129,7 @@
     
  {{-- Google Ads --}}
  @guest
+ <br>
  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
  <!-- ベーシック１ -->
  <ins class="adsbygoogle"
