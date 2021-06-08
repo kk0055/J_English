@@ -10,7 +10,7 @@
     {{ session('status') }}
     </div>
     @endif
-    <div class="flex ">
+    <div class="flex">
    
       </div>
       <div class="container mx-auto flex justify-center m-4">
@@ -33,7 +33,7 @@
       </h1>
     <div class="flex justify-between ml-5 mt-5">
       <a href="{{ route('about') }}"><p id='section1' class=" px-2 pb-3 text-xl text-green-400">はじめての方はこちら</p></a>
-   
+    
     @auth
     <a  class="mr-5 py-2 px-2 shadow-sm text-sm bg-black font-medium rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 " href="{{ route('create') }}">問題をつくる</a>
     @endauth
@@ -117,7 +117,6 @@
       </a>
       <a class="ml-1 text-xl " href="/">
          <i class="ml-2 fas fa-home"></i>
-        
 		</div>
        
  {{-- Google Ads --}}

@@ -31,7 +31,7 @@ Route::get('login/{provider}/callback', [LoginController::class, 'handleProvider
 //Middleware AUTH 
 Route::group(['middleware' => ['auth']], function () {
 
-  Route::get('/edit/{id}', [LanguageController::class,'edit'])->name('edit');
+Route::get('/edit/{id}', [LanguageController::class,'edit'])->name('edit');
 Route::post('/edit/{id}', [LanguageController::class,'update'])->name('update');
 
 Route::post('/favorite/{language}', [LanguageController::class,'favoritePost']);
@@ -45,8 +45,6 @@ Route::get('/mypost/{user:name}', [UserItemController::class,'index'])->name('us
 
 
 
-
-
   //Middleware admin
 Route::group(['middleware' => ['auth.admin']], function () {
 
@@ -56,6 +54,7 @@ Route::group(['middleware' => ['auth.admin']], function () {
   Route::get('/admin/user/{id}', [AdminController::class, 'showUserDetail']);
   Route::get('/admin/edit/{id}', [AdminController::class, 'edit'])->name('admin.edit');
   Route::post('/admin/edit/{id}', [AdminController::class, 'update'])->name('admin.update');
+  Route::get('/admin/search', [AdminController::class, 'adminSearch'])->name('admin.search');
   });
 
   Route::get('/admin/login', [AdminController::class, 'showLoginform']);

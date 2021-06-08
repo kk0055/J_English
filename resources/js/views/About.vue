@@ -110,18 +110,6 @@
       <img src="https://img.icons8.com/fluent/2x/twitter.png" width="40px" alt="">
       </a>
 		</div> --}}
-		<!-- /Twitter-->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <!-- ベーシック１ -->
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-6877145874439358"
-         data-ad-slot="5867733062"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
 
 	<footer class="">
 		<div class="container max-w-4xl mx-auto flex py-8">

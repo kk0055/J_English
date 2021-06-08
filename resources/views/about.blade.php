@@ -7,7 +7,22 @@
 	<div class="container w-full md:max-w-3xl mx-auto pt-20">
 
 		<div class="w-full px-4 md:px-6 text-sm md:text-xl text-gray-800 leading-normal" >
-
+ {{-- Google Ads --}}
+ @guest
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+ <!-- ベーシック１ -->
+ <ins class="adsbygoogle"
+      style="display:block"
+      data-ad-client="ca-pub-6877145874439358"
+      data-ad-slot="5867733062"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+ <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+ </script>
+  <br>
+  @endguest
+ {{-- !Google Ads --}}
 			<!--Title-->
 			<div class="">
 			

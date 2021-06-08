@@ -34,7 +34,7 @@ class AdminController extends Controller
 
     function logout(Request $request){
 		$request->session()->forget("admin_auth");
-		return redirect("admin");
+		return redirect("admin/login");
 	}
 
 	
@@ -110,4 +110,21 @@ class AdminController extends Controller
 
         return redirect('admin/user/'. $user->id);
     }
+
+		public function adminSearch(Request $request) 
+		{
+			$query = $request->input('query');
+
+			if(!$query) {
+					return back();
+			}
+		 $languages = Language::where('english', 'LIKE',"%{$query}%")
+		 ->orWhere('japanese', 'LIKE',"%{$query}%")
+		 ->simplePaginate(20);
+	
+	//    dd($languages);
+		 return view('admin.search_results',[
+				 'languages' => $languages
+		 ]);
+ 		}
 }

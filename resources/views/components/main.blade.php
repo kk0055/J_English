@@ -9,8 +9,10 @@
     @endauth
 
     <button class="question focus:outline-none text-sm md:text-base">{{ $language->japanese }} 
-    @if(Auth::user() == $language->user)
+    @if(Auth::user() == $language->user )
     <a href={{ route('edit',$language->id) }}> <i class="ml-2 far fa-edit"></i></a>     
+    @elseif(Request::is('admin/search'))
+    <a href={{ route('admin.edit',$language->id) }}> <i class="ml-2 far fa-edit"></i></a>    
     @endif
 
     </button>
