@@ -10,9 +10,7 @@
     {{ session('status') }}
     </div>
     @endif
-    <div class="flex">
-   
-      </div>
+  
       <div class="container mx-auto flex justify-center m-4">
         {{-- <a href="javascript:void(0)" class="greeting"> --}}
           {{-- <img src="https://pbs.twimg.com/profile_images/1394899451018309632/2MjLsq3Y_400x400.jpg" class="rounded-full profile-image"  alt=""> --}}
@@ -27,10 +25,8 @@
     
     <h1 class="font-bold ml-3 px-2 text-2xl mt-5  md:text-3xl">
       5秒英作文
-     
-   
       {{-- <i class="fas fa-paw ml-1"></i> --}}
-      </h1>
+    </h1>
     <div class="flex justify-between ml-5 mt-5">
       <a href="{{ route('about') }}"><p id='section1' class=" px-2 pb-3 text-xl text-green-400">はじめての方はこちら</p></a>
     
@@ -43,10 +39,10 @@
       <p id='section1' class=" px-2 pb-3 text-xl">使い方 </p>
      
     <p>①日本語を見て、英文を口に出す。</p>
-    <p>日本語を見て5秒以内に英語を声に出してください。</p>
+    <p>日本語を見て5秒以内に英語に直して声に出してください。</p>
     <p> </p>
     <p>②5秒考えてわからなければ英語を確認して答え合わせ。</p>
-    <p>日本語をクリックすると英文がでます。</p>
+    <p>日本語をクリックすると英文がでてきます。</p>
     <p>あまり長く考えず、分からなければすぐに答えを見てください</p>
     
     <p> </p>
@@ -60,13 +56,15 @@
     </p>
     <p class=" mb-1">
     <br>全部で1000問以上あります。リロードもしくは   
-    右上の
+    右上かページ下部の
     <i class="fas fa-home"></i>
 
     をクリックで問題はシャッフルされます。
     <br> 1ページ30問。毎日1ページずつでも頑張りましょう。
+    <br>
     <br>重要なのは
-    <span class="text-red-500 font-bold"> 「口に出すこと、 声を出すこと」</span>です <i class="far fa-laugh-wink"></i>
+    <span class="text-red-500 font-bold"> 「口に出すこと、 声を出すこと」</span>です。
+    <br>英語を声に出すこと慣れましょう。<i class="far fa-laugh-wink"></i>
 
     </p>
 

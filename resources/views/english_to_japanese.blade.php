@@ -14,7 +14,7 @@
 
   
   <h1 class=" font-bold break-normal  px-2 text-2xl mt-5  md:text-2xl">
-  5秒英作文<i class="fas fa-paw ml-1"></i>
+  5秒英作文
   </h1>
   <hr class="bg-gray-300 my-12">
  
@@ -22,12 +22,13 @@
   English→Japanese <i class="far fa-cat"></i></h2>
 
   <div class="ml-5 mt-3  text-sm md:text-base">
-    <p class=" pb-1 ">Read the English sentence and guess how to say it in Japanese in <span class="text-red-500">5</span> seconds.
-    <br> If you have no idea, click on the English sentence. 
-    <br> Then, Japanese will be displayed.
-    <i class="far fa-laugh-wink"></i>
-
-    </p>
+    <p class=" pb-1 ">Read the English sentence and guess how to say it in Japanese in <span class="text-red-500">5</span> seconds.</p>
+   <p>If you have no idea, click on the English sentence. </p> 
+   <p> Then, Japanese will be displayed
+     <i class="far fa-laugh-wink"></i> 
+   </p>
+   
+    
 
     <p class="text-blue-700 mt-1">
     <a href="/">
@@ -54,7 +55,7 @@
 
     <div class="mt-4 text-sm md:text-base">
     @foreach ($languages as  $language)
-    <div class="p-3 mt-6 lg:mt-2 leading-normal rounded shadow bg-white">
+    <div class="p-3 mt-6 lg:mt-2 leading-normal rounded shadow bg-white transition-colors duration-300 hover:bg-gray-100">
     {{-- ログイン時 favorite-button--}}
     @auth
     <favorite-button

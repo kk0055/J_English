@@ -19,7 +19,7 @@ $(document).ready(function(){
             var speech = new SpeechSynthesisUtterance();
 
             speech.volume = 1.0;
-            speech.rate = 1.9;
+            speech.rate = 1.0;
             speech.pitch = 1.0;
             speech.text = message;
             speech.lang = 'en-US';
