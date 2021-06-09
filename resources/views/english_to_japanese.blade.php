@@ -50,7 +50,7 @@
 
     <div class="mt-4 text-sm md:text-base">
     @foreach ($languages as  $language)
-    <div class="p-3 mt-6 lg:mt-2 leading-normal rounded shadow bg-white transition-colors duration-300 hover:bg-gray-100">
+    <div class="p-3 mt-6 lg:mt-2 leading-normal rounded shadow bg-white transition-colors duration-300 md:hover:bg-gray-100">
     {{-- ログイン時 favorite-button--}}
     @auth
     <favorite-button
