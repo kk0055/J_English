@@ -2,14 +2,9 @@
 
 @section('content')
 @include('nav')
-<div class="w-full ">
-  
-
-    @if (session('status'))
-    <div class="ml-5 text-green-500 text-2xl font-bold" role="alert">
-    {{ session('status') }}
-    </div>
-    @endif
+    
+<div class="w-full md:w-4/5 mx-auto">
+  @include('components.session')  
   
       <div class="container mx-auto flex justify-center m-4">
         {{-- <a href="javascript:void(0)" class="greeting"> --}}
@@ -98,7 +93,7 @@
    
     </div>
     <div class="mt-4">
-
+	<!--Main blader-->
     @include('components.main')
 
     </div>
@@ -106,23 +101,20 @@
     
 		<!--Divider-->
 		<hr class="border-b-2 mt-10 mb-8 mx-4">
-
-
-	
+   {{-- Home Button --}}
 		<div class="flex items-center px-4 mt-10">
-   
-      <a class="text-2xl" href="/">
-         <i class="ml- fas fa-home"></i>
+      <a class="text-2xl" href="/"><i class="ml- fas fa-home"></i> 
+        </a>
 		</div>
   
-   
-      <div class="container mx-auto flex m-4 ml-3">
+   {{-- Twitter Button --}}
+    <div class="container mx-auto flex m-4 ml-3">
         <div class="flex-col">
         <a href="https://twitter.com/5seconds_en" target='_blank'>
-          <img src="https://img.icons8.com/fluent/2x/twitter.png" width="40px" alt="">
-          </a>
-          <p class="text-xs">お問い合わせ</p></div>
-      </div>
+        <img src="https://img.icons8.com/fluent/2x/twitter.png" width="40px" alt="">
+        </a>
+        <p class="text-xs">お問い合わせ</p></div>
+    </div>
 
     
  {{-- Google Ads --}}
@@ -150,7 +142,6 @@
             <img src="https://pbs.twimg.com/profile_images/1394899451018309632/2MjLsq3Y_400x400.jpg" class="rounded-full" width="130px"  alt=""></a>
 		</div>
 	</footer> --}}
-
 
  
 </div >
