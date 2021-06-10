@@ -13,6 +13,7 @@ class UserItemController extends Controller
         $languages = $user->languages()->latest()->with('user')->simplePaginate(50);
         $count = count($user->languages()->get());
 
+        // dd($languages);
         return view('users.index',[
             
             'languages' => $languages ,
