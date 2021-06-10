@@ -8,7 +8,7 @@
   @include('components.session')   
 
   
-  <h1 class=" font-bold break-normal  px-2 text-2xl mt-5  md:text-2xl">
+  <h1 class="font-bold break-normal  px-2 text-2xl mt-5  md:text-2xl">
   5秒英作文
   </h1>
   <hr class="bg-gray-300 my-12">
@@ -23,8 +23,6 @@
      <i class="far fa-laugh-wink"></i> 
    </p>
    
-    
-
     <p class="text-blue-700 mt-1">
     <a href="/">
     <br>日本語→英語 (Japanese→English)Ver. </a> </p>
@@ -52,13 +50,13 @@
     @foreach ($languages as  $language)
     <div class="p-3 mt-6 lg:mt-2 leading-normal rounded shadow bg-white transition-colors duration-300 md:hover:bg-gray-100">
     {{-- ログイン時 favorite-button--}}
-    @auth
+    {{-- @auth
     <favorite-button
     :language={{ $language->id }}
     :favorited={{ $language->favorited() ? 'true' : 'false' }}
     >  </favorite-button
     >
-    @endauth
+    @endauth --}}
     {{-- end ログイン時 --}} 
     <button class="question focus:outline-none w-full flex">{{ $language->english }}
 
@@ -73,13 +71,22 @@
     <p class="english mt-2 ml-6 text-red-500 font-bold" id="target">
       {{ $language->english }}  
 
-      <ul class="mt-3">
+      <ul class="mt-3 flex justify-start place-items-center">
         <li>
             <input type="hidden"  class="answer" value="{{ $language->japanese }}">
                 <p><a href="javascript:void(0)">
                 <img src="https://img.eikaiwa.dmm.com/assets/uknow/icon_translation_play.png" class="trigger-jap" alt="" width="20px">
                 </a></p>
         </li>
+
+        <li>   
+          @auth
+          <favorite-button class="px-4"  
+          :language={{ $language->id }}
+          :favorited={{ $language->favorited() ? 'true' : 'false' }}
+          >  </favorite-button >
+          @endauth
+         </li>
         </ul>
     </p>        
     </div>

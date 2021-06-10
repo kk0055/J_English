@@ -3,7 +3,7 @@
 @section('content')
 @include('nav')
     
-<div class="w-full md:w-4/5 mx-auto">
+<div class="w-full md:w-4/5 md:mx-auto">
   @include('components.session')  
   
       <div class="container mx-auto flex justify-center m-4">
