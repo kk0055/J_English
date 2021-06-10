@@ -3,7 +3,7 @@
 @section('content')
 @include('nav')
     
-<div class="w-full md:w-4/5 md:mx-auto">
+<div class="w-full lg:w-4/5 lg:mx-auto">
   @include('components.session')  
   
       <div class="container mx-auto flex justify-center m-4">
@@ -49,18 +49,16 @@
     <p> </p>
     <p>④次の問題へ</p>
 
-    </p>
-    <p class=" mb-1">
-    <br>全部で1000問以上あります。リロードもしくは   
-    右上かページ下部の
-    <i class="fas fa-home"></i>
-
-    をクリックで問題はシャッフルされます。
-    <br> 1ページ30問。毎日1ページずつでも頑張りましょう。
     <br>
-    <br>重要なのは
-    <span class="text-red-500 font-bold"> 「口に出すこと、 声を出すこと」</span>です。
-    <br>英語を声に出すこと慣れましょう。<i class="far fa-laugh-wink"></i>
+    <p>
+   全部で1000問以上あります。リロードもしくは   
+    右上かページ下部の<i class="fas fa-home"></i>
+    をクリックで問題はシャッフルされます。
+    <br> 1ページ30問。毎日1ページずつでも頑張りましょう。</p>
+
+    <br><p>重要なのは
+    <span class="text-red-500 font-bold"> 「口に出すこと、 声を出すこと」</span>です。</p>
+    <p>英語を声に出すこと慣れましょう。<i class="far fa-laugh-wink"></i>
 
     </p>
 
@@ -72,7 +70,7 @@
         <form action="{{ route('item.search') }}">
         <input type="text" name="query" class="border-black text-sm rounded-full w-64 px-4  py-1 focus:outline-none border-b focus:shadow-outline " placeholder=" Search">
         </form>
-        </div >
+      </div >
         <br>
     {{-- Google Ads --}}
     @guest

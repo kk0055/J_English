@@ -78,15 +78,16 @@
                 <img src="https://img.eikaiwa.dmm.com/assets/uknow/icon_translation_play.png" class="trigger-jap" alt="" width="20px">
                 </a></p>
         </li>
-
+         {{-- ログイン時 favorite-button--}}
+        @auth
         <li>   
-          @auth
           <favorite-button class="px-4"  
           :language={{ $language->id }}
           :favorited={{ $language->favorited() ? 'true' : 'false' }}
           >  </favorite-button >
-          @endauth
          </li>
+         @endauth
+          {{--! ログイン時 favorite-button--}}
         </ul>
     </p>        
     </div>
