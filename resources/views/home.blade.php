@@ -2,7 +2,7 @@
 
 @section('content')
 @include('nav')  
-<div class="w-full ">
+<div class="w-full lg:w-4/5 lg:mx-auto">
   @include('components.session')  
   
       {{-- <div class="container mx-auto flex justify-center m-4"> --}}
@@ -106,7 +106,7 @@
 		</div>
   
    {{-- Twitter Button --}}
-    <div class="container mx-auto flex m-4 ml-3">
+    <div class="flex mt-5 ml-3">
         <div class="flex-col">
         <a href="https://twitter.com/5seconds_en" target='_blank'>
         <img src="https://img.icons8.com/fluent/2x/twitter.png" width="40px" alt="">
@@ -142,5 +142,5 @@
 	</footer> --}}
 
  
-</div >
+</div>
 @endsection
