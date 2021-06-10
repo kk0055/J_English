@@ -1,11 +1,10 @@
 @extends('layouts.default')
 
 @section('content')
-
-    
+@include('nav')  
 <div class="w-full lg:w-4/5 lg:mx-auto">
   @include('components.session')  
-  @include('nav')
+  
       {{-- <div class="container mx-auto flex justify-center m-4"> --}}
         {{-- <a href="javascript:void(0)" class="greeting"> --}}
           {{-- <img src="https://pbs.twimg.com/profile_images/1394899451018309632/2MjLsq3Y_400x400.jpg" class="rounded-full profile-image"  alt=""> --}}
@@ -15,7 +14,7 @@
            <img src="https://pbs.twimg.com/profile_images/1394899451018309632/2MjLsq3Y_400x400.jpg" class="rounded-full md:w-1/4" width="200px"  alt="">
           </a> --}}
    {{-- </div> --}}
-    <hr class="bg-gray-300 m-10">
+    <hr class="bg-gray-300 my-12">
     <!--Title-->
     
     <h1 class="font-bold ml-3 px-2 text-2xl mt-5  md:text-3xl">
@@ -32,7 +31,7 @@
     </div>
     
     <div class="ml-5 mt-3 text-sm md:text-base">
-      <p id='section1' class=" px-2 pb-3 text-xl">使い方 </p>
+    <p  class=" px-2 pb-3 text-xl">使い方 </p>
      
     <p>①日本語を見て、英文を口に出す。</p>
     <p>日本語を見て5秒以内に英語に直して声に出してください。</p>
@@ -68,7 +67,7 @@
       <br>
       <div class="mt-6">
         <form action="{{ route('item.search') }}">
-        <input type="text" name="query" class="border-black text-sm rounded-full w-64 px-4  py-1 focus:outline-none border-b focus:shadow-outline " placeholder=" Search">
+        <input type="text" name="query" class="border-black text-sm rounded-full w-64 px-4  py-1 focus:outline-none border-b focus:shadow-outline " placeholder="Search">
         </form>
       </div >
         <br>
