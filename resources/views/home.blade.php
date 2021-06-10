@@ -23,7 +23,7 @@
       {{-- <i class="fas fa-paw ml-1"></i> --}}
     </h1>
     <div class="flex justify-between ml-5 mt-5">
-      <a href="{{ route('about') }}"><p id='section1' class=" px-2 pb-3 text-xl text-green-400">はじめての方はこちら</p></a>
+      <a href="{{ route('about') }}"><p id='section1' class=" px-2 pb-3 text-xl text-green-400 hover:text-green-600 underline">はじめての方はこちら </p></a>
     
     @auth
     <a  class="mr-5 py-2 px-2 shadow-sm text-sm bg-black font-medium rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 " href="{{ route('create') }}">問題をつくる</a>
