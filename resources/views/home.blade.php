@@ -28,6 +28,7 @@
     @auth
     <a  class="mr-5 py-2 px-2 shadow-sm text-sm bg-black font-medium rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 " href="{{ route('create') }}">問題をつくる</a>
     @endauth
+
     </div>
     
     <div class="ml-5 mt-3 text-sm md:text-base">

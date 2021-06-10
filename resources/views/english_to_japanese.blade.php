@@ -60,7 +60,7 @@
     >
     @endauth
     {{-- end ログイン時 --}} 
-    <button class="question focus:outline-none">{{ $language->english }}
+    <button class="question focus:outline-none w-full flex">{{ $language->english }}
 
     {{--edit  --}}
     @if(Auth::user() == $language->user)

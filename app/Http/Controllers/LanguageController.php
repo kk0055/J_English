@@ -52,9 +52,8 @@ class LanguageController extends Controller
             'japanese' => $request->japanese,
             
             ]);
-           
-            return redirect()->to('/')->withStatus("追加！");
-            
+            return back()->withStatus("追加！");
+                  
     }
     
     /**
