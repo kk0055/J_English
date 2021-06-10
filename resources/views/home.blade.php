@@ -1,11 +1,11 @@
 @extends('layouts.default')
 
 @section('content')
-@include('nav')
+
     
 <div class="w-full lg:w-4/5 lg:mx-auto">
   @include('components.session')  
-  
+  @include('nav')
       {{-- <div class="container mx-auto flex justify-center m-4"> --}}
         {{-- <a href="javascript:void(0)" class="greeting"> --}}
           {{-- <img src="https://pbs.twimg.com/profile_images/1394899451018309632/2MjLsq3Y_400x400.jpg" class="rounded-full profile-image"  alt=""> --}}
