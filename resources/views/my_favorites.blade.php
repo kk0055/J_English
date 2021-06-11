@@ -4,7 +4,7 @@
 @include('nav')   
 
         <!--Section container-->
-<div class="w-full mb-10 ">
+<div class="w-full mb-10 lg:w-4/5 lg:mx-auto">
 
     <h1 class="font-bold break-normal  px-2 text-xl mt-5  md:text-2xl">
     5秒英作文<i class="fas fa-paw ml-1"></i>

@@ -1,10 +1,10 @@
 @extends('layouts.default')
 
 @section('content')
+@include('nav')
+<div class="w-full mb-10 lg:w-4/5 lg:mx-auto ">
 
-<div class="w-full mb-10 ">
-
-  @include('nav')
+  
   @include('components.session')   
 
   
@@ -58,7 +58,8 @@
     >
     @endauth --}}
     {{-- end ログイン時 --}} 
-    <button class="question focus:outline-none w-full flex">{{ $language->english }}
+    <button class="question focus:outline-none w-full flex">
+         <p>{{ $language->english }}</p>
 
     {{--edit  --}}
     @if(Auth::user() == $language->user)

@@ -2,7 +2,7 @@
 
 @section('content')
     
-<div class="w-full mb-10 ">
+<div class="w-full mb-10 lg:w-4/5 lg:mx-auto">
     @include('nav')
 
     @if (session('status'))

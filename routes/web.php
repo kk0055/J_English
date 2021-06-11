@@ -24,8 +24,6 @@ Route::get('/search', [SearchController::class, 'search'])->name('item.search');
 Route::get('/login/{provider}', [LoginController::class, 'redirectToProvider'])->name('twitter.login');
 Route::get('login/{provider}/callback', [LoginController::class, 'handleProviderCallback'])->name('');
 
-// Route::get('/login/{provider}', 'Auth\LoginController@redirectToProvider')->name('twitter.login');
-// Route::get('login/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
 
 
 //Middleware AUTH 

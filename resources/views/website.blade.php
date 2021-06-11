@@ -1,15 +1,17 @@
 @extends('layouts.default')
 
 @section('content')
-
-        <div class="w-full mb-10  bg-white ">
-            @include('nav')
+@include('nav')
+        <div class="w-full mb-10  lg:w-4/5 lg:mx-auto ">
+           
 
             <h1 class="font-bold break-normal  px-2 text-2xl mt-5  md:text-2xl">
-              英語学習用サイトの紹介<i class="fas fa-paw ml-1"></i>
+              英語学習用サイトの紹介
 		      	</h1>
-        <p class="px-3 mt-3 mb-2">英語学習に役立つYoutube動画やサイトを紹介します。</p>
-
+        <div class="px-3 mt-3 mb-2">
+        <p >英語学習に役立つYoutube動画やサイトを紹介します。</p>
+        <p class="">リスニングの勉強にお使いください</p>
+        </div>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <!-- ベーシック１ -->
         <ins class="adsbygoogle"

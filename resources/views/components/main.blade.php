@@ -3,7 +3,7 @@
   <div class="p-3 mt-6 lg:mt-2  rounded shadow bg-white transition-colors duration-300 md:hover:bg-gray-100 ">
   
     <button class="question focus:outline-none text-sm w-full flex items-start md:text-base">
-    {{ $language->japanese }} 
+    <p>{{ $language->japanese }} </p>
     @if(Auth::user() == $language->user )
     <a href={{ route('edit',$language->id) }}> <i class="ml-2 far fa-edit"></i></a>     
     @elseif(Request::is('admin/search'))
