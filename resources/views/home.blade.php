@@ -27,7 +27,7 @@
     @auth
     <a  class="mr-5 py-2 px-2 shadow-sm text-sm bg-black font-medium rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 " href="{{ route('create') }}">問題をつくる</a>
     @endauth
-
+    
     </div>
     
     <div class="ml-5 mt-3 text-sm md:text-base">
@@ -58,7 +58,6 @@
     <br><p>重要なのは
     <span class="text-red-500 font-bold"> 「口に出すこと、 声を出すこと」</span>です。</p>
     <p>英語を声に出すこと慣れましょう。<i class="far fa-laugh-wink"></i>
-
     </p>
 
     <p class="text-blue-700 mt-1">
@@ -109,7 +108,7 @@
 		</div>
   
    {{-- Twitter Button --}}
-    <div class="flex mt-5 ml-3">
+    <div class="flex mt-5 ml-3 mb-2">
         <div class="flex-col">
         <a href="https://twitter.com/5seconds_en" target='_blank'>
         <img src="https://img.icons8.com/fluent/2x/twitter.png" width="40px" alt="">
