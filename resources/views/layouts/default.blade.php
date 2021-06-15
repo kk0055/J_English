@@ -66,22 +66,17 @@
 
 </head>
 <style>
-.twitter-login{
-  background: #1DA1F2;
-}
-</style>
-<body class="bg-white" style="font-family: 'Noto Serif JP', serif;">
-  <div id="app">
-     
-  @yield('content')
 
+</style>
+<body class="bg-white loveMe" style="font-family: 'Noto Serif JP', serif;">
+
+<div id="app">
+  @yield('content')
 </div>
 
 <script>
-  
-
 </script>
-<script src="{{ asset('js/main.js?0523') }}" ></script>
+<script src="{{ asset('js/main.js?0615') }}" ></script>
 <script src="{{ asset('js/app.js') }}" ></script>
 
 </body>
