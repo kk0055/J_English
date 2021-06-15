@@ -9,11 +9,7 @@
         {{-- <a href="javascript:void(0)" class="greeting"> --}}
           {{-- <img src="https://pbs.twimg.com/profile_images/1394899451018309632/2MjLsq3Y_400x400.jpg" class="rounded-full profile-image"  alt=""> --}}
         {{-- </a>       --}}
-               
-        {{-- <a href="#" target='_blank'>
-           <img src="https://pbs.twimg.com/profile_images/1394899451018309632/2MjLsq3Y_400x400.jpg" class="rounded-full md:w-1/4" width="200px"  alt="">
-          </a> --}}
-   {{-- </div> --}}
+     {{-- </div> --}}
     <hr class="bg-gray-300 my-12">
     <!--Title-->
     
