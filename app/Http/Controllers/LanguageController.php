@@ -133,7 +133,7 @@ class LanguageController extends Controller
         $languages = Auth::user()->favorites()->orderBy('pivot_created_at','desc')->get();
 
         
-        return view('my_favorites', compact('languages'));
+        return view('users.my_favorites', compact('languages'));
     }
 
     public function JapaneseToEnglish()

@@ -68,7 +68,7 @@
 <style>
 
 </style>
-<body class="bg-white loveMe" style="font-family: 'Noto Serif JP', serif;">
+<body class="bg-white awesomeEvent" style="font-family: 'Noto Serif JP', serif;">
 
 <div id="app">
   @yield('content')
@@ -76,7 +76,7 @@
 
 <script>
 </script>
-<script src="{{ asset('js/main.js?0615') }}" ></script>
+<script src="{{ asset('js/main.js?0616') }}" ></script>
 <script src="{{ asset('js/app.js') }}" ></script>
 
 </body>

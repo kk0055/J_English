@@ -128,22 +128,22 @@ function replaceMessage(mes) {
 }
 
 
-const loveMe = document.querySelector('.loveMe')
+const loveMe = document.querySelector('.awesomeEvent')
 
 loveMe.addEventListener('dblclick', (e) => {
-  createHeart(e)
+    createAwesome(e)
 })
 
-  const createHeart = (e) => {
-  const heart = document.createElement('i')
-  heart.classList.add('fas')
-  heart.classList.add('fa-star')
+  const createAwesome = (e) => {
+  const awesomeBtn  = document.createElement('i')
+  awesomeBtn.classList.add('fas')
+  awesomeBtn.classList.add('fa-star')
 
   const x = e.pageX
   const y = e.pageY
 
-  heart.style.top = `${y}px`
-  heart.style.left = `${x}px`
+  awesomeBtn.style.top = `${y}px`
+  awesomeBtn.style.left = `${x}px`
 
-  loveMe.appendChild(heart)
+  loveMe.appendChild(awesomeBtn)
 }
