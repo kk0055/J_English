@@ -88,64 +88,6 @@
 
 </head>
 <style>
-
-.modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  transition: 200ms ease-in-out;
-  border: 1px solid black;
-  border-radius: 10px;
-  z-index: 10;
-  background-color: white;
-  width: 500px;
-  max-width: 80%;
-
-}
-
-.modal.active {
-  transform: translate(-50%, -50%) scale(1);
-}
-
-.modal-header {
-  padding: 10px 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid black;
-}
-
-
-.modal-header .close-button {
-  cursor: pointer;
-  border: none;
-  outline: none;
-  background: none;
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
-.modal-body {
-  padding: 10px 15px;
-}
-
-#overlay {
-  position: fixed;
-  opacity: 0;
-  transition: 200ms ease-in-out;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, .5);
-  pointer-events: none;
-}
-
-#overlay.active {
-  opacity: 1;
-  pointer-events: all;
-}
 </style>
 
 <body class="bg-white awesomeEvent" style="font-family: 'Noto Serif JP', serif;">
@@ -159,43 +101,8 @@
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/main.js?0616') }}"></script>
     <script>
-        const openModalButtons = document.querySelectorAll('[data-modal-target]')
-        const closeModalButtons = document.querySelectorAll('[data-close-button]')
-        const overlay = document.getElementById('overlay')
-        
-        openModalButtons.forEach(button => {
-          button.addEventListener('click', () => {
-            const modal = document.querySelector(button.dataset.modalTarget)
-            openModal(modal)
-          })
-        })
-        
-        overlay.addEventListener('click', () => {
-          const modals = document.querySelectorAll('.modal.active')
-          modals.forEach(modal => {
-            closeModal(modal)
-          })
-        })
-        
-        closeModalButtons.forEach(button => {
-          button.addEventListener('click', () => {
-            const modal = button.closest('.modal')
-            closeModal(modal)
-          })
-        })
-        
-        function openModal(modal) {
-          if (modal == null) return
-          modal.classList.add('active')
-          overlay.classList.add('active')
-        }
-        
-        function closeModal(modal) {
-          if (modal == null) return
-          modal.classList.remove('active')
-          overlay.classList.remove('active')
-        }
-            </script>
+
+    </script>
 </body>
 
 </html>

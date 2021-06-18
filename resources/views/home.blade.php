@@ -20,22 +20,12 @@
             <a href="{{ route('about') }}">
                 <p id='section1' class=" px-2 pb-3 text-xl text-green-400 hover:text-green-600 underline">はじめての方はこちら </p>
             </a>
-         
-         {{--     @auth
+
+             @auth
                 <a class="mr-5 py-2 px-2 shadow-sm text-sm bg-black font-medium rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 "
                     href="{{ route('create') }}">問題をつくる</a>
-            @endauth --}}
-            <button class="mr-5 py-2 px-2 shadow-sm text-sm bg-black font-medium rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 "
-            data-modal-target="#modal">問題をつくる</button>
-            <div class="modal" id="modal">
-                <div class="modal-header">
-                  <button data-close-button class="close-button">&times;</button>
-                </div>
-                <div class="modal-body">
-                @include('components.create_modal')
-                </div>
-              </div>
-              <div id="overlay"></div>
+            @endauth
+          
         </div>
 
         <div class="ml-5 mt-3 text-sm md:text-base">

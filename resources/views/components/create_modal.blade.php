@@ -1,5 +1,15 @@
 {{-- Home --}}
-
+<button class="mr-5 py-2 px-2 shadow-sm text-sm bg-black font-medium rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 "
+data-modal-target="#modal">問題をつくる</button>
+<div class="modal" id="modal">
+    <div class="modal-header">
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modal-body">
+    @include('components.create_modal')
+    </div>
+  </div>
+  <div id="overlay"></div>
 
   {{-- Modal --}}
 <div class="mt-1 md:mt-0 md:col-span-2 max-w-3xl mx-auto  p-16">
