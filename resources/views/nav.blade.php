@@ -52,7 +52,7 @@
                   @else
                   <a class=" md:mr-10 font-bold text-xl"  href="/">
                     <i class="fas fa-home"></i>
-                  </a>   
+                  </a> 
                   @endif
             </div>
   </div>

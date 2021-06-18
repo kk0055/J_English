@@ -46,7 +46,7 @@ class LanguageController extends Controller
             'japanese' => 'required',
       
         ]);
-     
+        
             $request->user()->languages()->create([
             'english' => $request->english,
             'japanese' => $request->japanese,
