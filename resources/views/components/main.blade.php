@@ -1,6 +1,6 @@
 
 @foreach ($languages as $language)
-  <div class="p-3 mt-6 lg:mt-2  rounded shadow bg-white transition-colors duration-300 md:hover:bg-gray-100 ">
+  <div class="p-3 mt-6 lg:mt-2  rounded shadow bg-white transition-colors duration-300 md:hover:bg-gray-100">
   
     <button class="question focus:outline-none text-sm w-full flex items-start md:text-base">
     <p>{{ $language->japanese }} </p>
