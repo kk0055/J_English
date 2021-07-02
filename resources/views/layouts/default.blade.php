@@ -88,6 +88,101 @@
 
 </head>
 <style>
+.counter {
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.counter.hide {
+  transform: translate(-50%, -50%) scale(0);
+  animation: hide 0.2s ease-out;
+}
+
+@keyframes hide {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+}
+
+
+@keyframes show {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  30% {
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.nums {
+  color: #3498db;
+  font-size: 50px;
+  position: relative;
+  overflow: hidden;
+  width: 250px;
+  height: 50px;
+}
+
+.nums span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(120deg);
+  transform-origin: bottom center;
+}
+
+.nums span.in {
+  transform: translate(-50%, -50%) rotate(0deg);
+  animation: goIn 0.5s ease-in-out;
+}
+
+.nums span.out {
+  animation: goOut 0.5s ease-in-out;
+}
+
+@keyframes goIn {
+  0% {
+    transform: translate(-50%, -50%) rotate(120deg);
+  }
+
+  30% {
+    transform: translate(-50%, -50%) rotate(-20deg);
+  }
+
+  60% {
+    transform: translate(-50%, -50%) rotate(10deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+@keyframes goOut {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  60% {
+    transform: translate(-50%, -50%) rotate(20deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(-120deg);
+  }
+}
 </style>
 
 <body class="bg-white awesomeEvent" style="font-family: 'Noto Serif JP', serif;">
@@ -101,7 +196,45 @@
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/main.js?0616') }}"></script>
     <script>
+// const nums = document.querySelectorAll('.nums span')
+// const counter = document.querySelector('.counter')
 
+
+// runAnimation()
+
+
+// let idx = 0
+
+// function resetDOM() {
+//   counter.classList.remove('hide')
+
+
+//   nums.forEach((num) => {
+//     num.classList.value = ''
+//   })
+
+//   nums[0].classList.add('in')
+// }
+
+// function runAnimation() {
+//   nums.forEach((num,idx) => {
+//     const nextToLast = nums.length - 1
+
+//     num.addEventListener('animationend', (e) => {
+//       if(e.animationName === 'goIn'  && idx !== nextToLast ) {
+//          num.classList.remove('in')
+//          num.classList.add('out')
+         
+//       } else if (e.animationName === 'goOut' && num.nextElementSibling) {
+//         num.nextElementSibling.classList.add('in')
+//       } else {
+//         counter.classList.add('hide')
+      
+//         setTimeout(resetDOM,1100) 
+//       }
+//     })
+//   })
+// }
     </script>
 </body>
 

@@ -13,6 +13,19 @@
         {{-- <hr class="bg-gray-300 my-12"> --}}
         <!--Title-->
 
+        <div class="container mx-auto flex justify-center m-4">
+            <div class="counter ">
+                <div class="nums">
+                  <span class="in">5</span>
+                  <span>4</span>
+                  <span>3</span>
+                  <span>2</span>
+                  <span>1</span>
+                  <span>0</span>
+                </div>
+              </div>
+              </div>
+
         <h1 class="font-bold ml-3 px-2 text-2xl mt-12  md:text-3xl">
             5秒英作文
         </h1>
