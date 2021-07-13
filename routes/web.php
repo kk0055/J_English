@@ -30,7 +30,7 @@ Route::get('login/{provider}/callback', [LoginController::class, 'handleProvider
 Route::group(['middleware' => ['auth']], function () {
 
 Route::get('/edit/{id}', [LanguageController::class,'edit'])->name('edit');
-Route::post('/edit/{id}', [LanguageController::class,'update'])->name('update');
+Route::patch('/edit/{id}', [LanguageController::class,'update'])->name('update');
 
 Route::post('/favorite/{language}', [LanguageController::class,'favoritePost']);
 Route::post('/unfavorite/{language}', [LanguageController::class,'unfavoritePost']);

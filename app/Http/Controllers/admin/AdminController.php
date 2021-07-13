@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Language;
+use App\Models\Favorite;
 use Illuminate\Support\Facades\Validator;
 
 class AdminController extends Controller
@@ -43,7 +44,7 @@ class AdminController extends Controller
 	}
 
     function showUserList(){
-		$user_list = User::orderBy("id", "desc")->paginate(10);
+		$user_list = User::orderBy("id", "desc")->paginate(20);
 		return view("admin.user_list", [
 			"user_list" => $user_list
 		]);
@@ -53,10 +54,12 @@ class AdminController extends Controller
 		
 		$languages = Language::where('user_id',$user->id )->get();
 
+		$favorites = $user->favorites()->orderBy('created_at','desc')->get();
 
 		return view("admin.user_detail", [
 			"user" => $user,
-			'languages' =>$languages
+			'languages' =>$languages,
+			'favorites' => $favorites
 		]);
 	}
 
