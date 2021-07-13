@@ -1,9 +1,7 @@
    <!--Title-->
    <div class="flex justify-between ">
     <h2 id='section1' class="font-bold break-normal text-gray-700 px-2 pb-3 text-xl">検索結果 <i class="far fa-cat"></i></h2>
-  
     </div>
-
         {{-- Google Ads --}}
         @guest
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -30,7 +28,7 @@
   </div>
 
    @else
-   <div class="">
+   
     @include('components.main')
-  </div>
+ 
     @endif
