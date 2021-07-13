@@ -12,8 +12,7 @@
         {{-- </div> --}}
         {{-- <hr class="bg-gray-300 my-12"> --}}
         <!--Title-->
-{{-- 
-        <div class="container mx-auto flex justify-center m-4">
+        {{-- <div class="container mx-auto flex justify-center m-4">
             <div class="counter ">
                 <div class="nums">
                   <span class="in">5</span>
@@ -34,11 +33,11 @@
                 <p id='section1' class=" px-2 pb-3 text-xl text-green-400 hover:text-green-600 underline">はじめての方はこちら </p>
             </a>
 
-             @auth
+            @auth
                 <a class="mr-5 py-2 px-2 shadow-sm text-sm bg-black font-medium rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 "
                     href="{{ route('create') }}">問題をつくる</a>
             @endauth
-          
+
         </div>
 
         <div class="ml-5 mt-3 text-sm md:text-base">
@@ -61,7 +60,7 @@
 
             <br>
             <p>
-                全部で1000問以上あります。リロードもしくは
+                全部で2000問以上あります。リロードもしくは
                 右上かページ下部の<i class="fas fa-home"></i>
                 をクリックで問題はシャッフルされます。
                 <br> 1ページ30問。毎日1ページずつでも頑張りましょう。
@@ -71,7 +70,7 @@
             <p>重要なのは
                 <span class="text-red-500 font-bold"> 「口に出すこと、 声を出すこと」</span>です。
             </p>
-            <p>英語を声に出すこと慣れましょう。<i class="far fa-laugh-wink"></i>
+            <p>英語を声に出すことに慣れましょう<i class="far fa-laugh-wink"></i>
             </p>
 
             <p class="text-blue-700 mt-1">
@@ -95,7 +94,6 @@
                     data-ad-slot="5867733062" data-ad-format="auto" data-full-width-responsive="true"></ins>
                 <script>
                     (adsbygoogle = window.adsbygoogle || []).push({});
-
                 </script>
                 <br>
             @endguest
@@ -138,7 +136,6 @@
                 data-ad-format="auto" data-full-width-responsive="true"></ins>
             <script>
                 (adsbygoogle = window.adsbygoogle || []).push({});
-
             </script>
             <br>
         @endguest

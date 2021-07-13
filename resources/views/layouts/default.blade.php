@@ -5,18 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>5秒英作文 ～5seconds English～ 英会話はリスニング+瞬間英作文力</title>
+    <title>5秒英作文 ～5seconds English～ 英会話はリスニング+瞬間英作文力。瞬間英作文練習例文2000門以上</title>
     <meta property="og:site_name" content="5秒英作文 ～5seconds English～" />
-    <meta property="og:title" content="5秒英作文 ～5seconds English～ 英会話はリスニング+瞬間英作文力" />
+    <meta property="og:title" content="5秒英作文 ～5seconds English～英会話はリスニング+瞬間英作文力。瞬間英作文練習例文2000門以上" />
     <meta property="og:url" content="https://5seconds-en.com" />
     <meta property="og:image"
         content="https://image.freepik.com/free-photo/top-view-decoration-with-cubes-wooden-background_23-2148389005.jpg" />
 
     <meta name="keywords" content="瞬間英作文,スピーキング,英語,5秒英作文,TOEIC,英会話,英語学習,海外">
     <meta name="description"
-        content="瞬間英作文。中学英語を中心に基本的な文法を使って瞬間英作文するトレーニングを行います。1000問以上の例文があります。英語、TOEIC,英会話の勉強に役立ちます。">
+        content="瞬間英作文。中学英語を中心に基本的な文法を使って瞬間英作文するトレーニングを行います。瞬間英作文練習例文2000門以上。英語、TOEIC,英会話の勉強に役立ちます。">
     <meta property="og:description"
-        content="瞬間英作文。中学英語を中心に基本的な文法を使って瞬間英作文するトレーニングを行います。1000問以上の例文があります。英語、TOEIC,英会話の勉強に役立ちます。" />
+        content="瞬間英作文。中学英語を中心に基本的な文法を使って瞬間英作文するトレーニングを行います。瞬間英作文練習例文2000門以上。英語、TOEIC,英会話の勉強に役立ちます。" />
     {{-- Twitter --}}
     <meta name="twitter:card" content="Summary">
     <meta name="twitter:title" content="5秒英作文 ～5seconds English～">
@@ -24,7 +24,7 @@
     <meta name="twitter:creator" content="@5seconds_en" />
     <meta name="twitter:domain" content="twitter.com/5seconds_en" />
     <meta name="twitter:description"
-        content="瞬間英作文。中学英語を中心に基本的な文法を使って瞬間英作文するトレーニングを行います。1000問以上の例文があります。英語、TOEIC,英会話の勉強に役立ちます。">
+        content="瞬間英作文。中学英語を中心に基本的な文法を使って瞬間英作文するトレーニングを行います。瞬間英作文練習例文2000門以上。英語、TOEIC,英会話の勉強に役立ちます。">
 
     <meta name="twitter:image"
         content="https://image.freepik.com/free-photo/top-view-decoration-with-cubes-wooden-background_23-2148389005.jpg">
@@ -88,101 +88,7 @@
 
 </head>
 <style>
-.counter {
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
 
-.counter.hide {
-  transform: translate(-50%, -50%) scale(0);
-  animation: hide 0.2s ease-out;
-}
-
-@keyframes hide {
-  0% {
-    transform: translate(-50%, -50%) scale(1);
-  }
-
-  100% {
-    transform: translate(-50%, -50%) scale(0);
-  }
-}
-
-
-@keyframes show {
-  0% {
-    transform: translate(-50%, -50%) scale(0);
-  }
-
-  30% {
-    transform: translate(-50%, -50%) scale(1.4);
-  }
-
-  100% {
-    transform: translate(-50%, -50%) scale(1);
-  }
-}
-
-.nums {
-  color: #3498db;
-  font-size: 50px;
-  position: relative;
-  overflow: hidden;
-  width: 250px;
-  height: 50px;
-}
-
-.nums span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(120deg);
-  transform-origin: bottom center;
-}
-
-.nums span.in {
-  transform: translate(-50%, -50%) rotate(0deg);
-  animation: goIn 0.5s ease-in-out;
-}
-
-.nums span.out {
-  animation: goOut 0.5s ease-in-out;
-}
-
-@keyframes goIn {
-  0% {
-    transform: translate(-50%, -50%) rotate(120deg);
-  }
-
-  30% {
-    transform: translate(-50%, -50%) rotate(-20deg);
-  }
-
-  60% {
-    transform: translate(-50%, -50%) rotate(10deg);
-  }
-
-  100% {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-}
-
-@keyframes goOut {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-
-  60% {
-    transform: translate(-50%, -50%) rotate(20deg);
-  }
-
-  100% {
-    transform: translate(-50%, -50%) rotate(-120deg);
-  }
-}
 </style>
 
 <body class="bg-white awesomeEvent" style="font-family: 'Noto Serif JP', serif;">
