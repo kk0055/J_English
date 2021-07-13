@@ -27,6 +27,9 @@
            </p> 
         </div>
         @endforeach
+				<div class="my-5">
+				{{ $languages->links()  }}
+			 </div>
         
 				<h2 class="mb-3 text-2xl">ユーザーのお気に入りリスト</h2>
 				@foreach ($favorites as $favorite)

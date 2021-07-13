@@ -44,7 +44,7 @@ class AdminController extends Controller
 	}
 
     function showUserList(){
-		$user_list = User::orderBy("id", "desc")->paginate(20);
+		$user_list = User::orderBy("id", "desc")->paginate(25);
 		return view("admin.user_list", [
 			"user_list" => $user_list
 		]);
@@ -52,13 +52,16 @@ class AdminController extends Controller
 	function showUserDetail($id){
 		$user = User::find($id);
 		
-		$languages = Language::where('user_id',$user->id )->get();
+		$languages = Language::where('user_id',$user->id )->paginate(20);
 
-		$favorites = $user->favorites()->orderBy('created_at','desc')->get();
+		// $favorites = $user->favorites()->orderBy('pivot_created_at','desc')->get();
+		$favorites = $user->favorites()->orderBy('pivot_created_at','desc')->get();
+		// $favorites = Favorite::where('user_id',$user->id)->latest()->get();
 
+	// dd($favorites );
 		return view("admin.user_detail", [
 			"user" => $user,
-			'languages' =>$languages,
+			'languages' => $languages,
 			'favorites' => $favorites
 		]);
 	}
@@ -123,6 +126,7 @@ class AdminController extends Controller
 			}
 		 $languages = Language::where('english', 'LIKE',"%{$query}%")
 		 ->orWhere('japanese', 'LIKE',"%{$query}%")
+		 ->orWhere('id', 'LIKE',"%{$query}%")
 		 ->simplePaginate(20);
 	
 	//    dd($languages);

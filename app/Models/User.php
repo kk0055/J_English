@@ -48,6 +48,8 @@ class User extends Authenticatable
 
     public function favorites()
 {
-    return $this->belongsToMany(Language::class, 'favorites', 'user_id', 'language_id')->withTimeStamps();
+    return $this->belongsToMany(Language::class, 'favorites', 'user_id', 'language_id')
+    ->withPivot(['created_at', 'updated_at', 'id'])
+    ->withTimeStamps();
 }
 }
