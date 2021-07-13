@@ -38,7 +38,7 @@
 					<a href={{ route('admin.edit',$favorite->id) }}> <i class="ml-2 far fa-edit"></i></a>     
 				</p>
 					 <p class="english mt-2 ml-6 text-red-500" >{{ $favorite->english }}</p> 
-					 <p class="english mt-2 ml-6 text-red-500" >{{ $favorite->created_at }}</p> 
+					 <p class="english mt-2 ml-6 " >{{ $favorite->getOriginal()['pivot_created_at'] }}</p> 
 						
 					</div>
 				@endforeach

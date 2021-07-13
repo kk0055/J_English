@@ -51,18 +51,17 @@ class AdminController extends Controller
 	}
 	function showUserDetail($id){
 		$user = User::find($id);
-		
+		//Userの投稿
 		$languages = Language::where('user_id',$user->id )->paginate(20);
-
-		// $favorites = $user->favorites()->orderBy('pivot_created_at','desc')->get();
+   //UserのFavorites
 		$favorites = $user->favorites()->orderBy('pivot_created_at','desc')->get();
-		// $favorites = Favorite::where('user_id',$user->id)->latest()->get();
+
 
 	// dd($favorites );
 		return view("admin.user_detail", [
 			"user" => $user,
 			'languages' => $languages,
-			'favorites' => $favorites
+			'favorites' => $favorites,
 		]);
 	}
 
