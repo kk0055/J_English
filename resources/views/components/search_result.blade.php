@@ -18,9 +18,9 @@
          <br>
          @endguest
         {{-- !Google Ads --}}
-        
+@if (!$languages->count())    
     <div class="ml-2 mt-3 ">
-    @if (!$languages->count())
+    
     <p>検索したワードはまだ無いみたいだね！<br> 君が作成してみては！？
    
    </p>
