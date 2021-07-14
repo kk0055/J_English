@@ -108,8 +108,6 @@
         </div>
 
 
-        <!--Divider-->
-        <hr class="border-b-2 mt-10 mb-8 mx-4">
         {{-- Home Button --}}
         <div class="flex items-center px-4 mt-10">
             <a class="text-2xl" href="/"><i class="ml- fas fa-home"></i>
@@ -117,12 +115,12 @@
         </div>
 
         {{-- Twitter Button --}}
-        <div class="flex mt-5 ml-3 mb-2">
+        <div class="flex flex-row mt-5 ml-3 mb-2">
             <div class="flex-col">
                 <a href="https://twitter.com/5seconds_en" target='_blank'>
                     <img src="https://img.icons8.com/fluent/2x/twitter.png" width="40px" alt="">
                 </a>
-                <p class="text-xs">お問い合わせ</p>
+                <p class="text-xs">何かあれば</p>
             </div>
         </div>
 
