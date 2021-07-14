@@ -32,7 +32,7 @@
             <a href="{{ route('about') }}">
                 <p id='section1' class=" px-2 pb-3 text-xl text-green-400 hover:text-green-600 underline">はじめての方はこちら </p>
             </a>
-
+        
             @auth
                 <a class="mr-5 py-2 px-2 shadow-sm text-sm bg-black font-medium rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 "
                     href="{{ route('create') }}">問題をつくる</a>
@@ -109,18 +109,18 @@
 
 
         {{-- Home Button --}}
-        <div class="flex items-center px-4 mt-10">
+        <div class="flex-col px-4 mt-10">
             <a class="text-2xl" href="/"><i class="ml- fas fa-home"></i>
-            </a>
+            </a> <p class="text-xs mb-5">もう1周</p>
         </div>
 
         {{-- Twitter Button --}}
-        <div class="flex flex-row mt-5 ml-3 mb-2">
-            <div class="flex-col">
+        <div class="my-5 ml-3">
+            <div class="flex-col pb-5">
                 <a href="https://twitter.com/5seconds_en" target='_blank'>
                     <img src="https://img.icons8.com/fluent/2x/twitter.png" width="40px" alt="">
                 </a>
-                <p class="text-xs">何かあれば</p>
+                <p id="contact" class="text-xs mb-5">何かあれば</p>
             </div>
         </div>
 
