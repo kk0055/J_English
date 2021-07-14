@@ -4,7 +4,7 @@
     
 <div class="w-full mb-10 lg:w-4/5 lg:mx-auto">
     <div class="my-3">
-        <a href="{{ url('admin/user_list') }}" class="inline-flex mb-3 justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 bg-black">ユーザー 一覧</a>
+        <a href="{{ url('admin/user_list') }}" class="inline-flex mb-3 justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 bg-black">All Users</a>
     </div>
 
     @if (session('status'))

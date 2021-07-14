@@ -4,7 +4,7 @@
 <div class="container">
 	<div class="card">
 		<div class="card-header">
-			<a href="{{ url('admin/user_list') }}">ユーザー一覧</a> &gt; ユーザー詳細
+			<a href="{{ url('admin/user_list') }}">All Users</a> &gt; User details
 		</div>
 		<div class="card-body">
 
@@ -31,7 +31,7 @@
 				{{ $languages->links()  }}
 			 </div>
         
-				<h2 class="mb-3 text-2xl">ユーザーのお気に入りリスト</h2>
+				<h2 class="mb-3 text-2xl">Favorites</h2>
 				@foreach ($favorites as $favorite)
 				<div class="p-2 mt-6 lg:mt-0 leading-normal rounded shadow bg-white">
 				<p class="question focus:outline-none">{{ $favorite->japanese }} 
