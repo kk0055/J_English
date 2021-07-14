@@ -15,7 +15,6 @@
 
 
                     <div class="col-span-6">
-
                         <label for="japanese" class="block text-sm font-medium text-gray-700">日本語</label>
                         <input type="text" name="japanese"
                             class="mt-1 p-1 focus:outline-none focus:ring  block w-full  shadow-sm sm:text-sm rounded-md border border-black"
@@ -28,7 +27,6 @@
                     @enderror
 
                     <div class="col-span-6 mt-3">
-
                         <label for="english" class="block text-sm font-medium text-gray-700">英語</label>
                         <input type="text" name="english"
                             class="mt-1 p-1 focus:outline-none focus:ring  block w-full shadow-sm sm:text-sm rounded-md border border-black"
@@ -39,15 +37,8 @@
                             {{ $message }}
                         </div>
                     @enderror
-                    {{-- Body --}}
-
-                    {{-- End of Body --}}
-
                 </div>
             </div>
-
-
-
             <div class="px-4 py-3 bg-white text-right sm:px-6">
                 <button type="submit"
                     class="inline-flex  justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 bg-black">

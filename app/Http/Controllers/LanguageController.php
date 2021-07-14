@@ -14,10 +14,8 @@ class LanguageController extends Controller
     public function index()
     {
 
-        // $languages = Language::inRandomOrder()->take(100)->get();
         $languages = Language::with('user')->inRandomOrder()->take(30)->get();
-
-        return view('home', [
+        return view('language.index', [
             'languages' => $languages,
 
         ]);
@@ -25,7 +23,7 @@ class LanguageController extends Controller
 
     public function create()
     {
-        return view('create');
+        return view('language.create');
     }
 
     /**
@@ -64,7 +62,7 @@ class LanguageController extends Controller
     public function edit($id)
     {
         $language = Language::find($id);
-        return view('edit', [
+        return view('language.edit', [
             'language' => $language
         ]);
     }
