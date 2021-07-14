@@ -14,7 +14,7 @@
 				<li class="list-group-item">メール: {{ $user->email }}</li>
 				<li class="list-group-item">作成日: {{ $user->created_at->format('Y/m/d H:i:s') }}</li>
 				<li class="list-group-item mb-5">更新日: {{ $user->updated_at->format('Y/m/d H:i:s') }}</li>
-			
+			</ul>
 				
         @foreach ($languages as  $language)
         <div class="p-2 mt-6 lg:mt-0 leading-normal rounded shadow bg-white">
@@ -42,7 +42,9 @@
 						
 					</div>
 				@endforeach
-			</ul>
+		    <div class="mt-2">
+				{{ $favorites->links()  }}
+			 </div>
 		</div>
 	</div>
 </div>

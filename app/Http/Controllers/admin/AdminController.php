@@ -57,7 +57,7 @@ class AdminController extends Controller
 		//Userの投稿
 		$languages = Language::where('user_id',$user->id )->paginate(20);
    //UserのFavorites
-		$favorites = $user->favorites()->orderBy('pivot_created_at','desc')->get();
+		$favorites = $user->favorites()->orderBy('pivot_created_at','desc')->take(30)->paginate();
 
 
 	// dd($favorites );

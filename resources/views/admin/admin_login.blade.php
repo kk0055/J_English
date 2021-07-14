@@ -24,6 +24,18 @@
 			<div>
 				PASS: <input class="form-control" type="password" name="password" value="" />
 			</div>
+			<div class="form-group mt-2">
+				
+						<div class="form-check">
+								<input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+
+								<label class="form-check-label" for="remember">
+										{{ __('Remember Me') }}
+								</label>
+					
+				</div>
+		</div>
+
 			<div class="mt-3">
 				<input class="btn btn-dark" type="submit" value="Login" />
 			</div>
