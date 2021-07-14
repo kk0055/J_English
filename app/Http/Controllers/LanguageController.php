@@ -13,13 +13,13 @@ class LanguageController extends Controller
 {
     public function index()
     {
-       
+
         // $languages = Language::inRandomOrder()->take(100)->get();
         $languages = Language::with('user')->inRandomOrder()->take(30)->get();
-      
-        return view('home',[
+
+        return view('home', [
             'languages' => $languages,
-            
+
         ]);
     }
 
@@ -29,92 +29,91 @@ class LanguageController extends Controller
     }
 
     /**
-        * Store a newly created resource in storage.
-        *
-        * @return Response
-        */
+     * Store a newly created resource in storage.
+     *
+     * @return Response
+     */
     public function store(Request $request)
     {
-       $user = Auth::user();
+        $user = Auth::user();
         //ログインしてない時
-        if(!$user){
-            return redirect()->to('/login'); 
-            }
+        if (!$user) {
+            return redirect()->to('/login');
+        }
 
         $validation =  $this->validate($request, [
             'english' => 'required',
             'japanese' => 'required',
-      
+
         ]);
-        
-            $request->user()->languages()->create([
+
+        $request->user()->languages()->create([
             'english' => $request->english,
             'japanese' => $request->japanese,
-            
-            ]);
-            return back()->withStatus("追加！");
-                  
+
+        ]);
+        return back()->withStatus("追加！");
     }
-    
-    /**
-        * Show the form for editing the specified resource.
-        *
-        * @param  int  $id
-        * @return Response
-        */
-        public function edit($id)
-        {
-            $language = Language::find($id);
-            return view('edit',[
-                'language' => $language
-            ]);
-        }
 
     /**
-        * Update the specified resource in storage.
-        *
-        * @param  int  $id
-        * @return Response
-        */
-    public function update(Request $request,$id)
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return Response
+     */
+    public function edit($id)
     {
         $language = Language::find($id);
-        $input = $request->only('japanese','english');
+        return view('edit', [
+            'language' => $language
+        ]);
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  int  $id
+     * @return Response
+     */
+    public function update(Request $request, $id)
+    {
+        $language = Language::find($id);
+        $input = $request->only('japanese', 'english');
 
         $validator = Validator::make($input, [
             'english' => 'required',
             'japanese' => 'required',
-      
-		]);
+
+        ]);
 
         //バリデーション失敗
-		if($validator->fails()){
-			return back()
-				->withErrors($validator)
-				->withInput();
-		}
+        if ($validator->fails()) {
+            return back()
+                ->withErrors($validator)
+                ->withInput();
+        }
 
-        	//バリデーション成功
-		$language->japanese = $input["japanese"];
-		$language->english = $input["english"];
-		
-		$language->save();
+        //バリデーション成功
+        $language->japanese = $input["japanese"];
+        $language->english = $input["english"];
 
-        return redirect()->route('user.post',$language->user->name)->withStatus("訂正完了！");;
+        $language->save();
+
+        return redirect()->route('user.post', $language->user->name)->withStatus("訂正完了！");;
     }
 
     /**
-        * Remove the specified resource from storage.
-        *
-        * @param  int  $id
-        * @return Response
-        */
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return Response
+     */
     public function destroy($id)
     {
         //
     }
 
-        public function favoritePost(Language $language)
+    public function favoritePost(Language $language)
     {
         Auth::user()->favorites()->attach($language->id);
 
@@ -128,23 +127,22 @@ class LanguageController extends Controller
         return back();
     }
 
-        public function myFavorites()
+    public function myFavorites()
     {
-        $languages = Auth::user()->favorites()->orderBy('pivot_created_at','desc')->get();
+        $languages = Auth::user()->favorites()->orderBy('pivot_created_at', 'desc')->get();
 
-        
+
         return view('users.my_favorites', compact('languages'));
     }
 
     public function JapaneseToEnglish()
     {
-       
+
         $languages = Language::with('user')->inRandomOrder()->take(30)->get();
-      
-        return view('english_to_japanese',[
+
+        return view('english_to_japanese', [
             'languages' => $languages,
-           
+
         ]);
     }
-
 }

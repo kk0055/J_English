@@ -11,12 +11,14 @@ use Illuminate\Support\Facades\Validator;
 
 class AdminController extends Controller
 {
-    function showLoginForm(){
+    function showLoginForm()
+		{
 		return view("admin.admin_login");
-	}
+  	}
 
 	
-	function login(Request $request){
+	function login(Request $request)
+	 {
 		//入力内容をチェックする
 		$user_id = $request->input("user_id");
 		$password = $request->input("password");
@@ -49,6 +51,7 @@ class AdminController extends Controller
 			"user_list" => $user_list
 		]);
 	}
+
 	function showUserDetail($id){
 		$user = User::find($id);
 		//Userの投稿

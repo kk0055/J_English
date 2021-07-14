@@ -51,7 +51,7 @@ Route::group(['middleware' => ['auth.admin']], function () {
   Route::get('/admin/user_list', [AdminController::class, 'showUserList']);
   Route::get('/admin/user/{id}', [AdminController::class, 'showUserDetail']);
   Route::get('/admin/edit/{id}', [AdminController::class, 'edit'])->name('admin.edit');
-  Route::post('/admin/edit/{id}', [AdminController::class, 'update'])->name('admin.update');
+  Route::put('/admin/edit/{id}', [AdminController::class, 'update'])->name('admin.update');
   Route::get('/admin/search', [AdminController::class, 'adminSearch'])->name('admin.search');
   });
 
