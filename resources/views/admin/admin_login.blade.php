@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
 	<div class="card">
-		<div class="card-header">ログイン</div>
+		<div class="card-header ">Login</div>
 		<div class="card-body">
 
 			@if ($errors->any())
@@ -25,7 +25,7 @@
 				PASS: <input class="form-control" type="password" name="password" value="" />
 			</div>
 			<div class="mt-3">
-				<input class="btn btn-primary" type="submit" value="ログイン" />
+				<input class="btn btn-dark" type="submit" value="Login" />
 			</div>
 			</form>
 
