@@ -4,7 +4,7 @@
 <div class="container">
 	<div class="card">
 
-		<div class="card-header">ユーザー一覧</div>
+		<div class="card-header">All Users</div>
 		<div class="card-body">
 
 			<ul class="list-group">

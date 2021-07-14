@@ -46,9 +46,9 @@ Route::get('/mypost/{user:name}', [UserItemController::class,'index'])->name('us
   //Middleware admin
 Route::group(['middleware' => ['auth.admin']], function () {
 
-  Route::get('/admin/show', [AdminController::class, 'show']);
+  Route::get('/admin/show', [AdminController::class, 'show'])->name('admin.show');
   Route::post('/admin/logout', [AdminController::class, 'logout']);
-  Route::get('/admin/user_list', [AdminController::class, 'showUserList']);
+  Route::get('/admin/user_list', [AdminController::class, 'showUserList'])->name('admin.showUserList');
   Route::get('/admin/user/{id}', [AdminController::class, 'showUserDetail']);
   Route::get('/admin/edit/{id}', [AdminController::class, 'edit'])->name('admin.edit');
   Route::put('/admin/edit/{id}', [AdminController::class, 'update'])->name('admin.update');
