@@ -116,7 +116,7 @@ class AdminController extends Controller
 		
 		$language->save();
 
-        return redirect('admin/user/'. $user->id);
+        return redirect('admin/user/'. $user->id)->withStatus("訂正完了！");
     }
 
 		public function adminSearch(Request $request) 

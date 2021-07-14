@@ -1,12 +1,12 @@
-@extends('layouts.default')
+@extends('layouts.admin')
 
 @section('content')
-    @include('nav')
-    <div class="mt-1 md:mt-0 md:col-span-2 max-w-3xl mx-auto  p-16">
 
-        <form action={{ route('admin.update', $language->id) }} method="POST" enctype="multipart/form-data">
+    <div class="mt-1 md:mt-0 md:col-span-2 max-w-3xl mx-auto  p-16">
+     
+        <form action="{{ route('admin.update', $language->id) }}" method="POST" enctype="multipart/form-data">
             @csrf
-            {{ method_field('PUT') }}
+            @method('PUT')
             <div class="shadow overflow-hidden sm:rounded-md">
                 <div class="px-4 py-5 bg-white sm:p-6">
                     <div class="create-text flex flex-col w-full items-center  px-6 tracking-wide">

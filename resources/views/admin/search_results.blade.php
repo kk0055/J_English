@@ -14,7 +14,7 @@
     @endif
 
     <h1 class="font-bold break-normal text-gray-700 px-2 text-2xl mt-5  md:text-2xl">
-    管理画面用検索結果
+    Search Result
    
     </h1>
 

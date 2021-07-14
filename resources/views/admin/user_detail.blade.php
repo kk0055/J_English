@@ -7,7 +7,9 @@
 			<a href="{{ url('admin/user_list') }}">All Users</a> &gt; User details
 		</div>
 		<div class="card-body">
-
+			<div class="my-3">
+				@include('components.session')
+				</div>
 			<ul class="list-group">
 				<li class="list-group-item">ID: {{ $user->id }}</li>
 				<li class="list-group-item">名前: {{ $user->name }}</li>
