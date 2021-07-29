@@ -1862,6 +1862,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -1876,7 +1877,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       axios.get('/words').then(function (response) {
-        console.log(response);
+        //  console.log( response)
         _this.words = response.data.data;
         console.log(_this.words);
       })["catch"](function (error) {
@@ -37561,17 +37562,33 @@ var render = function() {
           staticClass:
             "inline-flex flex-col space-y-2 items-center justify-end flex-1 h-full w-full p-4 bg-blue-400 rounded-xl"
         },
-        [
-          _vm._l(_vm.words, function(word) {
-            return _c("p", {
+        _vm._l(_vm.words, function(word) {
+          return _c(
+            "p",
+            {
               key: word.id,
               staticClass: "w-full text-2xl font-semibold text-white"
-            })
-          }),
-          _vm._v("\n    " + _vm._s(_vm.word.word) + "\n  ")
-        ],
-        2
-      )
+            },
+            [_vm._v("\n    " + _vm._s(word.word) + "\n     ")]
+          )
+        }),
+        0
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "flex items-center justify-center mt-8" }, [
+        _c("div", { staticClass: "border rounded-lg border-blue-400  px-4 " }, [
+          _c("button", { on: { click: _vm.loadEnglishWord } }, [
+            _c(
+              "p",
+              {
+                staticClass:
+                  "text-sm font-medium leading-normal text-center py-2"
+              },
+              [_vm._v("Shuffle")]
+            )
+          ])
+        ])
+      ])
     ])
   ])
 }
