@@ -1863,6 +1863,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -37555,19 +37557,21 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
+    _c("h1", [_vm._v("Hey")]),
+    _vm._v(" "),
     _c("div", { staticClass: "max-w-screen-md md:w-3/4 mt-24 mx-auto" }, [
       _c(
         "div",
         {
           staticClass:
-            "inline-flex flex-col space-y-2 items-center justify-end flex-1 h-full w-full p-4 bg-blue-400 rounded-xl"
+            "inline-flex flex-col space-y-2 items-center  h-full w-full p-4 bg-blue-400 rounded-xl"
         },
         _vm._l(_vm.words, function(word) {
           return _c(
             "p",
             {
               key: word.id,
-              staticClass: "w-full text-2xl font-semibold text-white"
+              staticClass: "w-full text-2xl font-semibold text-white "
             },
             [_vm._v("\n    " + _vm._s(word.word) + "\n     ")]
           )
