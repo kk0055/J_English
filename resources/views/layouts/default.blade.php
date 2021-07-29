@@ -98,19 +98,11 @@
     </div>
 
 
-   
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/main.js?0616') }}"></script>
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-
     <script>
-        $(function() {
-          // ボタンクリック時にload.phpを非同期通信で取得
-          $('#update').click(function() {
-            $('#result').load('englishword.blade.php');
-          });
-        });
-        </script>
+      
+    </script>
 </body>
 
 </html>

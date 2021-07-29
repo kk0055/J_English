@@ -9,16 +9,13 @@
         @foreach ($words as $word)
         <p class="w-full text-2xl font-semibold text-white"> {{ $word->word}}</p>
       @endforeach
-       
-   
-        <div class="rounded mr-auto">
-          <div class="opacity-95 border rounded-lg border-white px-4">
-            <p class="m-auto inset-0 text-sm font-medium leading-normal text-center text-white py-2">Buy Now</p>
-          </div>
-        </div>
       </div>
-   
+      <div class='flex items-center justify-center mt-8'>
+      <div class="border rounded-lg border-blue-400  px-4 ">
+        <a href="{{ route('englishWord') }}">
+        <p class="text-sm font-medium leading-normal text-center py-2">Shuffle</p></a>
+      </div></div>
     </div>
-   
 
+ 
 @endsection
