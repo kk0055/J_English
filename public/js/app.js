@@ -37641,7 +37641,44 @@ var render = function() {
             ])
           ]),
           _vm._v(" "),
-          _vm._m(1)
+          _c(
+            "div",
+            { staticClass: "border rounded-lg border-blue-400 px-4 mt-10" },
+            [
+              _c("button", [
+                _c(
+                  "a",
+                  {
+                    staticClass: "twitter-link",
+                    attrs: {
+                      href:
+                        "https://twitter.com/intent/tweet?text=【次の3つで文章を作ってね】%0A" +
+                        _vm.words[0].word +
+                        "/" +
+                        _vm.words[1].word +
+                        "/" +
+                        _vm.words[2].word +
+                        "%0A%0A&hashtags=ガチャガチャ英単語",
+                      id: "tw",
+                      onClick:
+                        "window.open(encodeURI(decodeURI(this.href)), 'tweetwindow', 'width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1'); return false;",
+                      rel: "nofollow"
+                    }
+                  },
+                  [
+                    _c(
+                      "p",
+                      {
+                        staticClass:
+                          "text-sm font-medium leading-normal text-center py-2"
+                      },
+                      [_vm._v("\n            Tweetする\n          ")]
+                    )
+                  ]
+                )
+              ])
+            ]
+          )
         ]
       )
     ])
@@ -37672,39 +37709,6 @@ var staticRenderFns = [
         ]
       )
     ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "border rounded-lg border-blue-400 px-4 mt-10" },
-      [
-        _c("button", [
-          _c(
-            "a",
-            {
-              attrs: {
-                href:
-                  "https://twitter.com/intent/tweet?url=https://5second-en.com&text=aaaa",
-                target: "_blank"
-              }
-            },
-            [
-              _c(
-                "p",
-                {
-                  staticClass:
-                    "text-sm font-medium leading-normal text-center py-2"
-                },
-                [_vm._v("\n            Tweetする\n          ")]
-              )
-            ]
-          )
-        ])
-      ]
-    )
   }
 ]
 render._withStripped = true
