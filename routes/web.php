@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LanguageController;
+use App\Http\Controllers\WordController;
 use App\Http\Controllers\UserItemController;
 use App\Http\Controllers\WebsiteController;
 use App\Http\Controllers\admin\AdminController;
@@ -57,3 +58,6 @@ Route::group(['middleware' => ['auth.admin']], function () {
 
   Route::get('/admin/login', [AdminController::class, 'showLoginform']);
   Route::post('/admin/login', [AdminController::class, 'login']);
+
+
+  Route::get('/words/slot', [WordController::class,'englishWord'])->name('englishWord');
