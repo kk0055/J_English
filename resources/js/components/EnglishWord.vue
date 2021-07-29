@@ -46,7 +46,7 @@
         <div class="border rounded-lg border-blue-400 px-4">
           <button @click="loadEnglishWord">
             <p class="text-sm font-medium leading-normal text-center py-2">
-              Shuffle
+              ガチャガチャ
             </p>
           </button>
          

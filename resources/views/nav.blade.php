@@ -9,9 +9,11 @@
       <input class="hidden" type="checkbox" id="menu-toggle" />
       <div class="hidden md:flex md:items-center md:w-auto w-full order-3 md:order-1" id="menu">
           <div class="nav">
-              <ul class="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
+              <ul class="md:flex items-center justify-between text-base text-gray-600 pt-4 md:pt-0">
                 <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="{{ route('about') }}">はじめに</a></li>
-                <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="{{ route('website') }}">英語学習用サイトの紹介</a></li>
+                <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="{{ route('englishWord') }}">ガチャガチャ英単語</a></li>
+                <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="{{ route('website') }}">英語学習用サイト</a></li>
+              
                 @guest
                   <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="{{ route('login') }}">ログイン</a></li>
                   <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="{{ route('register') }}">登録</a></li>

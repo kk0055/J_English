@@ -37636,7 +37636,7 @@ var render = function() {
                   staticClass:
                     "text-sm font-medium leading-normal text-center py-2"
                 },
-                [_vm._v("\n            Shuffle\n          ")]
+                [_vm._v("\n            ガチャガチャ\n          ")]
               )
             ])
           ]),
