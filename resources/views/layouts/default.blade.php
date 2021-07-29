@@ -101,47 +101,16 @@
    
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/main.js?0616') }}"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
     <script>
-// const nums = document.querySelectorAll('.nums span')
-// const counter = document.querySelector('.counter')
-
-
-// runAnimation()
-
-
-// let idx = 0
-
-// function resetDOM() {
-//   counter.classList.remove('hide')
-
-
-//   nums.forEach((num) => {
-//     num.classList.value = ''
-//   })
-
-//   nums[0].classList.add('in')
-// }
-
-// function runAnimation() {
-//   nums.forEach((num,idx) => {
-//     const nextToLast = nums.length - 1
-
-//     num.addEventListener('animationend', (e) => {
-//       if(e.animationName === 'goIn'  && idx !== nextToLast ) {
-//          num.classList.remove('in')
-//          num.classList.add('out')
-         
-//       } else if (e.animationName === 'goOut' && num.nextElementSibling) {
-//         num.nextElementSibling.classList.add('in')
-//       } else {
-//         counter.classList.add('hide')
-      
-//         setTimeout(resetDOM,1100) 
-//       }
-//     })
-//   })
-// }
-    </script>
+        $(function() {
+          // ボタンクリック時にload.phpを非同期通信で取得
+          $('#update').click(function() {
+            $('#result').load('englishword.blade.php');
+          });
+        });
+        </script>
 </body>
 
 </html>

@@ -10,9 +10,9 @@ class WordController extends Controller
     public function englishWord()
     {
 
-    $words = EnglishWord::inRandomOrder()->take(30)->get();
+    $words = EnglishWord::inRandomOrder()->take(3)->get();
 
-    dd($words);
+    // dd($words);
     return view('words.englishword', [
         'words' => $words,
 

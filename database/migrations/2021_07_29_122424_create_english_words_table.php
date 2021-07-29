@@ -15,7 +15,7 @@ class CreateEnglishWordsTable extends Migration
     {
         Schema::create('english_words', function (Blueprint $table) {
             $table->id();
-            $table->string('english-word');
+            $table->string('word');
             $table->timestamps();
         });
     }
