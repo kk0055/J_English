@@ -1872,6 +1872,47 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -1885,7 +1926,7 @@ __webpack_require__.r(__webpack_exports__);
     loadEnglishWord: function loadEnglishWord() {
       var _this = this;
 
-      axios.get('/words').then(function (response) {
+      axios.get("/en-words").then(function (response) {
         //  console.log( response)
         _this.words = response.data.data;
         console.log(_this.words);
@@ -37571,32 +37612,38 @@ var render = function() {
         "div",
         {
           staticClass:
-            "inline-flex flex-col space-y-2 items-center  h-full w-full p-4 bg-blue-400 rounded-xl text-white"
+            "\n        inline-flex\n        flex-col\n        space-y-2\n        items-center\n        h-full\n        w-full\n        p-4\n        bg-blue-400\n        rounded-xl\n        text-white\n      "
         },
         _vm._l(_vm.words, function(word) {
           return _c(
             "p",
             { key: word.id, staticClass: "w-full text-2xl font-semibold" },
-            [_vm._v("\n    " + _vm._s(word.word) + "\n     ")]
+            [_vm._v("\n        " + _vm._s(word.word) + "\n      ")]
           )
         }),
         0
       ),
       _vm._v(" "),
-      _c("div", { staticClass: "flex items-center justify-center mt-8" }, [
-        _c("div", { staticClass: "border rounded-lg border-blue-400  px-4 " }, [
-          _c("button", { on: { click: _vm.loadEnglishWord } }, [
-            _c(
-              "p",
-              {
-                staticClass:
-                  "text-sm font-medium leading-normal text-center py-2"
-              },
-              [_vm._v("Shuffle")]
-            )
-          ])
-        ])
-      ])
+      _c(
+        "div",
+        { staticClass: "flex items-center flex-col justify-center mt-8" },
+        [
+          _c("div", { staticClass: "border rounded-lg border-blue-400 px-4" }, [
+            _c("button", { on: { click: _vm.loadEnglishWord } }, [
+              _c(
+                "p",
+                {
+                  staticClass:
+                    "text-sm font-medium leading-normal text-center py-2"
+                },
+                [_vm._v("\n            Shuffle\n          ")]
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _vm._m(1)
+        ]
+      )
     ])
   ])
 }
@@ -37605,12 +37652,12 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "text-center " }, [
+    return _c("div", { staticClass: "text-center" }, [
       _c(
         "h1",
         {
           staticClass:
-            "gatya mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl"
+            "\n        gacha\n        mt-2\n        leading-8\n        font-extrabold\n        tracking-tight\n        text-gray-900\n        sm:text-md\n        text-3xl\n      "
         },
         [_vm._v("\n      ガチャガチャ英単語\n    ")]
       ),
@@ -37620,11 +37667,44 @@ var staticRenderFns = [
         { staticClass: "mt-6 text-sm md:text-md text-gray-500 lg:mx-auto" },
         [
           _vm._v(
-            "\n    英単語がシャッフルで出てくるので文章を考えてツイートしてください。\n    "
+            "\n      英単語がシャッフルで出てくるので組み合わせて文章を考えてツイートしてください。\n    "
           )
         ]
       )
     ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "border rounded-lg border-blue-400 px-4 mt-10" },
+      [
+        _c("button", [
+          _c(
+            "a",
+            {
+              attrs: {
+                href:
+                  "https://twitter.com/intent/tweet?url=https://5second-en.com&text=aaaa",
+                target: "_blank"
+              }
+            },
+            [
+              _c(
+                "p",
+                {
+                  staticClass:
+                    "text-sm font-medium leading-normal text-center py-2"
+                },
+                [_vm._v("\n            Tweetする\n          ")]
+              )
+            ]
+          )
+        ])
+      ]
+    )
   }
 ]
 render._withStripped = true

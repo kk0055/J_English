@@ -61,6 +61,6 @@ Route::group(['middleware' => ['auth.admin']], function () {
 
 
 
-  Route::get('/words/slot', [WordController::class,'englishWord'])->name('englishWord');
+  Route::get('/en-words/gacha', [WordController::class,'englishWord'])->name('englishWord');
 
-  Route::get('/words', [WordController::class,'getEnglishWord'])->name('getEnglishWord');
+  Route::get('/en-words', [WordController::class,'getEnglishWord'])->name('getEnglishWord');

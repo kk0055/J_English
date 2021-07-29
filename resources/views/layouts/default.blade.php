@@ -89,8 +89,9 @@
 
 </head>
 <style>
- .gatya  {
+ .gacha  {
     font-family: 'Hachi Maru Pop', cursive;
+    font-size: 2.5rem;
  }
  
 </style>
