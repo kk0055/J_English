@@ -1865,6 +1865,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -37556,10 +37563,10 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("h1", [_vm._v("Hey")]),
+  return _c("div", { staticClass: "mt-10" }, [
+    _vm._m(0),
     _vm._v(" "),
-    _c("div", { staticClass: "max-w-screen-md w-3/4 md:w-3/4 mt-24 mx-auto" }, [
+    _c("div", { staticClass: "max-w-screen-md w-3/4 md:w-3/4 mt-20 mx-auto" }, [
       _c(
         "div",
         {
@@ -37593,7 +37600,33 @@ var render = function() {
     ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "text-center " }, [
+      _c(
+        "h1",
+        {
+          staticClass:
+            "gatya mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl"
+        },
+        [_vm._v("\n      ガチャガチャ英単語\n    ")]
+      ),
+      _vm._v(" "),
+      _c(
+        "p",
+        { staticClass: "mt-6 text-sm md:text-md text-gray-500 lg:mx-auto" },
+        [
+          _vm._v(
+            "\n    英単語がシャッフルで出てくるので文章を考えてツイートしてください。\n    "
+          )
+        ]
+      )
+    ])
+  }
+]
 render._withStripped = true
 
 

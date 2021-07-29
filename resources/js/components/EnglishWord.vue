@@ -1,8 +1,15 @@
 <template>
-  <div>
+  <div class="mt-10">
 
-    <h1>Hey</h1>
-      <div class="max-w-screen-md w-3/4 md:w-3/4 mt-24 mx-auto">
+        <div class="text-center ">
+       <h1 class="gatya mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+        ガチャガチャ英単語
+      </h1>
+      <p class="mt-6 text-sm md:text-md text-gray-500 lg:mx-auto">
+      英単語がシャッフルで出てくるので文章を考えてツイートしてください。
+      </p>
+    </div>
+      <div class="max-w-screen-md w-3/4 md:w-3/4 mt-20 mx-auto">
     <div class="inline-flex flex-col space-y-2 items-center  h-full w-full p-4 bg-blue-400 rounded-xl text-white">
      
       <p class="w-full text-2xl font-semibold" v-for="word in words" :key='word.id'>

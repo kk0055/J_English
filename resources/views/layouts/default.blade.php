@@ -85,10 +85,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&display=swap" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
 
 </head>
 <style>
-
+ .gatya  {
+    font-family: 'Hachi Maru Pop', cursive;
+ }
+ 
 </style>
 
 <body class="bg-white awesomeEvent" style="font-family: 'Noto Serif JP', serif;">
