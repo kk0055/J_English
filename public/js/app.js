@@ -37559,20 +37559,17 @@ var render = function() {
   return _c("div", [
     _c("h1", [_vm._v("Hey")]),
     _vm._v(" "),
-    _c("div", { staticClass: "max-w-screen-md md:w-3/4 mt-24 mx-auto" }, [
+    _c("div", { staticClass: "max-w-screen-md w-3/4 md:w-3/4 mt-24 mx-auto" }, [
       _c(
         "div",
         {
           staticClass:
-            "inline-flex flex-col space-y-2 items-center  h-full w-full p-4 bg-blue-400 rounded-xl"
+            "inline-flex flex-col space-y-2 items-center  h-full w-full p-4 bg-blue-400 rounded-xl text-white"
         },
         _vm._l(_vm.words, function(word) {
           return _c(
             "p",
-            {
-              key: word.id,
-              staticClass: "w-full text-2xl font-semibold text-white "
-            },
+            { key: word.id, staticClass: "w-full text-2xl font-semibold" },
             [_vm._v("\n    " + _vm._s(word.word) + "\n     ")]
           )
         }),

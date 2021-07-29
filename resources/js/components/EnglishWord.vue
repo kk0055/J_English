@@ -2,10 +2,10 @@
   <div>
 
     <h1>Hey</h1>
-      <div class="max-w-screen-md md:w-3/4 mt-24 mx-auto">
-    <div class="inline-flex flex-col space-y-2 items-center  h-full w-full p-4 bg-blue-400 rounded-xl">
+      <div class="max-w-screen-md w-3/4 md:w-3/4 mt-24 mx-auto">
+    <div class="inline-flex flex-col space-y-2 items-center  h-full w-full p-4 bg-blue-400 rounded-xl text-white">
      
-      <p class="w-full text-2xl font-semibold text-white " v-for="word in words" :key='word.id'>
+      <p class="w-full text-2xl font-semibold" v-for="word in words" :key='word.id'>
       {{ word.word }}
        </p>
     </div>
