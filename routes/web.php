@@ -60,4 +60,7 @@ Route::group(['middleware' => ['auth.admin']], function () {
   Route::post('/admin/login', [AdminController::class, 'login']);
 
 
-  Route::get('/words/slot', [WordController::class,'englishWord'])->name('englishWord');
+
+  Route::get('/words/slot', [WordController::class,'index'])->name('englishWord');
+
+  Route::get('/words', [WordController::class,'englishWord'])->name('englishWord');
