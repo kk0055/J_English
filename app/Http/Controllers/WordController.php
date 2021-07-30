@@ -20,5 +20,17 @@ class WordController extends Controller
    
     }
 
+    public function japanesehWord()
+    {
+        return view('words.englishWord');
+    }
+
+    public function getJapaneseWord()
+    {
+    return EnglishWordResource::collection(EnglishWord::inRandomOrder()->take(3)->get());
+
+   
+    }
+
   
 }
