@@ -1,8 +1,7 @@
-@extends('layouts.default')
+@extends('layouts.gacha_default')
 
 @section('content')
-    @include('nav')
-    @include('components.session')
+    
 
     <english-word/>
  
