@@ -11,9 +11,9 @@
                   <div class="hidden md:block">
                       <div class="ml-10 flex items-baseline space-x-4">
         
-                                            <a class="hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="{{ route('japaneseWord') }}">ガチャガチャ日本語</a>
+                                            <a class="hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium underline" href="{{ route('japaneseWord') }}">ガチャガチャ日本語</a>
                         </a>
-                          <a class=" dark:text-white  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="/">5秒英作文</a>
+                          <a class=" dark:text-white  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium underline" href="/">5秒英作文</a>
                  
                       </div>
                   </div>
@@ -34,8 +34,8 @@
       </div>
       <div class="md:hidden">
           <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                   <a class="text-gray-600 dark:text-white block px-3 py-2 rounded-md text-base font-medium" href="{{ route('japaneseWord') }}">ガチャガチャ日本語</a>
-              <a class="text-gray-600 dark:text-white block px-3 py-2 rounded-md text-base font-medium" href="/">5秒英作文</a>
+                   <a class="text-gray-600 dark:text-white block px-3 py-2 rounded-md text-base font-medium underline" href="{{ route('japaneseWord') }}">ガチャガチャ日本語</a>
+              <a class="text-gray-600 dark:text-white block px-3 py-2 rounded-md text-base font-medium underline" href="/">5秒英作文</a>
           </div>
       </div>
   </nav>

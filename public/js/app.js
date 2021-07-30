@@ -37789,81 +37789,89 @@ var render = function() {
   return _c("div", { staticClass: "mt-10" }, [
     _vm._m(0),
     _vm._v(" "),
-    _c("div", { staticClass: "max-w-screen-md w-3/4 md:w-3/4 mt-14 mx-auto" }, [
-      _c(
-        "div",
-        {
-          staticClass:
-            "\n        inline-flex\n        flex-col\n        space-y-2\n        items-center\n        h-full\n        w-full\n        p-4\n        bg-blue-400\n        rounded-xl\n        text-white\n      "
-        },
-        _vm._l(_vm.words, function(word) {
-          return _c(
-            "p",
-            { key: word.id, staticClass: "w-full text-2xl font-semibold" },
-            [_vm._v("\n        " + _vm._s(word.word) + "\n      ")]
-          )
-        }),
-        0
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "flex items-center flex-col justify-center mt-8" },
-        [
-          _c("div", { staticClass: "border rounded-lg border-blue-400 px-4" }, [
-            _c("button", { on: { click: _vm.loadEnglishWord } }, [
-              _c(
-                "p",
-                {
-                  staticClass:
-                    "text-sm font-medium leading-normal text-center py-2"
-                },
-                [_vm._v("\n            ガチャガチャ\n          ")]
-              )
-            ])
-          ]),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "border rounded-lg border-blue-400 px-4 mt-10" },
-            [
-              _c("button", [
-                _c(
-                  "a",
-                  {
-                    staticClass: "twitter-link",
-                    attrs: {
-                      href:
-                        "https://twitter.com/intent/tweet?text=【次の3つで文章を作ってね】%0A" +
-                        _vm.words[0].word +
-                        "/" +
-                        _vm.words[1].word +
-                        "/" +
-                        _vm.words[2].word +
-                        "%0A%0A&hashtags=ガチャガチャ英単語",
-                      id: "tw",
-                      onClick:
-                        "window.open(encodeURI(decodeURI(this.href)), 'tweetwindow', 'width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1'); return false;",
-                      rel: "nofollow"
-                    }
-                  },
-                  [
-                    _c(
-                      "p",
-                      {
-                        staticClass:
-                          "text-sm font-medium leading-normal text-center py-2"
-                      },
-                      [_vm._v("\n            Tweetする\n          ")]
-                    )
-                  ]
-                )
-              ])
-            ]
-          )
-        ]
-      )
-    ])
+    _c(
+      "div",
+      { staticClass: "max-w-screen-md  md:w-3/4 mt-14 w-3/4 mx-auto" },
+      [
+        _c(
+          "div",
+          {
+            staticClass:
+              "\n        inline-flex\n        flex-col\n        space-y-2\n        items-center\n        h-full\n        w-full\n        p-4\n        bg-blue-400\n        rounded-xl\n        text-white\n      "
+          },
+          _vm._l(_vm.words, function(word) {
+            return _c(
+              "p",
+              { key: word.id, staticClass: "w-full text-2xl font-semibold" },
+              [_vm._v("\n        " + _vm._s(word.word) + "\n      ")]
+            )
+          }),
+          0
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "flex items-center flex-col justify-center mt-8" },
+          [
+            _c(
+              "div",
+              { staticClass: "border rounded-lg border-blue-400 px-4" },
+              [
+                _c("button", { on: { click: _vm.loadEnglishWord } }, [
+                  _c(
+                    "p",
+                    {
+                      staticClass:
+                        "text-sm font-medium leading-normal text-center py-2"
+                    },
+                    [_vm._v("\n            ガチャガチャ\n          ")]
+                  )
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "border rounded-lg border-blue-400 px-4 mt-10" },
+              [
+                _c("button", [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "twitter-link",
+                      attrs: {
+                        href:
+                          "https://twitter.com/intent/tweet?text=【次の3つで文章を作ってね】%0A" +
+                          _vm.words[0].word +
+                          "/" +
+                          _vm.words[1].word +
+                          "/" +
+                          _vm.words[2].word +
+                          "%0A%0A&hashtags=ガチャガチャ英単語",
+                        id: "tw",
+                        onClick:
+                          "window.open(encodeURI(decodeURI(this.href)), 'tweetwindow', 'width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1'); return false;",
+                        rel: "nofollow"
+                      }
+                    },
+                    [
+                      _c(
+                        "p",
+                        {
+                          staticClass:
+                            "text-sm font-medium leading-normal text-center py-2"
+                        },
+                        [_vm._v("\n            Tweetする\n          ")]
+                      )
+                    ]
+                  )
+                ])
+              ]
+            )
+          ]
+        )
+      ]
+    )
   ])
 }
 var staticRenderFns = [
@@ -37871,7 +37879,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "text-center" }, [
+    return _c("div", { staticClass: "text-center " }, [
       _c(
         "h1",
         {
@@ -37883,7 +37891,10 @@ var staticRenderFns = [
       _vm._v(" "),
       _c(
         "p",
-        { staticClass: "mt-10 text-sm md:text-md text-gray-500 lg:mx-auto" },
+        {
+          staticClass:
+            "mt-10 text-sm md:text-md text-gray-500 lg:mx-auto w-3/4 mx-auto"
+        },
         [
           _vm._v(
             "\n      英単語がシャッフルで出てくるので組み合わせて文章を考えてツイートしてください。\n    "
@@ -37893,7 +37904,10 @@ var staticRenderFns = [
       _vm._v(" "),
       _c(
         "p",
-        { staticClass: "mt-2 text-sm md:text-md text-gray-500 lg:mx-auto" },
+        {
+          staticClass:
+            "mt-2 text-sm md:text-md text-gray-500 lg:mx-auto w-3/4 mx-auto"
+        },
         [
           _vm._v(
             "\n     Combine the three words to make a sentence and tweet it!\n    "
@@ -38068,7 +38082,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "text-center" }, [
+    return _c("div", { staticClass: "text-center " }, [
       _c(
         "h1",
         {
@@ -38080,7 +38094,10 @@ var staticRenderFns = [
       _vm._v(" "),
       _c(
         "p",
-        { staticClass: "mt-10 text-sm md:text-md text-gray-500 lg:mx-auto" },
+        {
+          staticClass:
+            "mt-10 text-sm md:text-md text-gray-500 lg:mx-auto w-3/4 mx-auto"
+        },
         [
           _vm._v(
             "\n      日本語がシャッフルで出てくるので組み合わせて文章を考えてツイートしてください。\n    "
@@ -38090,7 +38107,10 @@ var staticRenderFns = [
       _vm._v(" "),
       _c(
         "p",
-        { staticClass: "mt-2 text-sm md:text-md text-gray-500 lg:mx-auto" },
+        {
+          staticClass:
+            "mt-2 text-sm md:text-md text-gray-500 lg:mx-auto w-3/4 mx-auto"
+        },
         [
           _vm._v(
             "\n    Combine the three words to make a sentence and tweet it!\n    "

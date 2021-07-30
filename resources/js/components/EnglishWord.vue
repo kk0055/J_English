@@ -1,6 +1,6 @@
 <template>
   <div class="mt-10">
-    <div class="text-center">
+    <div class="text-center ">
       <h1
         class="
           gacha
@@ -15,14 +15,14 @@
       >
         ガチャガチャ英単語
       </h1>
-      <p class="mt-10 text-sm md:text-md text-gray-500 lg:mx-auto">
+      <p class="mt-10 text-sm md:text-md text-gray-500 lg:mx-auto w-3/4 mx-auto">
         英単語がシャッフルで出てくるので組み合わせて文章を考えてツイートしてください。
       </p>
-      <p class="mt-2 text-sm md:text-md text-gray-500 lg:mx-auto">
+      <p class="mt-2 text-sm md:text-md text-gray-500 lg:mx-auto w-3/4 mx-auto">
        Combine the three words to make a sentence and tweet it!
       </p>
     </div>
-    <div class="max-w-screen-md w-3/4 md:w-3/4 mt-14 mx-auto">
+    <div class="max-w-screen-md  md:w-3/4 mt-14 w-3/4 mx-auto">
       <div
         class="
           inline-flex
