@@ -38023,7 +38023,7 @@ var render = function() {
                         _vm.words[1].word +
                         "/" +
                         _vm.words[2].word +
-                        "%0A%0A&hashtags=ガチャガチャ英単語",
+                        "%0A%0A&hashtags=ガチャガチャ日本語",
                       id: "tw",
                       onClick:
                         "window.open(encodeURI(decodeURI(this.href)), 'tweetwindow', 'width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1'); return false;",
