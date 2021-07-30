@@ -1931,8 +1931,7 @@ __webpack_require__.r(__webpack_exports__);
 
       axios.get("/en-words").then(function (response) {
         //  console.log( response)
-        _this.words = response.data.data;
-        console.log(_this.words);
+        _this.words = response.data.data; // console.log(this.words);
       })["catch"](function (error) {
         console.log(error);
       });
@@ -2100,8 +2099,7 @@ __webpack_require__.r(__webpack_exports__);
 
       axios.get("/ja-words").then(function (response) {
         //  console.log( response)
-        _this.words = response.data.data;
-        console.log(_this.words);
+        _this.words = response.data.data; // console.log(this.words);
       })["catch"](function (error) {
         console.log(error);
       });

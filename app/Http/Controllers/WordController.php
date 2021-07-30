@@ -12,7 +12,7 @@ class WordController extends Controller
     
     public function englishWord()
     {
-        return view('words.englishWord');
+        return view('words.englishword');
     }
 
     public function getEnglishWord()

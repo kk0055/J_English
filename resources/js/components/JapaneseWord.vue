@@ -86,7 +86,7 @@ export default {
         .then((response) => {
           //  console.log( response)
           this.words = response.data.data;
-          console.log(this.words);
+          // console.log(this.words);
         })
         .catch(function (error) {
           console.log(error);
