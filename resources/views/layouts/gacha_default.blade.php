@@ -86,18 +86,19 @@
 
 </head>
 <style>
+ 
  .gacha  {
     font-family: 'Hachi Maru Pop', cursive;
     font-size: 2.5rem;
- }
- 
+   }
+
 </style>
 
 <body class="bg-white awesomeEvent" style="font-family: 'Noto Serif JP', serif;">
 
     <div id="app">
-        @include('components.gacha_nav')
-        @include('components.session')
+       
+        
         @yield('content')     
         
     </div>

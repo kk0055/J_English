@@ -22,7 +22,7 @@ class WordController extends Controller
 
     public function japanesehWord()
     {
-        return view('words.englishWord');
+        return view('words.japaneseword');
     }
 
     public function getJapaneseWord()

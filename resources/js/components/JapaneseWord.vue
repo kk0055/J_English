@@ -13,10 +13,10 @@
           text-3xl
         "
       >
-        ガチャガチャ英単語
+        ガチャガチャ日本語
       </h1>
-      <p class="mt-10 text-sm md:text-md text-gray-500 lg:mx-auto">
-        英単語がシャッフルで出てくるので組み合わせて文章を考えてツイートしてください。
+      <p class="mt-6 text-sm md:text-md text-gray-500 lg:mx-auto">
+        日本語がシャッフルで出てくるので組み合わせて文章を考えてツイートしてください。
       </p>
     </div>
     <div class="max-w-screen-md w-3/4 md:w-3/4 mt-14 mx-auto">
@@ -44,7 +44,7 @@
       </div>
       <div class="flex items-center flex-col justify-center mt-8">
         <div class="border rounded-lg border-blue-400 px-4">
-          <button @click="loadEnglishWord">
+          <button @click="loadJapaneseWord">
             <p class="text-sm font-medium leading-normal text-center py-2">
               ガチャガチャ
             </p>
@@ -74,12 +74,12 @@ export default {
     };
   },
   mounted() {
-    this.loadEnglishWord();
+    this.loadJapaneseWord();
   },
   methods: {
-    loadEnglishWord: function () {
+    loadJapaneseWord: function () {
       axios
-        .get("/en-words")
+        .get("/ja-words")
         .then((response) => {
           //  console.log( response)
           this.words = response.data.data;
