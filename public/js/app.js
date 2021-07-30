@@ -1913,6 +1913,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -2011,6 +2014,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
+//
+//
 //
 //
 //
@@ -37885,6 +37891,16 @@ var staticRenderFns = [
             "\n      英単語がシャッフルで出てくるので組み合わせて文章を考えてツイートしてください。\n    "
           )
         ]
+      ),
+      _vm._v(" "),
+      _c(
+        "p",
+        { staticClass: "mt-2 text-sm md:text-md text-gray-500 lg:mx-auto" },
+        [
+          _vm._v(
+            "\n     Combine the three words to make a sentence and tweet it!\n    "
+          )
+        ]
       )
     ])
   }
@@ -38066,10 +38082,20 @@ var staticRenderFns = [
       _vm._v(" "),
       _c(
         "p",
-        { staticClass: "mt-6 text-sm md:text-md text-gray-500 lg:mx-auto" },
+        { staticClass: "mt-10 text-sm md:text-md text-gray-500 lg:mx-auto" },
         [
           _vm._v(
             "\n      日本語がシャッフルで出てくるので組み合わせて文章を考えてツイートしてください。\n    "
+          )
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "p",
+        { staticClass: "mt-2 text-sm md:text-md text-gray-500 lg:mx-auto" },
+        [
+          _vm._v(
+            "\n    Combine the three words to make a sentence and tweet it!\n    "
           )
         ]
       )

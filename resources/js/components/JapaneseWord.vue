@@ -15,8 +15,11 @@
       >
         ガチャガチャ日本語
       </h1>
-      <p class="mt-6 text-sm md:text-md text-gray-500 lg:mx-auto">
+      <p class="mt-10 text-sm md:text-md text-gray-500 lg:mx-auto">
         日本語がシャッフルで出てくるので組み合わせて文章を考えてツイートしてください。
+      </p>
+       <p class="mt-2 text-sm md:text-md text-gray-500 lg:mx-auto">
+      Combine the three words to make a sentence and tweet it!
       </p>
     </div>
     <div class="max-w-screen-md w-3/4 md:w-3/4 mt-14 mx-auto">
