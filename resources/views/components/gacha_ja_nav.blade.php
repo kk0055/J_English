@@ -5,7 +5,7 @@
       <div class="max-w-7xl mx-auto px-8">
           <div class="flex items-center justify-between h-16">
               <div class=" flex items-center">
-                  <a class="flex-shrink-0" href="{{ route('englishWord') }}">
+                  <a class="flex-shrink-0" href="{{ route('japaneseWord') }}">
                     <i class="far fa-flushed text-4xl" ></i>
                   </a>
                   <div class="hidden md:block">

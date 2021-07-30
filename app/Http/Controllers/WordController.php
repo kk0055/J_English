@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\EnglishWord;
+use App\Models\JapaneseWord;
 use App\Http\Resources\EnglishWordResource;
+use App\Http\Resources\JapaneseWordResource;
 class WordController extends Controller
 {
     
@@ -27,7 +29,7 @@ class WordController extends Controller
 
     public function getJapaneseWord()
     {
-    return EnglishWordResource::collection(EnglishWord::inRandomOrder()->take(3)->get());
+    return JapaneseWordResource::collection(JapaneseWord::inRandomOrder()->take(3)->get());
 
    
     }
