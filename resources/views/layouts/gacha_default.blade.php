@@ -98,9 +98,45 @@
     <div id="app">
         @include('components.gacha_nav')
         @include('components.session')
-        @yield('content')
+        @yield('content')     
+        
     </div>
 
+    <footer class="bg-white dark:bg-gray-800 pt-10 my-10 pb-8 xl:pt-8 flex items-center justify-center">
+        <div class="max-w-screen-lg xl:max-w-screen-xl mx-auto  text-gray-400 dark:text-gray-300">
+                    <div class="text-center">
+                        <ul>
+                <li class="w-1/2 md:w-1/3 lg:w-1/3">
+                    <div class="text-center">
+                        <h2 class="text-gray-500 dark:text-gray-200 text-md uppercase mb-4">
+                            Contacts
+                        </h2>
+                        <ul>
+                            <li class="mb-4 hover:text-gray-800 dark:hover:text-white transition-colors duration-200">
+                                <a href="#">
+                                    Github
+                                </a>
+                            </li>
+                            <li class="mb-4 hover:text-gray-800 dark:hover:text-white transition-colors duration-200">
+                                <a href="#">
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="mb-4 hover:text-gray-800 dark:hover:text-white transition-colors duration-200">
+                                <a href="#">
+                                    Twitter
+                                </a>
+                            </li>
+                            <li class="mb-4 hover:text-gray-800 dark:hover:text-white transition-colors duration-200">
+                                <a href="#">
+                                    LinkedIn
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+        </div>
+    </footer>
+ 
 
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/main.js?0616') }}"></script>
