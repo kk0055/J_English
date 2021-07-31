@@ -10,9 +10,12 @@
         <a class="nav-link" href="{{ route('admin.show') }}">Admin-top<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="{{ route('admin.index') }}">Admin-Main</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="/">Main</a>
       </li>
- 
+  
     </ul>
     <form class="form-inline my-2 my-lg-0" action="{{ route('admin.search') }}">
       <input class="form-control mr-sm-2" type="text" name="query" placeholder="Search" aria-label="Search">
