@@ -40,6 +40,15 @@ class AdminController extends Controller
 		return redirect("admin/login");
 	}
 
+	public function index()
+	{
+
+			$languages = Language::with('user')->inRandomOrder()->take(30)->get();
+			return view('admin.index', [
+					'languages' => $languages,
+
+			]);
+	}
 	
     function show(){
 		return view("admin.admin_top");
