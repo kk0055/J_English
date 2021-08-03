@@ -62,9 +62,9 @@
     <script data-ad-client="ca-pub-6877145874439358" async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
-
+{{-- tailwindcss --}}
     <link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
-    {{-- <link href="https://unpkg.com/@tailwindcss/custom-forms/dist/custom-forms.min.css" rel="stylesheet"> --}}
+  
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Stick&display=swap" rel="stylesheet">
@@ -89,13 +89,7 @@
 
 </head>
 <style>
- .gacha  {
-    font-family: 'Hachi Maru Pop', cursive;
-    font-size: 2.5rem;
- }
- .time {
-
-}
+ 
 </style>
 
 <body class="bg-white awesomeEvent" style="font-family: 'Noto Serif JP', serif;">
@@ -106,25 +100,9 @@
 
 
     <script src="{{ asset('js/app.js') }}"></script>
-    <script src="{{ asset('js/main.js?0616') }}"></script>
+    <script src="{{ asset('js/main.js?0803') }}"></script>
     <script>
-const timeEl = document.getElementById('time')
-let seconds = 0
-    function increaseTime() {
-  let m = Math.floor(seconds/60)
-  let s = seconds % 60
 
-  m = m < 10 ? `0${m}` : m
-  s = s < 10 ? `0${s}` : s
-  timeEl.innerHTML = `Time: ${m}:${s}`
-  seconds++
-
-}
-function startTimer() {
-  setInterval(increaseTime, 1000)
-
-}
-startTimer()
     </script>
 </body>
 

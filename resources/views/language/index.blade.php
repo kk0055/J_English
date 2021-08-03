@@ -53,17 +53,17 @@
                 全部で2000問以上あります。リロードもしくは
                 右上かページ下部の<i class="fas fa-home"></i>
                 をクリックで問題はシャッフルされます。
-                <br> 1ページ30問。毎日1ページずつでも頑張りましょう。
+                <br> 1ページ30問。1ページ5分で毎日1ページずつでも頑張りましょう。
             </p>
 
             <br>
             <p>重要なのは
                 <span class="text-red-500 font-bold"> 「口に出すこと、 声を出すこと」</span>です。
             </p>
-            <p>英語を声に出すことに慣れましょう<i class="far fa-laugh-wink"></i>
+            <p>英語を声に出すことに慣れていきましょう<i class="far fa-laugh-wink"></i>
             </p>
 
-            <p class="text-blue-700 mt-1">
+            <p class="text-blue-700 mt-1 underline">
                 <a href="/japanese">
                     <br>英語→日本語 (English→Japanese)Ver. </a>
             </p>

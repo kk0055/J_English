@@ -53,7 +53,9 @@
                 </div>
                   @else
                   <div class="flex">
+                    @if (Request::is('/'))
                   <h3 id="time" class="time mr-5 mt-1 text-red-500">Time: 00:00</h3>
+                  @endif
                   <a class=" md:mr-10 font-bold text-xl"  href="/">
                     <i class="fas fa-home"></i>
                   </a> 

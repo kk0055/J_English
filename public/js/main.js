@@ -127,7 +127,7 @@ function replaceMessage(mes) {
    
 }
 
-
+//dblclickでStarを出すイベント
 const loveMe = document.querySelector('.awesomeEvent')
 
 loveMe.addEventListener('dblclick', (e) => {
@@ -147,3 +147,22 @@ loveMe.addEventListener('dblclick', (e) => {
 
   loveMe.appendChild(awesomeBtn)
 }
+
+//Timer
+const timeEl = document.getElementById('time')
+let seconds = 0
+    function increaseTime() {
+  let m = Math.floor(seconds/60)
+  let s = seconds % 60
+
+  m = m < 10 ? `0${m}` : m
+  s = s < 10 ? `0${s}` : s
+  timeEl.innerHTML = `Time: ${m}:${s}`
+  seconds++
+
+}
+function startTimer() {
+  setInterval(increaseTime, 1000)
+
+}
+startTimer()
