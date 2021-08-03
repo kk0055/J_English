@@ -93,7 +93,9 @@
     font-family: 'Hachi Maru Pop', cursive;
     font-size: 2.5rem;
  }
- 
+ .time {
+
+}
 </style>
 
 <body class="bg-white awesomeEvent" style="font-family: 'Noto Serif JP', serif;">
@@ -106,7 +108,23 @@
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/main.js?0616') }}"></script>
     <script>
-      
+const timeEl = document.getElementById('time')
+let seconds = 0
+    function increaseTime() {
+  let m = Math.floor(seconds/60)
+  let s = seconds % 60
+
+  m = m < 10 ? `0${m}` : m
+  s = s < 10 ? `0${s}` : s
+  timeEl.innerHTML = `Time: ${m}:${s}`
+  seconds++
+
+}
+function startTimer() {
+  setInterval(increaseTime, 1000)
+
+}
+startTimer()
     </script>
 </body>
 

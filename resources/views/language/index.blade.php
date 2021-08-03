@@ -12,9 +12,12 @@
         {{-- </div> --}}
         {{-- <hr class="bg-gray-300 my-12"> --}}
       
-        <h1 class="font-bold ml-3 px-2 text-2xl mt-12  md:text-3xl">
+        <div class="flex flex-row  ml-3 px-2 text-2xl mt-12  md:text-3xl">
+        <h1 class="font-bold">
             5秒英作文
         </h1>
+        
+      </div>
         <div class="flex justify-between ml-5 mt-5">
             <a href="{{ route('about') }}">
                 <p id='section1' class=" px-2 pb-3 text-xl text-green-400 hover:text-green-600 underline">はじめての方はこちら </p>
@@ -40,7 +43,7 @@
             <p> </p>
             <p>③何度か口に出す。</p>
             <p>口になじむまで何回か声に出してみましょう。</p>
-            <p>サウンドボタンを押すと英語を読み上げますが、デバイスの言語設定を英語にする必要があります。</p>
+            <p>サウンドボタンを押すと英語を読み上げますが、スマホの言語設定を英語にする必要があります。</p>
 
             <p> </p>
             <p>④次の問題へ</p>
