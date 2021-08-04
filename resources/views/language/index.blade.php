@@ -55,7 +55,7 @@
                     <i class="fas fa-home"></i>
                   </a> 
                 をクリックで問題はシャッフルされます。
-                <br> 1ページ30問。1ページ5分で毎日1ページずつでも頑張りましょう。
+                <br> 1ページ30問。1ページ5分、毎日1ページずつでも頑張りましょう。
             </p>
 
             <br>
@@ -106,16 +106,7 @@
             </a> <p class="text-xs mb-5">もう1周</p>
         </div>
 
-        {{-- Twitter Button --}}
-        <div class="my-5 ml-3">
-            <div class="flex-col pb-5">
-                <a href="https://twitter.com/5seconds_en" target='_blank'>
-                    <img src="https://img.icons8.com/fluent/2x/twitter.png" width="40px" alt="">
-                </a>
-                <p id="contact" class="text-xs mb-5">何かあれば</p>
-            </div>
-        </div>
-
+  
 
         {{-- Google Ads --}}
         @guest
@@ -141,4 +132,6 @@
 
 
     </div>
+    @include('components.gacha_footer')
 @endsection
+

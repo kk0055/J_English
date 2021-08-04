@@ -11,7 +11,7 @@
             @endif
         </button>
 
-        <p class="english mt-2 ml-6 text-red-500 font-black	text-sm md:text-base" id="target">
+        <p class="english mt-2 ml-4 text-red-500 font-black	text-sm md:text-base" id="target">
             {{ $language->english }}
 
         <ul class="mt-3 flex justify-start place-items-center">
