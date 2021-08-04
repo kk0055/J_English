@@ -36,6 +36,7 @@
           <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                    <a class="text-gray-600 dark:text-white block px-3 py-2 rounded-md text-base font-medium underline" href="{{ route('japaneseWord') }}">ガチャガチャ日本語</a>
               <a class="text-gray-600 dark:text-white block px-3 py-2 rounded-md text-base font-medium underline" href="/">5秒英作文</a>
+         
           </div>
       </div>
   </nav>

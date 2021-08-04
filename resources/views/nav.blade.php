@@ -44,12 +44,7 @@
         </div>
       </div>
 
-      <!-- secondary nav -->
-      {{-- <div class="hidden md:flex items-center space-x-1">
-        <h3 id="time" class="time mr-5 mt-1 text-red-500">Time: 00:00</h3>
-      </div> --}}
 
-      <!-- mobile button goes here -->
       <div class=" flex items-center">
         @if (Request::is('/'))
         <h3 id="time" class="time mr-5 text-red-500">Time: 00:00</h3>
