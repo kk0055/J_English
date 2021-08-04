@@ -151,7 +151,8 @@ loveMe.addEventListener('dblclick', (e) => {
 //Timer
 const timeEl = document.getElementById('time')
 let seconds = 0
-    function increaseTime() {
+ function increaseTime() {
+ 
   let m = Math.floor(seconds/60)
   let s = seconds % 60
 

@@ -1,5 +1,5 @@
 
-<nav id="header" class="w-full z-30 top-0 py-1">
+<nav id="header" class="w-full bg-gray-50 top-0 py-1 fixed">
   <div class="w-full mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3">
       <label for="menu-toggle" class="cursor-pointer md:hidden block">
           <svg class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
@@ -64,3 +64,4 @@
             </div>
   </div>
 </nav>
+<br><br>
