@@ -7,6 +7,8 @@ use App\Models\EnglishWord;
 use App\Models\JapaneseWord;
 use App\Http\Resources\EnglishWordResource;
 use App\Http\Resources\JapaneseWordResource;
+use Illuminate\Support\Facades\Auth;
+
 class WordController extends Controller
 {
     
@@ -18,7 +20,6 @@ class WordController extends Controller
     public function getEnglishWord()
     {
     return EnglishWordResource::collection(EnglishWord::inRandomOrder()->take(3)->get());
-
    
     }
 
@@ -33,6 +34,32 @@ class WordController extends Controller
 
    
     }
+    
+
+    public function japaneseCreate()
+    {
+        return view('language.create');
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @return Response
+     */
+    public function japaneseStore(Request $request)
+    {
+        $user = Auth::user();
+        //ログインしてない時
+        if (!$user) {
+            return redirect()->to('auth/login');
+        }
+
+        EnglishWord::create([
+            'word' => $request->word,
+        ]);
+        return back()->withStatus("追加！");
+    }
+
 
   
 }
