@@ -36,12 +36,14 @@ class WordController extends Controller
     }
     
 
-    public function japaneseCreate()
+    public function wordsCreate()
     {
-        $words = JapaneseWord::latest()->get();
+        $japanese = JapaneseWord::latest()->get();
+        $english = EnglishWord::latest()->get();
 
         return view('words.create',[
-            'words' => $words
+            'japanese' => $japanese,
+            'english' => $english,
         ]);
     }   
 
@@ -63,6 +65,22 @@ class WordController extends Controller
         return back()->withStatus("追加！");
     }
 
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @return Response
+     */
+    public function englishStore(Request $request)
+    {
+     
+        $validation =  $this->validate($request, [
+            'word' => 'required',
 
+        ]);
+        EnglishWord::create([
+            'word' => $request->word,
+        ]);
+        return back()->withStatus("追加！");
+    }
   
 }
