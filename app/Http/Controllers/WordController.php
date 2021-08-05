@@ -38,7 +38,7 @@ class WordController extends Controller
 
     public function japaneseCreate()
     {
-        $words = JapaneseWord::all();
+        $words = JapaneseWord::latest()->get();
 
         return view('words.create',[
             'words' => $words
@@ -53,7 +53,10 @@ class WordController extends Controller
     public function japaneseStore(Request $request)
     {
      
+        $validation =  $this->validate($request, [
+            'word' => 'required',
 
+        ]);
         JapaneseWord::create([
             'word' => $request->word,
         ]);
