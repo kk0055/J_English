@@ -58,7 +58,8 @@ Route::group(['middleware' => ['auth.admin']], function () {
 
   //Japanese word create
   Route::get('/ja-words/create', [WordController::class,'japaneseCreate'])->name('japaneseWord.create');
-  Route::get('/ja-words/create', [WordController::class,'japaneseStore'])->name('japaneseWord.store');
+  Route::post('/ja-words/create', [WordController::class,'japaneseStore'])->name('japaneseWord.store');
+
   });
 
   Route::get('/admin/login', [AdminController::class, 'showLoginform']);

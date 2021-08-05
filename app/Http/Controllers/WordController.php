@@ -38,8 +38,12 @@ class WordController extends Controller
 
     public function japaneseCreate()
     {
-        return view('language.create');
-    }
+        $words = JapaneseWord::all();
+
+        return view('words.create',[
+            'words' => $words
+        ]);
+    }   
 
     /**
      * Store a newly created resource in storage.
@@ -48,13 +52,9 @@ class WordController extends Controller
      */
     public function japaneseStore(Request $request)
     {
-        $user = Auth::user();
-        //ログインしてない時
-        if (!$user) {
-            return redirect()->to('auth/login');
-        }
+     
 
-        EnglishWord::create([
+        JapaneseWord::create([
             'word' => $request->word,
         ]);
         return back()->withStatus("追加！");
