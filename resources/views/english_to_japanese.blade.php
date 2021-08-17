@@ -97,7 +97,7 @@
         {{-- Home Button --}}
         <div class="flex-col px-4 mt-10">
           <a class="text-2xl" href="{{ route('japanese') }}"><i class="ml- fas fa-home"></i>
-          </a> <p class="text-xs mb-5">One more time</p>
+          </a> <p class="text-xs mb-5">One More Round</p>
       </div>
 
         {{-- Google Ads --}}
