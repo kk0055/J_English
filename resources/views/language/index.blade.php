@@ -62,18 +62,19 @@
             <p>重要なのは
                 <span class="text-red-500 font-bold"> 「口に出すこと、 声を出すこと」</span>です。
             </p>
-            <p>英語を声に出すことに慣れていきましょう<i class="far fa-laugh-wink"></i>
+            <p>英語を声に出すことに慣れていきましょう
             </p>
-
+            <br>
+            <p>※ログインすると保存と投稿ができます。</p>
             <p class="text-blue-700 mt-1 underline">
                 <a href="/japanese">
                     <br>英語→日本語 (English→Japanese)Ver. </a>
             </p>
             <br>
-            <div class="mt-6">
+            <div class="mt-6 ">
                 <form action="{{ route('item.search') }}">
                     <input type="text" name="query"
-                        class="border-black text-sm rounded-full w-64 px-4  py-1 focus:outline-none border-b focus:shadow-outline "
+                        class="border-black shadow-md text-sm rounded-full w-64 px-5 border-solid py-2 focus:outline-none border-b focus:shadow-outline "
                         placeholder="Search" value="{{ request('query') }}">
                 </form>
             </div>
