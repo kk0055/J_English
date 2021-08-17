@@ -9,12 +9,12 @@
 
   
   <h1 class="font-bold break-normal  px-2 text-2xl mt-5  md:text-2xl">
-  5秒英作文
+     2000+ Daily use Japanese Sentences
   </h1>
   <hr class="bg-gray-300 my-12">
  
   <h2 id='section1' class="font-bold break-normal  px-2 pb-3 text-xl">
-  English→Japanese <i class="far fa-cat"></i></h2>
+  How to use</h2>
 
   <div class="ml-5 mt-3  text-sm md:text-base">
     <p class=" pb-1 ">Read the English sentence and guess how to say it in Japanese in <span class="text-red-500">5</span> seconds.</p>
@@ -94,6 +94,11 @@
     </div>
     @endforeach
     </div>
+        {{-- Home Button --}}
+        <div class="flex-col px-4 mt-10">
+          <a class="text-2xl" href="{{ route('japanese') }}"><i class="ml- fas fa-home"></i>
+          </a> <p class="text-xs mb-5">One more time</p>
+      </div>
 
         {{-- Google Ads --}}
         @guest
@@ -112,5 +117,6 @@
          <br>
          @endguest
         {{-- !Google Ads --}}
+        @include('components.gacha_footer')
 </div >
 @endsection

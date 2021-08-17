@@ -8,16 +8,15 @@
     <title>2000+ Daily use Japanese sentences</title>
     <meta property="og:site_name" content="Learn English " />
     <meta property="og:title" content="Learn English " />
-    <meta property="og:url" content="https://5seconds-en.com" />
+    <meta property="og:url" content="https://5seconds-en.com/japanese" />
     <meta property="og:image"
         content="https://image.freepik.com/free-photo/top-view-decoration-with-cubes-wooden-background_23-2148389005.jpg" />
-    <meta content='A list of all the resources we recommend most for learning Japanese' name='description'>
     <meta content='japan, japanese, culture, learning, language' name='keywords'>
     <meta name="keywords" content="japan, japanese, culture, learning, language">
     <meta name="description"
-        content="Whether you are a beginner or otherwise, learn Japanese online for free – speaking practice. 2000+ Japanese sentences to Survive Your First Conversation With a Native">
+        content="Whether you are a beginner or otherwise, learn Japanese online for free –especially for speaking practice. 2000+ common Japanese sentences to Survive Your First Conversation With a Native">
     <meta property="og:description"
-        content="Whether you are a beginner or otherwise, learn Japanese online for free – speaking practice.2000+ Japanese sentences to Survive Your First Conversation With a Native" />
+        content="Whether you are a beginner or otherwise, learn Japanese online for free – speaking practice.2000+ common Japanese sentences to Survive Your First Conversation With a Native" />
     {{-- Twitter --}}
     <meta name="twitter:card" content="Summary">
     <meta name="twitter:title" content="2000+ Daily use Japanese sentences">
@@ -25,7 +24,7 @@
     <meta name="twitter:creator" content="@5seconds_en" />
     <meta name="twitter:domain" content="twitter.com/5seconds_en" />
     <meta name="twitter:description"
-        content="Whether you are a beginner or otherwise, learn Japanese online for free – speaking practice. 2000+ Japanese sentences to Survive Your First Conversation With a Native">
+        content="Whether you are a beginner or otherwise, learn Japanese online for free – speaking practice. 2000+ common Japanese sentences to Survive Your First Conversation With a Native">
 
     <meta name="twitter:image"
         content="https://image.freepik.com/free-photo/top-view-decoration-with-cubes-wooden-background_23-2148389005.jpg">
