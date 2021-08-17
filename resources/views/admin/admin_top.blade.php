@@ -10,7 +10,7 @@
 			</div>
 
 			<div>
-				<a href="{{ route('japaneseWord.create') }}" class="inline-flex mb-3 justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 bg-black">Japanese Word</a>
+				<a href="{{ route('japaneseWord.create') }}" class="inline-flex mb-3 justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 bg-black">Add Words</a>
 			</div>
 		
 			<form method="post" action="{{ url('admin/logout') }}">

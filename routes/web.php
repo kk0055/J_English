@@ -56,10 +56,11 @@ Route::group(['middleware' => ['auth.admin']], function () {
   Route::put('/admin/edit/{id}', [AdminController::class, 'update'])->name('admin.update');
   Route::get('/admin/search', [AdminController::class, 'adminSearch'])->name('admin.search');
 
-  //Japanese word create
-  Route::get('/words/create', [WordController::class,'wordsCreate'])->name('japaneseWord.create');
+  //word create
+  Route::get('/admin/words/create', [WordController::class,'wordsCreate'])->name('japaneseWord.create');
   Route::post('/ja-words/create', [WordController::class,'japaneseStore'])->name('japaneseWord.store');
   Route::post('/en-words/create', [WordController::class,'englishStore'])->name('englishWord.store');
+  
   });
 
   Route::get('/admin/login', [AdminController::class, 'showLoginform']);

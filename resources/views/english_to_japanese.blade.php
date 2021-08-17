@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.default_eng')
 
 @section('content')
 @include('nav')
