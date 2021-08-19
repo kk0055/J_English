@@ -14,8 +14,13 @@
         <!-- primary nav -->
         <div class="hidden md:flex items-center space-x-1">
           <ul class="md:flex items-center justify-between text-base text-gray-600 pt-4 md:pt-0">
+            @if ( Auth::user()->id  === 1)
+            <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4"  href="  {{ route('showAdminLogin') }}">Admin</a></li>
+            @endif
             <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="{{ route('about') }}">はじめに</a></li>
             <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="{{ route('englishWord') }}">ガチャガチャ英単語</a></li>
+         
+
             <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="{{ route('website') }}">英語学習用サイト</a></li>
           
             @guest
@@ -62,6 +67,9 @@
   <!-- mobile menu -->
   <div class="mobile-menu hidden md:hidden">
     <ul class="md:flex items-center justify-between text-base text-gray-600 pt-4 md:pt-0">
+      @if ( Auth::user()->id  === 1)
+      <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4"  href="  {{ route('showAdminLogin') }}">Admin page</a></li>
+      @endif
       <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="{{ route('about') }}">はじめに</a></li>
       <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="{{ route('englishWord') }}">ガチャガチャ英単語</a></li>
       <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="{{ route('website') }}">英語学習用サイト</a></li>

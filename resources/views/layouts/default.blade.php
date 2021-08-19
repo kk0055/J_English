@@ -14,9 +14,9 @@
 
     <meta name="keywords" content="瞬間英作文,スピーキング,英語,5秒英作文,TOEIC,英会話,英語学習,海外">
     <meta name="description"
-        content="瞬間英作文。中学英語を中心に基本的な文法を使って瞬間英作文するトレーニングを行います。瞬間英作文練習例文2000門以上。英語、TOEIC,英会話の勉強に役立ちます。">
+        content="瞬間英作文。中学英語を中心に基本的な文法を使って瞬間英作文するトレーニングを行います。瞬間英作文の練習例文2000門以上。英語学習、スピーキングの練習、TOEIC,英会話の勉強にお使いください。">
     <meta property="og:description"
-        content="瞬間英作文。中学英語を中心に基本的な文法を使って瞬間英作文するトレーニングを行います。瞬間英作文練習例文2000門以上。英語、TOEIC,英会話の勉強に役立ちます。" />
+        content="瞬間英作文。中学英語を中心に基本的な文法を使って瞬間英作文するトレーニングを行います。瞬間英作文練習例文2000門以上。英語学習、スピーキングの練習,TOEIC,英会話の勉強にお使いください。" />
     {{-- Twitter --}}
     <meta name="twitter:card" content="Summary">
     <meta name="twitter:title" content="5秒英作文 ～5seconds English～">
@@ -24,7 +24,7 @@
     <meta name="twitter:creator" content="@5seconds_en" />
     <meta name="twitter:domain" content="twitter.com/5seconds_en" />
     <meta name="twitter:description"
-        content="瞬間英作文。中学英語を中心に基本的な文法を使って瞬間英作文するトレーニングを行います。瞬間英作文練習例文2000門以上。英語、TOEIC,英会話の勉強に役立ちます。">
+        content="瞬間英作文。中学英語を中心に基本的な文法を使って瞬間英作文するトレーニングを行います。瞬間英作文練習例文2000門以上。英語学習、スピーキングの練習,TOEIC,英会話の勉強にお使いください。">
 
     <meta name="twitter:image"
         content="https://image.freepik.com/free-photo/top-view-decoration-with-cubes-wooden-background_23-2148389005.jpg">
