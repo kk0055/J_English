@@ -31,7 +31,7 @@
         </div>
 
         <div class="ml-5 mt-3 text-sm md:text-base">
-            <p class=" px-2 pb-3 text-xl">使い方 </p>
+            <h1 class=" px-2 pb-3 text-xl">瞬間英作文 トレーニング </h1>
 
             <p>①日本語を見て、英文を口に出す。</p>
             <p>日本語を見て5秒以内に英語に直して声に出してください。</p>

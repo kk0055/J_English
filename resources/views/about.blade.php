@@ -27,6 +27,7 @@
 			<div class="">
 			
 						<h1 class="font-bold break-normal pt-6 pb-2 text-2xl md:text-3xl">5秒英作文 - 英会話はリスニング+瞬間英作文力</h1>
+            <h1 class=" py-2 pb-3 text-xl">瞬間英作文 トレーニング </h1>
 						<p class="text-sm md:text-base  mt-2">～はじめに～</p>
 			</div>
 
@@ -75,6 +76,7 @@
 <p>基本は中学英語レベルの問題がかなり多いです。英語を見れば「あー!こんなものか。」というくらい簡単なのに、日本語を見て英語を作れないというのは、中学英語が「わかる」けど使いこなせていないのです。中学英語を使った簡単な英文を大量に声に出して、基礎をマスターしましょう。</p>
 <p> </p>
 <p> </p>
+<h2 class="text-xl py-1">瞬間英作文 トレーニング </h2>
 <h2 class="font-bold text-3xl md:text-4xl">基本的な使い方</h2>
 <br>
 <p>①日本語を見て、英文を口に出す。</p>
@@ -94,20 +96,20 @@
 <br>
 <p>（ログインすれば、問題の投稿と保存ができます。）</p>
 <p> <a href="website" class="hover:text-blue-500">
-  <span class="text-green-400">サイト紹介のページ</span> </a>ではリスニング用のYoutubeが見れます。</p>
+  <span class="text-green-400 underline">サイト紹介のページ</span> </a>ではリスニング用のYoutubeが見れます。</p>
 
 <p> </p>
-<p>以上です。あとは繰り返し、継続です。人と比べる必要はありません。</p>
-<p>全部で1000問以上あります。リロードもしくは   
+
+<p>全部で2000問以上あります。リロードもしくは   
   右上の
   <i class="fas fa-home"></i>
 
   をクリックで問題はシャッフルされます。</p>
 <p>1ページ30問。自分のペースで毎日1ページずつでも続けていきましょう。</p>
 
-<p class="text-blue-700 mt-1">
+<p class="text-blue-700 mt-1 underline">
 <a href="/">
-  <br>日本語→英語 (Japanese→English)Ver. </a> </p>
+  <br>はじめる </a> </p>
 
 
 			<!--/ Post Content-->
