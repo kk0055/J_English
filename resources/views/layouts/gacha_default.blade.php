@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ガチャガチャ英単語 | ガチャガチャ日本語</title>
-    <meta property="og:site_name" content="ガチャガチャ英単語" />
-    <meta property="og:title" content="ガチャガチャ英単語" />
+    <title>ガチャガチャ英単語 | ガチャガチャ日本語 ランダムに単語を3つ出します。英単語verと日本語verあり。組み合わせによるアイデア出し、英作文の練習、お題の選定、ランダムな言葉でひらめきを得たい際にお使いください。自由に遊んでみてください。</title>
+    <meta property="og:site_name" content="ガチャガチャ英単語 ランダムに単語を3つ出します。英単語verと日本語verあり。組み合わせによるアイデア出し、英作文の練習、お題の選定、ランダムな言葉でひらめきを得たい際にお使いください。自由に遊んでみてください。" />
+    <meta property="og:title" content="ガチャガチャ英単語 ランダムに単語を3つ出します。英単語verと日本語verあり。組み合わせによるアイデア出し、英作文の練習、お題の選定、ランダムな言葉でひらめきを得たい際にお使いください。自由に遊んでみてください。" />
     <meta property="og:url" content="https://5seconds-en.com" />
     <meta property="og:image"
         content="https://image.freepik.com/free-photo/top-view-decoration-with-cubes-wooden-background_23-2148389005.jpg" />
