@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>5秒英作文 ～5seconds English～ 英会話はリスニング+瞬間英作文力。瞬間英作文とレーニング例文2000門以上</title>
-    <meta property="og:site_name" content="5秒英作文 ～5seconds English～ 英会話はリスニング+瞬間英作文力。瞬間英作文とレーニング例文2000門以上" />
-    <meta property="og:title" content="5秒英作文 ～5seconds English～英会話はリスニング+瞬間英作文力。瞬間英作文練習例文2000門以上" />
+    <title>5秒英作文 ～5seconds English～ 英会話はリスニング+瞬間英作文力。瞬間英作文とレーニング例文2000門以上。英語学習、スピーキングの練習、TOEIC,英会話の勉強にお使いください。</title>
+    <meta property="og:site_name" content="5秒英作文 ～5seconds English～ 英会話はリスニング+瞬間英作文力。瞬間英作文とレーニング例文2000門以上。英語学習、スピーキングの練習、TOEIC,英会話の勉強にお使いください。" />
+    <meta property="og:title" content="5秒英作文 ～5seconds English～英会話はリスニング+瞬間英作文力。瞬間英作文練習例文2000門以上。英語学習、スピーキングの練習、TOEIC,英会話の勉強にお使いください。" />
     <meta property="og:url" content="https://5seconds-en.com" />
     <meta property="og:image"
         content="https://image.freepik.com/free-photo/top-view-decoration-with-cubes-wooden-background_23-2148389005.jpg" />
