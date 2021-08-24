@@ -2117,22 +2117,22 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
-/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
-/* harmony import */ var _router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./router */ "./resources/js/router.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
+/* harmony import */ var _router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./router */ "./resources/js/router.js");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
 
 
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js").default;
-vue__WEBPACK_IMPORTED_MODULE_2__.default.use(vue_router__WEBPACK_IMPORTED_MODULE_0__.default);
-vue__WEBPACK_IMPORTED_MODULE_2__.default.component('favorite-button', __webpack_require__(/*! ./components/Favorite.vue */ "./resources/js/components/Favorite.vue").default);
-vue__WEBPACK_IMPORTED_MODULE_2__.default.component('english-word', __webpack_require__(/*! ./components/EnglishWord.vue */ "./resources/js/components/EnglishWord.vue").default);
-vue__WEBPACK_IMPORTED_MODULE_2__.default.component('japanese-word', __webpack_require__(/*! ./components/JapaneseWord.vue */ "./resources/js/components/JapaneseWord.vue").default);
-var app = new vue__WEBPACK_IMPORTED_MODULE_2__.default({
+vue__WEBPACK_IMPORTED_MODULE_1__.default.use(vue_router__WEBPACK_IMPORTED_MODULE_2__.default);
+vue__WEBPACK_IMPORTED_MODULE_1__.default.component('favorite-button', __webpack_require__(/*! ./components/Favorite.vue */ "./resources/js/components/Favorite.vue").default);
+vue__WEBPACK_IMPORTED_MODULE_1__.default.component('english-word', __webpack_require__(/*! ./components/EnglishWord.vue */ "./resources/js/components/EnglishWord.vue").default);
+vue__WEBPACK_IMPORTED_MODULE_1__.default.component('japanese-word', __webpack_require__(/*! ./components/JapaneseWord.vue */ "./resources/js/components/JapaneseWord.vue").default);
+var app = new vue__WEBPACK_IMPORTED_MODULE_1__.default({
   el: '#app',
-  router: _router__WEBPACK_IMPORTED_MODULE_1__.default
+  router: _router__WEBPACK_IMPORTED_MODULE_0__.default
 });
 
 /***/ }),
@@ -2192,16 +2192,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
 /* harmony import */ var _components_JapaneseWord_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/JapaneseWord.vue */ "./resources/js/components/JapaneseWord.vue");
+/* harmony import */ var _views_About_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./views/About.vue */ "./resources/js/views/About.vue");
 
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new vue_router__WEBPACK_IMPORTED_MODULE_1__.default({
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new vue_router__WEBPACK_IMPORTED_MODULE_2__.default({
   mode: 'history',
   routes: [{
     path: '/ja-words/gacha',
     name: 'JapaneseWord',
     component: _components_JapaneseWord_vue__WEBPACK_IMPORTED_MODULE_0__.default
+  }, {
+    path: '/about',
+    name: 'About',
+    component: _views_About_vue__WEBPACK_IMPORTED_MODULE_1__.default
   }]
 }));
 
@@ -37707,6 +37713,43 @@ component.options.__file = "resources/js/components/JapaneseWord.vue"
 
 /***/ }),
 
+/***/ "./resources/js/views/About.vue":
+/*!**************************************!*\
+  !*** ./resources/js/views/About.vue ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _About_vue_vue_type_template_id_2995bb7e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./About.vue?vue&type=template&id=2995bb7e& */ "./resources/js/views/About.vue?vue&type=template&id=2995bb7e&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__.default)(
+  script,
+  _About_vue_vue_type_template_id_2995bb7e___WEBPACK_IMPORTED_MODULE_0__.render,
+  _About_vue_vue_type_template_id_2995bb7e___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/views/About.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/components/EnglishWord.vue?vue&type=script&lang=js&":
 /*!**************************************************************************!*\
   !*** ./resources/js/components/EnglishWord.vue?vue&type=script&lang=js& ***!
@@ -37802,6 +37845,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_JapaneseWord_vue_vue_type_template_id_5c1b08c6___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_JapaneseWord_vue_vue_type_template_id_5c1b08c6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./JapaneseWord.vue?vue&type=template&id=5c1b08c6& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/JapaneseWord.vue?vue&type=template&id=5c1b08c6&");
+
+
+/***/ }),
+
+/***/ "./resources/js/views/About.vue?vue&type=template&id=2995bb7e&":
+/*!*********************************************************************!*\
+  !*** ./resources/js/views/About.vue?vue&type=template&id=2995bb7e& ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_About_vue_vue_type_template_id_2995bb7e___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_About_vue_vue_type_template_id_2995bb7e___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_About_vue_vue_type_template_id_2995bb7e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./About.vue?vue&type=template&id=2995bb7e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/About.vue?vue&type=template&id=2995bb7e&");
 
 
 /***/ }),
@@ -38154,6 +38214,387 @@ var staticRenderFns = [
         ]
       )
     ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/About.vue?vue&type=template&id=2995bb7e&":
+/*!************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/About.vue?vue&type=template&id=2995bb7e& ***!
+  \************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "container w-full md:max-w-3xl mx-auto pt-20" },
+      [
+        _c(
+          "div",
+          {
+            staticClass:
+              "w-full px-4 md:px-6 text-sm md:text-xl text-gray-800 leading-normal"
+          },
+          [
+            _c("div", {}, [
+              _c(
+                "h1",
+                {
+                  staticClass:
+                    "font-bold break-normal pt-6 pb-2 text-2xl md:text-3xl"
+                },
+                [_vm._v("5秒英作文 - 英会話はリスニング+瞬間英作文力")]
+              ),
+              _vm._v(" "),
+              _c("p", { staticClass: "text-sm md:text-base  mt-2" }, [
+                _vm._v("～はじめに～")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("p"),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "英語を勉強する目的はひとそれぞれです。TOEICで良いスコアを取りたい、映画を字幕なしで見たい、受験のために英語が必要、留学したい、英語を使った仕事に就きたい、外国人と楽しく英会話をできるようになりたい、カッコよく英語を話せるようになりたいなど。"
+              )
+            ]),
+            _vm._v(" "),
+            _c("p"),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "英語の勉強をする方法も、無料のものから有料のものまで数えられないほどたくさんあります。英単語を覚える、文法を暗記、簡単な英文を暗記、シャドーウィング、リスニングを聴く、リーディング、ディクテーション（耳で聞いたものをそのまま書き取っていく）をする、英文の音読、英語で日記を書く、英作文を作る、オンライン英会話、学校に通う、留学などなど。"
+              )
+            ]),
+            _vm._v(" "),
+            _c("p"),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "どれも大切ですし、正直何から始めて良いかわからないかとおもいます。"
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "ただ、よく言われるように多くのひとはリーディングはそれほど苦労なくできると思います。"
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("英語を学ぶ目的としては、"),
+              _c(
+                "strong",
+                { staticClass: "font-bold underline text-red-500" },
+                [
+                  _vm._v(
+                    "英語を話せるようになりたい、英会話できるようになりたい"
+                  )
+                ]
+              ),
+              _vm._v(
+                "というのが一番ではないでしょうか。リスニングには問題がなく、相手の言っていることは分かるのに、上手く答えられない、会話がスムーズにいかないというのはフラストレーションがたまります。"
+              )
+            ]),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c("h2", { staticClass: "font-bold text-2xl md:text-3xl" }, [
+              _vm._v("英会話ができるようになるには")
+            ]),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "この5秒英作文のサイトは、日本語を見て、瞬間的に英作文ができるようになるために作りました。瞬間的に英文が作れると何がいいのか。"
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "瞬間的に英文を作れるようになると英会話がスムーズにできるようになります。コミュニケーションも円滑になるでしょう。"
+              )
+            ]),
+            _vm._v(" "),
+            _c("p"),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("瞬間的に英作文を作る練習は"),
+              _c("strong", { staticClass: "font-bold text-red-500" }, [
+                _vm._v("「基本的な文法をマスターする」「瞬発力を鍛える")
+              ]),
+              _vm._v("」のに効果的で、この力は英会話においてはかなり重要です。")
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "TOEICなどのリーディングの試験で必要な英語の力をつけることにも役立つはずです。"
+              )
+            ]),
+            _vm._v(" "),
+            _c("p"),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("英語が話せるとは"),
+              _c(
+                "strong",
+                { staticClass: "font-bold underline text-red-500" },
+                [_vm._v("”今言いたいことが口から瞬時に出てくること”")]
+              ),
+              _vm._v("だと思います。")
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "では、どうすれば今言いたいことが瞬時にでてくるのかというと、瞬時に出てくるセリフの引き出しが多ければ多いほど出てきやすいです。"
+              )
+            ]),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "最初は難しいかもしれませんが、日本語を見て英語を口に出すトレーニングを積めば、英語を口に出すことに慣れてきます。"
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "何度もやれば少しずつフレーズを覚えてきます。 インプットなしにはアウトプットはできません。頭の中に英語があまり入っていないのに、英語が話せるわけがないのです。"
+              )
+            ]),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "少しずつでも続けていれば、そのうち自分が言いたいことも出てきやすくなります。そして引き出しが増えていきます。"
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "基本的な文法の引き出しが増えれば、後はボキャブラリー（単語）のバリエーションが広がれば広がるほど、英語で伝えられることが増えていきます。応用がきくようになります。"
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "トレーニングを積むことで、使うべき文法やフレーズがより瞬間的に頭に浮かんでくるようになるでしょう。"
+              )
+            ]),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "英語が話せるようになりたくてオンライン英会話を始めたり、留学を検討する人も多いとおもいます。ですが、これだけでは英語のスピーキング力を効率的に向上させることはできません。\n"
+              ),
+              _c("br"),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(
+                "\nスピーキング力を向上させるには、話す機会を持つことが重要なのではなく、その準備"
+              ),
+              _c("strong", { staticClass: "font-bold text-red-500" }, [
+                _vm._v(
+                  "（時間が掛かっても、まずは正確な文章を作れるようになること）"
+                )
+              ]),
+              _vm._v(
+                "が大切なのです。基本的な簡単な単語、文法を学んでからオンライン英会話なり、留学をした方が会話を楽しめます。むしろ、基本的な文法さえ分からない状態だと英会話がストレスに感じ、あまり楽しく感じられないのではないでしょうか。"
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "基本的な簡単な単語、文法を身に着けるのにはこの5秒英作文のサイトで瞬間英作文力をきたえることが最適です。"
+              )
+            ]),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "また、単語・文法の基本的な知識がないうちに、オンライン英会話などで先生にうながされて話すと、単語も文法もめちゃくちゃな「変」な英語を自分で作ってしまいます。その後に、修正されても、自分で作りだした「変」な英語が強烈な印象を持って頭に刻み込まれているので、何度も同じ間違いを繰り返してしまうという現象すらあります。まずは初期段階での基礎学習とインプットが重要です。"
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "ネイティヴスピーカーと話す機会は、ある程度基礎知識が身についてからの実践練習のステップで積極的に活用するほうがいいでしょう。"
+              )
+            ]),
+            _vm._v(" "),
+            _c("p"),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "このサイトには基本的な文法をつかった簡単な日常会話から少し難しい関係代名詞を使った文章を登録しています。"
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "基本は中学英語レベルの問題がかなり多いです。英語を見れば「あー!こんなものか。」というくらい簡単なのに、日本語を見て英語を作れないというのは、中学英語が「わかる」けど使いこなせていないのです。中学英語を使った簡単な英文を大量に声に出して、基礎をマスターしましょう。"
+              )
+            ]),
+            _vm._v(" "),
+            _c("p"),
+            _vm._v(" "),
+            _c("p"),
+            _vm._v(" "),
+            _c("h2", { staticClass: "font-bold text-3xl md:text-4xl" }, [
+              _vm._v("基本的な使い方")
+            ]),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c("p", [_vm._v("①日本語を見て、英文を口に出す。")]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("日本語を見て5秒以内に英語を声に出してください。")
+            ]),
+            _vm._v(" "),
+            _c("p"),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("②5秒考えてわからなければ英語を確認して答え合わせ。")
+            ]),
+            _vm._v(" "),
+            _c("p", [_vm._v("日本語をクリックすると英文がでます。")]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("あまり長く考えず、分からなければすぐに答えを見てください")
+            ]),
+            _vm._v(" "),
+            _c("p"),
+            _vm._v(" "),
+            _c("p", [_vm._v("③何度か口に出す。")]),
+            _vm._v(" "),
+            _c("p", [_vm._v("口になじむまで何回か声に出してみましょう。")]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "サウンドボタンを押すと英語を読み上げますが、デバイスの言語を英語にする必要があります。"
+              )
+            ]),
+            _vm._v(" "),
+            _c("p"),
+            _vm._v(" "),
+            _c("p", [_vm._v("④次の問題へ")]),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("（ログインすれば、問題の投稿と保存ができます。）")
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _c(
+                "a",
+                {
+                  staticClass: "hover:text-blue-500",
+                  attrs: { href: "website" }
+                },
+                [
+                  _c("span", { staticClass: "text-green-400" }, [
+                    _vm._v("サイト紹介のページ")
+                  ])
+                ]
+              ),
+              _vm._v("ではリスニング用のYoutubeが見れます。")
+            ]),
+            _vm._v(" "),
+            _c("p"),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "以上です。あとは繰り返し、継続です。人と比べる必要はありません。"
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "全部で1000問以上あります。リロードもしくは   \n  右上の\n  "
+              ),
+              _c("i", { staticClass: "fas fa-home" }),
+              _vm._v("\n\n  をクリックで問題はシャッフルされます。")
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "1ページ30問。自分のペースで毎日1ページずつでも続けていきましょう。"
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "text-blue-700 mt-1" }, [
+              _c("a", { attrs: { href: "/" } }, [
+                _c("br"),
+                _vm._v("日本語→英語 (Japanese→English)Ver. ")
+              ])
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c("div", {
+          staticClass: "text-base md:text-sm text-gray-500 px-4 py-6"
+        }),
+        _vm._v(" "),
+        _c("hr", { staticClass: "border-b-2 border-gray-400 mb-8 mx-4" }),
+        _vm._v(" "),
+        _vm._v("\n\t\t{{-- "),
+        _c("div", { staticClass: "container px-4 " }, [
+          _c(
+            "a",
+            {
+              attrs: {
+                href: "https://twitter.com/5seconds_en",
+                target: "_blank"
+              }
+            },
+            [
+              _c("img", {
+                attrs: {
+                  src: "https://img.icons8.com/fluent/2x/twitter.png",
+                  width: "40px",
+                  alt: ""
+                }
+              })
+            ]
+          )
+        ]),
+        _vm._v(" --}}\n\n\t"),
+        _c("footer", {}, [
+          _c("div", { staticClass: "container max-w-4xl mx-auto flex py-8" })
+        ])
+      ]
+    )
   }
 ]
 render._withStripped = true

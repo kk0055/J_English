@@ -73,3 +73,5 @@ Route::group(['middleware' => ['auth.admin']], function () {
   //japanseword
   Route::get('/ja-words/gacha', [WordController::class,'japanesehWord'])->name('japaneseWord');
   Route::get('/ja-words', [WordController::class,'getJapaneseWord'])->name('getJapaneseWord');
+
+
