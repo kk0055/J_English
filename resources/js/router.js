@@ -1,13 +1,13 @@
 import Router from 'vue-router'
-import About from './views/About.vue'
+import JapaneseWord from './components/JapaneseWord.vue'
 
 export default new Router({
   mode: 'history',
   routes: [
     {
-      path: '/about',
-      name: 'about',
-      component: About
+      path: '/ja-words/gacha',
+      name: 'JapaneseWord',
+      component: JapaneseWord
     },
   ]
 });

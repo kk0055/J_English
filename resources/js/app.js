@@ -2,8 +2,12 @@
 
 require('./bootstrap');
 
-window.Vue = require('vue').default;
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import router from './router'
 
+window.Vue = require('vue').default;
+Vue.use(VueRouter);
 
 
 Vue.component('favorite-button', require('./components/Favorite.vue').default);
@@ -13,4 +17,5 @@ Vue.component('japanese-word', require('./components/JapaneseWord.vue').default)
 
 const app = new Vue({
     el: '#app',
+    router
 });
