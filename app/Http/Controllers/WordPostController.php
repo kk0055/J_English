@@ -13,9 +13,11 @@ class WordPostController extends Controller
       return JapaneseWordPostResource::collection($posts);
     } 
 
-    public function JapaneseWordPostStore()
+    public function JapaneseWordPostStore(Request $request)
     {
+        $post = JapaneseWordPost::create($request->all());
     
+        return response()->json($post);
     }   
 
     public function EnglishWordPostIndex()
