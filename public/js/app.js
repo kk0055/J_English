@@ -2301,6 +2301,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -39256,7 +39257,7 @@ var render = function() {
                                       attrs: {
                                         autocomplete: "off",
                                         type: "text",
-                                        row: "5",
+                                        row: "6",
                                         name: "write"
                                       },
                                       domProps: { value: _vm.post.post },
@@ -39302,16 +39303,25 @@ var render = function() {
         "div",
         {
           staticClass:
-            "inline-flex flex-col space-y-2 items-center h-full\n           w-full  p-4 bg-blue-400 rounded-xl text-white"
+            "inline-flex flex-col space-y-2 items-center h-64\n           w-full  p-4  rounded-xl overflow-auto"
         },
-        _vm._l(_vm.posts, function(post) {
-          return _c(
-            "p",
-            { key: post.id, staticClass: "w-full text-2xl font-semibold" },
-            [_vm._v("\n          " + _vm._s(post.post) + "\n        ")]
+        [
+          _c(
+            "div",
+            { staticClass: "w-full py-4 " },
+            _vm._l(_vm.posts, function(post) {
+              return _c(
+                "p",
+                {
+                  key: post.id,
+                  staticClass: "w-full text-sm font-semibold border-b-2"
+                },
+                [_vm._v("\n          " + _vm._s(post.post) + "\n        ")]
+              )
+            }),
+            0
           )
-        }),
-        0
+        ]
       )
     ])
   ])
@@ -39363,7 +39373,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", [
-      _c("h1", { staticClass: "text-2xl font-semibold" }, [
+      _c("h1", { staticClass: "text-2xl mb-3 font-semibold" }, [
         _vm._v("Make a sentence with the words")
       ])
     ])

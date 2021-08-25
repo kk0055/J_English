@@ -65,7 +65,7 @@
 		<div class="relative px-4 py-10 bg-white shadow-lg rounded-3xl sm:p-20">
 			<div class="max-w-md mx-auto">
 				<div>
-					<h1 class="text-2xl font-semibold">Make a sentence with the words</h1>
+					<h1 class="text-2xl mb-3 font-semibold">Make a sentence with the words</h1>
 				</div>
           <p
           class="w-full  font-semibold"
@@ -77,7 +77,7 @@
 				<div class="divide-y divide-gray-200">
 					<div class="text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
 						<div class="relative">
-							<textarea autocomplete="off" type="text" row="5" name="write" class="py-5 peer placeholder-transparent h-15 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600" v-model="post.post"  > </textarea>
+							<textarea autocomplete="off" type="text" row="6" name="write" class="py-5 peer placeholder-transparent h-15 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600" v-model="post.post"  > </textarea>
 							<label for="write" class="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm"></label>
 						</div>
 					
@@ -94,18 +94,19 @@
  <!-- Form -->
  <!--  -->      
  <div
-        class="inline-flex flex-col space-y-2 items-center h-full
-           w-full  p-4 bg-blue-400 rounded-xl text-white"
+        class="inline-flex flex-col space-y-2 items-center h-64
+           w-full  p-4  rounded-xl overflow-auto"
       >
+      <div class="w-full py-4 ">
         <p
-          class="w-full text-2xl font-semibold"
+          class="w-full text-sm font-semibold border-b-2"
           v-for="post in posts"
           :key="post.id"
         >
           {{ post.post }}
-        </p>
+        </p></div>
       </div>
-      <!--  -->
+  <!--  -->
     </div>
 
 
