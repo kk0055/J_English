@@ -31,8 +31,6 @@ class WordController extends Controller
     public function getJapaneseWord()
     {
     return JapaneseWordResource::collection(JapaneseWord::inRandomOrder()->take(3)->get());
-
-   
     }
     
 

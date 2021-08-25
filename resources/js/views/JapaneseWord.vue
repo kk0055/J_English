@@ -94,54 +94,45 @@
 </template>
 
 <script>
+ import {mapState} from 'vuex'
 export default {
   data: function () {
     return {
-      words: [],
-      posts:[],
       post:{
         post:'' ,
-      
       }
     };
   },
   created() {
-    this.loadJapaneseWord();
-    this.loadJapaneseWordPost();
+    this.$store.dispatch('loadJapaneseWord')
+    this.$store.dispatch('loadJapaneseWordPost')
+    
+  },
+  computed: {
+...mapState(['words','posts'])
   },
   methods: {
-    loadJapaneseWord: function () {
-      axios
-        .get("/ja-words")
-        .then((response) => {
-          //  console.log( response)
-          this.words = response.data.data;
-          // console.log(this.words);
-        })
-        .catch(function (error) {
-          console.log(error);
-        });
-    },
-    loadJapaneseWordPost() {
-          axios
-        .get("/ja-words/post")
-        .then((response) => {
-          //  console.log( response)
-          this.posts = response.data.data;
-          // console.log(this.posts);
-        })
-        .catch(function (error) {
-          console.log(error);
-        });
-    },
+ 
+    loadJapaneseWord() {
+        this.$store.dispatch('loadJapaneseWord')
+          },
+    // loadJapaneseWordPost() {
+    //       axios
+    //     .get("/ja-words/post")
+    //     .then((response) => {
+    //       this.posts = response.data.data;
+    //       // console.log(this.posts);
+    //     })
+    //     .catch(function (error) {
+    //       console.log(error);
+    //     });
+    // },
       formSubmit() {  
-      //   if (this.post.length > 150 ) {
-      //   window.alert('within 150 .');
-      // }
+   
           axios.post('/ja-words/post/create', this.post)
           .then(res => console.log(res))
           .catch(err => console.log(err));
-           this.loadJapaneseWordPost();
+          this.$store.dispatch('loadJapaneseWordPost')
            this.post.post = ''
       }
   },
