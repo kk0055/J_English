@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen py-6 flex flex-col justify-center sm:py-12">
+   <div class="min-h-screen py-6 flex flex-col justify-center sm:py-12">
    <form  @submit.prevent="formSubmit">  
 	<div class="relative py-3 sm:max-w-xl sm:mx-auto">
 		<div
@@ -7,18 +7,20 @@
 		</div>
 		<div class="relative px-4 py-10 bg-white shadow-lg rounded-3xl sm:p-20">
 			<div class="max-w-md mx-auto">
-				<div class="mb-3">
-					<h1 class="text-2xl font-semibold">Make sentences with the words</h1>
+				<div>   
+					<h1 class="text-2xl mb-3 font-semibold">Make a sentence with the words</h1>
 				</div>
-          <p class="w-full font-semibold"
-          
+          <p
+          class="w-full  font-semibold"
+          v-for="word in words"
+          :key="word.id"
         >
           {{ word.word }}
         </p>
 				<div class="divide-y divide-gray-200">
 					<div class="text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
 						<div class="relative">
-							<textarea autocomplete="off" rows="3"type="text" name="write" class="py-5 peer placeholder-transparent h-15 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600" v-model="post.post"  > </textarea>
+							<textarea autocomplete="off" type="text" row="6" name="write" class="py-5 peer placeholder-transparent h-15 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600" v-model="post.post"  > </textarea>
 							<label for="write" class="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm"></label>
 						</div>
 					
@@ -35,8 +37,9 @@
 </template>
 
 <script>
+ import {mapState} from 'vuex'
 export default {
-  name:"CreateForm",
+  name:"JPCreateForm",
   data() {
   return {
      post:{
@@ -44,30 +47,17 @@ export default {
       }
   }
   },
-  props: {
-    word: Object,
-    post: Object
+  computed: {
+...mapState(['words'])
   },
   methods:{
-         formSubmit() {  
+          formSubmit() {  
           axios.post('/ja-words/post/create', this.post)
-          .then(res => console.log(res))
+          // .then(res => console.log(res))
           .catch(err => console.log(err));
-         this.loadJapaneseWordPost();
+          this.$store.dispatch('loadJapaneseWordPost')
            this.post.post = ''
-      },
-          loadJapaneseWordPost() {
-          axios
-        .get("/ja-words/post")
-        .then((response) => {
-          //  console.log( response)
-          this.posts = response.data.data;
-          // console.log(this.posts);
-        })
-        .catch(function (error) {
-          console.log(error);
-        });
-    },
+      }
   }
 }
 </script>
