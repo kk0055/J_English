@@ -12,7 +12,7 @@ Vue.use(VueRouter);
 
 Vue.component('favorite-button', require('./components/Favorite.vue').default);
 Vue.component('english-word', require('./components/EnglishWord.vue').default);
-Vue.component('japanese-word', require('./components/JapaneseWord.vue').default);
+Vue.component('japanese-word', require('./views/JapaneseWord.vue').default);
 
 
 const app = new Vue({

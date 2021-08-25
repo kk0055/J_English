@@ -75,9 +75,9 @@
           {{ word.word }}
         </p>
 				<div class="divide-y divide-gray-200">
-					<div class="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
+					<div class="text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
 						<div class="relative">
-							<textarea autocomplete="off" type="text" name="write" class="py-5 peer placeholder-transparent h-15 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600" v-model="post.post"  > </textarea>
+							<textarea autocomplete="off" type="text" row="5" name="write" class="py-5 peer placeholder-transparent h-15 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600" v-model="post.post"  > </textarea>
 							<label for="write" class="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm"></label>
 						</div>
 					

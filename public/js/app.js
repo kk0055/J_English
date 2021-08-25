@@ -2120,6 +2120,187 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  data: function data() {
+    return {
+      words: [],
+      posts: [],
+      post: {
+        post: ''
+      }
+    };
+  },
+  created: function created() {
+    this.loadJapaneseWord();
+    this.loadJapaneseWordPost();
+  },
+  methods: {
+    loadJapaneseWord: function loadJapaneseWord() {
+      var _this = this;
+
+      axios.get("/ja-words").then(function (response) {
+        //  console.log( response)
+        _this.words = response.data.data; // console.log(this.words);
+      })["catch"](function (error) {
+        console.log(error);
+      });
+    },
+    loadJapaneseWordPost: function loadJapaneseWordPost() {
+      var _this2 = this;
+
+      axios.get("/ja-words/post").then(function (response) {
+        //  console.log( response)
+        _this2.posts = response.data.data; // console.log(this.posts);
+      })["catch"](function (error) {
+        console.log(error);
+      });
+    },
+    formSubmit: function formSubmit() {
+      axios.post('/ja-words/post/create', this.post).then(function (res) {
+        return console.log(res);
+      })["catch"](function (err) {
+        return console.log(err);
+      });
+      this.loadJapaneseWordPost();
+      this.post.post = '';
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/JapaneseWord.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/JapaneseWord.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -2189,7 +2370,7 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js"
 vue__WEBPACK_IMPORTED_MODULE_1__.default.use(vue_router__WEBPACK_IMPORTED_MODULE_2__.default);
 vue__WEBPACK_IMPORTED_MODULE_1__.default.component('favorite-button', __webpack_require__(/*! ./components/Favorite.vue */ "./resources/js/components/Favorite.vue").default);
 vue__WEBPACK_IMPORTED_MODULE_1__.default.component('english-word', __webpack_require__(/*! ./components/EnglishWord.vue */ "./resources/js/components/EnglishWord.vue").default);
-vue__WEBPACK_IMPORTED_MODULE_1__.default.component('japanese-word', __webpack_require__(/*! ./components/JapaneseWord.vue */ "./resources/js/components/JapaneseWord.vue").default);
+vue__WEBPACK_IMPORTED_MODULE_1__.default.component('japanese-word', __webpack_require__(/*! ./views/JapaneseWord.vue */ "./resources/js/views/JapaneseWord.vue").default);
 var app = new vue__WEBPACK_IMPORTED_MODULE_1__.default({
   el: '#app',
   router: _router__WEBPACK_IMPORTED_MODULE_0__.default
@@ -37810,6 +37991,45 @@ component.options.__file = "resources/js/views/About.vue"
 
 /***/ }),
 
+/***/ "./resources/js/views/JapaneseWord.vue":
+/*!*********************************************!*\
+  !*** ./resources/js/views/JapaneseWord.vue ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _JapaneseWord_vue_vue_type_template_id_0675050c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./JapaneseWord.vue?vue&type=template&id=0675050c& */ "./resources/js/views/JapaneseWord.vue?vue&type=template&id=0675050c&");
+/* harmony import */ var _JapaneseWord_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./JapaneseWord.vue?vue&type=script&lang=js& */ "./resources/js/views/JapaneseWord.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
+  _JapaneseWord_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
+  _JapaneseWord_vue_vue_type_template_id_0675050c___WEBPACK_IMPORTED_MODULE_0__.render,
+  _JapaneseWord_vue_vue_type_template_id_0675050c___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/views/JapaneseWord.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/components/EnglishWord.vue?vue&type=script&lang=js&":
 /*!**************************************************************************!*\
   !*** ./resources/js/components/EnglishWord.vue?vue&type=script&lang=js& ***!
@@ -37854,6 +38074,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_JapaneseWord_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./JapaneseWord.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/JapaneseWord.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_JapaneseWord_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
+
+/***/ }),
+
+/***/ "./resources/js/views/JapaneseWord.vue?vue&type=script&lang=js&":
+/*!**********************************************************************!*\
+  !*** ./resources/js/views/JapaneseWord.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_JapaneseWord_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./JapaneseWord.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/JapaneseWord.vue?vue&type=script&lang=js&");
  /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_JapaneseWord_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
 
 /***/ }),
@@ -37922,6 +38158,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_About_vue_vue_type_template_id_2995bb7e___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_About_vue_vue_type_template_id_2995bb7e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./About.vue?vue&type=template&id=2995bb7e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/About.vue?vue&type=template&id=2995bb7e&");
+
+
+/***/ }),
+
+/***/ "./resources/js/views/JapaneseWord.vue?vue&type=template&id=0675050c&":
+/*!****************************************************************************!*\
+  !*** ./resources/js/views/JapaneseWord.vue?vue&type=template&id=0675050c& ***!
+  \****************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_JapaneseWord_vue_vue_type_template_id_0675050c___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_JapaneseWord_vue_vue_type_template_id_0675050c___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_JapaneseWord_vue_vue_type_template_id_0675050c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./JapaneseWord.vue?vue&type=template&id=0675050c& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/JapaneseWord.vue?vue&type=template&id=0675050c&");
 
 
 /***/ }),
@@ -38264,61 +38517,87 @@ var render = function() {
                         "relative px-4 py-10 bg-white shadow-lg rounded-3xl sm:p-20"
                     },
                     [
-                      _c("div", { staticClass: "max-w-md mx-auto" }, [
-                        _vm._m(1),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "divide-y divide-gray-200" }, [
+                      _c(
+                        "div",
+                        { staticClass: "max-w-md mx-auto" },
+                        [
+                          _vm._m(1),
+                          _vm._v(" "),
+                          _vm._l(_vm.words, function(word) {
+                            return _c(
+                              "p",
+                              {
+                                key: word.id,
+                                staticClass: "w-full  font-semibold"
+                              },
+                              [
+                                _vm._v(
+                                  "\n          " +
+                                    _vm._s(word.word) +
+                                    "\n        "
+                                )
+                              ]
+                            )
+                          }),
+                          _vm._v(" "),
                           _c(
                             "div",
-                            {
-                              staticClass:
-                                "py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7"
-                            },
+                            { staticClass: "divide-y divide-gray-200" },
                             [
-                              _c("div", { staticClass: "relative" }, [
-                                _c("textarea", {
-                                  directives: [
-                                    {
-                                      name: "model",
-                                      rawName: "v-model",
-                                      value: _vm.post.post,
-                                      expression: "post.post"
-                                    }
-                                  ],
+                              _c(
+                                "div",
+                                {
                                   staticClass:
-                                    "py-5 peer placeholder-transparent h-15 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600",
-                                  attrs: {
-                                    autocomplete: "off",
-                                    type: "text",
-                                    name: "write"
-                                  },
-                                  domProps: { value: _vm.post.post },
-                                  on: {
-                                    input: function($event) {
-                                      if ($event.target.composing) {
-                                        return
+                                    "py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7"
+                                },
+                                [
+                                  _c("div", { staticClass: "relative" }, [
+                                    _c("textarea", {
+                                      directives: [
+                                        {
+                                          name: "model",
+                                          rawName: "v-model",
+                                          value: _vm.post.post,
+                                          expression: "post.post"
+                                        }
+                                      ],
+                                      staticClass:
+                                        "py-5 peer placeholder-transparent h-15 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600",
+                                      attrs: {
+                                        autocomplete: "off",
+                                        type: "text",
+                                        name: "write"
+                                      },
+                                      domProps: { value: _vm.post.post },
+                                      on: {
+                                        input: function($event) {
+                                          if ($event.target.composing) {
+                                            return
+                                          }
+                                          _vm.$set(
+                                            _vm.post,
+                                            "post",
+                                            $event.target.value
+                                          )
+                                        }
                                       }
-                                      _vm.$set(
-                                        _vm.post,
-                                        "post",
-                                        $event.target.value
-                                      )
-                                    }
-                                  }
-                                }),
-                                _vm._v(" "),
-                                _c("label", {
-                                  staticClass:
-                                    "absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm",
-                                  attrs: { for: "write" }
-                                })
-                              ]),
-                              _vm._v(" "),
-                              _vm._m(2)
+                                    }),
+                                    _vm._v(" "),
+                                    _c("label", {
+                                      staticClass:
+                                        "absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm",
+                                      attrs: { for: "write" }
+                                    })
+                                  ]),
+                                  _vm._v(" "),
+                                  _vm._m(2)
+                                ]
+                              )
                             ]
                           )
-                        ])
-                      ])
+                        ],
+                        2
+                      )
                     ]
                   )
                 ]
@@ -38793,6 +39072,316 @@ var staticRenderFns = [
         ])
       ]
     )
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/JapaneseWord.vue?vue&type=template&id=0675050c&":
+/*!*******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/JapaneseWord.vue?vue&type=template&id=0675050c& ***!
+  \*******************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "mt-10" }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("div", { staticClass: "max-w-screen-md w-3/4 md:w-3/4 mt-14 mx-auto" }, [
+      _c(
+        "div",
+        {
+          staticClass:
+            "inline-flex flex-col space-y-2 items-center h-full\n           w-full  p-4 bg-blue-400 rounded-xl text-white"
+        },
+        _vm._l(_vm.words, function(word) {
+          return _c(
+            "p",
+            { key: word.id, staticClass: "w-full text-2xl font-semibold" },
+            [_vm._v("\n          " + _vm._s(word.word) + "\n        ")]
+          )
+        }),
+        0
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "flex items-center flex-col justify-center mt-8" },
+        [
+          _c("div", { staticClass: "border rounded-lg border-blue-400 px-4" }, [
+            _c("button", { on: { click: _vm.loadJapaneseWord } }, [
+              _c(
+                "p",
+                {
+                  staticClass:
+                    "text-sm font-medium leading-normal text-center py-2"
+                },
+                [_vm._v("\n              ガチャガチャ\n            ")]
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "border rounded-lg border-blue-400 px-4 mt-10" },
+            [
+              _c("button", [
+                _c(
+                  "a",
+                  {
+                    staticClass: "twitter-link",
+                    attrs: {
+                      href:
+                        "https://twitter.com/intent/tweet?text=【次の3つで文章を作ってね】%0A" +
+                        _vm.words[0].word +
+                        "/" +
+                        _vm.words[1].word +
+                        "/" +
+                        _vm.words[2].word +
+                        "%0A%0A&hashtags=ガチャガチャ日本語",
+                      id: "tw",
+                      onClick:
+                        "window.open(encodeURI(decodeURI(this.href)), 'tweetwindow', 'width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1'); return false;",
+                      rel: "nofollow"
+                    }
+                  },
+                  [
+                    _c(
+                      "p",
+                      {
+                        staticClass:
+                          "text-sm font-medium leading-normal text-center py-2"
+                      },
+                      [_vm._v("\n              Tweetする\n            ")]
+                    )
+                  ]
+                )
+              ])
+            ]
+          )
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "min-h-screen py-6 flex flex-col justify-center sm:py-12"
+        },
+        [
+          _c(
+            "form",
+            {
+              on: {
+                submit: function($event) {
+                  $event.preventDefault()
+                  return _vm.formSubmit($event)
+                }
+              }
+            },
+            [
+              _c(
+                "div",
+                { staticClass: "relative py-3 sm:max-w-xl sm:mx-auto" },
+                [
+                  _c("div", {
+                    staticClass:
+                      "absolute inset-0 bg-gradient-to-r from-blue-300 to-blue-600 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 rounded-3xl"
+                  }),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "relative px-4 py-10 bg-white shadow-lg rounded-3xl sm:p-20"
+                    },
+                    [
+                      _c(
+                        "div",
+                        { staticClass: "max-w-md mx-auto" },
+                        [
+                          _vm._m(1),
+                          _vm._v(" "),
+                          _vm._l(_vm.words, function(word) {
+                            return _c(
+                              "p",
+                              {
+                                key: word.id,
+                                staticClass: "w-full  font-semibold"
+                              },
+                              [
+                                _vm._v(
+                                  "\n          " +
+                                    _vm._s(word.word) +
+                                    "\n        "
+                                )
+                              ]
+                            )
+                          }),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            { staticClass: "divide-y divide-gray-200" },
+                            [
+                              _c(
+                                "div",
+                                {
+                                  staticClass:
+                                    "text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7"
+                                },
+                                [
+                                  _c("div", { staticClass: "relative" }, [
+                                    _c("textarea", {
+                                      directives: [
+                                        {
+                                          name: "model",
+                                          rawName: "v-model",
+                                          value: _vm.post.post,
+                                          expression: "post.post"
+                                        }
+                                      ],
+                                      staticClass:
+                                        "py-5 peer placeholder-transparent h-15 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600",
+                                      attrs: {
+                                        autocomplete: "off",
+                                        type: "text",
+                                        row: "5",
+                                        name: "write"
+                                      },
+                                      domProps: { value: _vm.post.post },
+                                      on: {
+                                        input: function($event) {
+                                          if ($event.target.composing) {
+                                            return
+                                          }
+                                          _vm.$set(
+                                            _vm.post,
+                                            "post",
+                                            $event.target.value
+                                          )
+                                        }
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("label", {
+                                      staticClass:
+                                        "absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm",
+                                      attrs: { for: "write" }
+                                    })
+                                  ]),
+                                  _vm._v(" "),
+                                  _vm._m(2)
+                                ]
+                              )
+                            ]
+                          )
+                        ],
+                        2
+                      )
+                    ]
+                  )
+                ]
+              )
+            ]
+          )
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass:
+            "inline-flex flex-col space-y-2 items-center h-full\n           w-full  p-4 bg-blue-400 rounded-xl text-white"
+        },
+        _vm._l(_vm.posts, function(post) {
+          return _c(
+            "p",
+            { key: post.id, staticClass: "w-full text-2xl font-semibold" },
+            [_vm._v("\n          " + _vm._s(post.post) + "\n        ")]
+          )
+        }),
+        0
+      )
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "text-center " }, [
+      _c(
+        "h1",
+        {
+          staticClass:
+            "\n          gacha\n          mt-2\n          leading-8\n          font-extrabold\n          tracking-tight\n          text-gray-900\n          sm:text-md\n          text-3xl\n        "
+        },
+        [_vm._v("\n        ガチャガチャ日本語\n      ")]
+      ),
+      _vm._v(" "),
+      _c(
+        "p",
+        {
+          staticClass:
+            "mt-10 text-sm md:text-md text-gray-500 lg:mx-auto w-3/4 mx-auto"
+        },
+        [
+          _vm._v(
+            "\n        日本語がシャッフルで出てくるので組み合わせて文章を考えてツイートしてください。\n      "
+          )
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "p",
+        {
+          staticClass:
+            "mt-2 text-sm md:text-md text-gray-500 lg:mx-auto w-3/4 mx-auto"
+        },
+        [
+          _vm._v(
+            "\n      Combine the three words to make a sentence and tweet it!\n      "
+          )
+        ]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("h1", { staticClass: "text-2xl font-semibold" }, [
+        _vm._v("Make a sentence with the words")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "relative" }, [
+      _c(
+        "button",
+        {
+          staticClass: "bg-blue-500 text-white rounded-md px-2 py-1",
+          attrs: { type: "submit" }
+        },
+        [_vm._v("Submit")]
+      )
+    ])
   }
 ]
 render._withStripped = true
