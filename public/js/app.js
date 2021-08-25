@@ -2084,6 +2084,26 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -38101,13 +38121,13 @@ var render = function() {
         "div",
         {
           staticClass:
-            "\n        inline-flex\n        flex-col\n        space-y-2\n        items-center\n        h-full\n        w-full\n        p-4\n        bg-blue-400\n        rounded-xl\n        text-white\n      "
+            "inline-flex flex-col space-y-2 items-center h-full\n           w-full  p-4 bg-blue-400 rounded-xl text-white"
         },
         _vm._l(_vm.words, function(word) {
           return _c(
             "p",
             { key: word.id, staticClass: "w-full text-2xl font-semibold" },
-            [_vm._v("\n        " + _vm._s(word.word) + "\n      ")]
+            [_vm._v("\n          " + _vm._s(word.word) + "\n        ")]
           )
         }),
         0
@@ -38125,7 +38145,7 @@ var render = function() {
                   staticClass:
                     "text-sm font-medium leading-normal text-center py-2"
                 },
-                [_vm._v("\n            ガチャガチャ\n          ")]
+                [_vm._v("\n              ガチャガチャ\n            ")]
               )
             ])
           ]),
@@ -38161,7 +38181,7 @@ var render = function() {
                         staticClass:
                           "text-sm font-medium leading-normal text-center py-2"
                       },
-                      [_vm._v("\n            Tweetする\n          ")]
+                      [_vm._v("\n              Tweetする\n            ")]
                     )
                   ]
                 )
@@ -38169,7 +38189,9 @@ var render = function() {
             ]
           )
         ]
-      )
+      ),
+      _vm._v(" "),
+      _vm._m(1)
     ])
   ])
 }
@@ -38183,9 +38205,9 @@ var staticRenderFns = [
         "h1",
         {
           staticClass:
-            "\n        gacha\n        mt-2\n        leading-8\n        font-extrabold\n        tracking-tight\n        text-gray-900\n        sm:text-md\n        text-3xl\n      "
+            "\n          gacha\n          mt-2\n          leading-8\n          font-extrabold\n          tracking-tight\n          text-gray-900\n          sm:text-md\n          text-3xl\n        "
         },
-        [_vm._v("\n      ガチャガチャ日本語\n    ")]
+        [_vm._v("\n        ガチャガチャ日本語\n      ")]
       ),
       _vm._v(" "),
       _c(
@@ -38196,7 +38218,7 @@ var staticRenderFns = [
         },
         [
           _vm._v(
-            "\n      日本語がシャッフルで出てくるので組み合わせて文章を考えてツイートしてください。\n    "
+            "\n        日本語がシャッフルで出てくるので組み合わせて文章を考えてツイートしてください。\n      "
           )
         ]
       ),
@@ -38209,11 +38231,87 @@ var staticRenderFns = [
         },
         [
           _vm._v(
-            "\n    Combine the three words to make a sentence and tweet it!\n    "
+            "\n      Combine the three words to make a sentence and tweet it!\n      "
           )
         ]
       )
     ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "min-h-screen py-6 flex flex-col justify-center sm:py-12"
+      },
+      [
+        _c("div", { staticClass: "relative py-3 sm:max-w-xl sm:mx-auto" }, [
+          _c("div", {
+            staticClass:
+              "absolute inset-0 bg-gradient-to-r from-blue-300 to-blue-600 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"
+          }),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass:
+                "relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20"
+            },
+            [
+              _c("div", { staticClass: "max-w-md mx-auto" }, [
+                _c("div", [
+                  _c("h1", { staticClass: "text-2xl font-semibold" }, [
+                    _vm._v("Make a sentence with the words")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "divide-y divide-gray-200" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7"
+                    },
+                    [
+                      _c("div", { staticClass: "relative" }, [
+                        _c("textarea", {
+                          staticClass:
+                            "peer placeholder-transparent h-15 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600",
+                          attrs: {
+                            autocomplete: "off",
+                            type: "text",
+                            name: "write"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("label", {
+                          staticClass:
+                            "absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm",
+                          attrs: { for: "write" }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "relative" }, [
+                        _c(
+                          "button",
+                          {
+                            staticClass:
+                              "bg-blue-500 text-white rounded-md px-2 py-1"
+                          },
+                          [_vm._v("Submit")]
+                        )
+                      ])
+                    ]
+                  )
+                ])
+              ])
+            ]
+          )
+        ])
+      ]
+    )
   }
 ]
 render._withStripped = true
