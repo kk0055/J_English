@@ -38250,14 +38250,14 @@ var staticRenderFns = [
         _c("div", { staticClass: "relative py-3 sm:max-w-xl sm:mx-auto" }, [
           _c("div", {
             staticClass:
-              "absolute inset-0 bg-gradient-to-r from-blue-300 to-blue-600 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"
+              "absolute inset-0 bg-gradient-to-r from-blue-300 to-blue-600 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 rounded-3xl"
           }),
           _vm._v(" "),
           _c(
             "div",
             {
               staticClass:
-                "relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20"
+                "relative px-4 py-10 bg-white shadow-lg rounded-3xl sm:p-20"
             },
             [
               _c("div", { staticClass: "max-w-md mx-auto" }, [
