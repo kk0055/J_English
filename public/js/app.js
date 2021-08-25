@@ -2283,25 +2283,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -2338,6 +2319,9 @@ __webpack_require__.r(__webpack_exports__);
       });
     },
     formSubmit: function formSubmit() {
+      //   if (this.post.length > 150 ) {
+      //   window.alert('within 150 .');
+      // }
       axios.post('/ja-words/post/create', this.post).then(function (res) {
         return console.log(res);
       })["catch"](function (err) {
@@ -39303,7 +39287,7 @@ var render = function() {
         "div",
         {
           staticClass:
-            "inline-flex flex-col space-y-2 items-center h-64\n           w-full  p-4  rounded-xl overflow-auto"
+            "inline-flex flex-col space-y-2 items-center h-64 w-full  p-4  rounded-xl overflow-auto"
         },
         [
           _c(
@@ -39336,7 +39320,7 @@ var staticRenderFns = [
         "h1",
         {
           staticClass:
-            "\n          gacha\n          mt-2\n          leading-8\n          font-extrabold\n          tracking-tight\n          text-gray-900\n          sm:text-md\n          text-3xl\n        "
+            "gacha mt-2 leading-8 font-extrabold tracking-tight text-gray-900 sm:text-md text-3xl "
         },
         [_vm._v("\n        ガチャガチャ日本語\n      ")]
       ),

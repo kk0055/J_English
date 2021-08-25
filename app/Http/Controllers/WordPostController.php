@@ -9,7 +9,7 @@ class WordPostController extends Controller
 {
     public function JapaneseWordPostIndex()
     {
-      $posts = JapaneseWordPost::latest()->get();
+      $posts = JapaneseWordPost::latest()->take(100)->get();
       return JapaneseWordPostResource::collection($posts);
     } 
 

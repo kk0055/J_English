@@ -1,18 +1,7 @@
 <template>
   <div class="mt-10">
     <div class="text-center ">
-      <h1
-        class="
-          gacha
-          mt-2
-          leading-8
-          font-extrabold
-          tracking-tight
-          text-gray-900
-          sm:text-md
-          text-3xl
-        "
-      >
+      <h1 class="gacha mt-2 leading-8 font-extrabold tracking-tight text-gray-900 sm:text-md text-3xl ">
         ガチャガチャ日本語
       </h1>
       <p class="mt-10 text-sm md:text-md text-gray-500 lg:mx-auto w-3/4 mx-auto">
@@ -25,10 +14,8 @@
     <div class="max-w-screen-md w-3/4 md:w-3/4 mt-14 mx-auto">
       <div
         class="inline-flex flex-col space-y-2 items-center h-full
-           w-full  p-4 bg-blue-400 rounded-xl text-white"
-      >
-        <p
-          class="w-full text-2xl font-semibold"
+           w-full  p-4 bg-blue-400 rounded-xl text-white">
+        <p class="w-full text-2xl font-semibold"
           v-for="word in words"
           :key="word.id"
         >
@@ -42,7 +29,6 @@
               ガチャガチャ
             </p>
           </button>
-         
         </div>
 
           <div class="border rounded-lg border-blue-400 px-4 mt-10">
@@ -64,7 +50,7 @@
 		</div>
 		<div class="relative px-4 py-10 bg-white shadow-lg rounded-3xl sm:p-20">
 			<div class="max-w-md mx-auto">
-				<div>
+				<div>   
 					<h1 class="text-2xl mb-3 font-semibold">Make a sentence with the words</h1>
 				</div>
           <p
@@ -93,23 +79,18 @@
 </div>
  <!-- Form -->
  <!--  -->      
- <div
-        class="inline-flex flex-col space-y-2 items-center h-64
-           w-full  p-4  rounded-xl overflow-auto"
-      >
+ <div class="inline-flex flex-col space-y-2 items-center h-64 w-full  p-4  rounded-xl overflow-auto">
       <div class="w-full py-4 ">
         <p
           class="w-full text-sm font-semibold border-b-2"
           v-for="post in posts"
-          :key="post.id"
-        >
+          :key="post.id" >
           {{ post.post }}
-        </p></div>
+        </p>
       </div>
+</div>
   <!--  -->
     </div>
-
-
   </div>
 </template>
 
@@ -121,7 +102,6 @@ export default {
       posts:[],
       post:{
         post:'' ,
-        
       
       }
     };
@@ -156,6 +136,9 @@ export default {
         });
     },
       formSubmit() {  
+      //   if (this.post.length > 150 ) {
+      //   window.alert('within 150 .');
+      // }
           axios.post('/ja-words/post/create', this.post)
           .then(res => console.log(res))
           .catch(err => console.log(err));
