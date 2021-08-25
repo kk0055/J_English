@@ -2104,14 +2104,31 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
-      words: []
+      words: [],
+      posts: [],
+      post: {
+        id: '',
+        post: ''
+      }
     };
   },
   mounted: function mounted() {
     this.loadJapaneseWord();
+    this.loadJapaneseWordPost();
   },
   methods: {
     loadJapaneseWord: function loadJapaneseWord() {
@@ -2120,6 +2137,17 @@ __webpack_require__.r(__webpack_exports__);
       axios.get("/ja-words").then(function (response) {
         //  console.log( response)
         _this.words = response.data.data; // console.log(this.words);
+      })["catch"](function (error) {
+        console.log(error);
+      });
+    },
+    loadJapaneseWordPost: function loadJapaneseWordPost() {
+      var _this2 = this;
+
+      axios.get("/ja-words/post").then(function (response) {
+        //  console.log( response)
+        _this2.posts = response.data.data;
+        console.log(_this2.posts);
       })["catch"](function (error) {
         console.log(error);
       });
@@ -38192,7 +38220,23 @@ var render = function() {
       ),
       _vm._v(" "),
       _vm._m(1)
-    ])
+    ]),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        staticClass:
+          "inline-flex flex-col space-y-2 items-center h-full\n           w-full  p-4 bg-blue-400 rounded-xl text-white"
+      },
+      _vm._l(_vm.posts, function(post) {
+        return _c(
+          "p",
+          { key: post.id, staticClass: "w-full text-2xl font-semibold" },
+          [_vm._v("\n          " + _vm._s(post.post) + "\n        ")]
+        )
+      }),
+      0
+    )
   ])
 }
 var staticRenderFns = [

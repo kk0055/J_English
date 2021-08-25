@@ -7,7 +7,9 @@ use App\Http\Controllers\UserItemController;
 use App\Http\Controllers\WebsiteController;
 use App\Http\Controllers\admin\AdminController;
 use App\Http\Controllers\SearchController;
+use App\Http\Controllers\WordPostController;
 use App\Http\Controllers\Auth\LoginController;
+
 use Illuminate\Support\Facades\Auth;
 
 Auth::routes();
@@ -74,4 +76,5 @@ Route::group(['middleware' => ['auth.admin']], function () {
   Route::get('/ja-words/gacha', [WordController::class,'japanesehWord'])->name('japaneseWord');
   Route::get('/ja-words', [WordController::class,'getJapaneseWord'])->name('getJapaneseWord');
 
-
+  Route::get('/ja-words/post', [WordPostController::class,'JapaneseWordPostIndex'])->name('JapaneseWordPostIndex');
+  Route::post('/ja-words/post/create', [WordPostController::class,'JapaneseWordPostStore'])->name('JapaneseWordPostStore');

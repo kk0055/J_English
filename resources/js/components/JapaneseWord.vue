@@ -84,7 +84,18 @@
 </div>
  <!-- Form -->
     </div>
-   
+        <div
+        class="inline-flex flex-col space-y-2 items-center h-full
+           w-full  p-4 bg-blue-400 rounded-xl text-white"
+      >
+        <p
+          class="w-full text-2xl font-semibold"
+          v-for="post in posts"
+          :key="post.id"
+        >
+          {{ post.post }}
+        </p>
+      </div>
 
   </div>
 </template>
@@ -94,10 +105,17 @@ export default {
   data: function () {
     return {
       words: [],
+      posts:[],
+      post:{
+        id:'',
+        post:'' 
+      
+      }
     };
   },
   mounted() {
     this.loadJapaneseWord();
+    this.loadJapaneseWordPost();
   },
   methods: {
     loadJapaneseWord: function () {
@@ -112,6 +130,18 @@ export default {
           console.log(error);
         });
     },
+    loadJapaneseWordPost() {
+          axios
+        .get("/ja-words/post")
+        .then((response) => {
+          //  console.log( response)
+          this.posts = response.data.data;
+          console.log(this.posts);
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+    }
   },
 };
 </script>
