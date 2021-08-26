@@ -78,3 +78,4 @@ Route::group(['middleware' => ['auth.admin']], function () {
 
   Route::get('/ja-words/post', [WordPostController::class,'JapaneseWordPostIndex'])->name('JapaneseWordPostIndex');
   Route::post('/ja-words/post/create', [WordPostController::class,'JapaneseWordPostStore'])->name('JapaneseWordPostStore');
+  Route::delete('/ja-words/post/{id}', [WordPostController::class,'JapaneseWordPostDelete'])->name('JapaneseWordPostDelete');

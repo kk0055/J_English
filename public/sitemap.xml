@@ -1,46 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-<!--  created with free sitemap generation system www.sitemapxml.jp  --> 
+
 <url>
   <loc>https://5seconds-en.com/</loc>
-  <priority>1.0</priority>
-  <changefreq>always</changefreq>
+  <lastmod>2021-08-26T07:32:58+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
   <loc>https://5seconds-en.com/about</loc>
-  <priority>0.8</priority>
-  <changefreq>always</changefreq>
+  <lastmod>2021-08-26T07:32:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://5seconds-en.com/en-words/gacha</loc>
+  <lastmod>2021-08-26T07:32:58+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://5seconds-en.com/website</loc>
-  <priority>0.8</priority>
-  <changefreq>always</changefreq>
+  <lastmod>2021-08-26T07:32:58+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://5seconds-en.com/login</loc>
-  <priority>0.8</priority>
-  <changefreq>always</changefreq>
+  <lastmod>2021-08-26T07:32:58+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://5seconds-en.com/register</loc>
-  <priority>0.8</priority>
-  <changefreq>always</changefreq>
+  <lastmod>2021-08-26T07:32:58+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://5seconds-en.com/japanese</loc>
-  <priority>0.8</priority>
-  <changefreq>always</changefreq>
+  <lastmod>2021-08-26T07:32:58+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://5seconds-en.com/login/twitter</loc>
-  <priority>0.7</priority>
-  <changefreq>always</changefreq>
+  <loc>https://5seconds-en.com/ja-words/gacha</loc>
+  <lastmod>2021-08-26T07:32:58+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://5seconds-en.com/password/reset</loc>
-  <priority>0.7</priority>
-  <changefreq>always</changefreq>
+  <lastmod>2021-08-26T07:32:58+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
+
 
 </urlset>

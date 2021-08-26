@@ -26,7 +26,7 @@
         <div class="border rounded-lg border-blue-400 px-4">
           <button @click="loadJapaneseWord">
             <p class="text-sm font-medium leading-normal text-center py-2">
-              ガチャガチャする
+              ガチャガチャする             
             </p>
           </button>
         </div>
@@ -44,7 +44,7 @@
 <JPCreateForm/>
  <!-- Form -->
  <!--  -->      
- <div class="inline-flex flex-col space-y-2 items-center h-64 w-full  p-4  rounded-xl overflow-auto">
+ <div class="mt-4 inline-flex flex-col space-y-2 items-center h-64 w-full  p-4  rounded-xl overflow-auto">
       <div class="w-full py-4 ">
         <p
           class="w-full text-sm font-semibold border-b-2"
@@ -52,6 +52,9 @@
           :key="post.id" >
           {{ post.post }}
         </p>
+       
+        
+          
       </div>
 </div>
   <!--  -->
@@ -88,7 +91,10 @@ JPCreateForm
  
     loadJapaneseWord() {
         this.$store.dispatch('loadJapaneseWord')
-          },
+    },
+    deletePost(post) {
+        this.$store.dispatch('deleteJapaneseWordPost',post)
+    }
   },
 };
 </script>

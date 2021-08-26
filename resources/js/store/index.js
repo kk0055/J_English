@@ -16,6 +16,10 @@ export default new Vuex.Store({
     loadJapaneseWordPost(state, data ) {
       state.posts = data
      },
+     deleteJapaneseWordPost(state, post ) {
+      let index = state.posts.findIndex(item => item.id === post.id)
+      state.posts.splice(index, 1)
+     },
   },
   actions: {
     loadJapaneseWord({commit}) {
@@ -39,6 +43,17 @@ export default new Vuex.Store({
       console.log(error);
     });
 },
+deleteJapaneseWordPost({commit}, post) {
+  axios.delete(`/ja-words/post/${post.id}`)
+
+      .then(res => {
+        console.log(res);
+          if (res.data === 'ok')
+              commit('deleteJapaneseWordPost', post)
+      }).catch(err => {
+      console.log(err)
+  })
+}
   }
 
 })

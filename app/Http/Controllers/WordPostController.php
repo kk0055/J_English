@@ -19,7 +19,14 @@ class WordPostController extends Controller
     
         return response()->json($post);
     }   
+    public function JapaneseWordPostDelete($id)
+    {
+      JapaneseWordPost::destroy($id);
+    
+      return response()->json("ok");
+    }  
 
+    
     public function EnglishWordPostIndex()
     {
     
