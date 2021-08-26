@@ -8,7 +8,8 @@
 		<div class="relative px-4 py-10 bg-white shadow-lg rounded-3xl sm:p-20">
 			<div class="max-w-md mx-auto">
 				<div>   
-					<h1 class="text-2xl mb-3 font-semibold">Make a sentence with the words</h1>
+					<h1 class="text-2xl mb-1 font-semibold">Make a sentence with the words</h1>
+          <p class="mb-3 ">※Up to 250 characters</p>
 				</div>
           <p
           class="w-full  font-semibold"
@@ -24,8 +25,10 @@
 							<label for="write" class="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm"></label>
 						</div>
 					
-						<div class="relative">
+						<div class="relative flex">
 							<button class="bg-blue-500 text-white rounded-md px-2 py-1" type="submit">Submit</button>
+             <p class="ml-3">  {{ charactersLeft }}</p>
+             
 						</div>
 					</div>
 				</div>
@@ -48,7 +51,12 @@ export default {
   }
   },
   computed: {
-...mapState(['words'])
+...mapState(['words']),
+      charactersLeft() {
+        var char = this.post.post.length,
+        limit = 250;
+        return (limit - char) + " / " + limit + "characters remaining";
+      }
   },
   methods:{
           formSubmit() {  
@@ -57,7 +65,8 @@ export default {
           .catch(err => console.log(err));
           this.$store.dispatch('loadJapaneseWordPost')
            this.post.post = ''
-      }
+      },
+   
   }
 }
 </script>

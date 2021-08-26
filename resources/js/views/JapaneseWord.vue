@@ -5,7 +5,7 @@
         ガチャガチャ日本語
       </h1>
       <p class="mt-10 text-sm md:text-md text-gray-500 lg:mx-auto w-3/4 mx-auto">
-        日本語がシャッフルで出てくるので組み合わせて文章を考えてツイートしてください。
+        日本語がランダムに出てくるので組み合わせて文章をつくってください。
       </p>
        <p class="mt-2 text-sm md:text-md text-gray-500 lg:mx-auto w-3/4 mx-auto">
       Combine the three words to make a sentence and tweet it!
@@ -26,7 +26,7 @@
         <div class="border rounded-lg border-blue-400 px-4">
           <button @click="loadJapaneseWord">
             <p class="text-sm font-medium leading-normal text-center py-2">
-              ガチャガチャ
+              ガチャガチャする
             </p>
           </button>
         </div>
@@ -67,6 +67,7 @@ export default {
     return {
       post:{
         post:'' ,
+       
       }
     };
   },
@@ -80,7 +81,8 @@ JPCreateForm
     
   },
   computed: {
-...mapState(['words','posts'])
+...mapState(['words','posts']),
+
   },
   methods: {
  
