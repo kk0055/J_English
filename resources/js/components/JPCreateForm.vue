@@ -53,7 +53,7 @@ export default {
   computed: {
 ...mapState(['words']),
       charactersLeft() {
-        var char = this.post.post.length,
+        let char = this.post.post.length,
         limit = 250;
         return (limit - char) + " / " + limit + "characters remaining";
       }

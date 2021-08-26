@@ -1834,113 +1834,6 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/EnglishWord.vue?vue&type=script&lang=js&":
-/*!******************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/EnglishWord.vue?vue&type=script&lang=js& ***!
-  \******************************************************************************************************************************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  data: function data() {
-    return {
-      words: []
-    };
-  },
-  mounted: function mounted() {
-    this.loadEnglishWord();
-  },
-  methods: {
-    loadEnglishWord: function loadEnglishWord() {
-      var _this = this;
-
-      axios.get("/en-words").then(function (response) {
-        //  console.log( response)
-        _this.words = response.data.data; // console.log(this.words);
-      })["catch"](function (error) {
-        console.log(error);
-      });
-    }
-  }
-});
-
-/***/ }),
-
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Favorite.vue?vue&type=script&lang=js&":
 /*!***************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Favorite.vue?vue&type=script&lang=js& ***!
@@ -2266,6 +2159,116 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/EnglishWord.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/EnglishWord.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  data: function data() {
+    return {
+      words: []
+    };
+  },
+  mounted: function mounted() {
+    this.loadEnglishWord();
+  },
+  methods: {
+    loadEnglishWord: function loadEnglishWord() {
+      var _this = this;
+
+      axios.get("/en-words").then(function (response) {
+        //  console.log( response)
+        _this.words = response.data.data; // console.log(this.words);
+      })["catch"](function (error) {
+        console.log(error);
+      });
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/JapaneseWord.vue?vue&type=script&lang=js&":
 /*!**************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/JapaneseWord.vue?vue&type=script&lang=js& ***!
@@ -2395,7 +2398,7 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js").default;
 vue__WEBPACK_IMPORTED_MODULE_2__.default.use(vue_router__WEBPACK_IMPORTED_MODULE_3__.default);
 vue__WEBPACK_IMPORTED_MODULE_2__.default.component('favorite-button', __webpack_require__(/*! ./components/Favorite.vue */ "./resources/js/components/Favorite.vue").default);
-vue__WEBPACK_IMPORTED_MODULE_2__.default.component('english-word', __webpack_require__(/*! ./components/EnglishWord.vue */ "./resources/js/components/EnglishWord.vue").default);
+vue__WEBPACK_IMPORTED_MODULE_2__.default.component('english-word', __webpack_require__(/*! ./views/EnglishWord.vue */ "./resources/js/views/EnglishWord.vue").default);
 vue__WEBPACK_IMPORTED_MODULE_2__.default.component('japanese-word', __webpack_require__(/*! ./views/JapaneseWord.vue */ "./resources/js/views/JapaneseWord.vue").default);
 var app = new vue__WEBPACK_IMPORTED_MODULE_2__.default({
   el: '#app',
@@ -37915,45 +37918,6 @@ process.umask = function() { return 0; };
 
 /***/ }),
 
-/***/ "./resources/js/components/EnglishWord.vue":
-/*!*************************************************!*\
-  !*** ./resources/js/components/EnglishWord.vue ***!
-  \*************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _EnglishWord_vue_vue_type_template_id_9d748902___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./EnglishWord.vue?vue&type=template&id=9d748902& */ "./resources/js/components/EnglishWord.vue?vue&type=template&id=9d748902&");
-/* harmony import */ var _EnglishWord_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./EnglishWord.vue?vue&type=script&lang=js& */ "./resources/js/components/EnglishWord.vue?vue&type=script&lang=js&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-;
-var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
-  _EnglishWord_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
-  _EnglishWord_vue_vue_type_template_id_9d748902___WEBPACK_IMPORTED_MODULE_0__.render,
-  _EnglishWord_vue_vue_type_template_id_9d748902___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/components/EnglishWord.vue"
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
-
-/***/ }),
-
 /***/ "./resources/js/components/Favorite.vue":
 /*!**********************************************!*\
   !*** ./resources/js/components/Favorite.vue ***!
@@ -38108,6 +38072,45 @@ component.options.__file = "resources/js/views/About.vue"
 
 /***/ }),
 
+/***/ "./resources/js/views/EnglishWord.vue":
+/*!********************************************!*\
+  !*** ./resources/js/views/EnglishWord.vue ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _EnglishWord_vue_vue_type_template_id_63dfe04b___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./EnglishWord.vue?vue&type=template&id=63dfe04b& */ "./resources/js/views/EnglishWord.vue?vue&type=template&id=63dfe04b&");
+/* harmony import */ var _EnglishWord_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./EnglishWord.vue?vue&type=script&lang=js& */ "./resources/js/views/EnglishWord.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
+  _EnglishWord_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
+  _EnglishWord_vue_vue_type_template_id_63dfe04b___WEBPACK_IMPORTED_MODULE_0__.render,
+  _EnglishWord_vue_vue_type_template_id_63dfe04b___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/views/EnglishWord.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/views/JapaneseWord.vue":
 /*!*********************************************!*\
   !*** ./resources/js/views/JapaneseWord.vue ***!
@@ -38144,22 +38147,6 @@ var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__
 if (false) { var api; }
 component.options.__file = "resources/js/views/JapaneseWord.vue"
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/components/EnglishWord.vue?vue&type=script&lang=js&":
-/*!**************************************************************************!*\
-  !*** ./resources/js/components/EnglishWord.vue?vue&type=script&lang=js& ***!
-  \**************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_EnglishWord_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./EnglishWord.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/EnglishWord.vue?vue&type=script&lang=js&");
- /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_EnglishWord_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
 
 /***/ }),
 
@@ -38211,6 +38198,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/views/EnglishWord.vue?vue&type=script&lang=js&":
+/*!*********************************************************************!*\
+  !*** ./resources/js/views/EnglishWord.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_EnglishWord_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./EnglishWord.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/EnglishWord.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_EnglishWord_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
+
+/***/ }),
+
 /***/ "./resources/js/views/JapaneseWord.vue?vue&type=script&lang=js&":
 /*!**********************************************************************!*\
   !*** ./resources/js/views/JapaneseWord.vue?vue&type=script&lang=js& ***!
@@ -38224,23 +38227,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_JapaneseWord_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./JapaneseWord.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/JapaneseWord.vue?vue&type=script&lang=js&");
  /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_JapaneseWord_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
-
-/***/ }),
-
-/***/ "./resources/js/components/EnglishWord.vue?vue&type=template&id=9d748902&":
-/*!********************************************************************************!*\
-  !*** ./resources/js/components/EnglishWord.vue?vue&type=template&id=9d748902& ***!
-  \********************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_EnglishWord_vue_vue_type_template_id_9d748902___WEBPACK_IMPORTED_MODULE_0__.render),
-/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_EnglishWord_vue_vue_type_template_id_9d748902___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
-/* harmony export */ });
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_EnglishWord_vue_vue_type_template_id_9d748902___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./EnglishWord.vue?vue&type=template&id=9d748902& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/EnglishWord.vue?vue&type=template&id=9d748902&");
-
 
 /***/ }),
 
@@ -38312,6 +38298,23 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/views/EnglishWord.vue?vue&type=template&id=63dfe04b&":
+/*!***************************************************************************!*\
+  !*** ./resources/js/views/EnglishWord.vue?vue&type=template&id=63dfe04b& ***!
+  \***************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_EnglishWord_vue_vue_type_template_id_63dfe04b___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_EnglishWord_vue_vue_type_template_id_63dfe04b___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_EnglishWord_vue_vue_type_template_id_63dfe04b___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./EnglishWord.vue?vue&type=template&id=63dfe04b& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/EnglishWord.vue?vue&type=template&id=63dfe04b&");
+
+
+/***/ }),
+
 /***/ "./resources/js/views/JapaneseWord.vue?vue&type=template&id=0675050c&":
 /*!****************************************************************************!*\
   !*** ./resources/js/views/JapaneseWord.vue?vue&type=template&id=0675050c& ***!
@@ -38325,159 +38328,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_JapaneseWord_vue_vue_type_template_id_0675050c___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_JapaneseWord_vue_vue_type_template_id_0675050c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./JapaneseWord.vue?vue&type=template&id=0675050c& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/JapaneseWord.vue?vue&type=template&id=0675050c&");
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/EnglishWord.vue?vue&type=template&id=9d748902&":
-/*!***********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/EnglishWord.vue?vue&type=template&id=9d748902& ***!
-  \***********************************************************************************************************************************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => (/* binding */ render),
-/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
-/* harmony export */ });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "mt-10" }, [
-    _vm._m(0),
-    _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "max-w-screen-md  md:w-3/4 mt-14 w-3/4 mx-auto" },
-      [
-        _c(
-          "div",
-          {
-            staticClass:
-              "\n        inline-flex\n        flex-col\n        space-y-2\n        items-center\n        h-full\n        w-full\n        p-4\n        bg-blue-400\n        rounded-xl\n        text-white\n      "
-          },
-          _vm._l(_vm.words, function(word) {
-            return _c(
-              "p",
-              { key: word.id, staticClass: "w-full text-2xl font-semibold" },
-              [_vm._v("\n        " + _vm._s(word.word) + "\n      ")]
-            )
-          }),
-          0
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "flex items-center flex-col justify-center mt-8" },
-          [
-            _c(
-              "div",
-              { staticClass: "border rounded-lg border-blue-400 px-4" },
-              [
-                _c("button", { on: { click: _vm.loadEnglishWord } }, [
-                  _c(
-                    "p",
-                    {
-                      staticClass:
-                        "text-sm font-medium leading-normal text-center py-2"
-                    },
-                    [_vm._v("\n            ガチャガチャ\n          ")]
-                  )
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "border rounded-lg border-blue-400 px-4 mt-10" },
-              [
-                _c("button", [
-                  _c(
-                    "a",
-                    {
-                      staticClass: "twitter-link",
-                      attrs: {
-                        href:
-                          "https://twitter.com/intent/tweet?text=【次の3つで文章を作ってね】%0A" +
-                          _vm.words[0].word +
-                          "/" +
-                          _vm.words[1].word +
-                          "/" +
-                          _vm.words[2].word +
-                          "%0A%0A&hashtags=ガチャガチャ英単語",
-                        id: "tw",
-                        onClick:
-                          "window.open(encodeURI(decodeURI(this.href)), 'tweetwindow', 'width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1'); return false;",
-                        rel: "nofollow"
-                      }
-                    },
-                    [
-                      _c(
-                        "p",
-                        {
-                          staticClass:
-                            "text-sm font-medium leading-normal text-center py-2"
-                        },
-                        [_vm._v("\n            Tweetする\n          ")]
-                      )
-                    ]
-                  )
-                ])
-              ]
-            )
-          ]
-        )
-      ]
-    )
-  ])
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "text-center " }, [
-      _c(
-        "h1",
-        {
-          staticClass:
-            "\n        gacha\n        mt-2\n        leading-8\n        font-extrabold\n        tracking-tight\n        text-gray-900\n        sm:text-md\n        text-3xl\n      "
-        },
-        [_vm._v("\n      ガチャガチャ英単語\n    ")]
-      ),
-      _vm._v(" "),
-      _c(
-        "p",
-        {
-          staticClass:
-            "mt-10 text-sm md:text-md text-gray-500 lg:mx-auto w-3/4 mx-auto"
-        },
-        [
-          _vm._v(
-            "\n      英単語がシャッフルで出てくるので組み合わせて文章を考えてツイートしてください。\n    "
-          )
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "p",
-        {
-          staticClass:
-            "mt-2 text-sm md:text-md text-gray-500 lg:mx-auto w-3/4 mx-auto"
-        },
-        [
-          _vm._v(
-            "\n     Combine the three words to make a sentence and tweet it!\n    "
-          )
-        ]
-      )
-    ])
-  }
-]
-render._withStripped = true
-
 
 
 /***/ }),
@@ -39389,6 +39239,161 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/EnglishWord.vue?vue&type=template&id=63dfe04b&":
+/*!******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/EnglishWord.vue?vue&type=template&id=63dfe04b& ***!
+  \******************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "mt-10" }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "max-w-screen-md  md:w-3/4 mt-14 w-3/4 mx-auto" },
+      [
+        _c(
+          "div",
+          {
+            staticClass:
+              "\n        inline-flex\n        flex-col\n        space-y-2\n        items-center\n        h-full\n        w-full\n        p-4\n        bg-blue-400\n        rounded-xl\n        text-white\n      "
+          },
+          _vm._l(_vm.words, function(word) {
+            return _c(
+              "p",
+              { key: word.id, staticClass: "w-full text-2xl font-semibold" },
+              [_vm._v("\n        " + _vm._s(word.word) + "\n      ")]
+            )
+          }),
+          0
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "flex items-center flex-col justify-center mt-8" },
+          [
+            _c(
+              "div",
+              { staticClass: "border rounded-lg border-blue-400 px-4" },
+              [
+                _c("button", { on: { click: _vm.loadEnglishWord } }, [
+                  _c(
+                    "p",
+                    {
+                      staticClass:
+                        "text-sm font-medium leading-normal text-center py-2"
+                    },
+                    [_vm._v("\n            ガチャガチャする\n          ")]
+                  )
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "border rounded-lg border-blue-400 px-4 mt-10" },
+              [
+                _c("button", [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "twitter-link",
+                      attrs: {
+                        href:
+                          "https://twitter.com/intent/tweet?text=【次の3つで文章を作ってね】%0A" +
+                          _vm.words[0].word +
+                          "/" +
+                          _vm.words[1].word +
+                          "/" +
+                          _vm.words[2].word +
+                          "%0A%0A&hashtags=ガチャガチャ英単語",
+                        id: "tw",
+                        onClick:
+                          "window.open(encodeURI(decodeURI(this.href)), 'tweetwindow', 'width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1'); return false;",
+                        rel: "nofollow"
+                      }
+                    },
+                    [
+                      _c(
+                        "p",
+                        {
+                          staticClass:
+                            "text-sm font-medium leading-normal text-center py-2"
+                        },
+                        [_vm._v("\n            Tweetする\n          ")]
+                      )
+                    ]
+                  )
+                ])
+              ]
+            )
+          ]
+        )
+      ]
+    )
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "text-center " }, [
+      _c(
+        "h1",
+        {
+          staticClass:
+            "\n        gacha\n        mt-2\n        leading-8\n        font-extrabold\n        tracking-tight\n        text-gray-900\n        sm:text-md\n        text-3xl\n      "
+        },
+        [_vm._v("\n      ガチャガチャ英単語\n    ")]
+      ),
+      _vm._v(" "),
+      _c("p", { staticClass: "mt-10 text-sm md:text-md text-gray-500 " }),
+      _vm._v(" "),
+      _c(
+        "p",
+        {
+          staticClass:
+            "mt-10 text-sm md:text-md text-gray-500 lg:mx-auto w-3/4 mx-auto"
+        },
+        [
+          _vm._v(
+            "\n      英単語がランダムに出てくるので組み合わせて文章をつくってください。 英作文の練習にお役立てください。\n    "
+          )
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "p",
+        {
+          staticClass:
+            "mt-2 text-sm md:text-md text-gray-500 lg:mx-auto w-3/4 mx-auto"
+        },
+        [
+          _vm._v(
+            "\n     Combine the three words to make a sentence. and then tweet or post it!\n    "
+          )
+        ]
+      )
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/JapaneseWord.vue?vue&type=template&id=0675050c&":
 /*!*******************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/JapaneseWord.vue?vue&type=template&id=0675050c& ***!
@@ -39557,7 +39562,7 @@ var staticRenderFns = [
         },
         [
           _vm._v(
-            "\n      Combine the three words to make a sentence and tweet it!\n      "
+            "\n      Combine the three words to make a sentence. and then tweet or post it!\n      "
           )
         ]
       )
