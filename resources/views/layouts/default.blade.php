@@ -99,7 +99,7 @@
     </div>
 
 
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/app.js?0827') }}"></script>
     <script src="{{ asset('js/main.js?0803') }}"></script>
     <script>
 // grab everything we need

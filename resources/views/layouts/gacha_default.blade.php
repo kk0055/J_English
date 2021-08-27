@@ -103,7 +103,7 @@
 
     @include('components.gacha_footer')
 
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/app.js?0827') }}"></script>
     <script>
 
 </script>
