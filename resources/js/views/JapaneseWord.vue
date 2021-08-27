@@ -44,10 +44,10 @@
 <JPCreateForm/>
  <!-- Form -->
  <!--  -->      
- <div class="mt-4 inline-flex flex-col space-y-2 items-center h-64 w-full  p-4  rounded-xl overflow-auto">
+ <div class="mt-4 inline-flex flex-col space-y-2 items-center h-64 w-full  p-4 rounded-xl overflow-y-auto whitespace-normal">
       <div class="w-full py-4 ">
         <p
-          class="w-full text-sm font-semibold border-b-2"
+          class="w-full text-sm font-semibold border-b-2 "
           v-for="post in posts"
           :key="post.id" >
           {{ post.post }}

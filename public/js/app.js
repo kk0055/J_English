@@ -1954,7 +1954,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "JPCreateForm",
@@ -1974,12 +1973,14 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   }),
   methods: {
     formSubmit: function formSubmit() {
-      axios.post('/ja-words/post/create', this.post) // .then(res => console.log(res))
-      ["catch"](function (err) {
-        return console.log(err);
-      });
-      this.$store.dispatch('loadJapaneseWordPost');
-      this.post.post = '';
+      if (this.post.post.length < 250) {
+        axios.post('/ja-words/post/create', this.post) // .then(res => console.log(res))
+        ["catch"](function (err) {
+          return console.log(err);
+        });
+        this.$store.dispatch('loadJapaneseWordPost');
+        this.post.post = '';
+      }
     }
   }
 });
@@ -2389,10 +2390,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
-/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
-/* harmony import */ var _router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./router */ "./resources/js/router.js");
-/* harmony import */ var _store_index_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./store/index.js */ "./resources/js/store/index.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
+/* harmony import */ var _router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./router */ "./resources/js/router.js");
+/* harmony import */ var _store_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./store/index.js */ "./resources/js/store/index.js");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
@@ -2400,14 +2401,14 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js").default;
-vue__WEBPACK_IMPORTED_MODULE_0__.default.use(vue_router__WEBPACK_IMPORTED_MODULE_1__.default);
-vue__WEBPACK_IMPORTED_MODULE_0__.default.component('favorite-button', __webpack_require__(/*! ./components/Favorite.vue */ "./resources/js/components/Favorite.vue").default);
-vue__WEBPACK_IMPORTED_MODULE_0__.default.component('english-word', __webpack_require__(/*! ./views/EnglishWord.vue */ "./resources/js/views/EnglishWord.vue").default);
-vue__WEBPACK_IMPORTED_MODULE_0__.default.component('japanese-word', __webpack_require__(/*! ./views/JapaneseWord.vue */ "./resources/js/views/JapaneseWord.vue").default);
-var app = new vue__WEBPACK_IMPORTED_MODULE_0__.default({
+vue__WEBPACK_IMPORTED_MODULE_2__.default.use(vue_router__WEBPACK_IMPORTED_MODULE_3__.default);
+vue__WEBPACK_IMPORTED_MODULE_2__.default.component('favorite-button', __webpack_require__(/*! ./components/Favorite.vue */ "./resources/js/components/Favorite.vue").default);
+vue__WEBPACK_IMPORTED_MODULE_2__.default.component('english-word', __webpack_require__(/*! ./views/EnglishWord.vue */ "./resources/js/views/EnglishWord.vue").default);
+vue__WEBPACK_IMPORTED_MODULE_2__.default.component('japanese-word', __webpack_require__(/*! ./views/JapaneseWord.vue */ "./resources/js/views/JapaneseWord.vue").default);
+var app = new vue__WEBPACK_IMPORTED_MODULE_2__.default({
   el: '#app',
-  store: _store_index_js__WEBPACK_IMPORTED_MODULE_3__.default,
-  router: _router__WEBPACK_IMPORTED_MODULE_2__.default
+  store: _store_index_js__WEBPACK_IMPORTED_MODULE_1__.default,
+  router: _router__WEBPACK_IMPORTED_MODULE_0__.default
 });
 
 /***/ }),
@@ -39524,7 +39525,7 @@ var render = function() {
           "div",
           {
             staticClass:
-              "mt-4 inline-flex flex-col space-y-2 items-center h-64 w-full  p-4  rounded-xl overflow-auto"
+              "mt-4 inline-flex flex-col space-y-2 items-center h-64 w-full  p-4 rounded-xl overflow-y-auto whitespace-normal"
           },
           [
             _c(
@@ -39535,7 +39536,7 @@ var render = function() {
                   "p",
                   {
                     key: post.id,
-                    staticClass: "w-full text-sm font-semibold border-b-2"
+                    staticClass: "w-full text-sm font-semibold border-b-2 "
                   },
                   [_vm._v("\n          " + _vm._s(post.post) + "\n        ")]
                 )

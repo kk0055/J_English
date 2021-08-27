@@ -29,7 +29,6 @@
 						<div class="relative flex">
 							<button class="bg-blue-500 text-white rounded-md px-2 py-1" type="submit">Submit</button>
              <p class="ml-3">  {{ charactersLeft }}</p>
-             
 						</div>
 					</div>
 				</div>
@@ -59,15 +58,16 @@ export default {
         return (limit - char) + " / " + limit + "characters remaining";
       }
   },
-  methods:{
-          formSubmit() {  
-          axios.post('/ja-words/post/create', this.post)
-          // .then(res => console.log(res))
-          .catch(err => console.log(err));
-          this.$store.dispatch('loadJapaneseWordPost')
-           this.post.post = ''
-      },
-   
+  methods:{  
+      formSubmit() {  
+        if (this.post.post.length < 250) {
+      axios.post('/ja-words/post/create', this.post)
+      // .then(res => console.log(res))
+      .catch(err => console.log(err));
+      this.$store.dispatch('loadJapaneseWordPost')
+        this.post.post = ''
+        }
+    }
   }
 }
 </script>
