@@ -1954,6 +1954,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "JPCreateForm",
@@ -2288,9 +2289,6 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-//
-//
-//
 //
 //
 //
@@ -38464,7 +38462,7 @@ var render = function() {
                     _vm._l(_vm.words, function(word) {
                       return _c(
                         "p",
-                        { key: word.id, staticClass: "w-full  font-semibold" },
+                        { key: word.id, staticClass: "w-full  font-semibold " },
                         [
                           _vm._v(
                             "\n          " + _vm._s(word.word) + "\n        "

@@ -52,9 +52,6 @@
           :key="post.id" >
           {{ post.post }}
         </p>
-       
-        
-          
       </div>
 </div>
   <!--  -->

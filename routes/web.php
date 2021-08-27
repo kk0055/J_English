@@ -76,6 +76,13 @@ Route::group(['middleware' => ['auth.admin']], function () {
   Route::get('/ja-words/gacha', [WordController::class,'japanesehWord'])->name('japaneseWord');
   Route::get('/ja-words', [WordController::class,'getJapaneseWord'])->name('getJapaneseWord');
 
+   //englishWordPost
+  Route::get('/en-words/post', [WordPostController::class,'EngliahWordPostIndex'])->name('EngliahWordPostIndex');
+  Route::post('/en-words/post/create', [WordPostController::class,'EngliahWordPostStore'])->name('EngliahWordPostStore');
+  Route::delete('/en-words/post/{id}', [WordPostController::class,'EngliahWordPostDelete'])->name('EngliahWordPostDelete');
+
+  //japansewordPost
   Route::get('/ja-words/post', [WordPostController::class,'JapaneseWordPostIndex'])->name('JapaneseWordPostIndex');
   Route::post('/ja-words/post/create', [WordPostController::class,'JapaneseWordPostStore'])->name('JapaneseWordPostStore');
   Route::delete('/ja-words/post/{id}', [WordPostController::class,'JapaneseWordPostDelete'])->name('JapaneseWordPostDelete');
+

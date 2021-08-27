@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateJapaneseWordPostsTable extends Migration
+class CreateEnglishWordPostsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateJapaneseWordPostsTable extends Migration
      */
     public function up()
     {
-        Schema::create('japanese_word_posts', function (Blueprint $table) {
+        Schema::create('english_word_posts', function (Blueprint $table) {
             $table->id();
             $table->text('post');
             $table->timestamps();
@@ -27,6 +27,6 @@ class CreateJapaneseWordPostsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('japanese_word_posts');
+        Schema::dropIfExists('english_word_posts');
     }
 }

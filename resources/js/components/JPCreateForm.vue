@@ -11,8 +11,9 @@
 					<h1 class="text-2xl mb-1 font-semibold">Make a sentence with the words</h1>
           <p class="mb-3 ">※Up to 250 characters</p>
 				</div>
+    
           <p
-          class="w-full  font-semibold"
+          class="w-full  font-semibold "
           v-for="word in words"
           :key="word.id"
         >

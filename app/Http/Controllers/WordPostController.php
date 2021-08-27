@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\JapaneseWordPost;
+use App\Models\EnglishWordPost;
 use App\Http\Resources\JapaneseWordPostResource;
+use App\Http\Resources\EnglishPostResource;
 class WordPostController extends Controller
 {
     public function JapaneseWordPostIndex()
@@ -33,6 +35,11 @@ class WordPostController extends Controller
     }   
 
     public function EnglishWordPostStore()
+    {
+    
+    }   
+
+    public function EngliahWordPostDelete()
     {
     
     }   
