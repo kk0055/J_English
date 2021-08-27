@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\JapaneseWordPost;
 use App\Models\EnglishWordPost;
 use App\Http\Resources\JapaneseWordPostResource;
-use App\Http\Resources\EnglishPostResource;
+use App\Http\Resources\EnglishWordPostResource;
 class WordPostController extends Controller
 {
     public function JapaneseWordPostIndex()
@@ -18,7 +18,6 @@ class WordPostController extends Controller
     public function JapaneseWordPostStore(Request $request)
     {
         $post = JapaneseWordPost::create($request->all());
-    
         return response()->json($post);
     }   
     public function JapaneseWordPostDelete($id)
@@ -29,18 +28,22 @@ class WordPostController extends Controller
     }  
 
     
+    
     public function EnglishWordPostIndex()
     {
-    
+      $posts = EnglishWordPost::latest()->take(100)->get();
+      return EnglishWordPostResource::collection($posts);
     }   
 
-    public function EnglishWordPostStore()
+    public function EnglishWordPostStore(Request $request)
     {
-    
+      $post = EnglishWordPost::create($request->all());
+      return response()->json($post);
     }   
 
-    public function EngliahWordPostDelete()
+    public function EngliahWordPostDelete($id)
     {
-    
+      JapaneseWordPost::destroy($id);
+      return response()->json("ok");
     }   
 }
