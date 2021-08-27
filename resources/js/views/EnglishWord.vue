@@ -65,36 +65,60 @@
               Tweetする
             </p>
             </a>
-          </button>
+               </button>
         </div>
       </div>
+ <!-- Form -->
+<ENCreateForm/>
+ <!-- Form -->
+ <!--  -->      
+ <div class="mt-4 inline-flex flex-col space-y-2 items-center h-64 w-full  p-4 rounded-xl overflow-y-auto whitespace-normal">
+      <div class="w-full py-4 ">
+        <p
+          class="w-full text-sm font-semibold border-b-2 "
+          v-for="post in posts"
+          :key="post.id" >
+          {{ post.post }}
+        </p>
+      </div>
+</div>
+  <!--  -->
     </div>
   </div>
 </template>
-
 <script>
+import {mapState} from 'vuex'
+import ENCreateForm from '../components/ENCreateForm'
 export default {
   data: function () {
     return {
-      words: [],
+      post:{
+        post:'' ,
+      
+      }
     };
   },
-  mounted() {
-    this.loadEnglishWord();
+  components: {
+ENCreateForm
+  },
+   created() {
+    //actionsをdispatch
+    this.$store.dispatch('loadEnglishWord')
+    this.$store.dispatch('loadEnglishWordPost')
+    
+  },
+  computed: {
+...mapState(['words','posts']),
+
   },
   methods: {
-    loadEnglishWord: function () {
-      axios
-        .get("/en-words")
-        .then((response) => {
-          //  console.log( response)
-          this.words = response.data.data;
-          // console.log(this.words);
-        })
-        .catch(function (error) {
-          console.log(error);
-        });
+ 
+    loadEnglishWord() {
+        this.$store.dispatch('loadEnglishWord')
     },
+    deletePost(post) {
+        this.$store.dispatch('deleteEnglishWordPost',post)
+    }
   },
 };
 </script>

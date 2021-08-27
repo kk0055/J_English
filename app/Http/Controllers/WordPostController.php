@@ -28,14 +28,15 @@ class WordPostController extends Controller
     }  
 
     
-    
-    public function EnglishWordPostIndex()
+
+    public function EngliahWordPostIndex()
     {
       $posts = EnglishWordPost::latest()->take(100)->get();
+      
       return EnglishWordPostResource::collection($posts);
     }   
 
-    public function EnglishWordPostStore(Request $request)
+    public function EngliahWordPostStore(Request $request)
     {
       $post = EnglishWordPost::create($request->all());
       return response()->json($post);
@@ -43,7 +44,7 @@ class WordPostController extends Controller
 
     public function EngliahWordPostDelete($id)
     {
-      JapaneseWordPost::destroy($id);
+      EnglishWordPost::destroy($id);
       return response()->json("ok");
     }   
 }
