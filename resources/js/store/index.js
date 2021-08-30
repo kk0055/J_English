@@ -79,7 +79,7 @@ loadEnglishWordPost({commit}) {
 axios.get("/en-words/post")
 .then((response) => {
   commit('loadEnglishWordPost', response.data.data)
-  console.log(response.data);
+  // console.log(response.data);
 })
 .catch(function (error) {
   console.log(error);

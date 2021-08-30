@@ -71,7 +71,10 @@
  <!-- Form -->
 <ENCreateForm/>
  <!-- Form -->
- <!--  -->      
+ <!--  -->     
+   <div class="flex items-center justify-center mt-2 mb-2">  
+ <p class="text-xl ">Posts from Everyone</p>
+  </div> 
  <div class="mt-4 inline-flex flex-col space-y-2 items-center h-64 w-full  p-4 rounded-xl overflow-y-auto whitespace-normal">
       <div class="w-full py-4 ">
         <p
