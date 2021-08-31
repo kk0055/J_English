@@ -53,7 +53,7 @@ Route::group(['middleware' => ['auth.admin']], function () {
   Route::get('/admin/index', [AdminController::class, 'index'])->name('admin.index');
   Route::post('/admin/logout', [AdminController::class, 'logout']);
   Route::get('/admin/user_list', [AdminController::class, 'showUserList'])->name('admin.showUserList');
-  Route::get('/admin/user/{id}', [AdminController::class, 'showUserDetail']);
+  Route::get('/admin/user/{id}', [AdminController::class, 'showUserDetail'])->name('admin.showUserDetail');
   Route::get('/admin/edit/{id}', [AdminController::class, 'edit'])->name('admin.edit');
   Route::put('/admin/edit/{id}', [AdminController::class, 'update'])->name('admin.update');
   Route::get('/admin/search', [AdminController::class, 'adminSearch'])->name('admin.search');
