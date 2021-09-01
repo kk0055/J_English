@@ -6,8 +6,7 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     words: [],
-    posts:[],
- 
+    posts:[], 
   },
   mutations: {
     loadJapaneseWord(state, data ) {
@@ -69,7 +68,7 @@ loadEnglishWord({commit}) {
   .then((response) => {
 
     commit('loadEnglishWord', response.data.data)
-    // console.log(response.data);
+    // console.log(response.data.data);
   })
   .catch(function (error) {
     console.log(error);
