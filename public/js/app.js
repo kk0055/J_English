@@ -2380,7 +2380,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       post: {
         post: ''
       },
-      forTweetword: ''
+      forTweetWord: ''
     };
   },
   components: {
@@ -2392,14 +2392,14 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     this.$store.dispatch('loadEnglishWordPost');
   },
   computed: _objectSpread(_objectSpread({}, (0,vuex__WEBPACK_IMPORTED_MODULE_0__.mapState)(['words', 'posts'])), {}, {
-    Tweetword: function Tweetword() {
+    TweetWord: function TweetWord() {
       var _this$$store$state$wo, _this$$store$state$wo2, _this$$store$state$wo3;
 
       var word = ((_this$$store$state$wo = this.$store.state.words[0]) === null || _this$$store$state$wo === void 0 ? void 0 : _this$$store$state$wo.word) || '';
       var word1 = ((_this$$store$state$wo2 = this.$store.state.words[1]) === null || _this$$store$state$wo2 === void 0 ? void 0 : _this$$store$state$wo2.word) || '';
       var word2 = ((_this$$store$state$wo3 = this.$store.state.words[2]) === null || _this$$store$state$wo3 === void 0 ? void 0 : _this$$store$state$wo3.word) || '';
       var total = word + '/' + word1 + '/' + word2;
-      return this.forTweetword = total;
+      return this.forTweetWord = total;
     }
   }),
   methods: {
@@ -39740,7 +39740,7 @@ var render = function() {
                       attrs: {
                         href:
                           "https://twitter.com/intent/tweet?text=【次の3つで文章を作ってね】%0A" +
-                          _vm.Tweetword +
+                          _vm.TweetWord +
                           "%0A%0A&hashtags=ガチャガチャ英単語",
                         id: "tw",
                         onClick:
