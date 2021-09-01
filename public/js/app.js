@@ -39800,7 +39800,7 @@ var render = function() {
                   },
                   [
                     _vm._v("\n          " + _vm._s(post.post) + "\n        "),
-                    post.selected_words.length > 2
+                    post.selected_words
                       ? _c("span", { staticClass: "ml-2" }, [
                           _vm._v("[ " + _vm._s(post.selected_words) + " ] ")
                         ])

@@ -82,7 +82,7 @@
           v-for="post in posts"
           :key="post.id" >
           {{ post.post }}
-        <span class="ml-2" v-if="post.selected_words.length > 2">[ {{ post.selected_words }} ] </span> 
+        <span class="ml-2" v-if="post.selected_words">[ {{ post.selected_words }} ] </span> 
         </p>
         
       </div>
