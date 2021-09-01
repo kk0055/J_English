@@ -1,5 +1,5 @@
-te<template>
-   <div class="min-h-screen py-6 flex flex-col justify-center sm:py-12">
+<template>
+   <div class="min-h-screen py-6 flex flex-col justify-center sm:py-12" id="create">
    <form  @submit.prevent="formSubmit">  
 	<div class="relative py-3 sm:max-w-xl sm:mx-auto">
 		<div
@@ -11,23 +11,8 @@ te<template>
 					<h1 class="text-2xl mb-1 font-semibold">Make a sentence with the words</h1>
           <p class="mb-3 ">※Up to 250 characters</p>
 				</div>
-          <!-- <p
-          class="w-full  font-semibold "
-          v-for="word in words"
-          :key="word.id"
-        >
-          {{ word.word }}
-        </p> -->
-
-       <!-- <div v-for="word in words"  :key="word.id"> -->
-         
-          <!-- <input type="hidden"  v-model="post.selected_words"> -->
           {{ loadSelectedWord }}
-          <!-- <input type="text"  v-model="words[0].word + '/' + words[1].word + '/'+ words[2].word"> -->
-     <!-- {{ words[0].word + '/' + words[1].word + '/'+ words[2].word }} -->
-       <!-- {{     word.word.split('').join('') }} -->
-          <!-- </div> -->
-
+ 
 				<div class="divide-y divide-gray-200">
 					<div class="text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
 						<div class="relative">
@@ -55,17 +40,8 @@ export default {
   return {
      post:{
         post:'' ,
-        selected_words: ''
-        //  this.$store.state.words[0].word + '/' +  this.$store.state.words[1].word + '/'+  this.$store.state.words[2].word 
-        // words[0].word + '/' +  words[1].word + '/'+  words[2].word 
-        // this.$store.words[0].word + '/' +  this.$store.words[1].word + '/'+  this.$store.words[2].word 
-        // this.$store.mutations.words[0].word + '/' +  this.$store.wmutations.ords[1].word + '/'+  this.$store.mutations.words[2].word 
-            // this.words[0].word 
-            // '<template v-for word in words :key="word.id> <p>{{word.word}}</p> </template>'
-        //  words.forEach(word=>{})
-       
+        selected_words: ''   
       },
-      
   }
   },
   computed: {

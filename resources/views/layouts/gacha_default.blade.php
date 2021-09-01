@@ -81,7 +81,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+    rel="stylesheet">
 </head>
 <style>
  
@@ -89,7 +90,9 @@
     font-family: 'Hachi Maru Pop', cursive;
     font-size: 2.5rem;
    }
-
+html {
+  scroll-behavior: smooth;
+}
 </style>
 
 <body class="bg-white awesomeEvent" style="font-family: 'Noto Serif JP', serif;">

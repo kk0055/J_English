@@ -22,7 +22,7 @@
         英単語がランダムに出てくるので組み合わせて文章をつくってください。 英作文の練習にお役立てください。
       </p>
       <p class="mt-2 text-sm md:text-md text-gray-500 lg:mx-auto w-3/4 mx-auto">
-       Combine the three words to make a sentence. and then tweet or post it!
+       Combine the three words to make a sentence. and then tweet or <a class="underline" href="#create">post</a>  it!
       </p>
     </div>
     <div class="max-w-screen-md  md:w-3/4 mt-14 w-3/4 mx-auto">
@@ -73,7 +73,7 @@
  <!-- Form -->
  <!--  -->     
    <div class="flex items-center justify-center mt-2 mb-2">  
- <p class="text-xl ">Posts from Everyone</p>
+ <p class="text-xl ">Posts from everyone</p>
   </div> 
  <div class="mt-4 inline-flex flex-col space-y-2 items-center h-64 w-full  p-4 rounded-xl overflow-y-auto whitespace-normal">
       <div class="w-full py-4 ">
@@ -99,8 +99,8 @@ export default {
     return {
       post:{
         post:'' ,
+      },
       
-      }
     };
   },
   components: {
@@ -126,3 +126,7 @@ ENCreateForm
   },
 };
 </script>
+
+<style >
+
+</style>
