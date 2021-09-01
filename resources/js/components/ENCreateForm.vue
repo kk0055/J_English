@@ -52,7 +52,7 @@ export default {
         return (limit - char) + " / " + limit + "characters remaining";
       },
       loadSelectedWord(){
-         let val = this.$store.state.words[0].word + '/' +  this.$store.state.words[1].word + '/'+  this.$store.state.words[2].word 
+         let val = (this.$store.state.words[0]?.word || '') + '/' +  (this.$store.state.words[1]?.word || '') + '/'+ (this.$store.state.words[2]?.word || '')
         //  console.log(val)
         return this.post.selected_words = val
       }

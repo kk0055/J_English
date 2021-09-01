@@ -1904,7 +1904,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       return limit - _char + " / " + limit + "characters remaining";
     },
     loadSelectedWord: function loadSelectedWord() {
-      var val = this.$store.state.words[0].word + '/' + this.$store.state.words[1].word + '/' + this.$store.state.words[2].word; //  console.log(val)
+      var _this$$store$state$wo, _this$$store$state$wo2, _this$$store$state$wo3;
+
+      var val = (((_this$$store$state$wo = this.$store.state.words[0]) === null || _this$$store$state$wo === void 0 ? void 0 : _this$$store$state$wo.word) || '') + '/' + (((_this$$store$state$wo2 = this.$store.state.words[1]) === null || _this$$store$state$wo2 === void 0 ? void 0 : _this$$store$state$wo2.word) || '') + '/' + (((_this$$store$state$wo3 = this.$store.state.words[2]) === null || _this$$store$state$wo3 === void 0 ? void 0 : _this$$store$state$wo3.word) || ''); //  console.log(val)
 
       return this.post.selected_words = val;
     }
@@ -2040,18 +2042,14 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
-//
-//
-//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "JPCreateForm",
   data: function data() {
     return {
       post: {
-        post: ''
+        post: '',
+        selected_words: ''
       }
     };
   },
@@ -2060,6 +2058,11 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       var _char = this.post.post.length,
           limit = 250;
       return limit - _char + " / " + limit + "characters remaining";
+    },
+    loadSelectedWord: function loadSelectedWord() {
+      var val = this.$store.state.words[0].word + '/' + this.$store.state.words[1].word + '/' + this.$store.state.words[2].word; //  console.log(val)
+
+      return this.post.selected_words = val;
     }
   }),
   methods: {
@@ -2406,14 +2409,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
-/* harmony import */ var _components_JPCreateForm__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/JPCreateForm */ "./resources/js/components/JPCreateForm.vue");
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+/* harmony import */ var _components_JPCreateForm__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/JPCreateForm */ "./resources/js/components/JPCreateForm.vue");
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+//
 //
 //
 //
@@ -2489,14 +2493,14 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     };
   },
   components: {
-    JPCreateForm: _components_JPCreateForm__WEBPACK_IMPORTED_MODULE_0__.default
+    JPCreateForm: _components_JPCreateForm__WEBPACK_IMPORTED_MODULE_1__.default
   },
   created: function created() {
     //actionsをdispatch
     this.$store.dispatch('loadJapaneseWord');
     this.$store.dispatch('loadJapaneseWordPost');
   },
-  computed: _objectSpread({}, (0,vuex__WEBPACK_IMPORTED_MODULE_1__.mapState)(['words', 'posts'])),
+  computed: _objectSpread({}, (0,vuex__WEBPACK_IMPORTED_MODULE_0__.mapState)(['words', 'posts'])),
   methods: {
     loadJapaneseWord: function loadJapaneseWord() {
       this.$store.dispatch('loadJapaneseWord');
@@ -38835,93 +38839,76 @@ var render = function() {
                   "relative px-4 py-10 bg-white shadow-lg rounded-3xl sm:p-20"
               },
               [
-                _c(
-                  "div",
-                  { staticClass: "max-w-md mx-auto" },
-                  [
-                    _vm._m(0),
-                    _vm._v(" "),
-                    _vm._l(_vm.words, function(word) {
-                      return _c(
-                        "p",
-                        { key: word.id, staticClass: "w-full  font-semibold " },
-                        [
-                          _vm._v(
-                            "\n          " + _vm._s(word.word) + "\n        "
-                          )
-                        ]
-                      )
-                    }),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "divide-y divide-gray-200" }, [
-                      _c(
-                        "div",
-                        {
-                          staticClass:
-                            "text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7"
-                        },
-                        [
-                          _c("div", { staticClass: "relative" }, [
-                            _c("textarea", {
-                              directives: [
-                                {
-                                  name: "model",
-                                  rawName: "v-model",
-                                  value: _vm.post.post,
-                                  expression: "post.post"
-                                }
-                              ],
-                              staticClass:
-                                "py-5 peer placeholder-transparent h-15 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600",
-                              attrs: {
-                                autocomplete: "off",
-                                type: "text",
-                                row: "6",
-                                name: "write"
-                              },
-                              domProps: { value: _vm.post.post },
-                              on: {
-                                input: function($event) {
-                                  if ($event.target.composing) {
-                                    return
-                                  }
-                                  _vm.$set(
-                                    _vm.post,
-                                    "post",
-                                    $event.target.value
-                                  )
-                                }
-                              }
-                            }),
-                            _vm._v(" "),
-                            _c("label", {
-                              staticClass:
-                                "absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm",
-                              attrs: { for: "write" }
-                            })
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "relative flex" }, [
-                            _c(
-                              "button",
+                _c("div", { staticClass: "max-w-md mx-auto" }, [
+                  _vm._m(0),
+                  _vm._v(
+                    "\n    \n        " +
+                      _vm._s(_vm.loadSelectedWord) +
+                      "\n\n\t\t\t\t"
+                  ),
+                  _c("div", { staticClass: "divide-y divide-gray-200" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7"
+                      },
+                      [
+                        _c("div", { staticClass: "relative" }, [
+                          _c("textarea", {
+                            directives: [
                               {
-                                staticClass:
-                                  "bg-blue-500 text-white rounded-md px-2 py-1",
-                                attrs: { type: "submit" }
-                              },
-                              [_vm._v("Submit")]
-                            ),
-                            _vm._v(" "),
-                            _c("p", { staticClass: "ml-3" }, [
-                              _vm._v("  " + _vm._s(_vm.charactersLeft))
-                            ])
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.post.post,
+                                expression: "post.post"
+                              }
+                            ],
+                            staticClass:
+                              "py-5 peer placeholder-transparent h-15 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600",
+                            attrs: {
+                              autocomplete: "off",
+                              type: "text",
+                              row: "6",
+                              name: "write"
+                            },
+                            domProps: { value: _vm.post.post },
+                            on: {
+                              input: function($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(_vm.post, "post", $event.target.value)
+                              }
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("label", {
+                            staticClass:
+                              "absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm",
+                            attrs: { for: "write" }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "relative flex" }, [
+                          _c(
+                            "button",
+                            {
+                              staticClass:
+                                "bg-blue-500 text-white rounded-md px-2 py-1",
+                              attrs: { type: "submit" }
+                            },
+                            [_vm._v("Submit")]
+                          ),
+                          _vm._v(" "),
+                          _c("p", { staticClass: "ml-3" }, [
+                            _vm._v("  " + _vm._s(_vm.charactersLeft))
                           ])
-                        ]
-                      )
-                    ])
-                  ],
-                  2
-                )
+                        ])
+                      ]
+                    )
+                  ])
+                ])
               ]
             )
           ])
@@ -39970,7 +39957,14 @@ var render = function() {
                     key: post.id,
                     staticClass: "w-full text-sm font-semibold border-b-2 "
                   },
-                  [_vm._v("\n          " + _vm._s(post.post) + "\n        ")]
+                  [
+                    _vm._v(
+                      "\n          " + _vm._s(post.post) + "\n            "
+                    ),
+                    _c("span", { staticClass: "ml-2" }, [
+                      _vm._v("[ " + _vm._s(post.selected_words) + " ] ")
+                    ])
+                  ]
                 )
               }),
               0

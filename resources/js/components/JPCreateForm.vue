@@ -12,13 +12,8 @@
           <p class="mb-3 ">※Up to 250 characters</p>
 				</div>
     
-          <p
-          class="w-full  font-semibold "
-          v-for="word in words"
-          :key="word.id"
-        >
-          {{ word.word }}
-        </p>
+        {{ loadSelectedWord }}
+
 				<div class="divide-y divide-gray-200">
 					<div class="text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
 						<div class="relative">
@@ -47,6 +42,7 @@ export default {
   return {
      post:{
         post:'' ,
+        selected_words: '' 
       }
   }
   },
@@ -56,6 +52,11 @@ export default {
         let char = this.post.post.length,
         limit = 250;
         return (limit - char) + " / " + limit + "characters remaining";
+      },
+      loadSelectedWord(){
+         let val = this.$store.state.words[0].word + '/' +  this.$store.state.words[1].word + '/'+  this.$store.state.words[2].word 
+        //  console.log(val)
+        return this.post.selected_words = val
       }
   },
   methods:{  

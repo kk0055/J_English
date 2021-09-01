@@ -17,6 +17,7 @@ class JapaneseWordPostResource extends JsonResource
         return [
             'id' => $this->id,
             'post' => $this->post,
+            'selected_words' => $this->selected_words,
         ];
         // return parent::toArray($request);
     }

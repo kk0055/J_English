@@ -54,6 +54,7 @@
           v-for="post in posts"
           :key="post.id" >
           {{ post.post }}
+            <span class="ml-2">[ {{ post.selected_words }} ] </span> 
         </p>
       </div>
 </div>
