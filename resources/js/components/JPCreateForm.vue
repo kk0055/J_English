@@ -43,7 +43,10 @@ export default {
      post:{
         post:'' ,
         selected_words: '' 
-      }
+      },
+      word1:'',
+      word:'',
+      word3:''
   }
   },
   computed: {

@@ -32,7 +32,7 @@
         </div>
           <div class="border rounded-lg border-blue-400 px-4 mt-10">
           <button >
-            <a  :href="'https://twitter.com/intent/tweet?text=【次の3つで文章を作ってね】%0A'+ words[0].word + '/' + words[1].word + '/'+ words[2].word +'%0A%0A&hashtags=ガチャガチャ日本語'" id="tw" onClick="window.open(encodeURI(decodeURI(this.href)), 'tweetwindow', 'width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1'); return false;" rel="nofollow" class="twitter-link"> 
+            <a  :href="'https://twitter.com/intent/tweet?text=【次の3つで文章を作ってね】%0A'+ Tweetword1 + '/' + Tweetword2 + '/'+ Tweetword3 +'%0A%0A&hashtags=ガチャガチャ日本語'" id="tw" onClick="window.open(encodeURI(decodeURI(this.href)), 'tweetwindow', 'width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1'); return false;" rel="nofollow" class="twitter-link"> 
             <p class="text-sm font-medium leading-normal text-center py-2">
               Tweetする
             </p>
@@ -71,8 +71,10 @@ export default {
     return {
       post:{
         post:'' ,
-      
-      }
+      },
+      word1:'',
+      word2:'',
+      word3:''
     };
   },
   components: {
@@ -86,6 +88,18 @@ JPCreateForm
   },
   computed: {
 ...mapState(['words','posts']),
+Tweetword1() {
+  let word = this.$store.state.words[0]?.word || ''
+  return this.word1 = word
+},
+Tweetword2() {
+  let word = this.$store.state.words[1]?.word || ''
+  return this.word2 = word
+},
+Tweetword3() {
+  let word = this.$store.state.words[2]?.word || ''
+  return this.word3 = word
+},
 
   },
   methods: {

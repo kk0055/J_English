@@ -2050,7 +2050,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       post: {
         post: '',
         selected_words: ''
-      }
+      },
+      word1: '',
+      word: '',
+      word3: ''
     };
   },
   computed: _objectSpread(_objectSpread({}, (0,vuex__WEBPACK_IMPORTED_MODULE_0__.mapState)(['words'])), {}, {
@@ -2374,7 +2377,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     return {
       post: {
         post: ''
-      }
+      },
+      word1: '',
+      word2: '',
+      word3: ''
     };
   },
   components: {
@@ -2385,7 +2391,26 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     this.$store.dispatch('loadEnglishWord');
     this.$store.dispatch('loadEnglishWordPost');
   },
-  computed: _objectSpread({}, (0,vuex__WEBPACK_IMPORTED_MODULE_0__.mapState)(['words', 'posts'])),
+  computed: _objectSpread(_objectSpread({}, (0,vuex__WEBPACK_IMPORTED_MODULE_0__.mapState)(['words', 'posts'])), {}, {
+    Tweetword1: function Tweetword1() {
+      var _this$$store$state$wo;
+
+      var word = ((_this$$store$state$wo = this.$store.state.words[0]) === null || _this$$store$state$wo === void 0 ? void 0 : _this$$store$state$wo.word) || '';
+      return this.word1 = word;
+    },
+    Tweetword2: function Tweetword2() {
+      var _this$$store$state$wo2;
+
+      var word = ((_this$$store$state$wo2 = this.$store.state.words[1]) === null || _this$$store$state$wo2 === void 0 ? void 0 : _this$$store$state$wo2.word) || '';
+      return this.word2 = word;
+    },
+    Tweetword3: function Tweetword3() {
+      var _this$$store$state$wo3;
+
+      var word = ((_this$$store$state$wo3 = this.$store.state.words[2]) === null || _this$$store$state$wo3 === void 0 ? void 0 : _this$$store$state$wo3.word) || '';
+      return this.word3 = word;
+    }
+  }),
   methods: {
     loadEnglishWord: function loadEnglishWord() {
       this.$store.dispatch('loadEnglishWord');
@@ -2489,7 +2514,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     return {
       post: {
         post: ''
-      }
+      },
+      word1: '',
+      word2: '',
+      word3: ''
     };
   },
   components: {
@@ -2500,7 +2528,26 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     this.$store.dispatch('loadJapaneseWord');
     this.$store.dispatch('loadJapaneseWordPost');
   },
-  computed: _objectSpread({}, (0,vuex__WEBPACK_IMPORTED_MODULE_0__.mapState)(['words', 'posts'])),
+  computed: _objectSpread(_objectSpread({}, (0,vuex__WEBPACK_IMPORTED_MODULE_0__.mapState)(['words', 'posts'])), {}, {
+    Tweetword1: function Tweetword1() {
+      var _this$$store$state$wo;
+
+      var word = ((_this$$store$state$wo = this.$store.state.words[0]) === null || _this$$store$state$wo === void 0 ? void 0 : _this$$store$state$wo.word) || '';
+      return this.word1 = word;
+    },
+    Tweetword2: function Tweetword2() {
+      var _this$$store$state$wo2;
+
+      var word = ((_this$$store$state$wo2 = this.$store.state.words[1]) === null || _this$$store$state$wo2 === void 0 ? void 0 : _this$$store$state$wo2.word) || '';
+      return this.word2 = word;
+    },
+    Tweetword3: function Tweetword3() {
+      var _this$$store$state$wo3;
+
+      var word = ((_this$$store$state$wo3 = this.$store.state.words[2]) === null || _this$$store$state$wo3 === void 0 ? void 0 : _this$$store$state$wo3.word) || '';
+      return this.word3 = word;
+    }
+  }),
   methods: {
     loadJapaneseWord: function loadJapaneseWord() {
       this.$store.dispatch('loadJapaneseWord');
@@ -39699,11 +39746,11 @@ var render = function() {
                       attrs: {
                         href:
                           "https://twitter.com/intent/tweet?text=【次の3つで文章を作ってね】%0A" +
-                          _vm.words[0].word +
+                          _vm.Tweetword1 +
                           "/" +
-                          _vm.words[1].word +
+                          _vm.Tweetword2 +
                           "/" +
-                          _vm.words[2].word +
+                          _vm.Tweetword3 +
                           "%0A%0A&hashtags=ガチャガチャ英単語",
                         id: "tw",
                         onClick:
@@ -39907,11 +39954,11 @@ var render = function() {
                       attrs: {
                         href:
                           "https://twitter.com/intent/tweet?text=【次の3つで文章を作ってね】%0A" +
-                          _vm.words[0].word +
+                          _vm.Tweetword1 +
                           "/" +
-                          _vm.words[1].word +
+                          _vm.Tweetword2 +
                           "/" +
-                          _vm.words[2].word +
+                          _vm.Tweetword3 +
                           "%0A%0A&hashtags=ガチャガチャ日本語",
                         id: "tw",
                         onClick:
