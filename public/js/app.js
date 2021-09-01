@@ -38862,7 +38862,10 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "min-h-screen py-6 flex flex-col justify-center sm:py-12" },
+    {
+      staticClass: "min-h-screen py-6 flex flex-col justify-center sm:py-12",
+      attrs: { id: "create" }
+    },
     [
       _c(
         "form",
@@ -40065,8 +40068,12 @@ var staticRenderFns = [
         },
         [
           _vm._v(
-            "\n      Combine the three words to make a sentence. and then tweet or   post it!\n      "
-          )
+            "\n      Combine the three words to make a sentence. and then tweet or "
+          ),
+          _c("a", { staticClass: "underline", attrs: { href: "#create" } }, [
+            _vm._v("post")
+          ]),
+          _vm._v("  it!\n      ")
         ]
       )
     ])

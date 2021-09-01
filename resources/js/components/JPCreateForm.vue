@@ -1,5 +1,5 @@
 <template>
-   <div class="min-h-screen py-6 flex flex-col justify-center sm:py-12">
+   <div class="min-h-screen py-6 flex flex-col justify-center sm:py-12" id="create">
    <form  @submit.prevent="formSubmit">  
 	<div class="relative py-3 sm:max-w-xl sm:mx-auto">
 		<div
