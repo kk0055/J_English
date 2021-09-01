@@ -114,7 +114,6 @@ ENCreateForm
   },
   computed: {
 ...mapState(['words','posts']),
-
   },
   methods: {
  

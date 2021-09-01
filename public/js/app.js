@@ -1900,6 +1900,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "ENCreateForm",
@@ -1924,7 +1925,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           limit = 250;
       return limit - _char + " / " + limit + "characters remaining";
     },
-    load: function load() {
+    loadSelectedWord: function loadSelectedWord() {
       var val = this.$store.state.words[0].word + '/' + this.$store.state.words[1].word + '/' + this.$store.state.words[2].word; //  console.log(val)
 
       return this.post.selected_words = val;
@@ -38656,31 +38657,11 @@ var render = function() {
                 _c("div", { staticClass: "max-w-md mx-auto" }, [
                   _vm._m(0),
                   _vm._v(" "),
-                  _c("input", {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.post.selected_words,
-                        expression: "post.selected_words"
-                      }
-                    ],
-                    attrs: { type: "hidden" },
-                    domProps: { value: _vm.post.selected_words },
-                    on: {
-                      input: function($event) {
-                        if ($event.target.composing) {
-                          return
-                        }
-                        _vm.$set(
-                          _vm.post,
-                          "selected_words",
-                          $event.target.value
-                        )
-                      }
-                    }
-                  }),
-                  _vm._v(_vm._s(_vm.load) + "\n          "),
+                  _vm._v(
+                    "\n          " +
+                      _vm._s(_vm.loadSelectedWord) +
+                      "\n          "
+                  ),
                   _vm._v(" "),
                   _c("div", { staticClass: "divide-y divide-gray-200" }, [
                     _c(

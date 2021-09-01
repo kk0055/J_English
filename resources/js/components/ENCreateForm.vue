@@ -21,7 +21,8 @@ te<template>
 
        <!-- <div v-for="word in words"  :key="word.id"> -->
          
-          <input type="hidden"  v-model="post.selected_words">{{ load }}
+          <!-- <input type="hidden"  v-model="post.selected_words"> -->
+          {{ loadSelectedWord }}
           <!-- <input type="text"  v-model="words[0].word + '/' + words[1].word + '/'+ words[2].word"> -->
      <!-- {{ words[0].word + '/' + words[1].word + '/'+ words[2].word }} -->
        <!-- {{     word.word.split('').join('') }} -->
@@ -74,7 +75,7 @@ export default {
         limit = 250;
         return (limit - char) + " / " + limit + "characters remaining";
       },
-      load(){
+      loadSelectedWord(){
          let val = this.$store.state.words[0].word + '/' +  this.$store.state.words[1].word + '/'+  this.$store.state.words[2].word 
         //  console.log(val)
         return this.post.selected_words = val
@@ -89,7 +90,7 @@ export default {
       this.$store.dispatch('loadEnglishWordPost')
         this.post.post = ''
         }
-    }
+    },
   }
 }
 </script>
