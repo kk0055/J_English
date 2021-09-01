@@ -2063,7 +2063,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       return limit - _char + " / " + limit + "characters remaining";
     },
     loadSelectedWord: function loadSelectedWord() {
-      var val = this.$store.state.words[0].word + '/' + this.$store.state.words[1].word + '/' + this.$store.state.words[2].word; //  console.log(val)
+      var _this$$store$state$wo, _this$$store$state$wo2, _this$$store$state$wo3;
+
+      var val = (((_this$$store$state$wo = this.$store.state.words[0]) === null || _this$$store$state$wo === void 0 ? void 0 : _this$$store$state$wo.word) || '') + '/' + (((_this$$store$state$wo2 = this.$store.state.words[1]) === null || _this$$store$state$wo2 === void 0 ? void 0 : _this$$store$state$wo2.word) || '') + '/' + (((_this$$store$state$wo3 = this.$store.state.words[2]) === null || _this$$store$state$wo3 === void 0 ? void 0 : _this$$store$state$wo3.word) || ''); //  console.log(val)
 
       return this.post.selected_words = val;
     }
@@ -39798,9 +39800,11 @@ var render = function() {
                   },
                   [
                     _vm._v("\n          " + _vm._s(post.post) + "\n        "),
-                    _c("span", { staticClass: "ml-2" }, [
-                      _vm._v("[ " + _vm._s(post.selected_words) + " ] ")
-                    ])
+                    post.selected_words.length > 2
+                      ? _c("span", { staticClass: "ml-2" }, [
+                          _vm._v("[ " + _vm._s(post.selected_words) + " ] ")
+                        ])
+                      : _vm._e()
                   ]
                 )
               }),
@@ -40006,11 +40010,13 @@ var render = function() {
                   },
                   [
                     _vm._v(
-                      "\n          " + _vm._s(post.post) + "\n            "
+                      "\n          " + _vm._s(post.post) + "\n           "
                     ),
-                    _c("span", { staticClass: "ml-2" }, [
-                      _vm._v("[ " + _vm._s(post.selected_words) + " ] ")
-                    ])
+                    post.selected_words.length > 2
+                      ? _c("span", { staticClass: "ml-2" }, [
+                          _vm._v("[ " + _vm._s(post.selected_words) + " ] ")
+                        ])
+                      : _vm._e()
                   ]
                 )
               }),
