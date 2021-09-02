@@ -43,27 +43,30 @@
  <!-- Form -->
 <JPCreateForm/>
  <!-- Form -->
- <!--  -->    
+ <!--Posts  -->    
   <div class="flex items-center justify-center mt-2 mb-2">  
  <p class="text-xl ">Posts from Everyone</p>
   </div>
  <div class="mt-4 inline-flex flex-col space-y-2 items-center h-64 w-full  p-4 rounded-xl overflow-y-auto whitespace-normal" >
       <div class="w-full py-4 ">
+     <transition-group name="fade" tag="ul" class="list-group">
         <p
           class="w-full text-sm font-semibold border-b-2 "
           v-for="post in posts"
           :key="post.id" >
           {{ post.post }}
-           <span class="ml-2" v-if="post.selected_words">[ {{ post.selected_words }} ] </span> 
+        <span class="ml-2" v-if="post.selected_words">[ {{ post.selected_words }} ] </span> 
         </p>
+    </transition-group>
       </div>
 </div>
-  <!--  -->
+  <!--Posts  -->
     </div>
   </div>
 </template>
 
 <script>
+require('vue2-animate/dist/vue2-animate.min.css')
  import {mapState} from 'vuex'
  import JPCreateForm from '../components/JPCreateForm'
 export default {
