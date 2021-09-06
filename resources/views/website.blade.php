@@ -169,14 +169,6 @@
     </div>
     <p class="mt-5">フレンズは面白い。Netflixで見れるから見てね。</p>
     {{-- block end --}}     
-
-    {{-- block --}}
-    <li class=" font-bold break-normal  mt-20 pb-3 text-xl">TOEFL Listening Practice </li>
-    <div class="iframe-wrap">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Dahw9ZxlNFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <p class="mt-5"></p>
-    {{-- block end --}}     
   </ul>
   
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -190,7 +182,7 @@
   <script>
        (adsbygoogle = window.adsbygoogle || []).push({});
   </script>  
-  
+      @include('components.footer')
           </div>
     </div >
 @endsection

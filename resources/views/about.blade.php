@@ -144,7 +144,7 @@
          (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 
-	<footer class="">
+	<footer class="mt-2">
     @include('components.footer')
 	</footer>
 

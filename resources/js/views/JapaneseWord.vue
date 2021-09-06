@@ -5,7 +5,7 @@
         ガチャガチャ日本語
       </h1>
       <p class="mt-10 text-sm md:text-md text-gray-500 lg:mx-auto w-3/4 mx-auto">
-        日本語がランダムに出てくるので組み合わせて文章をつくってください。
+        日本語がランダムに出てくるので組み合わせて文章をつくってください。(アカウント登録不要)
       </p>
        <p class="mt-2 text-sm md:text-md text-gray-500 lg:mx-auto w-3/4 mx-auto">
       Combine the three words to make a sentence. and then tweet or <a class="underline" href="#create">post</a>  it!
