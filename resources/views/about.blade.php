@@ -145,9 +145,7 @@
     </script>
 
 	<footer class="">
-		<div class="container max-w-4xl mx-auto flex py-8">
-
-		</div>
+    @include('components.footer')
 	</footer>
 
 </div>

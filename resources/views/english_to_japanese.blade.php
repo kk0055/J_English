@@ -117,6 +117,6 @@
          <br>
          @endguest
         {{-- !Google Ads --}}
-        @include('components.gacha_footer')
+        @include('components.footer')
 </div >
 @endsection

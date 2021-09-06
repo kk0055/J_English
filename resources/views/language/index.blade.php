@@ -66,6 +66,7 @@
             </p>
             <br>
             <p>※ログインすると保存と投稿ができます。</p>
+            <p class="mt-2">英作文をつくる練習がしたい方はこちら→<a href="{{ route('englishWord') }}"class="text-blue-400 hover:text-blue-600 underline" ><span> ガチャガチャ英単語</span></a> </p>
             <p class="text-blue-700 mt-1 underline">
                 <a href="/japanese">
                     <br>英語→日本語 (English→Japanese)Ver. </a>
@@ -133,6 +134,6 @@
 
 
     </div>
-    @include('components.gacha_footer')
+    @include('components.footer')
 @endsection
 
