@@ -182,7 +182,7 @@
   <script>
        (adsbygoogle = window.adsbygoogle || []).push({});
   </script>  
-      @include('components.footer')
+      
           </div>
     </div >
 @endsection
