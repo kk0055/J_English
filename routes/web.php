@@ -24,6 +24,8 @@ Route::get('/website', [WebsiteController::class,'index'])->name('website');
 Route::get('/about', [WebsiteController::class,'about'])->name('about');
 Route::get('/search', [SearchController::class, 'search'])->name('item.search');
 
+// Route::get('/login/google', [LoginController::class, 'redirectToGoogle'])->name('twitter.login');
+// Route::get('login/google/callback', [LoginController::class, 'handleGoogleCallback'])->name('');
 Route::get('/login/{provider}', [LoginController::class, 'redirectToProvider'])->name('twitter.login');
 Route::get('login/{provider}/callback', [LoginController::class, 'handleProviderCallback'])->name('');
 

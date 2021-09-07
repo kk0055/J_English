@@ -75,4 +75,5 @@ class LoginController extends Controller
             return redirect('/login')->with('oauth_error', 'メールアドレスが取得できませんでした');
         }
     }
+
 }

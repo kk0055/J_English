@@ -74,6 +74,13 @@
                     <i class="fab fa-twitter mr-1"></i>Twitterでログイン
                         </a>
                     </div>
+                    <div class="mb-3">
+                        <a href="{{ url('/login/google') }}"  class="twitter-login px-2 text-white  
+                        font-display focus:outline-none focus:shadow-outline 
+                        shadow-lg"> 
+                        <i class="fab fa-twitter mr-1"></i>Googleでログイン
+                            </a>
+                        </div>
                  {{-- テストボタン --}}
                   <form method="POST" action="{{ route('login') }}">
                     @csrf
