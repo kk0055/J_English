@@ -6,7 +6,7 @@
 
 	<div class="container w-full md:max-w-3xl mx-auto pt-20">
 
-		<div class="w-full px-4 md:px-6 text-sm md:text-xl text-gray-800 leading-normal" >
+		<div class="w-full px-4 md:px-6 text-sm md:text-lg text-gray-800 leading-normal" >
  {{-- Google Ads --}}
  @guest
  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -33,7 +33,7 @@
 
 
 			<!--Post Content-->
-<div class="space-y-3" >
+<div class="space-y-1" >
 <p> </p>
 <p>英語を勉強する目的はひとそれぞれです。TOEICで良いスコアを取りたい、映画を字幕なしで見たい、受験のために英語が必要、留学したい、英語を使った仕事に就きたい、外国人と楽しく英会話をできるようになりたい、カッコよく英語を話せるようになりたいなど。</p>
 <p> </p>
@@ -41,7 +41,7 @@
 <p> </p>
 <p>どれも大切ですし、正直何から始めて良いかわからないかとおもいます。</p>
 <p>ただ、よく言われるように多くのひとはリーディングはそれほど苦労なくできると思います。</p>
-<p>英語を学ぶ目的としては、<strong class="font-bold underline text-red-500">英語を話せるようになりたい、英会話できるようになりたい</strong>というのが一番ではないでしょうか。リスニングには問題がなく、相手の言っていることは分かるのに、上手く答えられない、会話がスムーズにいかないというのはフラストレーションがたまります。</p>
+<p>英語を学ぶ目的としては、<strong class="font-bold text-red-500">英語を話せるようになりたい、英会話できるようになりたい</strong>というのが一番ではないでしょうか。リスニングには問題がなく、相手の言っていることは分かるのに、上手く答えられない、会話がスムーズにいかないというのはフラストレーションがたまります。</p>
 <br>
 <br>
 <h2 class="font-bold text-2xl md:text-3xl">英会話ができるようになるには</h2>
@@ -54,7 +54,7 @@
 <p>TOEICなどのリーディングの試験で必要な英語の力をつけることにも役立つはずです。</p>
 <p> </p>
 
-<p>英語が話せるとは<strong class="font-bold underline text-red-500">”今言いたいことが口から瞬時に出てくること”</strong>だと思います。</p>
+<p>英語が話せるとは<strong class="font-bold text-red-500">”今言いたいことが口から瞬時に出てくること”</strong>だと思います。</p>
 <p>では、どうすれば今言いたいことが瞬時にでてくるのかというと、瞬時に出てくるセリフの引き出しが多ければ多いほど出てきやすいです。</p>
 <br>
 <p>最初は難しいかもしれませんが、日本語を見て英語を口に出すトレーニングを積めば、英語を口に出すことに慣れてきます。</p>
