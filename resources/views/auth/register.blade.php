@@ -48,7 +48,7 @@
                             </div>
 
                         </div>
-                        <input class="w-3/4 text-lg py-2 border-b border-gray-300 focus:outline-none focus:border-indigo-500 form-control @error('password') is-invalid @enderror" type="password"  placeholder="" value="{{ old('password') }}" name="password">
+                        <input class="w-3/4 text-lg py-1 border-b border-gray-300 focus:outline-none focus:border-indigo-500 form-control @error('password') is-invalid @enderror" type="password"  placeholder="" value="{{ old('password') }}" name="password">
                     </div>
 
                     @error('password')
@@ -64,7 +64,7 @@
                             </div>
 
                         </div>
-                        <input class="w-3/4 text-lg py-2 border-b border-gray-300 focus:outline-none focus:border-indigo-500 form-control @error('password') is-invalid @enderror" type="password"  placeholder="" value="{{ old('password') }}" name="password_confirmation">
+                        <input class="w-3/4 text-lg py-1 border-b border-gray-300 focus:outline-none focus:border-indigo-500 form-control @error('password') is-invalid @enderror" type="password"  placeholder="" value="{{ old('password') }}" name="password_confirmation">
                     </div>
 
                     @error('password')

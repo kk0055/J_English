@@ -25,7 +25,7 @@
 
                     <div class="">
                         <p class="text-sm font-bold text-gray-700 tracking-wide">メールアドレス</p>
-                        <input class="w-3/4 text-lg py-2 border-b border-gray-300 focus:outline-none focus:border-indigo-500 form-control @error('email') is-invalid @enderror" type="email" name="email" placeholder="" value="{{ old('email') }}" >
+                        <input class="w-3/4 text-lg py-1 border-b border-gray-300 focus:outline-none focus:border-indigo-500 form-control @error('email') is-invalid @enderror" type="email" name="email" placeholder="" value="{{ old('email') }}" >
                     </div>
 
                                 
@@ -41,7 +41,7 @@
                             </p>
                             
                         </div>
-                        <input class="w-3/4 text-lg py-2  focus:outline-none  border-b focus:border-indigo-500 form-control @error('password') is-invalid @enderror" type="password"  placeholder="" value="{{ old('password') }}" name="password">
+                        <input class="w-3/4 text-lg py-1  focus:outline-none  border-b focus:border-indigo-500 form-control @error('password') is-invalid @enderror" type="password"  placeholder="" value="{{ old('password') }}" name="password">
                     </div>
 
                     <div class="form-check mt-3">
@@ -51,7 +51,7 @@
                             {{ __('Keep me logged in') }}
                         </label>
                     </div>
-                    <div class="mt-10">
+                    <div class="mt-5">
                         <button class="text-black p-2 w-full 
                         font-semibold font-display focus:outline-none focus:shadow-outline hover:bg-gray-200 border
                         shadow-lg">
@@ -66,21 +66,23 @@
                 </div>
            
                 
-                <div class="mb-2  ml-2">
-                    <div class="mb-3">
+                <div class="mb-2   ml-2">
+                    <div class="mb-3 ">
+                        <a href="{{ url('/login/google') }}"  class="bg-black px-2 text-white  
+                        font-display focus:outline-none focus:shadow-outline w-full rounded
+                        shadow-lg"> 
+                        Googleでログイン
+                            </a>
+                        </div>
+
+                    <div class="mb-3 ">
                     <a href="{{ url('/login/twitter') }}"  class="twitter-login px-2 text-white  
-                    font-display focus:outline-none focus:shadow-outline 
+                    w-full rounded focus:outline-none focus:shadow-outline 
                     shadow-lg"> 
                     <i class="fab fa-twitter mr-1"></i>Twitterでログイン
                         </a>
                     </div>
-                    <div class="mb-3">
-                        <a href="{{ url('/login/google') }}"  class="twitter-login px-2 text-white  
-                        font-display focus:outline-none focus:shadow-outline 
-                        shadow-lg"> 
-                        <i class="fab fa-twitter mr-1"></i>Googleでログイン
-                            </a>
-                        </div>
+             
                  {{-- テストボタン --}}
                   <form method="POST" action="{{ route('login') }}">
                     @csrf
@@ -91,9 +93,7 @@
                         <input class="" type="hidden"  value="12345678910" name="password">
                   
                     <div class=" my-2">
-                        <button class="bg-black px-2 text-white  
-                        font-display focus:outline-none focus:shadow-outline 
-                        shadow-lg"> ゲストとしてログイン
+                        <button class="rounded px-2 hover:bg-red-800 focus:outline-none bg-red-700 text-white"> ゲストとしてログイン
                         </button>
                     </div>  
                 </form>

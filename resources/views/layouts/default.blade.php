@@ -89,7 +89,7 @@
 
 </head>
 <style>
- 
+
 </style>
 
 <body class="bg-white awesomeEvent" style="font-family: 'Noto Serif JP', serif;">
