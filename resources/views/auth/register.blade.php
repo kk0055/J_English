@@ -8,7 +8,7 @@
        
         <div class="">
                    <a href="/"> 
-                    <i class="fas fa-book"></i></a>   
+                    <i class="fas fa-home"></i></a>   
             <P class="text-center text-gray-700 font-bold">登録</P>
            
             <div class="mt-10">

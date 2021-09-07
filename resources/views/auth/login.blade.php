@@ -10,7 +10,7 @@
     {{ session('oauth_error') }}
         @endif
             <a href="/"> 
-                <i class="fas fa-book"></i></a>  
+                <i class="fas fa-home"></i></a>  
             <P class="text-center text-gray-700 font-bold ">ログイン</P>
          
             <div class="mt-10 ">
@@ -62,7 +62,7 @@
              
                 </form>
                 <div class="mt-2 text-sm  my-4">
-                  <a class="cursor-pointer ml-2 \ text-gray-500 hover:text-red-600" href="{{ 'register' }}">アカウントをお持ちではない方はこちら</a>
+                  <a class="cursor-pointer ml-2 text-blue-400 hover:text-blue-600" href="{{ 'register' }}">アカウントをお持ちではない方</a>
                 </div>
            
                 
@@ -99,8 +99,8 @@
                 </form>
                 <div class="mt-2">
                     @if (Route::has('password.request'))
-                    <a class="btn btn-link text-sm hover:text-red-600" href="{{ route('password.request') }}">
-                        {{ __('パスワードをお忘れの方はこちら') }}
+                    <a class="btn btn-link text-sm text-blue-400 hover:text-blue-600" href="{{ route('password.request') }}">
+                        {{ __('パスワードをお忘れの方') }}
                     </a>
                 @endif
             </div>
