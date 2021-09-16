@@ -95,11 +95,10 @@
 
 <br>
 <p>（ログインすれば、問題の投稿と保存ができます。）</p>
-<p> <a href="website" class="hover:text-blue-500">
-  <span class="text-green-400 underline">サイト紹介のページ</span> </a>ではリスニング用のYoutubeが見れます。</p>
+<br/>
+<p class="mt-4">英作文をつくる練習がしたい方はこちら→<a href="{{ route('englishWord') }}"class="text-blue-400 hover:text-blue-600 underline" ><span> ガチャガチャ英単語</span></a> </p>
 
-<p> </p>
-
+<br/>
 <p>全部で2000問以上あります。リロードもしくは   
   右上の
   <i class="fas fa-home"></i>
