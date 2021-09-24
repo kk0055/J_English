@@ -99,11 +99,9 @@
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/main.js?0803') }}"></script>
     <script>
-        // grab everything we need
+        // Navbar
         const btn = document.querySelector("button.mobile-menu-button");
         const menu = document.querySelector(".mobile-menu");
-
-        // add event listeners
         btn.addEventListener("click", () => {
             menu.classList.toggle("hidden");
         });

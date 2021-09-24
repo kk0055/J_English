@@ -99,7 +99,9 @@
     {{-- </div> --}}
     <script src="{{ asset('js/app.js?0924') }}"></script>
     <script src="{{ asset('js/main.js?0924') }}"></script>
-
+    <script>
+  
+    </script>
 </body>
 
 </html>

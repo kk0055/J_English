@@ -12,7 +12,8 @@
         {{-- </div> --}}
         {{-- <hr class="bg-gray-300 my-12"> --}}
         {{-- Twitter --}}
-        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false"></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <div class="ml-3">
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false"></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
          {{-- Twitter --}}
         <div class="flex flex-row  ml-3 px-2 text-2xl mt-12  md:text-3xl">
         <h1 class="font-bold">
