@@ -1,6 +1,6 @@
 <template>
-  <div class="mt-10">
-    <div class="text-center ">
+  <div class="mt-10">   
+    <div class="text-center ">   
       <h1 class="gacha mt-2 leading-8 font-extrabold tracking-tight text-gray-900 sm:text-md text-3xl ">
         ガチャガチャ日本語
       </h1>

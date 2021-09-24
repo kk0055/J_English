@@ -10,8 +10,8 @@
     <meta property="og:title" content="ガチャガチャ英単語 ランダムに単語を3つ出します。英単語verと日本語verあり。組み合わせによるアイデア出し、英作文の練習、お題の選定、ランダムな言葉でひらめきを得たい際にお使いください。自由に遊んでみてください。" />
     <meta property="og:url" content="https://5seconds-en.com/en-words/gacha" />
     <meta property="og:image"
-        content="https://image.freepik.com/free-photo/top-view-decoration-with-cubes-wooden-background_23-2148389005.jpg" />
-
+        content="https://pbs.twimg.com/media/FADf9hxVIAodvPq?format=jpg&name=large" />
+        
     <meta name="keywords" content="瞬間英作文,スピーキング,英語,5秒英作文,TOEIC,英会話,英語学習,海外,ランダム単語">
     <meta name="description" content="ランダムに単語を3つ出します。英単語verと日本語verあり。組み合わせによるアイデア出し、英作文の練習、お題の選定、ランダムな言葉でひらめきを得たい際にお使いください。自由に遊んでみてください。" />
     <meta property="og:description"
@@ -25,7 +25,7 @@
     <meta name="description" content="ランダムに単語を3つ出します。英単語verと日本語verあり。組み合わせによるアイデア出し、英作文の練習、お題の選定、ランダムな言葉でひらめきを得たい際にお使いください。自由に遊んでみてください。" />
 
     <meta name="twitter:image"
-        content="https://images.pexels.com/photos/5560909/pexels-photo-5560909.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+        content="https://pbs.twimg.com/media/FADf9hxVIAodvPq?format=jpg&name=large">
 
     {{-- Search Console --}}
     <meta name="google-site-verification" content="Xja4SEPoY8ersK2goh_5cGHoLdvCDalwlmQLTV1F-io" />
