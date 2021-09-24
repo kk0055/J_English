@@ -97,7 +97,7 @@
 
 
     <script src="{{ asset('js/app.js') }}"></script>
-    <script src="{{ asset('js/main.js?0803') }}"></script>
+    <script src="{{ asset('js/main.js?0924') }}"></script>
     <script>
         // Navbar
         const btn = document.querySelector("button.mobile-menu-button");
