@@ -19,7 +19,7 @@ $(document).ready(function(){
             var speech = new SpeechSynthesisUtterance();
 
             speech.volume = 1.0;
-            speech.rate = 1.0;
+            speech.rate = 0.9;
             speech.pitch = 1.0;
             speech.text = message;
             speech.lang = 'en-US';
@@ -31,12 +31,8 @@ $(document).ready(function(){
     });
     speech.voice = voice
 
-            // utterances.push(speech);
-            // console.log(speech);
             speechSynthesis.speak(speech);
-          
-            // console.log( speechSynthesis.speak(speech));
-            // console.log( speech);
+  
         });
     });
 
@@ -55,7 +51,7 @@ $(document).ready(function(){
             var speech = new SpeechSynthesisUtterance();
 
             speech.volume = 1.0;
-            speech.rate = 1.0;
+            speech.rate = 1.1;
             speech.pitch = 1.0;
             speech.text = message;
             speech.lang = 'ja-JP';
@@ -135,10 +131,14 @@ loveMe.addEventListener('dblclick', (e) => {
 })
 
   const createAwesome = (e) => {
+//   const awesomeBtn  = document.createElement('i')
+//   awesomeBtn.classList.add('fas')
+//   awesomeBtn.classList.add('fa-star')
+
   const awesomeBtn  = document.createElement('i')
+  awesomeBtn.innerText = 'きみは天才★'
   awesomeBtn.classList.add('fas')
   awesomeBtn.classList.add('fa-star')
-
   const x = e.pageX
   const y = e.pageY
 
@@ -149,6 +149,7 @@ loveMe.addEventListener('dblclick', (e) => {
 }
 
 //Timer
+if (document.getElementById('time')!==null) {
 const timeEl = document.getElementById('time')
 let seconds = 0
  function increaseTime() {
@@ -160,7 +161,7 @@ let seconds = 0
   s = s < 10 ? `0${s}` : s
   timeEl.innerHTML = `Time: ${m}:${s}`
   seconds++
-
+}
 }
 function startTimer() {
   setInterval(increaseTime, 1000)

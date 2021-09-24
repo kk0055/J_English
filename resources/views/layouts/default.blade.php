@@ -94,24 +94,12 @@
 
 <body class="bg-white awesomeEvent" style="font-family: 'Noto Serif JP', serif;">
 
-    <div id="app">
+    {{-- <div id="app"> --}}
         @yield('content')
-    </div>
+    {{-- </div> --}}
+    <script src="{{ asset('js/app.js?0924') }}"></script>
+    <script src="{{ asset('js/main.js?0924') }}"></script>
 
-
-    <script src="{{ asset('js/app.js?0827') }}"></script>
-    <script src="{{ asset('js/main.js?0803') }}"></script>
-    <script>
-// grab everything we need
-const btn = document.querySelector("button.mobile-menu-button");
-const menu = document.querySelector(".mobile-menu");
-
-// add event listeners
-btn.addEventListener("click", () => {
-  menu.classList.toggle("hidden");
-});
-
-    </script>
 </body>
 
 </html>

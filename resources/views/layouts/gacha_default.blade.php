@@ -105,7 +105,6 @@ html {
     </div>
 
     @include('components.footer')
-
     <script src="{{ asset('js/app.js?0827') }}"></script>
     <script>
 

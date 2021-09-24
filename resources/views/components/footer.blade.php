@@ -1,8 +1,6 @@
 <footer class="bg-white dark:bg-gray-800 pt-10 my-10 pb-8 xl:pt-8 flex items-center justify-center">
   <div class="">
-              <div class="text-center">
-                  <ul>
-          <li class="">
+             <div class="text-center">
               <div class="">
                    <ul>
                       <li class="mb-4 hover:text-gray-800 dark:hover:text-white underline transition-colors duration-200">
