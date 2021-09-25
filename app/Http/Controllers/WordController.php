@@ -56,7 +56,7 @@ class WordController extends Controller
     {
      
         $validation =  $this->validate($request, [
-            'word' => 'required',
+            'word' => 'required|unique:japanese_words',
 
         ]);
         JapaneseWord::create([
@@ -74,7 +74,7 @@ class WordController extends Controller
     {
      
         $validation =  $this->validate($request, [
-            'word' => 'required',
+            'word' => 'required|unique:english_words'
 
         ]);
         EnglishWord::create([
