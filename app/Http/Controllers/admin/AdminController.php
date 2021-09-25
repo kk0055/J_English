@@ -145,4 +145,6 @@ class AdminController extends Controller
 				 'languages' => $languages
 		 ]);
  		}
+
+		 
 }

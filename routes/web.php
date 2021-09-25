@@ -61,9 +61,12 @@ Route::group(['middleware' => ['auth.admin']], function () {
   Route::get('/admin/search', [AdminController::class, 'adminSearch'])->name('admin.search');
 
   //word create
-  Route::get('/admin/words/create', [WordController::class,'wordsCreate'])->name('japaneseWord.create');
+  Route::get('/admin/words/create', [WordController::class,'adminWordsCreate'])->name('japaneseWord.create');
   Route::post('/ja-words/create', [WordController::class,'japaneseStore'])->name('japaneseWord.store');
   Route::post('/en-words/create', [WordController::class,'englishStore'])->name('englishWord.store');
+  Route::delete('/en-words/{word}/delete', [WordController::class,'enWordsDestroy'])->name('englishWord.destroy');
+  Route::delete('/ja-words/{word}/delete', [WordController::class,'jaWordsDestroy'])->name('japaneseWord.destroy');
+ 
   
   });
 

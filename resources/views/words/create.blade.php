@@ -76,17 +76,25 @@
         <div class="row">
             <div class="col">
                 @foreach ($japanese as $word)
-                    <li class="list-group-item">
-
+                <li class="list-group-item flex justify-between place-items-center">
                         {{ $word->word }}
+                        <form method="POST" action="{{ route('japaneseWord.destroy', $word->id) }}">
+                            @csrf
+                            @method('DELETE')
+                            <button class=""><i class="fa fa-trash" aria-hidden="true"></i> </button>
+                        </form>
                     </li>
                 @endforeach
             </div>
-            <div class="col">
+            <div class="col"> 
                 @foreach ($english as $word)
-                    <li class="list-group-item">
-
+                    <li class="list-group-item flex justify-between place-items-center">
                         {{ $word->word }}
+                        <form method="POST" action="{{ route('englishWord.destroy', $word->id) }}">
+                            @csrf
+                            @method('DELETE')
+                            <button class=""><i class="fa fa-trash" aria-hidden="true"></i> </button>
+                        </form>
                     </li>
                 @endforeach
             </div>

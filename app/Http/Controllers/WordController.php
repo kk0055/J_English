@@ -34,7 +34,9 @@ class WordController extends Controller
     }
     
 
-    public function wordsCreate()
+        
+    // Admin用
+    public function adminWordsCreate()
     {
         $japanese = JapaneseWord::latest()->get();
         $english = EnglishWord::latest()->get();
@@ -43,10 +45,10 @@ class WordController extends Controller
             'japanese' => $japanese,
             'english' => $english,
         ]);
-    }   
+    }  
 
     /**
-     * Store a newly created resource in storage.
+     * Admin用
      *
      * @return Response
      */
@@ -64,7 +66,7 @@ class WordController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Admin用
      *
      * @return Response
      */
@@ -80,5 +82,19 @@ class WordController extends Controller
         ]);
         return back()->withStatus("追加！");
     }
-  
+    
+    public function enWordsDestroy(EnglishWord $word)
+    {
+
+        $word->delete();
+
+        return back()->withStatus("Deleted！");
+    }
+    public function jaWordsDestroy(JapaneseWord $word)
+    {
+
+        $word->delete();
+
+        return back()->withStatus("Deleted！".$word->name);
+    }
 }
