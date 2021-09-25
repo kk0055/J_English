@@ -82,7 +82,7 @@ class WordController extends Controller
         ]);
         return back()->withStatus("追加！");
     }
-    
+    // Admin用
     public function enWordsDestroy(EnglishWord $word)
     {
 
@@ -90,11 +90,12 @@ class WordController extends Controller
 
         return back()->withStatus("Deleted！");
     }
+    // Admin用
     public function jaWordsDestroy(JapaneseWord $word)
     {
 
         $word->delete();
 
-        return back()->withStatus("Deleted！".$word->name);
+        return back()->withStatus("Deleted！");
     }
 }

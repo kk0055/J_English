@@ -1,11 +1,13 @@
 @extends('layouts.admin')
 
 @section('content')
-
+<div class="container">
+    <div class="row">
+    <div class="col-sm">
     <div class="form-group mt-1 md:mt-0 md:col-span-2 max-w-3xl mx-auto  p-16">
-        <div class="my-4">
+        {{-- <div class="my-4">
             @include('components.session')
-        </div>
+        </div> --}}
         <a class="" href="{{ route('japaneseWord') }}">
             <i class="far fa-flushed text-4xl mb-2"></i>
         </a>
@@ -38,10 +40,12 @@
             </div>
         </form>
     </div>
+    </div>
     {{-- ! 日本語追加 --}}
 
     {{-- 英語追加 --}}
-    <div class="form-group mt-1 md:mt-0 md:col-span-2 max-w-3xl mx-auto  p-16">
+    <div class="col-sm">
+        <div class="form-group mt-1 md:mt-0 md:col-span-2 max-w-3xl mx-auto  p-16">
         <a class="" href="{{ route('englishWord') }}">
             <i class="fas fa-flushed text-4xl mb-2"></i>
         </a>
@@ -71,7 +75,11 @@
             </div>
         </form>
     </div>
+    </div>
+</div>
+</div>
 
+    {{-- Words展開 --}}
     <div class="container">
         <div class="row">
             <div class="col">
