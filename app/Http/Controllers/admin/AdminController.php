@@ -11,8 +11,13 @@ use Illuminate\Support\Facades\Validator;
 
 class AdminController extends Controller
 {
-    function showLoginForm()
+    function showLoginForm(Request $request)
 		{
+			 
+		if($request->session()->has('admin_auth')){
+			// $request->session()->put("admin_auth", true);
+			return redirect("admin/show");
+		}
 		return view("admin.admin_login");
   	}
 
@@ -28,6 +33,7 @@ class AdminController extends Controller
 			$request->session()->put("admin_auth", true);
 			return redirect("admin/show");
 		}
+  
 
 		//ログイン失敗
 		return redirect("admin/login")->withErrors([
