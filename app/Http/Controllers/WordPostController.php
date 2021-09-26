@@ -51,8 +51,8 @@ class WordPostController extends Controller
     
     public function adminWordsPost()
     {
-      $japanese = JapaneseWordPost::latest()->get();
-      $english = EnglishWordPost::latest()->get();
+      $japanese = JapaneseWordPost::latest()->paginate(50);
+      $english = EnglishWordPost::latest()->paginate(50);
     //  dd($english);
     //  dd($japanese);
       return view('admin.words_post',[

@@ -18,6 +18,7 @@
                         </form>
                     </li>
                 @endforeach
+                {{ $japanese->links() }}
             </div>
             <div class="col"> 
                 @foreach ($english as $word)
@@ -31,7 +32,8 @@
                         </form>
                     </li>
                 @endforeach
-            </div>
+                {{ $english->links() }}
+            </div>   
         </div>
     </div>
 @endsection
