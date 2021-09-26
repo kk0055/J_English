@@ -60,14 +60,15 @@ Route::group(['middleware' => ['auth.admin']], function () {
   Route::put('/admin/edit/{id}', [AdminController::class, 'update'])->name('admin.update');
   Route::get('/admin/search', [AdminController::class, 'adminSearch'])->name('admin.search');
 
-  //word create
+  //wordの管理
   Route::get('/admin/words/create', [WordController::class,'adminWordsCreate'])->name('japaneseWord.create');
   Route::post('/ja-words/create', [WordController::class,'japaneseStore'])->name('japaneseWord.store');
   Route::post('/en-words/create', [WordController::class,'englishStore'])->name('englishWord.store');
   Route::delete('/en-words/{word}/delete', [WordController::class,'enWordsDestroy'])->name('englishWord.destroy');
   Route::delete('/ja-words/{word}/delete', [WordController::class,'jaWordsDestroy'])->name('japaneseWord.destroy');
- 
-  
+  Route::get('admin/words-post', [WordPostController::class,'adminWordsPost'])->name('admin.wordsPost');
+  Route::delete('admin/en-words/post/{post}/delete', [WordPostController::class,'EnglishWordPostDelete'])->name('EnglishWordPostDelete');
+  Route::delete('admin/ja-words/post/{post}/delete', [WordPostController::class,'JapaneseWordPostDelete'])->name('JapaneseWordPostDelete');
   });
 
   Route::get('/admin/login', [AdminController::class, 'showLoginform'])->name('showAdminLogin');
@@ -84,10 +85,10 @@ Route::group(['middleware' => ['auth.admin']], function () {
    //englishWordPost
   Route::get('/en-words/post', [WordPostController::class,'EngliahWordPostIndex'])->name('EngliahWordPostIndex');
   Route::post('/en-words/post/create', [WordPostController::class,'EngliahWordPostStore'])->name('EngliahWordPostStore');
-  Route::delete('/en-words/post/{id}', [WordPostController::class,'EngliahWordPostDelete'])->name('EngliahWordPostDelete');
+  // Route::delete('/en-words/post/{id}', [WordPostController::class,'EngliahWordPostDelete'])->name('EngliahWordPostDelete');
 
   //japansewordPost
   Route::get('/ja-words/post', [WordPostController::class,'JapaneseWordPostIndex'])->name('JapaneseWordPostIndex');
   Route::post('/ja-words/post/create', [WordPostController::class,'JapaneseWordPostStore'])->name('JapaneseWordPostStore');
-  Route::delete('/ja-words/post/{id}', [WordPostController::class,'JapaneseWordPostDelete'])->name('JapaneseWordPostDelete');
+  // Route::delete('/ja-words/post/{id}', [WordPostController::class,'JapaneseWordPostDelete'])->name('JapaneseWordPostDelete');
 

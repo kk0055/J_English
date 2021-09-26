@@ -20,12 +20,12 @@ class WordPostController extends Controller
         $post = JapaneseWordPost::create($request->all());
         return response()->json($post);
     }   
-    public function JapaneseWordPostDelete($id)
-    {
-      JapaneseWordPost::destroy($id);
+    // public function JapaneseWordPostDelete($id)
+    // {
+    //   JapaneseWordPost::destroy($id);
     
-      return response()->json("ok");
-    }  
+    //   return response()->json("ok");
+    // }  
 
     
 
@@ -42,9 +42,36 @@ class WordPostController extends Controller
       return response()->json($post);
     }   
 
-    public function EngliahWordPostDelete($id)
+    // public function EngliahWordPostDelete($id)
+    // {
+    //   EnglishWordPost::destroy($id);
+    //   return response()->json("ok");
+    // }   
+
+    
+    public function adminWordsPost()
     {
-      EnglishWordPost::destroy($id);
-      return response()->json("ok");
+      $japanese = JapaneseWordPost::latest()->get();
+      $english = EnglishWordPost::latest()->get();
+    //  dd($english);
+    //  dd($japanese);
+      return view('admin.words_post',[
+          'japanese' => $japanese,
+          'english' => $english,
+      ]);
+    }  
+    public function JapaneseWordPostDelete(JapaneseWordPost $post)
+    {
+      // dd($post);
+      $post->delete();
+    
+      return back()->withStatus("Deleted！");
+    }  
+
+    public function EnglishWordPostDelete(EnglishWordPost $post)
+    {
+      $post->delete();
+      return back()->withStatus("Deleted！");
     }   
 }
+

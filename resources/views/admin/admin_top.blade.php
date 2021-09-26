@@ -12,6 +12,10 @@
 			<div>
 				<a href="{{ route('japaneseWord.create') }}" class="inline-flex mb-3 justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 bg-black">Add Words</a>
 			</div>
+
+			<div>
+				<a href="{{ route('admin.wordsPost') }}" class="inline-flex mb-3 justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 bg-black">Manage Word post</a>
+			</div>
 		
 			<form method="post" action="{{ url('admin/logout') }}">
 				@csrf
