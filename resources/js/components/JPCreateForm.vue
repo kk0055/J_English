@@ -69,7 +69,7 @@ export default {
          this.$store.dispatch('loadJapaneseWordPost')
       // .then(res => console.log(res))
       .catch(err => console.log(err));
-      // this.$store.dispatch('loadJapaneseWordPost')
+       this.$store.dispatch('loadJapaneseWordPost')
         this.post.post = ''
         }
     }
