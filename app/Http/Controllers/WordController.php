@@ -38,8 +38,8 @@ class WordController extends Controller
     // Admin用
     public function adminWordsCreate()
     {
-        $japanese = JapaneseWord::latest()->paginate(50);
-        $english = EnglishWord::latest()->paginate(50);
+        $japanese = JapaneseWord::latest()->paginate(100);
+        $english = EnglishWord::latest()->paginate(100);
         return view('words.create',[
             'japanese' => $japanese,
             'english' => $english,

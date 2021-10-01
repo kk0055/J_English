@@ -108,6 +108,7 @@
                 @endforeach
                 {{ $english->links() }}
             </div>
+          
         </div>
     </div>
 @endsection
