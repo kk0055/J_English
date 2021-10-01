@@ -61,6 +61,7 @@ export default {
       formSubmit() {  
         if (this.post.post.length < 250) {
       axios.post('/en-words/post/create', this.post)
+      this.$store.dispatch('loadEnglishWordPost')
       // .then(res => console.log(res))
       .catch(err => console.log(err));
       this.$store.dispatch('loadEnglishWordPost')

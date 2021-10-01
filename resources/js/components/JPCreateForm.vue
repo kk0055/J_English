@@ -66,9 +66,10 @@ export default {
       formSubmit() {  
         if (this.post.post.length < 250) {
       axios.post('/ja-words/post/create', this.post)
+         this.$store.dispatch('loadJapaneseWordPost')
       // .then(res => console.log(res))
       .catch(err => console.log(err));
-      this.$store.dispatch('loadJapaneseWordPost')
+      // this.$store.dispatch('loadJapaneseWordPost')
         this.post.post = ''
         }
     }
