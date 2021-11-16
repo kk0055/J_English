@@ -1,16 +1,6 @@
 <template>
   <div class="mt-10">   
-    <div class="text-center ">   
-      <h1 class="gacha mt-2 leading-8 font-extrabold tracking-tight text-gray-900 sm:text-md text-3xl ">
-        ガチャガチャ日本語
-      </h1>
-      <p class="mt-10 text-sm md:text-md text-gray-500 lg:mx-auto w-3/4 mx-auto">
-        日本語がランダムに出てくるので組み合わせて文章をつくってください。(アカウント登録不要)
-      </p>
-       <p class="mt-2 text-sm md:text-md text-gray-500 lg:mx-auto w-3/4 mx-auto">
-      Combine the three words to make a sentence. and then tweet or <a class="underline" href="#create">post</a>  it!
-      </p>
-    </div>
+
     <div class="max-w-screen-md w-3/4 md:w-3/4 mt-14 mx-auto">
       <div
         class="inline-flex flex-col space-y-2 items-center h-full

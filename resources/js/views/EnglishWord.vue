@@ -1,30 +1,7 @@
 <template>
   <div class="mt-10">
-    <div class="text-center ">
-      <h1
-        class="
-          gacha
-          mt-2
-          leading-8
-          font-extrabold
-          tracking-tight
-          text-gray-900
-          sm:text-md
-          text-3xl
-        "
-      >
-        ガチャガチャ英単語
-      </h1>
-        <p class="mt-10 text-sm md:text-md text-gray-500 ">
-       
-      </p>
-      <p class="mt-10 text-sm md:text-md text-gray-500 lg:mx-auto w-3/4 mx-auto">
-        英単語がランダムに出てくるので組み合わせて文章をつくってください。 英作文の練習にお役立てください。(アカウント登録不要)
-      </p>
-      <p class="mt-2 text-sm md:text-md text-gray-500 lg:mx-auto w-3/4 mx-auto">
-       Combine the three words to make a sentence. and then tweet or <a class="underline" href="#create">post</a>  it!
-      </p>
-    </div>
+  
+         
     <div class="max-w-screen-md  md:w-3/4 mt-14 w-3/4 mx-auto">
       <div
         class="
@@ -41,6 +18,7 @@
         "
       >
         <p
+          v-if="dataLoaded"
           class="w-full text-2xl font-semibold"
           v-for="word in words"
           :key="word.id"
@@ -104,6 +82,7 @@ export default {
         post:'' ,
       },
       forTweetWord:'',
+      dataLoaded:null
     };
   },
   components: {
@@ -111,6 +90,7 @@ ENCreateForm
   },
    created() {
     //actionsをdispatch
+    this.dataLoaded = true
     this.$store.dispatch('loadEnglishWord')
     this.$store.dispatch('loadEnglishWordPost')
     
