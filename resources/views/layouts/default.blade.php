@@ -78,7 +78,7 @@
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     {{-- CSS --}}
     <link rel="stylesheet" href="{{ asset('css/style.css?0615') }}">
-
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <!-- Ptengine Tag -->
     <script src="https://js.ptengine.jp/269856ai.js"></script>
     <!-- End Ptengine Tag -->
