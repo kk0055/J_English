@@ -75,6 +75,9 @@
                     <br>英語→日本語 (English→Japanese)Ver. </a>
             </p>
             <br>
+            <div class="flex-col mt-2 pb-3">
+                <p id="contact" class="text-xs mb-2">サイト全体でこういう機能欲しいなぁなどあれば <a href="https://twitter.com/5seconds_en" target='_blank' class="text-gray-400 hover:text-gray-600 underline">DM </a>ください😎</p>
+            </div>
             <div class="mt-6 ">
                 <form action="{{ route('item.search') }}">
                     <input type="text" name="query"

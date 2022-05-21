@@ -19,5 +19,6 @@ Vue.component('japanese-word', require('./views/JapaneseWord.vue').default);
 const app = new Vue({
     el: '#app',
     store,
-    router
+    router,
+  
 });

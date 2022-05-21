@@ -27,7 +27,7 @@
       {{-- Twitter Button --}}
       <div class="my-5 ml-3">
         <div class="flex-col pb-5">
-            <p id="contact" class="text-xs mb-5">何かあれば <a href="https://twitter.com/5seconds_en" target='_blank' class="text-gray-400 hover:text-gray-600 underline">DM </a>ください。感想でも嬉しいです。</p>
+            <p id="contact" class="text-xs mb-5">ご意見やこんな機能欲しいなぁなどあれば <a href="https://twitter.com/5seconds_en" target='_blank' class="text-gray-400 hover:text-gray-600 underline">DM </a>ください。感想でも嬉しいです。</p>
         </div>
     </div>
 
