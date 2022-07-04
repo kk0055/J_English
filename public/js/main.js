@@ -17,19 +17,22 @@ $(document).ready(function(){
             // message = replaceMessage(message);
          
             var speech = new SpeechSynthesisUtterance();
-
+            var voices = window.speechSynthesis.getVoices();
+            // console.log(voices)
             speech.volume = 1.0;
             speech.rate = 0.9;
             speech.pitch = 1.0;
             speech.text = message;
-            speech.lang = 'en-US';
+            speech.lang = 'en-US ';
+            speech.voice = voices[7];
+            // speech.voice.name = 'Google UK English Male'
 
           
-      var voice = speechSynthesis.getVoices().find(function(voice){
-        return voice.name === 'Google US English';
+    //   var voice = speechSynthesis.getVoices().find(function(voice){
+    //     return voice.name === 'Español es-ES';
      
-    });
-    speech.voice = voice
+    // });
+    // speech.voice = voice
 
             speechSynthesis.speak(speech);
   
