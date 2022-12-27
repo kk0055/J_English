@@ -36,11 +36,11 @@
             <h1 class=" px-2 pb-3 text-xl">瞬間英作文 トレーニング </h1>
 
             <p>①日本語を見て、英文を口に出す。</p>
-            <p>日本語を見て5秒以内に英語に直して声に出してください。</p>
+            <p>日本語を見て5秒以内に脳内で英語に変換して声に出してみてください。</p>
             <p> </p>
             <p>②5秒考えてわからなければ英語を確認して答え合わせ。</p>
             <p>日本語をクリックすると英文がでてきます。</p>
-            <p>あまり長く考えず、分からなければすぐに答えを見てください</p>
+            <p>あまり長く考えず、分からなければすぐに答えを見てOKです🙆‍♀‍</p>
 
             <p> </p>
             <p>③何度か口に出す。</p>
@@ -65,7 +65,7 @@
             <p>重要なのは
                 <span class="text-red-500 font-bold"> 「口に出すこと、 声を出すこと」</span>です。
             </p>
-            <p>英語を声に出すことに慣れていきましょう
+            <p>英語を声に出すことに慣れていきましょう🙆‍♀‍
             </p>
             <br>
             <p>※ログインすると保存と投稿ができます。</p>
@@ -75,6 +75,10 @@
                     <br>英語→日本語 (English→Japanese)Ver. </a>
             </p>
             <br>
+            <div class="flex-col mt-2 pb-3">
+                <p id="contact" class="text-xs mb-2">作ったので遊んでみてください😎 <a href="https://sojusoju.coffee" target='_blank' class="text-gray-400 hover:text-gray-600 underline">俺の飲んだもの </a></p>
+            </div>
+
             <div class="flex-col mt-2 pb-3">
                 <p id="contact" class="text-xs mb-2">サイト全体でこういう機能欲しいなぁなどあれば <a href="https://twitter.com/5seconds_en" target='_blank' class="text-gray-400 hover:text-gray-600 underline">DM </a>ください😎</p>
             </div>

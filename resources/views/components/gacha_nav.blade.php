@@ -14,7 +14,8 @@
                             </a>
                             <a class=" dark:text-white  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium underline"
                                 href="/">5秒英作文</a>
-
+                            <a class=" dark:text-white  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium underline"
+                                href="https://sojusoju.coffee" target="_blank">俺の飲んだもの</a>
                         </div>
                     </div>
                 </div>
@@ -38,7 +39,8 @@
                     href="{{ route('japaneseWord') }}">ガチャガチャ日本語</a>
                 <a class="text-gray-600 dark:text-white block px-3 py-2 rounded-md text-base font-medium underline"
                     href="/">5秒英作文</a>
-
+                <a class=" dark:text-white  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium underline"
+                    href="https://sojusoju.coffee" target="_blank">俺の飲んだもの</a>
             </div>
         </div>
     </nav>
