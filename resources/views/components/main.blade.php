@@ -12,7 +12,6 @@
                 <a href={{ route('admin.edit', $language->id) }}> <i class="ml-2 far fa-edit"></i></a>
             @endif
         </button>
-
         <p class="english mt-2 ml-4 text-red-500 font-black	text-sm md:text-base" id="target">
             {{ $language->english }}
 
@@ -20,14 +19,13 @@
             <li>
                 <input type="hidden" class="answer" value="{{ $language->english }}">
                 <p><a href="javascript:void(0)">
-                        <img src="https://img.eikaiwa.dmm.com/assets/uknow/icon_translation_play.png" class="trigger"
-                            alt="" width="20px">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Volume_up_font_awesome.svg/768px-Volume_up_font_awesome.svg.png" class="trigger"
+                            alt="" width="20px">                      
                     </a>
                 </p>
             </li>
             <li>
                 @auth
-           
                     <favorite-button class="px-4" :language={{ $language->id }}
                         :favorited={{ $language->favorited() ? 'true' : 'false' }}> </favorite-button>
                 @endauth
