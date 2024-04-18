@@ -76,7 +76,7 @@
             </p>
             <br>
             <div class="flex-col mt-2 pb-3">
-                <p id="contact" class="text-xs mb-2">作ったので遊んでみてください😎 <a href="https://sojusoju.coffee" target='_blank' class="text-gray-400 hover:text-gray-600 underline">俺の飲んだもの </a></p>
+                <p id="contact" class="text-xs mb-2">サーバー代を広告で賄っています。踏んで頂けると助かります。。。</p>
             </div>
 
             <div class="flex-col mt-2 pb-3">

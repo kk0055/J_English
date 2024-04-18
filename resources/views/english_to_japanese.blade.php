@@ -19,8 +19,10 @@
   <div class="ml-5 mt-3  text-sm md:text-base">
     <p class=" pb-1 ">Read the English sentence and guess how to say it in Japanese in <span class="text-red-500">5</span> seconds.</p>
    <p>If you have no idea, click on the English sentence. </p> 
-   <p> Then, Japanese will be displayed
+   <p> Then, Japanese will be displayed.
      <i class="far fa-laugh-wink"></i> 
+   </p>
+   <p> Press the Sound button to hear the sound.It sounds stupid though...(ToT)
    </p>
    
     <p class="text-blue-700 mt-1">
@@ -76,7 +78,8 @@
         <li>
             <input type="hidden"  class="answer" value="{{ $language->japanese }}">
                 <p><a href="javascript:void(0)">
-                <img src="https://img.eikaiwa.dmm.com/assets/uknow/icon_translation_play.png" class="trigger-jap" alt="" width="20px">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Volume_up_font_awesome.svg/768px-Volume_up_font_awesome.svg.png" class="trigger-jap"
+                  alt="" width="20px">   
                 </a></p>
         </li>
          {{-- ログイン時 favorite-button--}}
