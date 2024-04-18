@@ -76,7 +76,7 @@
             </p>
             <br>
             <div class="flex-col mt-2 pb-3">
-                <p id="contact" class="text-xs mb-2">サーバー代を広告で賄っています。踏んで頂けると助かります。。。</p>
+                <p id="contact" class="text-xs mb-2">サーバー代を広告で賄っています。踏んで頂けると助かります(ToT)</p>
             </div>
 
             <div class="flex-col mt-2 pb-3">
