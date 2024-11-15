@@ -80,7 +80,7 @@
             </div>
 
             <div class="flex-col mt-2 pb-3">
-                <p id="contact" class="text-xs mb-2">サイト全体でこういう機能欲しいなぁなどあれば <a href="https://twitter.com/5seconds_en" target='_blank' class="text-gray-400 hover:text-gray-600 underline">DM </a>ください😎</p>
+                <p id="contact" class="text-xs mb-2">賃貸物件、売買物件の仲介やってます。お手伝いできると思いますので、お気軽に <a href="https://xbatonx.com" target='_blank' class="text-gray-400 hover:text-gray-600 underline">ご連絡 </a>ください。</p>
             </div>
             <div class="mt-6 ">
                 <form action="{{ route('item.search') }}">
