@@ -80,7 +80,7 @@
             </div>
 
             <div class="flex-col mt-2 pb-3">
-                <p id="contact" class="text-xs mb-2">首都圏を中心に賃貸物件、売買物件の仲介もしております。お手伝いできると思いますので、お気軽に <a href="https://xbatonx.com" target='_blank' class="text-blue-400 hover:text-blue-600 underline">こちらのサイト </a>よりご連絡ください。</p>
+                <p id="contact" class="text-xs mb-2">首都圏を中心に賃貸物件、売買物件の仲介もしております。お手伝いできると思いますので、お気軽に <a href="https://kurabeel.com" target='_blank' class="text-blue-400 hover:text-blue-600 underline">こちらのサイト </a>よりご連絡ください。</p>
             </div>
             <div class="mt-6 ">
                 <form action="{{ route('item.search') }}">
