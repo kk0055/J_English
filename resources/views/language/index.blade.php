@@ -12,19 +12,19 @@
         {{-- </div> --}}
         {{-- <hr class="bg-gray-300 my-12"> --}}
         {{-- Twitter --}}
-       
-         {{-- Twitter --}}
+
+        {{-- Twitter --}}
         <div class="flex flex-row  ml-3 px-2 text-2xl mt-12  md:text-3xl">
-        <h1 class="font-bold">
-            5秒英作文
-        </h1>
-        
-      </div>
+            <h1 class="font-bold">
+                5秒英作文
+            </h1>
+
+        </div>
         <div class="flex justify-between ml-5 mt-5">
             <a href="{{ route('about') }}">
                 <p id='section1' class=" px-2 pb-3 text-xl text-green-400 hover:text-green-600 underline">はじめての方はこちら </p>
             </a>
-        
+
             @auth
                 <a class="mr-5 py-2 px-2 shadow-sm text-sm bg-black font-medium rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 "
                     href="{{ route('create') }}">問題をつくる</a>
@@ -53,10 +53,10 @@
             <br>
             <p>
                 全部で2000文以上あります。ランダムで出ます。</p>
-                <p>リロードもしくは
-                  <a class=""  href="/">
+            <p>リロードもしくは
+                <a class="" href="/">
                     <i class="fas fa-home"></i>
-                  </a> 
+                </a>
                 をクリックで問題はシャッフルされます。
                 <br> 1ページ30文。短い時間で繰り返し復習すると効果的です。
             </p>
@@ -69,7 +69,9 @@
             </p>
             <br>
             <p>※ログインすると保存と投稿ができます。</p>
-            <p class="mt-2">英作文をつくる練習がしたい方はこちら→<a href="{{ route('englishWord') }}"class="text-blue-400 hover:text-blue-600 underline" ><span> ガチャガチャ英単語</span></a> </p>
+            <p class="mt-2">英作文をつくる練習がしたい方はこちら→<a
+                    href="{{ route('englishWord') }}"class="text-blue-400 hover:text-blue-600 underline"><span>
+                        ガチャガチャ英単語</span></a> </p>
             <p class="text-blue-700 mt-1 underline">
                 <a href="/japanese">
                     <br>英語→日本語 (English→Japanese)Ver. </a>
@@ -80,8 +82,18 @@
             </div>
 
             <div class="flex-col mt-2 pb-3">
-                <p id="contact" class="text-xs mb-2">首都圏を中心に賃貸物件、売買物件の仲介もしております。お手伝いできると思いますので、お気軽に <a href="https://kurabeel.com" target='_blank' class="text-blue-400 hover:text-blue-600 underline">こちらのサイト </a>よりご連絡ください。</p>
+                <p id="contact" class="text-xs mb-2">首都圏を中心に賃貸物件、売買物件の仲介もしております。お手伝いできると思いますので、お気軽に <a
+                        href="https://kurabeel.com" target='_blank'
+                        class="text-blue-400 hover:text-blue-600 underline">こちらのサイト </a>よりご連絡ください。</p>
             </div>
+      {{-- くらベールads --}}
+      <div class="image-container" style="display: flex; justify-content: center; align-items: center; margin-top:40px;">
+        <div style="width:400px; height:220px">
+            <a href="https://kurabeel.com" target='_blank' style="">
+                <img src="{{ asset('img/ad.png') }}"style="max-width: 100%; height: auto;" alt="Ad">
+            </a>
+        </div>
+    </div>
             <div class="mt-6 ">
                 <form action="{{ route('item.search') }}">
                     <input type="text" name="query"
@@ -97,7 +109,8 @@
                 <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6877145874439358"
                     data-ad-slot="5867733062" data-ad-format="auto" data-full-width-responsive="true"></ins>
                 <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    (adsbygoogle = window.adsbygoogle || [])
+                    .push({});
                 </script>
                 <br>
             @endguest
@@ -115,12 +128,16 @@
         {{-- Home Button --}}
         <div class="flex-col px-4 mt-10">
             <a class="text-2xl" href="/"><i class="ml- fas fa-home"></i>
-            </a> <p class="text-xs mb-5">もう1周</p>
+            </a>
+            <p class="text-xs mb-5">もう1周</p>
         </div>
         {{-- Tweet --}}
         <div class="ml-3">
-            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false"></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
-  
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
+                data-show-count="false"></a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+
 
         {{-- Google Ads --}}
         @guest
@@ -130,7 +147,8 @@
             <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6877145874439358" data-ad-slot="5867733062"
                 data-ad-format="auto" data-full-width-responsive="true"></ins>
             <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
+                (adsbygoogle = window.adsbygoogle || [])
+                .push({});
             </script>
             <br>
         @endguest
@@ -148,4 +166,3 @@
     </div>
     @include('components.footer')
 @endsection
-

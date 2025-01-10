@@ -17,6 +17,14 @@
   Combine the three words to make a sentence. and then tweet or <a class="underline" href="#create">post</a>  it!
   </p>
 </div>
+  {{-- くらベールads --}}
+  <div class="image-container" style="display: flex; justify-content: center; align-items: center; margin-top:40px;">
+    <div style="width:400px; height:220px">
+        <a href="https://kurabeel.com" target='_blank' style="">
+            <img src="{{ asset('img/ad.png') }}"style="max-width: 100%; height: auto;" alt="Ad">
+        </a>
+    </div>
+</div>
    {{-- Google ads --}}
    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
    <!-- ベーシック１ -->
